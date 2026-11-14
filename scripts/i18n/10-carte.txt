@@ -1,0 +1,198 @@
+# Carte : catégories, produits, descriptions, options, allergènes, régimes.
+# français || italiano || english || deutsch || español
+
+# ---- Catégories ----
+Cafés || Caffè || Coffees || Kaffees || Cafés
+Croissants || Cornetti || Croissants || Croissants || Cruasanes
+Sodas || Bibite || Soft drinks || Softdrinks || Refrescos
+Mojitos || Mojito || Mojitos || Mojitos || Mojitos
+Jus || Succhi || Juices || Säfte || Zumos
+Smoothies || Frullati || Smoothies || Smoothies || Batidos
+Sandwichs || Panini || Sandwiches || Sandwiches || Sándwiches
+Desserts || Dolci || Desserts || Desserts || Postres
+Offres || Offerte || Offers || Angebote || Ofertas
+Petit-déjeuner || Colazione || Breakfast || Frühstück || Desayuno
+Petits-déjeuners || Colazioni || Breakfasts || Frühstücke || Desayunos
+Viennoiseries || Viennoiserie || Pastries || Feingebäck || Bollería
+
+# ---- Produits ----
+Petit-déjeuner Healthy || Colazione Healthy || Healthy Breakfast || Gesundes Frühstück || Desayuno Saludable
+Petit-déjeuner Sucré || Colazione Dolce || Sweet Breakfast || Süßes Frühstück || Desayuno Dulce
+Petit-déjeuner Salé || Colazione Salata || Savoury Breakfast || Herzhaftes Frühstück || Desayuno Salado
+Petit-déjeuner Turc || Colazione Turca || Turkish Breakfast || Türkisches Frühstück || Desayuno Turco
+Petit-déjeuner à composer || Colazione da comporre || Build-your-own Breakfast || Frühstück nach Wahl || Desayuno a tu gusto
+Espresso || Espresso || Espresso || Espresso || Espresso
+Double Espresso || Doppio Espresso || Double Espresso || Doppelter Espresso || Espresso Doble
+Café Direct || Caffè Filtro || Filter Coffee || Filterkaffee || Café de Filtro
+Café Crème || Caffè Crème || Café Crème || Milchkaffee || Café con Leche
+Café crème || Caffè crème || Café crème || Milchkaffee || Café con leche
+Café Latte Art || Caffè Latte Art || Latte Art Coffee || Latte-Art-Kaffee || Café Latte Art
+Cappuccino || Cappuccino || Cappuccino || Cappuccino || Capuchino
+Café Glacé Caramel || Caffè Freddo al Caramello || Iced Caramel Coffee || Eiskaffee Karamell || Café Helado de Caramelo
+Café Turc || Caffè Turco || Turkish Coffee || Türkischer Kaffee || Café Turco
+Café turc || Caffè turco || Turkish coffee || Türkischer Kaffee || Café turco
+Croissant Pur Beurre || Cornetto al Burro || All-Butter Croissant || Buttercroissant || Cruasán de Mantequilla
+Croissant pur beurre || Cornetto al burro || All-butter croissant || Buttercroissant || Cruasán de mantequilla
+Pain au Chocolat || Saccottino al Cioccolato || Pain au Chocolat || Schokocroissant || Napolitana de Chocolate
+Pain au chocolat || Saccottino al cioccolato || Pain au chocolat || Schokocroissant || Napolitana de chocolate
+Croissant Amande || Cornetto alle Mandorle || Almond Croissant || Mandelcroissant || Cruasán de Almendra
+Chausson aux Pommes || Sfogliatina alle Mele || Apple Turnover || Apfeltasche || Empanadilla de Manzana
+Coca-Cola || Coca-Cola || Coca-Cola || Coca-Cola || Coca-Cola
+Sprite || Sprite || Sprite || Sprite || Sprite
+Schweppes Agrumes || Schweppes Agrumi || Schweppes Citrus || Schweppes Zitrus || Schweppes Cítricos
+Ice Tea Pêche || Tè Freddo alla Pesca || Peach Iced Tea || Pfirsich-Eistee || Té Helado de Melocotón
+Virgin Mojito Classique || Virgin Mojito Classico || Classic Virgin Mojito || Virgin Mojito Klassisch || Virgin Mojito Clásico
+Virgin Mojito Fraise || Virgin Mojito alla Fragola || Strawberry Virgin Mojito || Virgin Mojito Erdbeere || Virgin Mojito de Fresa
+Virgin Mojito Framboise || Virgin Mojito al Lampone || Raspberry Virgin Mojito || Virgin Mojito Himbeere || Virgin Mojito de Frambuesa
+Virgin Mojito Passion || Virgin Mojito al Frutto della Passione || Passion Fruit Virgin Mojito || Virgin Mojito Maracuja || Virgin Mojito de Maracuyá
+Jus d'Orange Pressé || Spremuta d'Arancia || Fresh Orange Juice || Frisch gepresster Orangensaft || Zumo de Naranja Natural
+Jus de Citron || Spremuta di Limone || Lemon Juice || Zitronensaft || Zumo de Limón
+Jus de Fraise || Succo di Fragola || Strawberry Juice || Erdbeersaft || Zumo de Fresa
+Jus de Mangue || Succo di Mango || Mango Juice || Mangosaft || Zumo de Mango
+Smoothie Banane Fraise || Frullato Banana e Fragola || Banana Strawberry Smoothie || Bananen-Erdbeer-Smoothie || Batido de Plátano y Fresa
+Smoothie Mangue Passion || Frullato Mango e Passion Fruit || Mango Passion Smoothie || Mango-Maracuja-Smoothie || Batido de Mango y Maracuyá
+Smoothie Vert Détox || Frullato Verde Detox || Green Detox Smoothie || Grüner Detox-Smoothie || Batido Verde Detox
+Smoothie Fruits Rouges || Frullato ai Frutti Rossi || Berry Smoothie || Beeren-Smoothie || Batido de Frutos Rojos
+Avocado Toast || Avocado Toast || Avocado Toast || Avocado-Toast || Tostada de Aguacate
+Club Sandwich || Club Sandwich || Club Sandwich || Club-Sandwich || Sándwich Club
+Sandwich Thon Crudités || Panino Tonno e Verdure || Tuna Salad Sandwich || Thunfisch-Sandwich mit Rohkost || Sándwich de Atún y Verduras
+Panini Poulet Curry || Panino Pollo al Curry || Chicken Curry Panini || Panini Hähnchen-Curry || Panini de Pollo al Curry
+Tiramisu Maison || Tiramisù della Casa || Homemade Tiramisu || Hausgemachtes Tiramisu || Tiramisú Casero
+Cheesecake Fruits Rouges || Cheesecake ai Frutti Rossi || Berry Cheesecake || Beeren-Käsekuchen || Tarta de Queso con Frutos Rojos
+Fondant au Chocolat || Tortino al Cioccolato || Chocolate Fondant || Schokoladen-Fondant || Coulant de Chocolate
+Cookie Pépites de Chocolat || Cookie con Gocce di Cioccolato || Chocolate Chip Cookie || Schokoladen-Cookie || Galleta con Pepitas de Chocolate
+Formule Petit Déjeuner || Formula Colazione || Breakfast Deal || Frühstücksangebot || Menú Desayuno
+Coffee Break || Pausa Caffè || Coffee Break || Kaffeepause || Pausa Café
+
+# ---- Descriptions ----
+Pain frais, fromages, olives, légumes croquants, œuf au plat, miel et confitures maison. || Pane fresco, formaggi, olive, verdure croccanti, uovo all'occhio di bue, miele e confetture fatte in casa. || Fresh bread, cheeses, olives, crunchy vegetables, fried egg, honey and homemade jams. || Frisches Brot, Käse, Oliven, knackiges Gemüse, Spiegelei, Honig und hausgemachte Konfitüren. || Pan fresco, quesos, aceitunas, verduras crujientes, huevo frito, miel y mermeladas caseras.
+Croissants, pancakes aux fruits rouges, granola au yaourt, fruits frais et chocolat chaud. || Cornetti, pancake ai frutti rossi, granola con yogurt, frutta fresca e cioccolata calda. || Croissants, berry pancakes, granola with yoghurt, fresh fruit and hot chocolate. || Croissants, Beeren-Pancakes, Granola mit Joghurt, frisches Obst und heiße Schokolade. || Cruasanes, tortitas con frutos rojos, granola con yogur, fruta fresca y chocolate caliente.
+Plateau de fromages, crackers, olives, tomates, concombre, crêpes salées et fruits frais. || Tagliere di formaggi, cracker, olive, pomodori, cetriolo, crêpe salate e frutta fresca. || Cheese platter, crackers, olives, tomatoes, cucumber, savoury crêpes and fresh fruit. || Käseplatte, Cracker, Oliven, Tomaten, Gurke, herzhafte Crêpes und frisches Obst. || Tabla de quesos, crackers, aceitunas, tomates, pepino, crepes saladas y fruta fresca.
+Simit, fromages blancs, olives, miel en rayon, confitures, œuf et thé turc. || Simit, formaggi bianchi, olive, miele in favo, confetture, uovo e tè turco. || Simit, white cheeses, olives, honeycomb, jams, egg and Turkish tea. || Simit, Weißkäse, Oliven, Wabenhonig, Konfitüren, Ei und türkischer Tee. || Simit, quesos blancos, aceitunas, miel en panal, mermeladas, huevo y té turco.
+Pain frais et beurre inclus : choisissez votre boisson, puis composez le reste selon vos envies. || Pane fresco e burro inclusi: scegli la bevanda, poi componi il resto a piacere. || Fresh bread and butter included: choose your drink, then build the rest as you like. || Frisches Brot und Butter inklusive: Wählen Sie Ihr Getränk und stellen Sie den Rest nach Lust zusammen. || Pan fresco y mantequilla incluidos: elige tu bebida y completa el resto a tu gusto.
+Un shot pur et intense, à la crema dorée. || Un caffè puro e intenso, dalla crema dorata. || A pure, intense shot with a golden crema. || Ein reiner, intensiver Shot mit goldener Crema. || Un shot puro e intenso, con crema dorada.
+Deux shots pour un réveil garanti. || Due shot per un risveglio garantito. || Two shots for a guaranteed wake-up. || Zwei Shots für ein garantiertes Erwachen. || Dos shots para un despertar garantizado.
+Café filtre classique, doux et équilibré. || Caffè filtro classico, morbido ed equilibrato. || Classic filter coffee, smooth and balanced. || Klassischer Filterkaffee, mild und ausgewogen. || Café de filtro clásico, suave y equilibrado.
+Espresso et lait chaud, onctueux. || Espresso e latte caldo, cremoso. || Espresso and hot milk, creamy. || Espresso und heiße Milch, cremig. || Espresso y leche caliente, cremoso.
+Espresso double, lait velouté et art latte signature. || Espresso doppio, latte vellutato e latte art d'autore. || Double espresso, velvety milk and signature latte art. || Doppelter Espresso, samtige Milch und Latte Art des Hauses. || Espresso doble, leche aterciopelada y latte art de la casa.
+Espresso, lait moussé et une pointe de cacao. || Espresso, latte montato e un pizzico di cacao. || Espresso, frothed milk and a hint of cocoa. || Espresso, Milchschaum und ein Hauch Kakao. || Espresso, leche espumada y un toque de cacao.
+Espresso froid, caramel et glaçons. || Espresso freddo, caramello e ghiaccio. || Cold espresso, caramel and ice. || Kalter Espresso, Karamell und Eiswürfel. || Espresso frío, caramelo y hielo.
+Café finement moulu, préparé au cezve et servi avec sa mousse onctueuse. || Caffè macinato finissimo, preparato nella cezve e servito con la sua schiuma cremosa. || Finely ground coffee, brewed in a cezve and served with its creamy foam. || Fein gemahlener Kaffee, im Cezve zubereitet und mit cremigem Schaum serviert. || Café molido muy fino, preparado en cezve y servido con su espuma cremosa.
+Cuit sur place ce matin, croustillant à l'extérieur, moelleux à l'intérieur. || Sfornato qui stamattina, croccante fuori e soffice dentro. || Baked here this morning, crisp outside, soft inside. || Heute Morgen hier gebacken, außen knusprig, innen weich. || Horneado aquí esta mañana, crujiente por fuera y tierno por dentro.
+Pâte feuilletée et cœur de chocolat noir. || Pasta sfoglia e cuore di cioccolato fondente. || Puff pastry with a dark chocolate centre. || Blätterteig mit Zartbitterschokoladenkern. || Hojaldre con corazón de chocolate negro.
+Fourré à la crème d'amande, effeuillé. || Ripieno di crema di mandorle, con mandorle a lamelle. || Filled with almond cream, topped with flaked almonds. || Mit Mandelcreme gefüllt, mit Mandelblättchen. || Relleno de crema de almendra, con almendra laminada.
+Pommes fondantes en pâte feuilletée. || Mele morbide in pasta sfoglia. || Tender apples in puff pastry. || Zarte Äpfel im Blätterteig. || Manzanas tiernas en hojaldre.
+Servi bien frais avec des glaçons. || Servita ben fresca con ghiaccio. || Served well chilled with ice. || Gut gekühlt mit Eiswürfeln serviert. || Servido bien frío con hielo.
+Fraîcheur citron-lime pétillante. || Freschezza frizzante al limone e lime. || Sparkling lemon-lime freshness. || Spritzige Zitronen-Limetten-Frische. || Frescor burbujeante de limón y lima.
+Notes d'agrumes, légèrement amer. || Note di agrumi, leggermente amaro. || Citrus notes, slightly bitter. || Zitrusnoten, leicht bitter. || Notas cítricas, ligeramente amargo.
+Thé glacé infusé à la pêche. || Tè freddo infuso alla pesca. || Iced tea infused with peach. || Eistee mit Pfirsicharoma. || Té helado infusionado con melocotón.
+Citron vert frais, menthe pilée, sucre de canne et eau gazeuse. || Lime fresco, menta pestata, zucchero di canna e acqua frizzante. || Fresh lime, crushed mint, cane sugar and sparkling water. || Frische Limette, zerstoßene Minze, Rohrzucker und Sprudelwasser. || Lima fresca, hierbabuena machacada, azúcar de caña y agua con gas.
+Fraises fraîches et menthe pilée. || Fragole fresche e menta pestata. || Fresh strawberries and crushed mint. || Frische Erdbeeren und zerstoßene Minze. || Fresas frescas y hierbabuena machacada.
+Framboises fraîches et éclats de menthe. || Lamponi freschi e foglie di menta. || Fresh raspberries and mint leaves. || Frische Himbeeren und Minzblätter. || Frambuesas frescas y hojas de hierbabuena.
+Fruit de la passion et menthe fraîche. || Frutto della passione e menta fresca. || Passion fruit and fresh mint. || Maracuja und frische Minze. || Maracuyá y hierbabuena fresca.
+Oranges pressées minute, sans sucre ajouté. || Arance spremute al momento, senza zuccheri aggiunti. || Freshly squeezed oranges, no added sugar. || Frisch gepresste Orangen, ohne Zuckerzusatz. || Naranjas exprimidas al momento, sin azúcar añadido.
+Citrons frais pressés, acidulé et vivifiant. || Limoni freschi spremuti, acidulo e tonificante. || Freshly squeezed lemons, tangy and invigorating. || Frisch gepresste Zitronen, säuerlich und belebend. || Limones frescos exprimidos, ácido y revitalizante.
+Fraises mixées fraîches. || Fragole fresche frullate. || Freshly blended strawberries. || Frisch pürierte Erdbeeren. || Fresas frescas batidas.
+Mangue mûre à point, onctueux. || Mango maturo al punto giusto, cremoso. || Perfectly ripe mango, smooth. || Perfekt gereifte Mango, cremig. || Mango en su punto, cremoso.
+Banane, fraises et lait, texture veloutée. || Banana, fragole e latte, consistenza vellutata. || Banana, strawberries and milk, velvety texture. || Banane, Erdbeeren und Milch, samtige Textur. || Plátano, fresas y leche, textura aterciopelada.
+Mangue, fruit de la passion et yaourt. || Mango, frutto della passione e yogurt. || Mango, passion fruit and yoghurt. || Mango, Maracuja und Joghurt. || Mango, maracuyá y yogur.
+Épinard, pomme, citron et gingembre. || Spinaci, mela, limone e zenzero. || Spinach, apple, lemon and ginger. || Spinat, Apfel, Zitrone und Ingwer. || Espinaca, manzana, limón y jengibre.
+Fraise, framboise, myrtille et yaourt. || Fragola, lampone, mirtillo e yogurt. || Strawberry, raspberry, blueberry and yoghurt. || Erdbeere, Himbeere, Heidelbeere und Joghurt. || Fresa, frambuesa, arándano y yogur.
+Pain au levain, avocat écrasé, tomates cerises et graines torréfiées. || Pane a lievitazione naturale, avocado schiacciato, pomodorini e semi tostati. || Sourdough bread, smashed avocado, cherry tomatoes and toasted seeds. || Sauerteigbrot, zerdrückte Avocado, Kirschtomaten und geröstete Kerne. || Pan de masa madre, aguacate machacado, tomates cherry y semillas tostadas.
+Poulet grillé, bacon, salade, tomate. || Pollo alla griglia, bacon, insalata, pomodoro. || Grilled chicken, bacon, lettuce, tomato. || Gegrilltes Hähnchen, Bacon, Salat, Tomate. || Pollo a la parrilla, bacon, lechuga, tomate.
+Thon, crudités fraîches, pain complet. || Tonno, verdure fresche, pane integrale. || Tuna, fresh raw vegetables, wholemeal bread. || Thunfisch, frische Rohkost, Vollkornbrot. || Atún, verduras frescas, pan integral.
+Poulet, sauce curry, crudités, pressé et croustillant. || Pollo, salsa al curry, verdure, pressato e croccante. || Chicken, curry sauce, raw vegetables, pressed and crispy. || Hähnchen, Currysauce, Rohkost, gepresst und knusprig. || Pollo, salsa de curry, verduras, prensado y crujiente.
+Recette traditionnelle italienne, mascarpone et café. || Ricetta tradizionale italiana, mascarpone e caffè. || Traditional Italian recipe, mascarpone and coffee. || Traditionelles italienisches Rezept, Mascarpone und Kaffee. || Receta tradicional italiana, mascarpone y café.
+Base biscuitée, coulis de fruits rouges. || Base di biscotto, coulis di frutti rossi. || Biscuit base, berry coulis. || Keksboden, Beerencoulis. || Base de galleta, coulis de frutos rojos.
+Cœur coulant, chocolat noir intense. || Cuore morbido, cioccolato fondente intenso. || Molten centre, intense dark chocolate. || Flüssiger Kern, intensive Zartbitterschokolade. || Corazón fundido, chocolate negro intenso.
+Cuit maison, croustillant à l'extérieur. || Fatto in casa, croccante fuori. || Homemade, crisp on the outside. || Hausgebacken, außen knusprig. || Casera, crujiente por fuera.
+Café au choix, croissant pur beurre et jus d'orange pressé. || Caffè a scelta, cornetto al burro e spremuta d'arancia. || Coffee of your choice, all-butter croissant and fresh orange juice. || Kaffee nach Wahl, Buttercroissant und frisch gepresster Orangensaft. || Café a elegir, cruasán de mantequilla y zumo de naranja natural.
+Boisson glacée & Pâtisserie || Bevanda fredda e Pasticcino || Iced drink & Pastry || Eisgetränk & Gebäck || Bebida fría y Pastel
+
+# ---- Groupes d'options ----
+Service || Servizio || Service || Service || Servicio
+Boisson chaude || Bevanda calda || Hot drink || Heißgetränk || Bebida caliente
+Jus frais || Succo fresco || Fresh juice || Frischer Saft || Zumo natural
+Œufs || Uova || Eggs || Eier || Huevos
+Salé || Salato || Savoury || Herzhaft || Salado
+Douceurs || Dolcezze || Sweet treats || Süßes || Dulces
+Taille || Formato || Size || Größe || Tamaño
+Lait || Latte || Milk || Milch || Leche
+Sucre || Zucchero || Sugar || Zucker || Azúcar
+Glace || Ghiaccio || Ice || Eis || Hielo
+Extras || Extra || Extras || Extras || Extras
+
+# ---- Options ----
+À emporter || Da asporto || Takeaway || Zum Mitnehmen || Para llevar
+Beaucoup || Molto || Lots || Viel || Mucho
+Beurre supplémentaire || Burro extra || Extra butter || Extra Butter || Mantequilla extra
+Blanc de dinde || Petto di tacchino || Turkey breast || Putenbrust || Pechuga de pavo
+Chantilly || Panna montata || Whipped cream || Schlagsahne || Nata montada
+Chocolat chaud || Cioccolata calda || Hot chocolate || Heiße Schokolade || Chocolate caliente
+Citron frais || Limone fresco || Fresh lemon || Frische Zitrone || Limón fresco
+Confiture maison || Confettura fatta in casa || Homemade jam || Hausgemachte Konfitüre || Mermelada casera
+Coulis chocolat || Salsa al cioccolato || Chocolate sauce || Schokoladensauce || Salsa de chocolate
+Extra shot || Shot extra || Extra shot || Extra-Shot || Shot extra
+Fraise || Fragola || Strawberry || Erdbeere || Fresa
+Fromage blanc || Formaggio fresco || Fromage frais || Quark || Queso fresco
+Fromage kasar || Formaggio kaşar || Kaşar cheese || Kaşar-Käse || Queso kaşar
+Fruits frais de saison || Frutta fresca di stagione || Fresh seasonal fruit || Frisches Obst der Saison || Fruta fresca de temporada
+Gobelet à emporter || Bicchiere da asporto || Takeaway cup || Becher zum Mitnehmen || Vaso para llevar
+Graines de chia + || Semi di chia + || Chia seeds + || Chiasamen + || Semillas de chía +
+Granola et yaourt || Granola e yogurt || Granola and yoghurt || Granola und Joghurt || Granola y yogur
+Lait d'avoine || Latte d'avena || Oat milk || Hafermilch || Leche de avena
+Mangue || Mango || Mango || Mango || Mango
+Menthe fraîche + || Menta fresca + || Fresh mint + || Frische Minze + || Hierbabuena fresca +
+Miel || Miele || Honey || Honig || Miel
+Normal || Normale || Normal || Normal || Normal
+Œuf au plat || Uovo all'occhio di bue || Fried egg || Spiegelei || Huevo frito
+Œufs brouillés || Uova strapazzate || Scrambled eggs || Rührei || Huevos revueltos
+Olives noires et vertes || Olive nere e verdi || Black and green olives || Schwarze und grüne Oliven || Aceitunas negras y verdes
+Omelette fromage || Frittata al formaggio || Cheese omelette || Käseomelett || Tortilla de queso
+Omelette nature || Frittata semplice || Plain omelette || Omelett natur || Tortilla francesa
+Orange pressée || Spremuta d'arancia || Fresh orange juice || Frisch gepresster O-Saft || Zumo de naranja natural
+Pain sans gluten || Pane senza glutine || Gluten-free bread || Glutenfreies Brot || Pan sin gluten
+Pancakes fruits rouges || Pancake ai frutti rossi || Berry pancakes || Beeren-Pancakes || Tortitas de frutos rojos
+Pâte à tartiner || Crema spalmabile || Chocolate spread || Schokoaufstrich || Crema de cacao
+Peu || Poco || A little || Wenig || Poco
+Portion généreuse || Porzione abbondante || Generous portion || Große Portion || Ración generosa
+Sans || Senza || None || Ohne || Sin
+Sans oignon || Senza cipolla || No onion || Ohne Zwiebel || Sin cebolla
+Servi chaud || Servito caldo || Served hot || Warm serviert || Servido caliente
+Simit au sésame || Simit al sesamo || Sesame simit || Sesam-Simit || Simit de sésamo
+Sirop vanille || Sciroppo alla vaniglia || Vanilla syrup || Vanillesirup || Sirope de vainilla
+Tasse en verre (sur place) || Tazza di vetro (al tavolo) || Glass cup (dine in) || Glastasse (vor Ort) || Taza de cristal (en el local)
+Tasse en verre || Tazza di vetro || Glass cup || Glastasse || Taza de cristal
+Thé à la menthe || Tè alla menta || Mint tea || Minztee || Té de menta
+Tomates et concombre || Pomodori e cetriolo || Tomatoes and cucumber || Tomaten und Gurke || Tomates y pepino
+Pain frais et beurre || Pane fresco e burro || Fresh bread and butter || Frisches Brot und Butter || Pan fresco y mantequilla
+Carton recyclable, à emporter || Cartone riciclabile, da asporto || Recyclable paper cup, to take away || Recycelbarer Pappbecher, zum Mitnehmen || Cartón reciclable, para llevar
+Servi à votre table || Servito al tuo tavolo || Served at your table || An Ihren Tisch serviert || Servido en tu mesa
+
+# ---- Allergènes et régimes ----
+Gluten || Glutine || Gluten || Gluten || Gluten
+Œufs || Uova || Eggs || Eier || Huevos
+Soja || Soia || Soy || Soja || Soja
+Fruits à coque || Frutta a guscio || Tree nuts || Schalenfrüchte || Frutos de cáscara
+Arachides || Arachidi || Peanuts || Erdnüsse || Cacahuetes
+Sésame || Sesamo || Sesame || Sesam || Sésamo
+Moutarde || Senape || Mustard || Senf || Mostaza
+Poisson || Pesce || Fish || Fisch || Pescado
+Crustacés || Crostacei || Crustaceans || Krebstiere || Crustáceos
+Mollusques || Molluschi || Molluscs || Weichtiere || Moluscos
+Céleri || Sedano || Celery || Sellerie || Apio
+Sulfites || Solfiti || Sulphites || Sulfite || Sulfitos
+Lupin || Lupini || Lupin || Lupinen || Altramuces
+vegetarien || vegetariano || vegetarian || vegetarisch || vegetariano
+vegan || vegano || vegan || vegan || vegano
+sans-gluten || senza glutine || gluten-free || glutenfrei || sin gluten
+Végétarien || Vegetariano || Vegetarian || Vegetarisch || Vegetariano
+Végan || Vegano || Vegan || Vegan || Vegano
+Vegan || Vegano || Vegan || Vegan || Vegano
+Sans gluten || Senza glutine || Gluten-free || Glutenfrei || Sin gluten
+Allergènes : || Allergeni: || Allergens: || Allergene: || Alérgenos:
+Aucun allergène déclaré || Nessun allergene dichiarato || No allergens declared || Keine Allergene angegeben || Sin alérgenos declarados
+Aucun allergène || Nessun allergene || No allergens || Keine Allergene || Sin alérgenos
+Valeurs indicatives. || Valori indicativi. || Approximate values. || Richtwerte. || Valores orientativos.
+Valeurs indicatives, hors options et suppléments. || Valori indicativi, esclusi opzioni ed extra. || Approximate values, excluding options and extras. || Richtwerte, ohne Optionen und Extras. || Valores orientativos, sin opciones ni extras.
+Sans allergène majeur déclaré || Senza allergeni principali dichiarati || No major allergens declared || Keine Hauptallergene angegeben || Sin alérgenos principales declarados

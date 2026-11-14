@@ -1,0 +1,48 @@
+' SOUCOFFE - demarrage automatique du restaurant sur ce PC (sans fenetre).
+' Lance au demarrage de la session Windows (raccourci dans le dossier Demarrage,
+' cree par scripts\installer-demarrage-auto.ps1). Peut aussi etre lance a la main.
+'   - MariaDB (base de donnees)            port 3306
+'   - API PHP sur le reseau local          http://<IP-du-PC>:8000/api
+'   - site via scripts/lan_router.php      http://<IP-du-PC>:8080/
+' Ensuite, toutes les 30 secondes, relance ce qui se serait arrete.
+' Une seule copie tourne a la fois (les copies suivantes s'arretent seules).
+Option Explicit
+Dim sh, fso, root, mariadb, php, wmi, procs, p, n
+
+Set sh = CreateObject("WScript.Shell")
+Set fso = CreateObject("Scripting.FileSystemObject")
+root = fso.GetParentFolderName(fso.GetParentFolderName(WScript.ScriptFullName))
+mariadb = "C:\Program Files\MariaDB 13.0\bin\mariadbd.exe"
+php = sh.ExpandEnvironmentStrings("%LOCALAPPDATA%") & "\Microsoft\WinGet\Packages\PHP.PHP.8.3_Microsoft.Winget.Source_8wekyb3d8bbwe\php.exe"
+
+' Une seule copie de ce script.
+Set wmi = GetObject("winmgmts:\\.\root\cimv2")
+Set procs = wmi.ExecQuery("SELECT CommandLine FROM Win32_Process WHERE Name = 'wscript.exe' OR Name = 'cscript.exe'")
+n = 0
+For Each p In procs
+    If Not IsNull(p.CommandLine) Then
+        If InStr(LCase(p.CommandLine), "demarrage-auto.vbs") > 0 Then n = n + 1
+    End If
+Next
+If n > 1 Then WScript.Quit
+
+Function IsListening(port)
+    Dim ex
+    Set ex = sh.Exec("cmd /c netstat -ano | findstr "":" & port & " "" | findstr LISTENING")
+    IsListening = (Len(Trim(ex.StdOut.ReadAll)) > 0)
+End Function
+
+sh.CurrentDirectory = root
+Do
+    If Not IsListening(3306) And fso.FileExists(mariadb) Then
+        sh.Run """" & mariadb & """ --console", 0, False
+        WScript.Sleep 6000
+    End If
+    If Not IsListening(8000) And fso.FileExists(php) Then
+        sh.Run """" & php & """ -S 0.0.0.0:8000 api/index.php", 0, False
+    End If
+    If Not IsListening(8080) And fso.FileExists(php) Then
+        sh.Run """" & php & """ -S 0.0.0.0:8080 scripts/lan_router.php", 0, False
+    End If
+    WScript.Sleep 30000
+Loop

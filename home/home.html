@@ -1,0 +1,917 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Kebab - Restaurant intelligent avec cafétéria</title>
+<meta name="description" content="Kebab, restaurant intelligent avec sa cafétéria : kebab à la broche, paninis, assiettes, petits-déjeuners, desserts et boissons. Commande vocale, allergies, commande de table et suivi en direct depuis votre téléphone."/>
+<meta property="og:title" content="Kebab · Restaurant intelligent avec cafétéria"/>
+<meta property="og:description" content="Kebab, paninis, assiettes, petits-déjeuners, desserts et boissons, servis à votre table."/>
+<meta property="og:image" content="../images/media/kebab-plateau.jpg"/>
+<script src="../js/vendor/tailwind-3.4.17-forms-cq.js"></script>
+<link href="../css/soucoffe.css" rel="stylesheet"/>
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/icons.js" defer=""></script>
+<script src="../js/cart.js" defer=""></script>
+<script src="../js/profile.js" defer=""></script>
+<script src="../js/products.js" defer=""></script>
+<script src="../js/recommendations.js" defer=""></script>
+<script src="../js/smart-client.js" defer=""></script>
+<script src="../js/ai-client.js" defer=""></script>
+<script src="../js/assistant.js" defer=""></script>
+<script src="../js/restaurant-info.js" defer=""></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#f4ba96",
+                      "tertiary": "#3f1520",
+                      "surface-variant": "#ebe1d3",
+                      "tertiary-fixed-dim": "#e9bda7",
+                      "on-secondary-fixed": "#251a07",
+                      "on-primary-fixed": "#311300",
+                      "on-primary-container": "#e9b08c",
+                      "secondary-container": "#f6dfc0",
+                      "on-primary": "#ffffff",
+                      "outline-variant": "#d5c3b9",
+                      "surface-tint": "#805437",
+                      "on-surface-variant": "#51443d",
+                      "on-secondary-container": "#726249",
+                      "tertiary-fixed": "#ffdbca",
+                      "on-secondary-fixed-variant": "#53452e",
+                      "on-tertiary-fixed-variant": "#5e402f",
+                      "surface-container-high": "#f1e7d9",
+                      "surface-container": "#f7edde",
+                      "surface": "#fff8f2",
+                      "inverse-primary": "#f4ba96",
+                      "primary-fixed": "#ffdbc7",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-container": "#dfb49e",
+                      "secondary": "#6c5c44",
+                      "on-tertiary-fixed": "#2d1608",
+                      "surface-container-highest": "#ebe1d3",
+                      "primary-container": "#571d29",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface": "#1f1b13",
+                      "error": "#ba1a1a",
+                      "inverse-on-surface": "#f9efe1",
+                      "secondary-fixed": "#f6dfc0",
+                      "surface-container-low": "#fcf2e4",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#644534",
+                      "secondary-fixed-dim": "#d9c4a5",
+                      "inverse-surface": "#353027",
+                      "surface-dim": "#e2d9cb",
+                      "primary": "#571d29",
+                      "on-secondary": "#ffffff",
+                      "outline": "#83746c",
+                      "on-background": "#1f1b13",
+                      "surface-bright": "#fff8f2",
+                      "on-primary-fixed-variant": "#653d22",
+                      "on-error": "#ffffff",
+                      "background": "#fff8f2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "sm": "16px",
+                      "margin-mobile": "16px",
+                      "md": "24px",
+                      "xl": "80px",
+                      "xs": "8px",
+                      "lg": "48px",
+                      "gutter": "20px",
+                      "base": "4px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Arial"
+                      ],
+                      "title-lg": [
+                              "Arial"
+                      ],
+                      "display-lg-mobile": [
+                              "Arial"
+                      ],
+                      "label-md": [
+                              "Arial"
+                      ],
+                      "headline-md": [
+                              "Arial"
+                      ],
+                      "body-md": [
+                              "Arial"
+                      ],
+                      "headline-sm": [
+                              "Arial"
+                      ],
+                      "body-lg": [
+                              "Arial"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "title-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<link rel="manifest" href="../manifest.json"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="Kebab"/>
+<meta name="theme-color" content="#242120"/>
+<link rel="icon" type="image/png" href="../images/brand/favicon-32.png?v=kebab2"/>
+<link rel="apple-touch-icon" href="../images/brand/apple-touch-icon.png?v=kebab2"/>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar (Web) -->
+<header class="hidden md:flex bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline justify-between items-center w-full px-margin-desktop py-4 sticky top-0 z-40">
+<div class="flex items-center gap-8">
+<h1><img alt="Kebab" class="sc-brand-logo" src="../images/brand/logo.png?v=kebab2"/></h1>
+<nav class="flex items-center gap-6">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="#">Accueil</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="../menu/index.html">Menu</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md sc-nav-kebab" href="../menu-kebab/index.html">Kebab</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="../02-Menu-Principal/code.html?view=favorites">Favoris</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative">
+<input onkeydown="headerSearch(this.value, event)" class="bg-surface-container-high border-none rounded-full py-2 pl-10 pr-4 font-body-md text-sm text-on-surface focus:ring-2 focus:ring-primary w-64" placeholder="Rechercher au menu…" type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant">search</span>
+</div>
+<div class="flex items-center gap-4">
+<button data-theme-toggle="" onclick="toggleTheme()" type="button" class="text-on-surface-variant hover:text-primary transition-colors text-xl leading-none" aria-label="Changer de thème"><span class="material-symbols-outlined">dark_mode</span></button>
+<button onclick="window.location.href='../05-Suivi-Commande/code.html'" class="text-on-surface-variant hover:text-primary transition-colors flex flex-col items-center">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-label-md text-xs mt-1">Ma commande</span>
+</button>
+<button onclick="window.location.href='../04-Panier/code.html'" class="relative text-on-surface-variant hover:text-primary transition-colors flex flex-col items-center">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-label-md text-xs mt-1">Panier</span>
+<span data-cart-badge="" class="absolute -top-1 -right-2 bg-primary-container text-on-primary-container text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
+</button>
+</div>
+<div class="flex items-center gap-3 border-l border-outline-variant pl-6">
+<button type="button" data-profile-toggle="" class="w-10 h-10 rounded-full flex items-center justify-center text-primary text-[40px] shrink-0 hover:opacity-80 transition-opacity" aria-label="Mon profil" title="Mon profil"><span class="material-symbols-outlined" data-weight="fill">account_circle</span></button>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Table <span data-table-number="">12</span></span>
+<span class="font-body-md text-xs text-on-surface-variant" data-guest-name="">Souad</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Mobile Header (simulated) -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile py-4 bg-surface sticky top-0 z-40 shadow-sm">
+<div class="flex flex-col">
+<h1><img alt="Kebab" class="sc-brand-logo-mobile" src="../images/brand/logo.png?v=kebab2"/></h1>
+<span class="font-label-md text-on-surface-variant text-xs">Table <span data-table-number="">12</span> <span class="material-symbols-outlined text-[6px] mx-1 align-middle" data-weight="fill">circle</span> <span data-guest-name="">Souad</span></span>
+</div>
+<div class="flex items-center gap-4">
+<button type="button" data-profile-toggle="" class="text-primary text-2xl leading-none inline-flex items-center justify-center min-w-[40px] min-h-[40px]" aria-label="Mon profil" title="Mon profil"><span class="material-symbols-outlined">account_circle</span></button>
+<button data-theme-toggle="" onclick="toggleTheme()" type="button" class="text-on-surface-variant text-xl leading-none inline-flex items-center justify-center min-w-[40px] min-h-[40px]" aria-label="Changer de thème"><span class="material-symbols-outlined">dark_mode</span></button>
+<button onclick="focusSearch()" aria-label="Rechercher" class="text-on-surface-variant inline-flex items-center justify-center min-w-[40px] min-h-[40px]">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button onclick="window.location.href='../04-Panier/code.html'" class="relative text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span data-cart-badge="" class="absolute -top-1 -right-1 bg-primary-container text-on-primary-container text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
+</button>
+</div>
+</header>
+<!-- Mobile Search Bar -->
+<div class="md:hidden px-margin-mobile pt-2 pb-1 bg-surface">
+<div class="relative">
+<input onkeydown="headerSearch(this.value, event)" class="w-full bg-surface-container-high border-none rounded-full py-2 pl-10 pr-4 font-body-md text-sm text-on-surface focus:ring-2 focus:ring-primary" placeholder="Rechercher..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+</div>
+</div>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero : carrousel plein écran (images/hero/), fondu enchaîné -->
+<section id="sc-hero" class="sc-hero" aria-roledescription="carrousel" aria-label="Bienvenue chez Kebab">
+<div class="sc-hero-slides">
+<div class="sc-hero-slide is-food is-active" style="--sc-plate:url('../images/media/kebab-plateau.jpg')" data-caption="Plateau kebab et grillades" role="group" aria-roledescription="diapositive" aria-label="1 sur 5"><img src="../images/media/kebab-plateau.jpg" alt="" fetchpriority="high"/></div>
+<div class="sc-hero-slide is-food" style="--sc-plate:url('../images/products/panini-poulet-curry.jpg')" data-caption="Panini grillé au poulet curry" role="group" aria-roledescription="diapositive" aria-label="2 sur 5"><img src="../images/products/panini-poulet-curry.jpg" alt="" loading="lazy"/></div>
+<div class="sc-hero-slide is-food" style="--sc-plate:url('../images/media/kebab-brochettes.jpg')" data-caption="Brochettes grillées" role="group" aria-roledescription="diapositive" aria-label="3 sur 5"><img src="../images/media/kebab-brochettes.jpg" alt="" loading="lazy"/></div>
+<div class="sc-hero-slide is-food" style="--sc-plate:url('../images/products/petit-dejeuner-compose.jpg')" data-caption="Petits-déjeuners à composer" role="group" aria-roledescription="diapositive" aria-label="4 sur 5"><img src="../images/products/petit-dejeuner-compose.jpg" alt="" loading="lazy"/></div>
+<div class="sc-hero-slide" data-caption="L'espresso, tiré à la minute" role="group" aria-roledescription="diapositive" aria-label="5 sur 5"><video src="../videos/hero-espresso.mp4" poster="../images/hero/hero-3.jpg" muted loop playsinline preload="none" data-autoplay-visible="" aria-hidden="true"></video></div>
+</div>
+<div class="sc-hero-shade" aria-hidden="true"></div>
+<div class="sc-hero-inner">
+<div class="sc-hero-copy">
+<p class="sc-hero-eyebrow">Restaurant intelligent · Cuisine &amp; cafétéria</p>
+<h2 class="sc-hero-title">Une vraie cuisine,<br/><em>servie à votre table.</em></h2>
+<p class="sc-hero-lead">Kebab à la broche, paninis, assiettes, petits-déjeuners, desserts et boissons : commandez depuis votre table et suivez votre commande en direct.</p>
+<div class="sc-hero-actions">
+<a href="../01-Identification/log.html" class="sc-btn sc-btn-light">Voir le menu <span class="material-symbols-outlined">arrow_forward</span></a>
+<a href="../05-Suivi-Commande/code.html" class="sc-btn sc-btn-outline-light">Ma commande</a>
+<a href="#sc-infos" class="sc-hero-infolink hidden" data-ri-show=""><span class="material-symbols-outlined">schedule</span> <span data-ri-open-label="">Horaires et accès</span></a>
+</div>
+</div>
+</div>
+<div class="sc-hero-footer">
+<p class="sc-hero-caption"><span class="sc-hero-count"><b id="sc-hero-index">01</b> / 05</span><span id="sc-hero-caption" aria-live="polite">Plateau kebab et grillades</span></p>
+<div class="sc-hero-controls">
+<div class="sc-hero-dots" role="tablist">
+<button type="button" class="is-active" data-hero-dot="0" aria-label="Image 1"><i></i></button>
+<button type="button" data-hero-dot="1" aria-label="Image 2"><i></i></button>
+<button type="button" data-hero-dot="2" aria-label="Image 3"><i></i></button>
+<button type="button" data-hero-dot="3" aria-label="Image 4"><i></i></button>
+<button type="button" data-hero-dot="4" aria-label="Image 5"><i></i></button>
+</div>
+<button type="button" class="sc-hero-arrow" data-hero-prev="" aria-label="Image précédente"><span class="material-symbols-outlined">chevron_left</span></button>
+<button type="button" class="sc-hero-arrow" data-hero-next="" aria-label="Image suivante"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+</section>
+<!-- Nouvelle offre Kebab : menu dédié (/menu-kebab/). Produits, prix et photos saisis dans l'admin ;
+     grande photo facultative : images/menus/kebab.jpg (sinon visuel de repli aux couleurs du site). -->
+<section id="sc-kebab" class="sc-section sc-kebab-wrap" aria-labelledby="sc-kebab-title">
+<div class="sc-container">
+<div class="sc-kebab">
+<div id="sc-kebab-media" class="sc-kebab-media" role="img" aria-label="Kebab : pain grillé, viande, crudités et sauce"><span class="material-symbols-outlined" aria-hidden="true">kebab_dining</span></div>
+<div class="sc-kebab-text">
+<p class="sc-kicker">Menu Kebab · Grill</p>
+<h2 id="sc-kebab-title" class="sc-title">Le vrai goût du Kebab</h2>
+<p class="sc-sub">Goût, fraîcheur et saveur à chaque bouchée.</p>
+<ul class="sc-kebab-chips" aria-label="Nos atouts"><li><span class="material-symbols-outlined" aria-hidden="true">local_fire_department</span>Cuit à la broche</li><li><span class="material-symbols-outlined" aria-hidden="true">bakery_dining</span>Pain frais du jour</li><li><span class="material-symbols-outlined" aria-hidden="true">water_drop</span>Sauces maison</li></ul>
+<a class="sc-btn sc-btn-dark sc-kebab-cta" href="../menu-kebab/index.html">Découvrir le menu kebab <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+<div id="sc-kebab-picks" class="sc-kebab-picks hidden">
+<div class="sc-sechead">
+<div><p class="sc-kicker">Menu Kebab</p><h3 class="sc-title sc-kebab-subtitle">Les plus demandés</h3></div>
+<a href="../menu-kebab/index.html" class="sc-link">Voir tout le menu <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div id="kebab-products" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6"></div>
+</div>
+</div>
+</section>
+<!-- Atouts -->
+<section id="sc-after-hero" class="sc-perks" aria-label="Nos atouts">
+<div class="sc-perk"><span class="material-symbols-outlined">qr_code_scanner</span><div><strong>Commande à table</strong><small>Sans attendre au comptoir</small></div></div>
+<div class="sc-perk"><span class="material-symbols-outlined">schedule</span><div><strong>Suivi en direct</strong><small>De la cuisine à votre table</small></div></div>
+<div class="sc-perk"><span class="material-symbols-outlined">loyalty</span><div><strong>Fidélité récompensée</strong><small>Des points à chaque commande</small></div></div>
+</section>
+<!-- Le restaurant intelligent : chaque tuile ouvre une fonction RÉELLE du site
+     (js/smart-client.js, js/group-order.js, suivi 05, assistant ci-dessous). Lien de repli si le script manque. -->
+<section id="sc-smart" class="sc-section sc-iq-wrap" aria-labelledby="sc-smart-title">
+<div class="sc-container">
+<div class="sc-iq">
+<div class="sc-iq-head">
+<p class="sc-kicker">Restaurant intelligent</p>
+<h2 id="sc-smart-title" class="sc-title">Le service à table, en plus malin.</h2>
+<p class="sc-sub">Votre téléphone devient votre serveur personnel : il comprend votre commande, respecte vos allergies, réunit toute la table et vous prévient quand c'est prêt.</p>
+</div>
+<div class="sc-iq-grid">
+<a class="sc-iq-tile" href="../02-Menu-Principal/code.html" data-smart="voice"><span class="sc-iq-ico"><span class="material-symbols-outlined">mic</span></span><strong>Commande express</strong><small>Dites ou écrivez « 2 kebabs sans oignon et un coca » : les plats et vos choix sont retrouvés, en 5 langues.</small><em>Essayer <span class="material-symbols-outlined">arrow_forward</span></em></a>
+<a class="sc-iq-tile" href="../02-Menu-Principal/code.html" data-smart="diet"><span class="sc-iq-ico"><span class="material-symbols-outlined">allergy</span></span><strong>Mes allergies</strong><small>Indiquez vos allergies et votre régime : chaque plat est marqué compatible, à éviter ou à vérifier.</small><em>Configurer <span class="material-symbols-outlined">arrow_forward</span></em></a>
+<a class="sc-iq-tile" href="../04-Panier/code.html"><span class="sc-iq-ico"><span class="material-symbols-outlined">groups_2</span></span><strong>Commande de la table</strong><small>Chaque téléphone ajoute ses plats au panier commun, une seule commande part en cuisine, l'addition se partage.</small><em>Commander ensemble <span class="material-symbols-outlined">arrow_forward</span></em></a>
+<a class="sc-iq-tile" href="#assistant-input" data-smart="assistant"><span class="sc-iq-ico"><span class="material-symbols-outlined">auto_awesome</span></span><strong>Suggestions sur mesure</strong><small>Décrivez votre envie, vos habitudes et l'heure font le reste : on vous propose les bons plats.</small><em>Demander <span class="material-symbols-outlined">arrow_forward</span></em></a>
+<a class="sc-iq-tile" href="../05-Suivi-Commande/code.html"><span class="sc-iq-ico"><span class="material-symbols-outlined">schedule</span></span><strong>Suivi en direct</strong><small>Temps d'attente calculé sur la vraie activité de la cuisine, alerte et vibration quand votre commande est prête.</small><em>Ma commande <span class="material-symbols-outlined">arrow_forward</span></em></a>
+<div class="sc-iq-tile is-action"><span class="sc-iq-ico"><span class="material-symbols-outlined">notifications_active</span></span><strong>Appel du serveur</strong><small>Besoin de quelque chose ? Prévenez le serveur depuis votre table, sans lever la main. L'addition se demande depuis le suivi de commande.</small>
+<button type="button" class="sc-iq-call" onclick="callWaiter(this)"><span class="material-symbols-outlined">room_service</span> Appeler le serveur</button>
+<p id="waiter-call-msg" class="hidden sc-iq-msg" aria-live="polite"></p></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Le restaurant : identité, ambiance et ce que l'on sert (contenu réel de la carte) -->
+<section id="sc-about" class="sc-section" aria-labelledby="sc-about-title">
+<div class="sc-container sc-about">
+<div class="sc-about-media" aria-hidden="true">
+<img class="sc-about-a" src="../images/products/piatto-kebab.jpg" alt="" loading="lazy"/>
+<img class="sc-about-b" src="../images/products/petit-dejeuner-turc.jpg" alt="" loading="lazy"/>
+<img class="sc-about-c" src="../images/products/tiramisu.jpg" alt="" loading="lazy"/>
+<span class="sc-about-seal"><span class="material-symbols-outlined">auto_awesome</span><b>Restaurant</b><small>intelligent</small></span>
+</div>
+<div class="sc-about-text">
+<p class="sc-kicker">Notre restaurant</p>
+<h2 id="sc-about-title" class="sc-title">Une table pour chaque moment de la journée.</h2>
+<p class="sc-sub">Chez Kebab, on vient pour bien manger. Du petit-déjeuner au repas du soir, la cuisine prépare kebab, paninis, assiettes et douceurs, pendant que la cafétéria du restaurant sert cafés, jus frais, smoothies et mojitos.</p>
+<ul class="sc-about-list">
+<li><span class="material-symbols-outlined">kebab_dining</span><span><b>Le grill</b>Kebab à la broche, paninis, piadines et assiettes.</span></li>
+<li><span class="material-symbols-outlined">breakfast_dining</span><span><b>Le matin</b>Petits-déjeuners sucrés, salés, healthy ou à la turque.</span></li>
+<li><span class="material-symbols-outlined">cake</span><span><b>Les desserts</b>Tiramisu, cheesecake, fondant au chocolat.</span></li>
+<li><span class="material-symbols-outlined">local_cafe</span><span><b>La cafétéria</b>Cafés, jus frais, smoothies, mojitos et sodas.</span></li>
+</ul>
+<div class="sc-about-actions">
+<a href="../02-Menu-Principal/code.html" class="sc-btn sc-btn-dark">Découvrir la carte <span class="material-symbols-outlined">arrow_forward</span></a>
+<a href="#sc-gallery" class="sc-link">Voir la galerie <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Catégories -->
+<section class="sc-section">
+<div class="sc-container">
+<div class="sc-sechead">
+<div><p class="sc-kicker">La carte</p><h2 class="sc-title">Plats, douceurs et boissons</h2></div>
+<a href="../02-Menu-Principal/code.html" class="sc-link">Tout le menu <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="sc-cats">
+<a class="sc-cat" href="../menu-kebab/index.html"><img src="../images/products/doner-kebab.jpg" alt="" loading="lazy"/><span>Kebab</span></a>
+<a class="sc-cat" href="../02-Menu-Principal/code.html?category=Sandwichs"><img src="../images/products/club-sandwich.jpg" alt="" loading="lazy"/><span>Sandwichs</span></a>
+<a class="sc-cat" href="../02-Menu-Principal/code.html?category=Petit-déjeuner"><img src="../images/products/petit-dejeuner-sucre.jpg" alt="" loading="lazy"/><span>Petit-déjeuner</span></a>
+<a class="sc-cat" href="../02-Menu-Principal/code.html?category=Desserts"><img src="../images/products/tiramisu.jpg" alt="" loading="lazy"/><span>Desserts</span></a>
+<a class="sc-cat" href="../02-Menu-Principal/code.html?category=Croissants"><img src="../images/products/croissant-beurre.jpg" alt="" loading="lazy"/><span>Croissants</span></a>
+<a class="sc-cat" href="../02-Menu-Principal/code.html?category=Cafés"><img src="../images/products/cappuccino.jpg" alt="" loading="lazy"/><span>Cafés</span></a>
+<a class="sc-cat" href="../02-Menu-Principal/code.html?category=Jus"><img src="../images/products/jus-orange.jpg" alt="" loading="lazy"/><span>Jus frais</span></a>
+<a class="sc-cat" href="../02-Menu-Principal/code.html?category=Smoothies"><img src="../images/products/smoothie-fruits-rouges.jpg" alt="" loading="lazy"/><span>Smoothies</span></a>
+<a class="sc-cat" href="../02-Menu-Principal/code.html?category=Mojitos"><img src="../images/products/mojito-classique.jpg" alt="" loading="lazy"/><span>Mojitos</span></a>
+<a class="sc-cat" href="../02-Menu-Principal/code.html?category=Sodas"><img src="../images/products/coca-cola.jpg" alt="" loading="lazy"/><span>Sodas</span></a>
+</div>
+</div>
+</section>
+<!-- Petit-déjeuner à composer : ouvre directement la fiche de composition -->
+<section class="sc-section sc-compose-wrap">
+<div class="sc-container">
+<a class="sc-compose" href="../02-Menu-Principal/code.html?category=Petit-d%C3%A9jeuner&amp;open=petit-dejeuner-compose">
+<img src="../images/products/petit-dejeuner-compose.jpg" alt="Plateaux de petits-déjeuners : sucré, salé, healthy et turc" loading="lazy"/>
+<div class="sc-compose-text">
+<p class="sc-kicker">Nouveau · Petit-déjeuner</p>
+<h2 class="sc-title">Composez votre petit-déjeuner.</h2>
+<p class="sc-sub">Boisson chaude, jus frais, viennoiseries, œufs, salé, douceurs : choisissez dans la liste, le prix s’affiche au fur et à mesure.</p>
+<ul class="sc-compose-steps" aria-label="Au choix"><li>Boisson chaude</li><li>Jus frais</li><li>Viennoiseries</li><li>Œufs</li><li>Salé</li><li>Douceurs</li></ul>
+<span class="sc-btn sc-btn-dark">Je compose <span class="material-symbols-outlined">arrow_forward</span></span>
+</div>
+</a>
+</div>
+</section>
+<!-- Vitrine "Nos incontournables" : vraies fiches produit (photo, prix, favoris, ajout au panier) -->
+<section class="sc-section sc-section-alt">
+<div class="sc-container">
+<div class="sc-sechead">
+<div><p class="sc-kicker">Spécialités</p><h2 class="sc-title">Nos incontournables</h2></div>
+<a href="../02-Menu-Principal/code.html" class="sc-link">Voir tout <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div id="featured-products" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6" aria-busy="true"><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div></div>
+</div>
+</section>
+<!-- L'art du café : vidéo (videos/coffee-ad.mp4) et photos barista (images/media/) -->
+<section class="sc-section sc-art-section">
+<div class="sc-container sc-art">
+<div>
+<p class="sc-kicker">La cafétéria du restaurant</p>
+<h2 class="sc-title mb-4">Du grain à la tasse, avec soin.</h2>
+<p class="sc-sub">Nos grains sont torréfiés avec attention, moulus à la minute et extraits par nos baristas pour révéler toute leur rondeur.</p>
+<ul class="sc-art-points">
+<li><span class="material-symbols-outlined">grain</span><span><b>Grains fraîchement moulus</b> pour chaque tasse, jamais à l'avance.</span></li>
+<li><span class="material-symbols-outlined">local_cafe</span><span><b>Espresso, latte, café turc</b> : servis en tasse de verre ou en gobelet à emporter.</span></li>
+<li><span class="material-symbols-outlined">breakfast_dining</span><span><b>Petits-déjeuners</b> healthy, sucrés, salés ou à la turque, tous les matins.</span></li>
+</ul>
+<div class="mt-8 flex flex-wrap gap-3">
+<a href="../03-Cafes/code.html" class="sc-btn sc-art-cta">Découvrir nos cafés <span class="material-symbols-outlined">arrow_forward</span></a>
+<a href="../02-Menu-Principal/code.html?category=Petit-déjeuner" class="sc-link">Les petits-déjeuners <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+<div class="sc-art-media">
+<div class="sc-art-video">
+<video src="../videos/coffee-ad.mp4#t=0.6" poster="../images/media/coffee-trio.jpg" muted loop playsinline preload="none" data-autoplay-visible="" aria-label="Vidéo : grains de café et préparation"></video>
+<span class="sc-art-badge">Torréfié avec passion</span>
+</div>
+<div class="sc-art-stack">
+<img src="../images/media/coffee-barista.jpg" alt="Porte-filtres remplis de grains et de café moulu, et un espresso" loading="lazy"/>
+<img src="../images/media/coffee-trio.jpg" alt="Trois tasses : café moulu, latte art et grains" loading="lazy"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Vus récemment (produits ouverts sur cet appareil, js/products.js) -->
+<section id="recent-section" class="sc-section hidden" aria-labelledby="recent-title">
+<div class="sc-container">
+<div class="sc-sechead"><div><p class="sc-kicker">Pour vous</p><h2 id="recent-title" class="sc-title">Vus récemment</h2></div>
+<a href="../02-Menu-Principal/code.html" class="sc-link">Tout le menu <span class="material-symbols-outlined">arrow_forward</span></a></div>
+<div id="recent-products" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6"></div>
+</div>
+</section>
+<!-- Smart Hub : salutation, assistant en langage libre, dernière commande, habitude, suggestions du moment -->
+<section class="sc-section">
+<div class="sc-container">
+<div class="sc-sechead sc-sechead-center">
+<div><p class="sc-kicker">Pour vous</p><h2 id="smart-greeting" class="sc-title">Bonjour <span class="material-symbols-outlined align-middle">waving_hand</span></h2>
+<p class="sc-sub">Dites-nous ce qui vous ferait plaisir, ou laissez-nous deviner.</p></div>
+</div>
+<div class="max-w-2xl mx-auto mb-10">
+<div class="sc-ask">
+<span class="material-symbols-outlined">auto_awesome</span>
+<input id="assistant-input" onkeydown="runAssistant(this.value, event)" placeholder="Un café serré, un truc frais et pas cher…" type="text" aria-label="Décrivez votre envie"/>
+<button type="button" onclick="runAssistant(document.getElementById('assistant-input').value)">Suggérez-moi</button>
+</div>
+<div id="assistant-results" class="hidden mt-4 sc-panel">
+<p id="assistant-reason" class="text-sm text-on-surface-variant mb-3"></p>
+<div id="assistant-products"></div>
+</div>
+</div>
+<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-6">
+<div id="last-order-card" class="hidden sc-panel flex items-center gap-4"></div>
+<div id="habit-card" class="hidden sc-panel flex items-center gap-4"></div>
+</div>
+<div id="time-suggestions" class="hidden sc-panel"></div>
+</div>
+</div>
+</section>
+<!-- À toute heure : l'horloge de tasses + raccourcis par moment de la journée -->
+<section class="sc-section sc-section-alt sc-hours">
+<div class="sc-container grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+<div class="sc-hours-visual">
+<img src="../images/hero/clock.png" alt="Horloge formée de tasses de café au latte art" loading="lazy"/>
+</div>
+<div>
+<p class="sc-kicker">À toute heure</p>
+<h2 class="sc-title mb-4">Du petit-déjeuner au dernier dessert.</h2>
+<p class="sc-sub mb-8">Chaque moment de la journée a son plaisir. Choisissez le vôtre, on vous l'apporte à table.</p>
+<div class="sc-moments">
+<a href="../02-Menu-Principal/code.html?category=Croissants" class="sc-moment"><span class="sc-moment-icon"><span class="material-symbols-outlined">breakfast_dining</span></span><span><strong>Le matin</strong><small>Cafés, croissants &amp; viennoiseries</small></span><span class="material-symbols-outlined sc-moment-go">arrow_forward</span></a>
+<a href="../menu-kebab/index.html" class="sc-moment"><span class="sc-moment-icon"><span class="material-symbols-outlined">lunch_dining</span></span><span><strong>Le midi et le soir</strong><small>Kebab, assiettes, paninis &amp; sandwichs</small></span><span class="material-symbols-outlined sc-moment-go">arrow_forward</span></a>
+<a href="../02-Menu-Principal/code.html?category=Mojitos" class="sc-moment"><span class="sc-moment-icon"><span class="material-symbols-outlined">local_bar</span></span><span><strong>L'après-midi</strong><small>Mojitos, smoothies &amp; boissons glacées</small></span><span class="material-symbols-outlined sc-moment-go">arrow_forward</span></a>
+<a href="../02-Menu-Principal/code.html?category=Desserts" class="sc-moment"><span class="sc-moment-icon"><span class="material-symbols-outlined">cake</span></span><span><strong>La touche sucrée</strong><small>Tiramisu, cheesecake &amp; fondant</small></span><span class="material-symbols-outlined sc-moment-go">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Comment ça marche -->
+<section class="sc-section">
+<div class="sc-container">
+<div class="sc-sechead">
+<div><p class="sc-kicker">Comment ça marche</p><h2 class="sc-title">Bienvenue chez Kebab</h2></div>
+</div>
+<div class="sc-steps">
+<div class="sc-step sc-reveal"><span class="sc-step-num">01</span><span class="material-symbols-outlined">qr_code_scanner</span><h3>Scannez le QR code</h3><p>Trouvez le QR code sur votre table et scannez-le avec votre smartphone.</p></div>
+<div class="sc-step sc-reveal"><span class="sc-step-num">02</span><span class="material-symbols-outlined">menu_book</span><h3>Faites votre choix</h3><p>Parcourez la carte et personnalisez vos plats et vos boissons.</p></div>
+<div class="sc-step sc-reveal"><span class="sc-step-num">03</span><span class="material-symbols-outlined">room_service</span><h3>Savourez</h3><p>Détendez-vous, nous vous servons à votre table en quelques minutes.</p></div>
+</div>
+</div>
+</section>
+<!-- Galerie : photos de la carte, agrandissables -->
+<section id="sc-gallery" class="sc-section sc-section-alt" aria-labelledby="sc-gallery-title">
+<div class="sc-container">
+<div class="sc-sechead">
+<div><p class="sc-kicker">Galerie</p><h2 id="sc-gallery-title" class="sc-title">À la carte, en images</h2></div>
+<a href="../02-Menu-Principal/code.html" class="sc-link">Tout le menu <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="sc-gallery">
+<button type="button" class="sc-gal-item sc-gal-tall" data-gal=""><img src="../images/media/kebab-brochettes.jpg" alt="Brochettes grillées" loading="lazy"/><span>Brochettes grillées</span></button>
+<button type="button" class="sc-gal-item" data-gal=""><img src="../images/products/doner-kebab.jpg" alt="Döner kebab" loading="lazy"/><span>Döner kebab</span></button>
+<button type="button" class="sc-gal-item" data-gal=""><img src="../images/products/panini-poulet-curry.jpg" alt="Panini poulet curry" loading="lazy"/><span>Panini poulet curry</span></button>
+<button type="button" class="sc-gal-item sc-gal-tall" data-gal=""><img src="../images/products/club-sandwich.jpg" alt="Club sandwich" loading="lazy"/><span>Club sandwich</span></button>
+<button type="button" class="sc-gal-item" data-gal=""><img src="../images/products/piatto-kebab-riso.jpg" alt="Assiette kebab et riz" loading="lazy"/><span>Assiette kebab et riz</span></button>
+<button type="button" class="sc-gal-item sc-gal-wide" data-gal=""><img src="../images/media/kebab-grill.jpg" alt="Viandes et légumes sur le grill" loading="lazy"/><span>Le grill</span></button>
+<button type="button" class="sc-gal-item" data-gal=""><img src="../images/products/petit-dejeuner-turc.jpg" alt="Petit-déjeuner turc" loading="lazy"/><span>Petit-déjeuner turc</span></button>
+<button type="button" class="sc-gal-item sc-gal-wide" data-gal=""><img src="../images/products/petit-dejeuner-compose.jpg" alt="Petits-déjeuners : sucré, salé, healthy et turc" loading="lazy"/><span>Petits-déjeuners</span></button>
+<button type="button" class="sc-gal-item" data-gal=""><img src="../images/products/tiramisu.jpg" alt="Tiramisu" loading="lazy"/><span>Tiramisu</span></button>
+<button type="button" class="sc-gal-item sc-gal-tall" data-gal=""><img src="../images/products/mojito-fraise.jpg" alt="Mojito à la fraise" loading="lazy"/><span>Mojito à la fraise</span></button>
+<button type="button" class="sc-gal-item" data-gal=""><img src="../images/products/avocado-toast.jpg" alt="Avocado toast" loading="lazy"/><span>Avocado toast</span></button>
+<button type="button" class="sc-gal-item" data-gal=""><img src="../images/products/cheesecake.jpg" alt="Cheesecake" loading="lazy"/><span>Cheesecake</span></button>
+<button type="button" class="sc-gal-item sc-gal-tall" data-gal=""><img src="../images/media/kebab-sauces.jpg" alt="Sauces maison" loading="lazy"/><span>Sauces maison</span></button>
+<button type="button" class="sc-gal-item" data-gal=""><img src="../images/products/cafe-latte-art.jpg" alt="Café latte art" loading="lazy"/><span>Café latte art</span></button>
+</div>
+</div>
+</section>
+<!-- Horaires et accès : données saisies par l'admin (Menus et catégories > Infos du restaurant), js/restaurant-info.js.
+     Masquée tant que rien n'est renseigné : aucune information inventée. -->
+<section id="sc-infos" class="sc-section hidden" aria-labelledby="sc-infos-title">
+<div class="sc-container">
+<div class="sc-sechead">
+<div><p class="sc-kicker">Infos pratiques</p><h2 id="sc-infos-title" class="sc-title">Horaires et accès</h2></div>
+<span id="sc-open-badge" class="sc-open-badge hidden"></span>
+</div>
+<div class="sc-infos">
+<div id="sc-info-hours" class="sc-info-card hidden">
+<span class="sc-info-icon"><span class="material-symbols-outlined">schedule</span></span>
+<h3>Horaires d'ouverture</h3>
+<ul id="sc-hours-list" class="sc-hours-list"></ul>
+<p id="sc-hours-note" class="sc-info-note hidden" translate="no"></p>
+</div>
+<div id="sc-info-place" class="sc-info-card hidden">
+<span class="sc-info-icon"><span class="material-symbols-outlined">storefront</span></span>
+<h3>Nous trouver</h3>
+<p id="sc-info-address" class="sc-info-address" translate="no"></p>
+<a id="sc-info-maps" class="sc-btn sc-btn-dark hidden" target="_blank" rel="noopener">Itinéraire <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div id="sc-info-contact" class="sc-info-card hidden">
+<span class="sc-info-icon"><span class="material-symbols-outlined">call</span></span>
+<h3>Contact et réservation</h3>
+<p class="sc-info-text">Pour réserver une table ou pour toute question, contactez-nous.</p>
+<a id="sc-info-phone" class="sc-btn sc-btn-dark hidden"><span class="material-symbols-outlined">call</span> <span translate="no"></span></a>
+<a id="sc-info-email" class="sc-link hidden"><span translate="no"></span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Pied de page -->
+<footer class="sc-footer">
+<div class="sc-footer-cta">
+<div>
+<p class="sc-footer-eyebrow">Une petite envie ?</p>
+<h2 class="sc-footer-cta-title">Commandez depuis votre table, on vous l’apporte.</h2>
+</div>
+<a class="sc-footer-cta-btn" href="../menu/index.html">Voir la carte <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="sc-footer-inner">
+<div class="sc-footer-brand">
+<img src="../images/brand/logo.png?v=kebab2" alt="Kebab"/>
+<p>Restaurant intelligent, avec sa cafétéria : kebab, paninis, assiettes, petits-déjeuners, desserts, cafés et boissons, commandés depuis votre téléphone et servis à votre table.</p>
+<ul class="sc-footer-perks">
+<li><span class="material-symbols-outlined">qr_code_scanner</span> Commande à table</li>
+<li><span class="material-symbols-outlined">schedule</span> Suivi en direct</li>
+<li><span class="material-symbols-outlined">loyalty</span> Points fidélité</li>
+</ul>
+</div>
+<nav class="sc-footer-links" aria-label="Explorer">
+<p>Explorer</p>
+<a href="../home/home.html">Accueil</a>
+<a href="../menu/index.html">Le menu</a>
+<a href="../menu-kebab/index.html">Menu kebab</a>
+<a href="../03-Cafes/code.html">La cafétéria</a>
+<a href="#sc-gallery">Galerie</a>
+<a href="../02-Menu-Principal/code.html?view=favorites">Mes favoris</a>
+</nav>
+<nav class="sc-footer-links" aria-label="La carte">
+<p>La carte</p>
+<a href="../menu-kebab/index.html">Kebab</a>
+<a href="../02-Menu-Principal/code.html?category=Sandwichs">Sandwichs</a>
+<a href="../02-Menu-Principal/code.html?category=Petit-d%C3%A9jeuner">Petit-déjeuner</a>
+<a href="../02-Menu-Principal/code.html?category=Desserts">Desserts</a>
+<a href="../02-Menu-Principal/code.html?category=Caf%C3%A9s">Cafés</a>
+</nav>
+<nav class="sc-footer-links" aria-label="Ma visite">
+<p>Ma visite</p>
+<a href="../04-Panier/code.html">Mon panier</a>
+<a href="../05-Suivi-Commande/code.html">Suivre ma commande</a>
+<a href="#sc-infos" class="hidden" data-ri-show="">Horaires et accès</a>
+<a id="sc-footer-phone" class="hidden" translate="no"></a>
+<span id="sc-footer-address" class="sc-footer-address hidden" translate="no"></span>
+</nav>
+</div>
+<div class="sc-footer-bottom"><span>© <span id="sc-year">2026</span> Kebab</span><span>Fait avec passion, servi avec le sourire.</span></div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="bg-surface shadow-[0_-10px_30px_rgba(62,36,21,0.08)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 md:hidden">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl p-2 w-16 h-16 cursor-pointer active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home" data-weight="fill">home</span>
+<span class="font-label-md text-[10px]">Accueil</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 w-16 h-16 cursor-pointer active:scale-90 duration-150 hover:bg-secondary-container transition-all rounded-xl" href="../menu/index.html">
+<span class="material-symbols-outlined mb-1" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-label-md text-[10px]">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 w-16 h-16 cursor-pointer active:scale-90 duration-150 hover:bg-secondary-container transition-all rounded-xl" href="../02-Menu-Principal/code.html?view=favorites">
+<span class="material-symbols-outlined mb-1" data-icon="favorite">favorite</span>
+<span class="font-label-md text-[10px]">Favoris</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 w-16 h-16 cursor-pointer active:scale-90 duration-150 hover:bg-secondary-container transition-all rounded-xl" href="../04-Panier/code.html">
+<span class="material-symbols-outlined mb-1" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-label-md text-[10px]">Panier</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 w-16 h-16 cursor-pointer active:scale-90 duration-150 hover:bg-secondary-container transition-all rounded-xl" href="../05-Suivi-Commande/code.html">
+<span class="material-symbols-outlined mb-1" data-icon="receipt_long">receipt_long</span>
+<span class="font-label-md text-[10px]">Commande</span>
+</a>
+</nav>
+<script>
+    (function () {
+        function greetingText() {
+            var hour = new Date().getHours();
+            var greeting = hour < 5 ? 'Bonsoir' : hour < 18 ? 'Bonjour' : 'Bonsoir';
+            var name = window.Guest ? Guest.getName() : '';
+            var safeName = String(name || '').replace(/[&<>"']/g, function (c) {
+                return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+            });
+            return greeting + (name && name !== 'Client' ? ' ' + safeName : '') + ' ' + window.iconHtml('waving_hand');
+        }
+
+        // "Recommander ma dernière commande" : reprend TOUS les articles (et
+        // leurs options/quantités) de la toute dernière commande passée, pas
+        // seulement le produit le plus fréquent (voir renderHabitCard
+        // ci-dessous, complémentaire). N'affiche rien s'il n'y a jamais eu de
+        // commande.
+        function renderLastOrderCard() {
+            var card = document.getElementById('last-order-card');
+            if (!card || !window.Orders) return;
+            var order = Orders.getLast();
+            if (!order || !order.items || !order.items.length) { card.classList.add('hidden'); card.innerHTML = ''; return; }
+            var itemCount = order.items.reduce(function (sum, i) { return sum + (i.qty || 1); }, 0);
+            card.innerHTML =
+                '<div class="w-16 h-16 rounded-lg flex items-center justify-center text-3xl shrink-0 bg-secondary-container">' + window.iconHtml('history') + '</div>' +
+                '<div class="flex-1">' +
+                '<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Votre dernière commande</p>' +
+                '<h3 class="font-title-lg text-title-lg text-on-surface">' + itemCount + ' article' + (itemCount > 1 ? 's' : '') + '</h3>' +
+                '<p class="font-body-md text-sm text-on-surface-variant">' + order.total.toFixed(2).replace('.', ',') + ' €</p>' +
+                '</div>' +
+                '<button id="reorder-last-btn" onclick="reorderLastOrder()" class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-2 rounded-lg hover:bg-primary hover:text-on-primary transition-all shrink-0">Recommander</button>';
+            card.classList.remove('hidden');
+            if (window.renderIcons) renderIcons();
+        }
+
+        window.reorderLastOrder = function () {
+            var order = Orders.getLast();
+            if (!order || !order.items) return;
+            var btn = document.getElementById('reorder-last-btn');
+            if (btn) {
+                btn.disabled = true;
+                btn.innerHTML = window.iconHtml('check') + ' Ajouté';
+                btn.classList.add('opacity-90');
+            }
+            Orders.reorderToCart(order.id);
+            setTimeout(function () { window.location.href = '../04-Panier/code.html'; }, 400);
+        };
+
+        function renderHabitCard() {
+            var card = document.getElementById('habit-card');
+            if (!card || !window.SoucoffeRecommendations) return;
+            var product = SoucoffeRecommendations.getMostOrderedProduct();
+            if (!product) { card.classList.add('hidden'); card.innerHTML = ''; return; }
+            var price = getEffectivePrice(product);
+            var img = getEffectiveImage(product);
+            var tile = img
+                ? '<img src="' + img + '" alt="" class="w-16 h-16 rounded-lg object-cover shrink-0"/>'
+                : '<div class="w-16 h-16 rounded-lg flex items-center justify-center text-3xl shrink-0" style="background:' + (CATEGORY_STYLE[product.category] || CATEGORY_STYLE['default']).gradient + '">' + window.productIconHtml(product) + '</div>';
+            card.innerHTML =
+                tile +
+                '<div class="flex-1">' +
+                '<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Votre habitude</p>' +
+                '<h3 class="font-title-lg text-title-lg text-on-surface">' + String(product.name).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }) + '</h3>' +
+                '<p class="font-body-md text-sm text-on-surface-variant">' + price.toFixed(2).replace('.', ',') + ' €</p>' +
+                '</div>' +
+                '<button onclick="reorderHabit(\'' + product.id + '\')" class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-2 rounded-lg hover:bg-primary hover:text-on-primary transition-all shrink-0">Recommander</button>';
+            card.classList.remove('hidden');
+            if (window.renderIcons) renderIcons();
+        }
+
+        function renderTimeSuggestions() {
+            var container = document.getElementById('time-suggestions');
+            if (!container || !window.SoucoffeRecommendations) return;
+            var result = SoucoffeRecommendations.getTimeBasedSuggestions(4);
+            if (!result.products.length) { container.classList.add('hidden'); container.innerHTML = ''; return; }
+            container.innerHTML =
+                '<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-3">' + result.label + '</p>' +
+                '<div class="flex gap-3 overflow-x-auto hide-scrollbar pb-1">' +
+                result.products.map(function (p) { return '<div class="w-44 shrink-0">' + renderProductCard(p) + '</div>'; }).join('') +
+                '</div>';
+            container.classList.remove('hidden');
+            if (window.renderIcons) renderIcons();
+        }
+
+        // Vitrine "Nos incontournables" : quelques produits phares choisis à la
+        // main (mêmes fiches réelles que le Menu — photo, prix, favoris, ajout
+        // au panier), pour donner tout de suite envie sur la page d'accueil.
+        var FEATURED_IDS = ['panini-poulet-curry', 'club-sandwich', 'avocado-toast', 'tiramisu'];
+        function renderFeaturedProducts() {
+            var container = document.getElementById('featured-products');
+            if (!container || !window.getProductById || !window.renderProductCard) return;
+            var products = FEATURED_IDS.map(function (id) { return getProductById(id); }).filter(Boolean);
+            if (!products.length) { container.classList.add('hidden'); container.innerHTML = ''; return; }
+            container.innerHTML = products.map(function (p, i) { return renderProductCard(p, i); }).join('');
+            container.classList.remove('hidden');
+            if (window.renderIcons) renderIcons();
+        }
+        window.renderFeaturedProducts = renderFeaturedProducts;
+
+        // Section Kebab : jusqu'à 4 produits disponibles du menu Kebab (les plus populaires),
+        // mêmes fiches réelles que les menus. Sans produit : seule la présentation reste.
+        function renderKebabSection() {
+            var media = document.getElementById('sc-kebab-media');
+            if (media) {
+                var img = new Image();
+                img.onload = function () { media.style.backgroundImage = 'url("' + img.src + '")'; media.classList.add('has-photo'); };
+                img.src = '../images/menus/kebab.jpg';
+            }
+            var picks = document.getElementById('sc-kebab-picks');
+            var grid = document.getElementById('kebab-products');
+            if (!picks || !grid || !window.filterAndSortProducts || !window.renderProductCard) return;
+            var list = window.filterAndSortProducts(window.PRODUCTS || [], { menu: 'kebab', sortBy: 'popular' }).slice(0, 4);
+            picks.classList.toggle('hidden', !list.length);
+            grid.innerHTML = list.map(function (p, i) { return renderProductCard(p, i); }).join('');
+            if (window.renderIcons) renderIcons();
+        }
+
+        window.renderHabitCard = renderHabitCard;
+        window.renderTimeSuggestions = renderTimeSuggestions;
+        window.renderLastOrderCard = renderLastOrderCard;
+
+        window.reorderHabit = function (productId) {
+            var product = getProductById(productId);
+            if (!product) return;
+            // Produit à options obligatoires : passage par sa fiche (Menu).
+            if (window.productNeedsCustomization && window.productNeedsCustomization(product.id)) {
+                window.openProductModal(product.id);
+                return;
+            }
+            var btn = document.querySelector('#habit-card button');
+            if (btn) { btn.disabled = true; btn.innerHTML = window.iconHtml('check') + ' Ajouté'; btn.classList.add('opacity-90'); }
+            Cart.add({ id: product.id, name: product.name, price: getEffectivePrice(product), img: getEffectiveImage(product), qty: 1, productId: product.apiId });
+            setTimeout(function () {
+                if (btn) { btn.disabled = false; btn.textContent = 'Recommander'; btn.classList.remove('opacity-90'); }
+            }, 1200);
+        };
+
+        window.runAssistant = function (value, event) {
+            if (event && event.key && event.key !== 'Enter') return;
+            var resultsEl = document.getElementById('assistant-results');
+            var reasonEl = document.getElementById('assistant-reason');
+            var productsEl = document.getElementById('assistant-products');
+            if (!resultsEl || !window.SoucoffeAssistant) return;
+            var trimmed = (value || '').trim();
+            if (!trimmed) return;
+
+            var result = SoucoffeAssistant.matchAssistantQuery(trimmed, 4);
+            reasonEl.textContent = result.reason || '';
+            if (result.products.length) {
+                productsEl.innerHTML = '<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-2">' +
+                    result.products.map(function (p) { return '<div class="w-40 shrink-0">' + renderProductCard(p) + '</div>'; }).join('') +
+                    '</div>';
+            } else {
+                productsEl.innerHTML = '<a href="../02-Menu-Principal/code.html" class="text-primary font-label-md text-label-md hover:text-tertiary transition-colors">Parcourir le menu complet <span class="material-symbols-outlined align-middle">arrow_forward</span></a>';
+            }
+            resultsEl.classList.remove('hidden');
+            if (window.renderIcons) renderIcons();
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var greetingEl = document.getElementById('smart-greeting');
+            if (greetingEl) greetingEl.innerHTML = greetingText();
+
+            // Ne dépend pas du catalogue (juste l'historique local) : rendu
+            // immédiat, sans attendre l'appel réseau du catalogue.
+            renderLastOrderCard();
+
+            Promise.resolve(window.loadCatalog ? window.loadCatalog() : 'no-loadCatalog').then(function () {
+                renderHabitCard();
+                renderTimeSuggestions();
+                renderFeaturedProducts();
+                renderKebabSection();
+                // Vus récemment : n'apparaît que si le client a déjà ouvert des fiches.
+                var recent = window.getRecentlyViewed ? getRecentlyViewed(4) : [];
+                var recentSec = document.getElementById('recent-section');
+                if (recentSec && recent.length) {
+                    document.getElementById('recent-products').innerHTML = recent.map(function (p, i) { return renderProductCard(p, i); }).join('');
+                    recentSec.classList.remove('hidden');
+                    if (window.renderIcons) renderIcons();
+                }
+                // Sans historique (ni dernière commande ni habitude) : les
+                // suggestions prennent toute la largeur au lieu d'une demi-colonne.
+                var noHistory = ['last-order-card', 'habit-card'].every(function (id) {
+                    var el = document.getElementById(id);
+                    return !el || el.classList.contains('hidden');
+                });
+                var sugg = document.getElementById('time-suggestions');
+                if (sugg) sugg.style.gridColumn = noHistory ? '1 / -1' : '';
+            });
+        });
+    })();
+</script>
+<script>
+    // Carrousel du hero : fondu enchaîné toutes les 6 s, pause au survol /
+    // onglet masqué, flèches, points, swipe tactile. Sans mouvement automatique
+    // si l'utilisateur a demandé moins d'animations.
+    (function () {
+        var hero = document.getElementById('sc-hero');
+        if (!hero) return;
+        var slides = hero.querySelectorAll('.sc-hero-slide');
+        var dots = hero.querySelectorAll('[data-hero-dot]');
+        var caption = document.getElementById('sc-hero-caption');
+        var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var DELAY = 6000;
+        var current = 0, timer = null;
+
+        function show(i) {
+            current = (i + slides.length) % slides.length;
+            slides.forEach(function (s, k) { s.classList.toggle('is-active', k === current); });
+            dots.forEach(function (d, k) {
+                d.classList.toggle('is-active', k === current);
+                d.setAttribute('aria-selected', k === current ? 'true' : 'false');
+            });
+            if (caption) caption.textContent = slides[current].getAttribute('data-caption') || '';
+            var idx = document.getElementById('sc-hero-index');
+            if (idx) idx.textContent = ('0' + (current + 1)).slice(-2);
+            restart();
+        }
+        function restart() {
+            clearTimeout(timer);
+            hero.style.setProperty('--sc-hero-delay', DELAY + 'ms');
+            // relance l'animation de progression du point actif
+            dots.forEach(function (d) { d.classList.remove('is-running'); });
+            if (reduced || hero.classList.contains('is-paused')) return;
+            void hero.offsetWidth;
+            if (dots[current]) dots[current].classList.add('is-running');
+            timer = setTimeout(function () { show(current + 1); }, DELAY);
+        }
+        function pause(p) { hero.classList.toggle('is-paused', p); restart(); }
+
+        hero.querySelector('[data-hero-prev]').addEventListener('click', function () { show(current - 1); });
+        hero.querySelector('[data-hero-next]').addEventListener('click', function () { show(current + 1); });
+        dots.forEach(function (d) { d.addEventListener('click', function () { show(+d.getAttribute('data-hero-dot')); }); });
+        hero.addEventListener('mouseenter', function () { pause(true); });
+        hero.addEventListener('mouseleave', function () { pause(false); });
+        document.addEventListener('visibilitychange', function () { pause(document.hidden); });
+
+        var startX = null;
+        hero.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+        hero.addEventListener('touchend', function (e) {
+            if (startX === null) return;
+            var dx = e.changedTouches[0].clientX - startX;
+            if (Math.abs(dx) > 45) show(current + (dx < 0 ? 1 : -1));
+            startX = null;
+        });
+
+        // Apparition douce des blocs au défilement.
+        var revealables = document.querySelectorAll('.sc-reveal, .sc-hours-visual, .sc-moment');
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (!e.isIntersecting) return;
+                    e.target.classList.add('is-visible');
+                    io.unobserve(e.target);
+                });
+            }, { threshold: 0.15 });
+            revealables.forEach(function (el, i) {
+                el.classList.add('sc-reveal');
+                el.style.transitionDelay = (i % 4) * 90 + 'ms';
+                io.observe(el);
+            });
+        }
+
+        var year = document.getElementById('sc-year');
+        if (year) year.textContent = new Date().getFullYear();
+        show(0);
+    })();
+</script>
+</body></html>

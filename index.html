@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/i18n.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebab - Bienvenue</title>
+    <link rel="stylesheet" href="css/soucoffe.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            display: flex; justify-content: center; align-items: center;
+            min-height: 100vh; padding: 32px 16px;
+            color: #fff8f0; font-family: 'DM Sans', sans-serif;
+            background: #1b110b url('images/hero/hero-3.jpg') center / cover fixed;
+            position: relative;
+        }
+        body::before {
+            content: ''; position: fixed; inset: 0;
+            background: radial-gradient(ellipse at center, rgba(36,33,32,.55), rgba(36,33,32,.92) 75%);
+        }
+        .container {
+            position: relative; text-align: center; width: min(420px, 100%);
+            background: rgba(255, 248, 240, .07);
+            padding: 40px 32px; border: 1px solid rgba(255, 248, 240, .16);
+            border-radius: 22px; box-shadow: 0 40px 90px -30px rgba(0,0,0,.8);
+            backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+            animation: sc-fade-up .8s cubic-bezier(.22,1,.36,1) both;
+        }
+        .logo { width: 190px; height: 170px; object-fit: contain; margin: 0 auto 8px; display: block;
+            animation: sc-float 5s ease-in-out infinite; }
+        p { color: rgba(255,248,240,.78); font-size: 15px; margin-bottom: 22px; }
+        .loader { width: 120px; height: 3px; border-radius: 3px; background: rgba(255,248,240,.15);
+            margin: 0 auto 26px; overflow: hidden; }
+        .loader::after { content: ''; display: block; height: 100%; width: 0;
+            background: #ffffff; animation: sc-progress 2s linear forwards; }
+        .links { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+        .links p { margin-bottom: 6px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+        a {
+            padding: 12px 20px; color: #fff8f0; text-decoration: none; border-radius: 14px;
+            background: rgba(255,248,240,.06); border: 1px solid rgba(255,248,240,.12);
+            display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 14px;
+            transition: background .2s, transform .2s, border-color .2s;
+        }
+        a:first-of-type { background: #ffffff; color: #1c1512; border: 0; justify-content: center; }
+        a:hover { background: rgba(255,248,240,.14); border-color: rgba(227,173,114,.5); transform: translateX(3px); }
+        a:first-of-type:hover { background: #ffffff; transform: translateY(-2px); }
+        a svg { width: 18px; height: 18px; }
+    </style>
+<script src="js/icons.js" defer></script>
+<link rel="manifest" href="manifest.json"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="Kebab"/>
+<meta name="theme-color" content="#242120"/>
+<link rel="icon" type="image/png" href="images/brand/favicon-32.png?v=kebab2"/>
+<link rel="apple-touch-icon" href="images/brand/apple-touch-icon.png?v=kebab2"/>
+</head>
+<body class="sc-auth">
+    <div class="container">
+        <h1><img class="logo" alt="Kebab" src="images/brand/logo.png?v=kebab2"></h1>
+        <div class="loader"></div>
+        <p>Bienvenue! Redirection en cours...</p>
+        
+        <div class="links">
+            <p style="margin-bottom: 15px;">Ou choisissez une page:</p>
+            <a href="00-Bienvenue/index.html"><span class="material-symbols-outlined">room_service</span> Bienvenue (QR code)</a>
+            <a href="home/home.html"><span class="material-symbols-outlined">home</span> Accueil</a>
+            <a href="01-Identification/log.html"><span class="material-symbols-outlined">person</span> Identification</a>
+            <a href="02-Menu-Principal/code.html"><span class="material-symbols-outlined">restaurant_menu</span> Menu Principal</a>
+            <a href="03-Cafes/code.html"><span class="material-symbols-outlined">coffee</span> Nos Cafés</a>
+            <a href="04-Panier/code.html"><span class="material-symbols-outlined">shopping_cart</span> Panier</a>
+            <a href="05-Suivi-Commande/code.html"><span class="material-symbols-outlined">receipt_long</span> Suivi Commande</a>
+            <a href="06-Admin-Dashboard/code.html"><span class="material-symbols-outlined">dashboard</span> Admin Dashboard</a>
+        </div>
+    </div>
+    
+    <script>
+        // Redirection vers la page d'accueil du QR code (Bienvenue à table) après 2 secondes
+        setTimeout(() => {
+            window.location.href = '00-Bienvenue/index.html';
+        }, 2000);
+    </script>
+</body>
+</html>

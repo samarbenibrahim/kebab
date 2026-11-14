@@ -1,0 +1,95 @@
+# Offre Kebab, menus (cartes) et catégories (migration 023).
+# français || italiano || english || deutsch || español
+
+# ---- Menus ----
+Café || Caffè || Café || Café || Café
+Kebab || Kebab || Kebab || Kebab || Kebab
+Menu Café || Menù Caffè || Café menu || Café-Karte || Carta Café
+Menu Kebab || Menù Kebab || Kebab menu || Kebab-Karte || Carta Kebab
+Menu kebab || Menù Kebab || Kebab menu || Kebab-Karte || Carta Kebab
+Menu {0} || Menù {0} || {0} menu || {0}-Karte || Carta {0}
+Kebab - Menu {0} || Kebab - Menù {0} || Kebab - {0} menu || Kebab - {0}-Karte || Kebab - Carta {0}
+Kebab - Menu Kebab || Kebab - Menù Kebab || Kebab - Kebab menu || Kebab - Kebab-Karte || Kebab - Carta Kebab
+Menus || Menù || Menus || Karten || Cartas
+Votre pause café, à votre façon. || La tua pausa caffè, a modo tuo. || Your coffee break, your way. || Ihre Kaffeepause, wie Sie sie mögen. || Tu pausa café, a tu manera.
+Goût, fraîcheur et saveur à chaque bouchée. || Gusto, freschezza e sapore in ogni morso. || Taste, freshness and flavour in every bite. || Geschmack, Frische und Aroma in jedem Bissen. || Gusto, frescura y sabor en cada bocado.
+
+# ---- Catégories Kebab (noms italiens demandés) ----
+Paninis et piadines || Panini e Piadine || Sandwiches & piadinas || Sandwiches & Piadine || Bocadillos y piadinas
+Assiettes kebab || Piatti Kebab || Kebab plates || Kebab-Teller || Platos de kebab
+Menus kebab || Menu Kebab || Kebab meals || Kebab-Menüs || Menús de kebab
+Alternatives || Alternative || Alternatives || Alternativen || Alternativas
+Accompagnements || Contorni || Sides || Beilagen || Guarniciones
+Sauces et suppléments || Salse ed extra || Sauces & extras || Saucen & Extras || Salsas y extras
+
+# ---- Accueil : section Kebab ----
+Nouveau · Menu Kebab || Novità · Menù Kebab || New · Kebab menu || Neu · Kebab-Karte || Nuevo · Carta Kebab
+Le Kebab est arrivé ! || È arrivato il Kebab! || Kebab has arrived! || Der Kebab ist da! || ¡Ha llegado el Kebab!
+Découvrir le menu kebab || Scopri il menù Kebab || Discover the kebab menu || Kebab-Karte entdecken || Descubre la carta Kebab
+Les plus demandés || I più richiesti || Most popular || Am beliebtesten || Los más pedidos
+Voir tout le menu || Vedi tutto il menù || See the full menu || Ganze Karte ansehen || Ver toda la carta
+Kebab : pain grillé, viande, crudités et sauce || Kebab: pane tostato, carne, verdure e salsa || Kebab: toasted bread, meat, salad and sauce || Kebab: geröstetes Brot, Fleisch, Salat und Soße || Kebab: pan tostado, carne, verduras y salsa
+
+# ---- Page de menu ----
+Au menu || Nel menù || On the menu || Auf der Karte || En la carta
+Bientôt disponible || Presto disponibile || Coming soon || Bald verfügbar || Próximamente
+Ce menu arrive très bientôt. En attendant, découvrez notre carte café. || Questo menù arriva prestissimo. Nel frattempo, scopri il nostro menù caffè. || This menu is coming very soon. In the meantime, discover our café menu. || Diese Karte kommt sehr bald. Entdecken Sie bis dahin unsere Café-Karte. || Esta carta llega muy pronto. Mientras tanto, descubre nuestra carta de café.
+Voir le menu café || Vedi il menù caffè || See the café menu || Café-Karte ansehen || Ver la carta de café
+Le menu Kebab : paninis, piadines, assiettes et menus, à commander depuis votre table. || Il menù Kebab: panini, piadine, piatti e menù, da ordinare dal tuo tavolo. || The kebab menu: sandwiches, piadinas, plates and meals, to order from your table. || Die Kebab-Karte: Sandwiches, Piadine, Teller und Menüs, bestellbar vom Tisch. || La carta Kebab: bocadillos, piadinas, platos y menús, para pedir desde tu mesa.
+
+# ---- Admin : menus et catégories ----
+Menus et catégories || Menù e categorie || Menus & categories || Karten & Kategorien || Cartas y categorías
+Chaque menu (Kebab, Café, …) a sa page et regroupe ses catégories. Les produits s’ajoutent ensuite depuis Produits. || Ogni menù (Kebab, Caffè, …) ha la sua pagina e raggruppa le sue categorie. I prodotti si aggiungono poi da Prodotti. || Each menu (Kebab, Café, …) has its own page and groups its categories. Products are then added from Products. || Jede Karte (Kebab, Café, …) hat ihre Seite und bündelt ihre Kategorien. Produkte fügen Sie danach unter Produkte hinzu. || Cada carta (Kebab, Café, …) tiene su página y agrupa sus categorías. Los productos se añaden después desde Productos.
+Nouveau menu || Nuovo menù || New menu || Neue Karte || Nueva carta
+Nom du menu (ex. Pizza) || Nome del menù (es. Pizza) || Menu name (e.g. Pizza) || Name der Karte (z. B. Pizza) || Nombre de la carta (p. ej. Pizza)
+Accroche (facultatif) || Slogan (facoltativo) || Tagline (optional) || Slogan (optional) || Eslogan (opcional)
+Créer le menu || Crea il menù || Create menu || Karte erstellen || Crear la carta
+Nouvelle catégorie || Nuova categoria || New category || Neue Kategorie || Nueva categoría
+Nom de la catégorie (ex. Bowls) || Nome della categoria (es. Bowl) || Category name (e.g. Bowls) || Name der Kategorie (z. B. Bowls) || Nombre de la categoría (p. ej. Bowls)
+Menu de la nouvelle catégorie || Menù della nuova categoria || Menu for the new category || Karte der neuen Kategorie || Carta de la nueva categoría
+Créer la catégorie || Crea la categoria || Create category || Kategorie erstellen || Crear la categoría
+Nom du menu || Nome del menù || Menu name || Name der Karte || Nombre de la carta
+Accroche (sous le titre de la page) || Slogan (sotto il titolo della pagina) || Tagline (under the page title) || Slogan (unter dem Seitentitel) || Eslogan (bajo el título de la página)
+Visible || Visibile || Visible || Sichtbar || Visible
+Masqué || Nascosto || Hidden || Ausgeblendet || Oculto
+Menu principal || Menù principale || Main menu || Hauptkarte || Carta principal
+Voir la page || Vedi la pagina || View page || Seite ansehen || Ver la página
+Masquer || Nascondi || Hide || Ausblenden || Ocultar
+Rendre visible || Rendi visibile || Make visible || Sichtbar machen || Hacer visible
+Catégories ({0}) || Categorie ({0}) || Categories ({0}) || Kategorien ({0}) || Categorías ({0})
+Aucune catégorie dans ce menu. || Nessuna categoria in questo menù. || No categories in this menu. || Keine Kategorien in dieser Karte. || Ninguna categoría en esta carta.
+Nom de la catégorie || Nome della categoria || Category name || Name der Kategorie || Nombre de la categoría
+Menu de la catégorie || Menù della categoria || Category menu || Karte der Kategorie || Carta de la categoría
+Ordre || Ordine || Order || Reihenfolge || Orden
+@{0} produit(s) || {0} prodotto/i || {0} product(s) || {0} Produkt(e) || {0} producto(s)
+Votre rôle ne permet pas de gérer les menus. || Il tuo ruolo non consente di gestire i menù. || Your role doesn't allow you to manage menus. || Ihre Rolle erlaubt keine Verwaltung der Karten. || Tu rol no permite gestionar las cartas.
+Menu créé : {0} || Menù creato: {0} || Menu created: {0} || Karte erstellt: {0} || Carta creada: {0}
+Catégorie créée : {0} || Categoria creata: {0} || Category created: {0} || Kategorie erstellt: {0} || Categoría creada: {0}
+Menu enregistré || Menù salvato || Menu saved || Karte gespeichert || Carta guardada
+Menu masqué || Menù nascosto || Menu hidden || Karte ausgeblendet || Carta oculta
+Menu visible || Menù visibile || Menu visible || Karte sichtbar || Carta visible
+Menu supprimé || Menù eliminato || Menu deleted || Karte gelöscht || Carta eliminada
+Catégorie enregistrée || Categoria salvata || Category saved || Kategorie gespeichert || Categoría guardada
+Catégorie supprimée || Categoria eliminata || Category deleted || Kategorie gelöscht || Categoría eliminada
+menu.create || Menù creato || Menu created || Karte erstellt || Carta creada
+menu.update || Menù modificato || Menu updated || Karte geändert || Carta modificada
+menu.delete || Menù eliminato || Menu deleted || Karte gelöscht || Carta eliminada
+category.create || Categoria creata || Category created || Kategorie erstellt || Categoría creada
+category.update || Categoria modificata || Category updated || Kategorie geändert || Categoría modificada
+category.delete || Categoria eliminata || Category deleted || Kategorie gelöscht || Categoría eliminada
+menu #{0} || menù #{0} || menu #{0} || Karte #{0} || carta #{0}
+category #{0} || categoria #{0} || category #{0} || Kategorie #{0} || categoría #{0}
+
+# ---- API : menus et catégories ----
+Menu introuvable || Menù non trovato || Menu not found || Karte nicht gefunden || Carta no encontrada
+Menu inconnu || Menù sconosciuto || Unknown menu || Unbekannte Karte || Carta desconocida
+Catégorie introuvable || Categoria non trovata || Category not found || Kategorie nicht gefunden || Categoría no encontrada
+Un menu « {0} » existe déjà || Un menù « {0} » esiste già || A "{0}" menu already exists || Eine Karte „{0}“ existiert bereits || Ya existe una carta «{0}»
+Une catégorie « {0} » existe déjà || Una categoria « {0} » esiste già || A "{0}" category already exists || Eine Kategorie „{0}“ existiert bereits || Ya existe una categoría «{0}»
+Le menu principal ne peut pas être désactivé || Il menù principale non può essere disattivato || The main menu can't be turned off || Die Hauptkarte kann nicht deaktiviert werden || La carta principal no se puede desactivar
+Le menu principal ne peut pas être supprimé || Il menù principale non può essere eliminato || The main menu can't be deleted || Die Hauptkarte kann nicht gelöscht werden || La carta principal no se puede eliminar
+Ce menu contient des catégories : déplacez-les ou supprimez-les d'abord || Questo menù contiene categorie: spostale o eliminale prima || This menu contains categories: move or delete them first || Diese Karte enthält Kategorien: Verschieben oder löschen Sie sie zuerst || Esta carta contiene categorías: muévelas o elimínalas primero
+Cette catégorie contient des produits (ou en a contenu, pour l'historique des commandes) : elle ne peut pas être supprimée || Questa categoria contiene prodotti (o ne ha contenuti, per lo storico degli ordini): non può essere eliminata || This category contains products (or did, for order history): it can't be deleted || Diese Kategorie enthält Produkte (oder hat welche enthalten, für den Bestellverlauf): Sie kann nicht gelöscht werden || Esta categoría contiene productos (o los contuvo, para el historial de pedidos): no se puede eliminar
+Aucun champ à modifier || Nessun campo da modificare || Nothing to change || Nichts zu ändern || Ningún campo que modificar
+{0} doit être un entier || {0} deve essere un numero intero || {0} must be a whole number || {0} muss eine ganze Zahl sein || {0} debe ser un número entero
+{0} hors limites || {0} fuori dai limiti || {0} out of range || {0} außerhalb des Bereichs || {0} fuera de rango

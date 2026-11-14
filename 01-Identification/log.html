@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Kebab - Identification</title>
+<!-- Google Fonts -->
+<!-- Tailwind CSS -->
+<script src="../js/vendor/tailwind-3.4.17-forms-cq.js"></script>
+<link href="../css/soucoffe.css" rel="stylesheet"/>
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/auth.js"></script>
+<!-- Kebab icon system & shared cart/guest state -->
+<script src="../js/icons.js" defer=""></script>
+<script src="../js/cart.js" defer=""></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#f4ba96",
+                        "tertiary": "#3f1520",
+                        "surface-variant": "#ebe1d3",
+                        "tertiary-fixed-dim": "#e9bda7",
+                        "on-secondary-fixed": "#251a07",
+                        "on-primary-fixed": "#311300",
+                        "on-primary-container": "#e9b08c",
+                        "secondary-container": "#f6dfc0",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#d5c3b9",
+                        "surface-tint": "#805437",
+                        "on-surface-variant": "#51443d",
+                        "on-secondary-container": "#726249",
+                        "tertiary-fixed": "#ffdbca",
+                        "on-secondary-fixed-variant": "#53452e",
+                        "on-tertiary-fixed-variant": "#5e402f",
+                        "surface-container-high": "#f1e7d9",
+                        "surface-container": "#f7edde",
+                        "surface": "#fff8f2",
+                        "inverse-primary": "#f4ba96",
+                        "primary-fixed": "#ffdbc7",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#dfb49e",
+                        "secondary": "#6c5c44",
+                        "on-tertiary-fixed": "#2d1608",
+                        "surface-container-highest": "#ebe1d3",
+                        "primary-container": "#571d29",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1f1b13",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f9efe1",
+                        "secondary-fixed": "#f6dfc0",
+                        "surface-container-low": "#fcf2e4",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#644534",
+                        "secondary-fixed-dim": "#d9c4a5",
+                        "inverse-surface": "#353027",
+                        "surface-dim": "#e2d9cb",
+                        "primary": "#571d29",
+                        "on-secondary": "#ffffff",
+                        "outline": "#83746c",
+                        "on-background": "#1f1b13",
+                        "surface-bright": "#fff8f2",
+                        "on-primary-fixed-variant": "#653d22",
+                        "on-error": "#ffffff",
+                        "background": "#fff8f2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "sm": "16px",
+                        "margin-mobile": "16px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "xs": "8px",
+                        "lg": "48px",
+                        "gutter": "20px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Arial"],
+                        "title-lg": ["Arial"],
+                        "display-lg-mobile": ["Arial"],
+                        "label-md": ["Arial"],
+                        "headline-md": ["Arial"],
+                        "body-md": ["Arial"],
+                        "headline-sm": ["Arial"],
+                        "body-lg": ["Arial"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link rel="manifest" href="../manifest.json"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="Kebab"/>
+<meta name="theme-color" content="#242120"/>
+<link rel="icon" type="image/png" href="../images/brand/favicon-32.png?v=kebab2"/>
+<link rel="apple-touch-icon" href="../images/brand/apple-touch-icon.png?v=kebab2"/>
+</head>
+<body class="bg-surface text-on-surface antialiased sc-auth sc-login min-h-screen relative flex items-center justify-center overflow-x-hidden py-10">
+<!-- Ambient Background with subtle blur for depth -->
+<div class="sc-auth-bg fixed inset-0 z-0">
+<div class="sc-auth-photo w-full h-full bg-cover bg-center" style="background-image: url('../images/media/kebab-brochettes.jpg')" aria-hidden="true"></div>
+<!-- Gradient overlay to ensure high readability and a creamy feel -->
+<div class="sc-auth-overlay absolute inset-0"></div>
+</div>
+<!-- Main Content Canvas (Navigation suppressed due to onboarding intent) -->
+<main class="relative z-10 w-full max-w-md px-margin-mobile md:px-0 flex flex-col items-center">
+<a href="../00-Bienvenue/index.html" class="sc-login-back" aria-label="Retour à l’accueil"><span class="material-symbols-outlined">chevron_left</span> Accueil</a>
+<!-- Identification Card -->
+<div class="sc-card-enter w-full bg-surface-container-lowest rounded-[24px] p-8 md:p-10 shadow-[0_2px_10px_rgba(62,36,21,0.06)] flex flex-col items-center text-center transform transition-all duration-500 hover:shadow-[0_4px_14px_rgba(62,36,21,0.08)] border border-outline-variant/30">
+<!-- Icon Badge -->
+<div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-4 text-3xl text-primary"><span class="material-symbols-outlined">coffee</span></div>
+<!-- Greeting -->
+<span class="sc-heading-accent"></span>
+<h1 class="mb-2 tracking-tight"><img alt="Kebab" class="sc-brand-logo mx-auto" src="../images/brand/logo.png?v=kebab2"/></h1>
+<h2 class="sc-login-title">Connexion client</h2>
+<p class="font-body-md text-body-md text-on-surface-variant/80 mb-8 max-w-xs">Quelques infos avant de commencer, et on s'occupe du reste.</p>
+<!-- Session déjà ouverte (rempli par le script) -->
+<div id="session-card" class="hidden w-full mb-5 p-4 rounded-xl bg-surface-container text-left"></div>
+<!-- Input Section -->
+<div class="w-full space-y-5">
+<div>
+<label class="block font-title-lg text-title-lg text-on-surface-variant mb-3" for="firstName">
+                    Comment pouvons-nous vous appeler ?
+                </label>
+<div class="grid grid-cols-2 gap-3">
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined">person</span>
+</div>
+<input autocomplete="off" class="block w-full pl-12 pr-3 py-4 bg-surface text-on-surface font-body-lg text-body-lg rounded-xl border-1.5 border-transparent focus:border-primary focus:bg-surface-container-lowest focus:ring-0 focus:outline-none transition-all duration-300 shadow-inner placeholder:text-outline/70" id="firstName" placeholder="Prénom *" required aria-required="true" type="text"/>
+</div>
+<input autocomplete="off" class="block w-full pl-4 pr-3 py-4 bg-surface text-on-surface font-body-lg text-body-lg rounded-xl border-1.5 border-transparent focus:border-primary focus:bg-surface-container-lowest focus:ring-0 focus:outline-none transition-all duration-300 shadow-inner placeholder:text-outline/70" id="lastName" placeholder="Nom *" required aria-required="true" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant/80 mb-2 uppercase tracking-wide text-left">
+                    Personnes
+                </label>
+<div class="flex items-center justify-between bg-surface rounded-xl px-2 py-2 shadow-inner h-[58px]">
+<button type="button" onclick="changePartySize(-1)" aria-label="Moins de personnes" class="w-9 h-9 flex items-center justify-center text-primary hover:bg-surface-variant rounded-full transition-colors active:scale-90">
+<span class="material-symbols-outlined text-lg">remove</span>
+</button>
+<span id="partySize" class="font-title-lg text-title-lg text-primary w-6 text-center">1</span>
+<button type="button" onclick="changePartySize(1)" aria-label="Plus de personnes" class="w-9 h-9 flex items-center justify-center text-primary hover:bg-surface-variant rounded-full transition-colors active:scale-90">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant/80 mb-2 uppercase tracking-wide text-left" for="tableNumber">
+                    N° table *
+                </label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg">table_restaurant</span>
+</div>
+<input autocomplete="off" class="block w-full h-[58px] pl-10 pr-3 bg-surface text-on-surface font-body-lg text-body-lg rounded-xl border-1.5 border-transparent focus:border-primary focus:bg-surface-container-lowest focus:ring-0 focus:outline-none transition-all duration-300 shadow-inner placeholder:text-outline/70" id="tableNumber" placeholder="Ex: 12" required aria-required="true" type="text" inputmode="numeric"/>
+</div>
+</div>
+</div>
+<!-- Téléphone (facultatif) -->
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined">call</span>
+</div>
+<input autocomplete="off" class="block w-full pl-12 pr-3 py-4 bg-surface text-on-surface font-body-lg text-body-lg rounded-xl border-1.5 border-transparent focus:border-primary focus:bg-surface-container-lowest focus:ring-0 focus:outline-none transition-all duration-300 shadow-inner placeholder:text-outline/70" id="phone" placeholder="Téléphone (facultatif · points de fidélité)" type="tel" inputmode="tel" maxlength="30"/>
+</div>
+<p class="font-body-md text-xs text-on-surface-variant/70 text-left">Les champs marqués d'une étoile (*) sont obligatoires. Pour changer de table plus tard, vous préviendrez l'administration depuis votre profil.</p>
+<!-- Action Button -->
+<button onclick="startOrder()" class="w-full flex items-center justify-center gap-3 bg-primary-container text-on-primary font-label-md text-label-md py-4 px-6 rounded-xl shadow-md hover:shadow-lg hover:bg-primary transition-all duration-300 active:scale-95 group mt-4">
+<span>Commencer ma commande</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Subtle Footer/Help Text -->
+<p class="mt-8 font-body-md text-body-md text-on-surface-variant/70 text-center">
+            Profitez de l'expérience, nous préparons votre table.
+        </p>
+</main>
+<!-- Optional subtle micro-interaction script for input focus -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const input = document.getElementById('firstName');
+            const card = input.closest('.bg-surface-container-lowest');
+
+            input.addEventListener('focus', () => {
+                card.style.transform = 'translateY(-2px)';
+            });
+
+            input.addEventListener('blur', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        let partySize = 1;
+
+        function changePartySize(delta) {
+            // 1 à 50 : mêmes bornes que la validation du serveur (POST /api/orders)
+            partySize = Math.min(50, Math.max(1, partySize + delta));
+            document.getElementById('partySize').textContent = partySize;
+        }
+
+        function showIdentError(message) {
+            let el = document.getElementById('ident-error');
+            if (!el) {
+                el = document.createElement('p');
+                el.id = 'ident-error';
+                el.setAttribute('role', 'alert');
+                el.className = 'text-error font-body-md text-sm text-left';
+                document.querySelector('button[onclick="startOrder()"]').insertAdjacentElement('beforebegin', el);
+            }
+            el.textContent = message;
+            el.classList.toggle('hidden', !message);
+        }
+
+        // Où aller après l'identification : la page demandée au départ (paramètre
+        // ?next=, validé : lien interne seulement) ou la page d'accueil.
+        function nextPage() {
+            const next = Auth.safeNext(new URLSearchParams(location.search).get('next'));
+            return next || '../home/home.html';
+        }
+
+        let submitting = false;
+        // Identification obligatoire : prénom, nom, table, nombre de personnes
+        // (téléphone facultatif). Le client n'existe que si l'API l'a enregistré.
+        function startOrder() {
+            if (submitting) return;
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const tableNumber = document.getElementById('tableNumber').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            if (!firstName) { showIdentError('Indiquez votre prénom.'); document.getElementById('firstName').focus(); return; }
+            if (!lastName) { showIdentError('Indiquez votre nom.'); document.getElementById('lastName').focus(); return; }
+            if (!tableNumber) {
+                showIdentError('Indiquez votre numéro de table pour que l\'on sache où vous servir.');
+                document.getElementById('tableNumber').focus();
+                return;
+            }
+            showIdentError('');
+            submitting = true;
+            const btn = document.querySelector('button[onclick="startOrder()"]');
+            if (btn) btn.disabled = true;
+            const data = { firstName: firstName, lastName: lastName, tableNumber: tableNumber, partySize: partySize };
+            if (phone) data.phone = phone;
+            Auth.registerClient(data).then(() => {
+                window.location.href = nextPage();
+            }).catch((err) => {
+                showIdentError(err.message);
+                submitting = false;
+                if (btn) btn.disabled = false;
+            });
+        }
+
+        // Session déjà ouverte : proposer de continuer plutôt que de recréer un client.
+        function showExistingSession(c) {
+            const box = document.getElementById('session-card');
+            if (!box) return;
+            box.innerHTML = '';
+            const p = document.createElement('p');
+            p.className = 'font-body-md text-sm text-on-surface';
+            p.textContent = 'Session en cours : ' + c.firstName + ' ' + c.lastName + ' — table ' + c.tableNumber + ', ' + c.partySize + ' pers.';
+            const row = document.createElement('div');
+            row.className = 'flex gap-2 mt-3';
+            const go = document.createElement('button');
+            go.type = 'button';
+            go.className = 'flex-1 bg-primary-container text-on-primary font-label-md text-label-md py-3 rounded-lg hover:bg-primary transition-colors';
+            go.textContent = 'Continuer';
+            go.onclick = () => { window.location.href = nextPage(); };
+            const other = document.createElement('button');
+            other.type = 'button';
+            other.className = 'flex-1 bg-transparent border-[1.5px] border-outline-variant text-on-surface font-label-md text-label-md py-3 rounded-lg hover:bg-surface-container transition-colors';
+            other.textContent = 'Ce n\'est pas moi';
+            other.onclick = () => {
+                other.disabled = true;
+                Promise.resolve(Auth.logoutClient()).catch((err) => {
+                    other.disabled = false;
+                    let e = box.querySelector('[data-logout-error]');
+                    if (!e) {
+                        e = document.createElement('p');
+                        e.setAttribute('data-logout-error', '');
+                        e.setAttribute('role', 'alert');
+                        e.className = 'text-error font-body-md text-sm mt-3';
+                        box.appendChild(e);
+                    }
+                    e.textContent = err.message;
+                });
+            };
+            row.appendChild(go); row.appendChild(other);
+            box.appendChild(p); box.appendChild(row);
+            box.classList.remove('hidden');
+            // Session ouverte : pas de nouveau formulaire (table, personnes…) ; pour changer de table,
+            // le client demande l'accord de l'administration depuis l'icône de son profil.
+            const form = document.querySelector('.space-y-5');
+            if (form) form.classList.add('hidden');
+            const hint = document.createElement('p');
+            hint.className = 'font-body-md text-xs text-on-surface-variant mt-3';
+            hint.textContent = 'Pour changer de table, utilisez l\'icône de votre profil : l\'administration doit d\'abord donner son accord.';
+            box.appendChild(hint);
+        }
+
+        // Confort : champs limités comme côté serveur, préremplis si le client revient,
+        // et Entrée valide le formulaire.
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('firstName').maxLength = 70;
+            document.getElementById('lastName').maxLength = 70;
+            document.getElementById('tableNumber').maxLength = 20;
+            try {
+                const name = localStorage.getItem('soucoffe_guest_name');
+                if (name && name.trim() && name.trim() !== 'Client') {
+                    const parts = name.trim().split(' ');
+                    document.getElementById('firstName').value = parts.shift();
+                    document.getElementById('lastName').value = parts.join(' ');
+                }
+                const table = localStorage.getItem('soucoffe_table_number');
+                if (table && table.trim() && table.trim() !== '—') document.getElementById('tableNumber').value = table.trim();
+                const party = parseInt(localStorage.getItem('soucoffe_party_size'), 10);
+                if (party >= 1 && party <= 50) { partySize = party; document.getElementById('partySize').textContent = party; }
+            } catch (e) { /* stockage indisponible : formulaire vide */ }
+            // QR code de table (?table=12, transmis par la page d'accueil) : prioritaire
+            // sur la dernière table mémorisée.
+            const qrTable = (new URLSearchParams(location.search).get('table') || '').trim();
+            if (/^[0-9A-Za-z -]{1,20}$/.test(qrTable)) document.getElementById('tableNumber').value = qrTable;
+            ['firstName', 'lastName', 'tableNumber', 'phone'].forEach((id) => {
+                document.getElementById(id).addEventListener('keydown', (e) => { if (e.key === 'Enter') startOrder(); });
+            });
+            if (new URLSearchParams(location.search).get('expired')) {
+                showIdentError('Votre session a expiré : identifiez-vous à nouveau.');
+            }
+            // Session existante : on la vérifie auprès du serveur avant de proposer de continuer.
+            if (Auth.client()) {
+                Auth.refreshClient().then((r) => showExistingSession(r.client)).catch(() => { /* session morte : formulaire normal */ });
+            }
+        });
+    </script>
+</body></html>

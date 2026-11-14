@@ -1,0 +1,161 @@
+# Messages renvoyés par l'API (affichés tels quels dans les écrans en cas de refus).
+# français || italiano || english || deutsch || español
+
+# ---- Session et accès ----
+Connexion requise || Accesso richiesto || Sign-in required || Anmeldung erforderlich || Inicio de sesión necesario
+Session expirée ou invalide : reconnectez-vous || Sessione scaduta o non valida: accedi di nuovo || Session expired or invalid: please sign in again || Sitzung abgelaufen oder ungültig: Bitte erneut anmelden || Sesión caducada o no válida: vuelve a iniciar sesión
+Session client introuvable : identifiez-vous à nouveau || Sessione cliente non trovata: identificati di nuovo || Customer session not found: please sign in again || Gastsitzung nicht gefunden: Bitte erneut anmelden || Sesión de cliente no encontrada: identifícate de nuevo
+Compte désactivé ou supprimé || Account disattivato o eliminato || Account disabled or deleted || Konto deaktiviert oder gelöscht || Cuenta desactivada o eliminada
+Accès refusé pour votre rôle || Accesso negato per il tuo ruolo || Access denied for your role || Zugriff für Ihre Rolle verweigert || Acceso denegado para tu rol
+Permission refusée pour votre rôle || Permesso negato per il tuo ruolo || Permission denied for your role || Berechtigung für Ihre Rolle verweigert || Permiso denegado para tu rol
+Identifiants invalides || Credenziali non valide || Invalid credentials || Ungültige Anmeldedaten || Credenciales no válidas
+username et password sont requis || Nome utente e password sono obbligatori || Username and password are required || Benutzername und Passwort sind erforderlich || Usuario y contraseña son obligatorios
+Trop de tentatives échouées. Réessayez dans {0} minute(s). || Troppi tentativi falliti. Riprova tra {0} minuto/i. || Too many failed attempts. Try again in {0} minute(s). || Zu viele Fehlversuche. Versuchen Sie es in {0} Minute(n) erneut. || Demasiados intentos fallidos. Inténtalo de nuevo en {0} minuto(s).
+Erreur interne du serveur || Errore interno del server || Internal server error || Interner Serverfehler || Error interno del servidor
+Le corps de la requête est vide || Il corpo della richiesta è vuoto || The request body is empty || Der Anfrageinhalt ist leer || El cuerpo de la petición está vacío
+JSON invalide : {0} || JSON non valido: {0} || Invalid JSON: {0} || Ungültiges JSON: {0} || JSON no válido: {0}
+Route non trouvée : {0} || Percorso non trovato: {0} || Route not found: {0} || Route nicht gefunden: {0} || Ruta no encontrada: {0}
+Identifiant invalide || Identificativo non valido || Invalid identifier || Ungültige Kennung || Identificador no válido
+
+# ---- Comptes du personnel ----
+Ce nom d'utilisateur est déjà pris || Questo nome utente è già in uso || This username is already taken || Dieser Benutzername ist bereits vergeben || Este nombre de usuario ya está en uso
+Compte introuvable || Account non trovato || Account not found || Konto nicht gefunden || Cuenta no encontrada
+Seul l'administrateur peut gérer ce type de compte || Solo l'amministratore può gestire questo tipo di account || Only the administrator can manage this type of account || Nur der Administrator kann diesen Kontotyp verwalten || Solo el administrador puede gestionar este tipo de cuenta
+Un compte administrateur ne peut pas être supprimé || Un account amministratore non può essere eliminato || An administrator account can't be deleted || Ein Administratorkonto kann nicht gelöscht werden || Una cuenta de administrador no se puede eliminar
+Ce compte ne peut pas être désactivé || Questo account non può essere disattivato || This account can't be disabled || Dieses Konto kann nicht deaktiviert werden || Esta cuenta no se puede desactivar
+Le rôle de ce compte ne peut pas être changé || Il ruolo di questo account non può essere cambiato || This account's role can't be changed || Die Rolle dieses Kontos kann nicht geändert werden || El rol de esta cuenta no se puede cambiar
+Le mot de passe doit faire de 8 à 72 caractères || La password deve avere da 8 a 72 caratteri || The password must be 8 to 72 characters long || Das Passwort muss 8 bis 72 Zeichen haben || La contraseña debe tener entre 8 y 72 caracteres
+username invalide : 3 à 30 caractères (lettres minuscules, chiffres, . _ -) || Nome utente non valido: da 3 a 30 caratteri (lettere minuscole, cifre, . _ -) || Invalid username: 3 to 30 characters (lowercase letters, digits, . _ -) || Ungültiger Benutzername: 3 bis 30 Zeichen (Kleinbuchstaben, Ziffern, . _ -) || Usuario no válido: de 3 a 30 caracteres (minúsculas, cifras, . _ -)
+Seuls les serveurs ont des tables à servir || Solo i camerieri hanno tavoli da servire || Only waiters have tables to serve || Nur der Service hat Tische zu bedienen || Solo los camareros tienen mesas que atender
+Indiquez au moins une table que vous servez || Indica almeno un tavolo che servi || Enter at least one table you serve || Geben Sie mindestens einen Tisch an, den Sie bedienen || Indica al menos una mesa que atiendes
+tables doit être un tableau de numéros de table || I tavoli devono essere un elenco di numeri di tavolo || Tables must be a list of table numbers || Tische müssen eine Liste von Tischnummern sein || Las mesas deben ser una lista de números de mesa
+Trop de tables ({0} maximum par serveur) || Troppi tavoli ({0} al massimo per cameriere) || Too many tables ({0} max per waiter) || Zu viele Tische (höchstens {0} pro Bedienung) || Demasiadas mesas (máximo {0} por camarero)
+La table {0} est déjà servie par {1} || Il tavolo {0} è già servito da {1} || Table {0} is already served by {1} || Tisch {0} wird bereits von {1} bedient || La mesa {0} ya la atiende {1}
+Une de ces tables vient d'être prise par un autre serveur || Uno di questi tavoli è appena stato preso da un altro cameriere || One of these tables has just been taken by another waiter || Einer dieser Tische wurde gerade von einer anderen Bedienung übernommen || Otro camarero acaba de tomar una de estas mesas
+active doit être true ou false || Attivo deve essere vero o falso || Active must be true or false || Aktiv muss wahr oder falsch sein || Activo debe ser verdadero o falso
+phone invalide (chiffres, espaces, + ( ) . - ; 6 à 30 caractères) || Telefono non valido (cifre, spazi, + ( ) . - ; da 6 a 30 caratteri) || Invalid phone (digits, spaces, + ( ) . - ; 6 to 30 characters) || Ungültige Telefonnummer (Ziffern, Leerzeichen, + ( ) . - ; 6 bis 30 Zeichen) || Teléfono no válido (cifras, espacios, + ( ) . - ; de 6 a 30 caracteres)
+Vous avez une session en cours avec des commandes à régler. Pour changer de table, demandez l'accord de l'administration depuis votre profil. || Hai una sessione in corso con ordini da pagare. Per cambiare tavolo, chiedi il consenso dell'amministrazione dal tuo profilo. || You have a session in progress with orders to pay. To change table, ask the management for approval from your profile. || Sie haben eine laufende Sitzung mit offenen Bestellungen. Um den Tisch zu wechseln, bitten Sie die Verwaltung über Ihr Profil um Zustimmung. || Tienes una sesión en curso con pedidos por pagar. Para cambiar de mesa, pide la aprobación de la administración desde tu perfil.
+Il reste {0} € à régler : demandez l'addition avant de terminer votre session. || Restano da pagare {0} €: chiedi il conto prima di terminare la sessione. || {0} € still to pay: ask for the bill before ending your session. || Es sind noch {0} € offen: Fordern Sie die Rechnung an, bevor Sie die Sitzung beenden. || Quedan {0} € por pagar: pide la cuenta antes de terminar tu sesión.
+
+# ---- Clients et tables ----
+C'est déjà votre table actuelle || È già il tuo tavolo attuale || That's already your current table || Das ist bereits Ihr aktueller Tisch || Ya es tu mesa actual
+C'est déjà la table actuelle du client || È già il tavolo attuale del cliente || That's already the customer's current table || Das ist bereits der aktuelle Tisch des Gastes || Ya es la mesa actual del cliente
+Aucun changement de table n'a été accepté par l'administration || Nessun cambio di tavolo è stato accettato dall'amministrazione || No table change has been approved by the management || Kein Tischwechsel wurde von der Verwaltung genehmigt || La administración no ha aceptado ningún cambio de mesa
+L'administration vous a attribué la table {0} || L'amministrazione ti ha assegnato il tavolo {0} || The management has assigned you table {0} || Die Verwaltung hat Ihnen Tisch {0} zugewiesen || La administración te ha asignado la mesa {0}
+Une demande est déjà en attente de réponse de l'administration || Una richiesta è già in attesa di risposta dell'amministrazione || A request is already waiting for the management's reply || Eine Anfrage wartet bereits auf die Antwort der Verwaltung || Ya hay una solicitud pendiente de respuesta de la administración
+Une demande est déjà en attente de réponse de l'équipe || Una richiesta è già in attesa di risposta dello staff || A request is already waiting for the team's reply || Eine Anfrage wartet bereits auf die Antwort des Teams || Ya hay una solicitud pendiente de respuesta del equipo
+Cette demande a déjà reçu une réponse || Questa richiesta ha già ricevuto una risposta || This request has already been answered || Diese Anfrage wurde bereits beantwortet || Esta solicitud ya ha recibido respuesta
+Cette demande a déjà reçu une réponse et ne peut plus être annulée || Questa richiesta ha già ricevuto una risposta e non può più essere annullata || This request has already been answered and can no longer be cancelled || Diese Anfrage wurde bereits beantwortet und kann nicht mehr zurückgezogen werden || Esta solicitud ya ha recibido respuesta y ya no se puede cancelar
+Demande introuvable || Richiesta non trovata || Request not found || Anfrage nicht gefunden || Solicitud no encontrada
+decision doit être approve ou reject || La decisione deve essere approva o rifiuta || Decision must be approve or reject || Entscheidung muss annehmen oder ablehnen sein || La decisión debe ser aprobar o rechazar
+Table introuvable || Tavolo non trovato || Table not found || Tisch nicht gefunden || Mesa no encontrada
+La table {0} existe déjà || Il tavolo {0} esiste già || Table {0} already exists || Tisch {0} existiert bereits || La mesa {0} ya existe
+Impossible de supprimer une table {0} || Impossibile eliminare un tavolo {0} || Can't delete a table that is {0} || Ein Tisch mit Status „{0}“ kann nicht gelöscht werden || No se puede eliminar una mesa {0}
+occupée || occupato || occupied || besetzt || ocupada
+commande en préparation || con ordine in preparazione || with an order being prepared || Bestellung in Zubereitung || con pedido en preparación
+addition demandée || con conto richiesto || with the bill requested || Rechnung angefordert || con cuenta solicitada
+Des commandes sont encore en cours sur cette table || Ci sono ancora ordini in corso su questo tavolo || There are still orders in progress at this table || An diesem Tisch laufen noch Bestellungen || Todavía hay pedidos en curso en esta mesa
+Aucune commande à régler sur cette table || Nessun ordine da pagare su questo tavolo || No orders to pay at this table || An diesem Tisch ist nichts offen || No hay pedidos por pagar en esta mesa
+Aucune commande à encaisser sur cette table || Nessun ordine da incassare su questo tavolo || No orders to collect at this table || An diesem Tisch ist nichts zu kassieren || No hay pedidos por cobrar en esta mesa
+Il reste {0} € à encaisser sur cette table || Restano {0} € da incassare su questo tavolo || {0} € still to collect at this table || An diesem Tisch sind noch {0} € zu kassieren || Quedan {0} € por cobrar en esta mesa
+Cette table n'est pas à nettoyer || Questo tavolo non è da pulire || This table doesn't need cleaning || Dieser Tisch muss nicht gereinigt werden || Esta mesa no hay que limpiarla
+seats doit être un entier entre 1 et 50 || I posti devono essere un numero intero tra 1 e 50 || Seats must be a whole number between 1 and 50 || Plätze müssen eine ganze Zahl zwischen 1 und 50 sein || Las plazas deben ser un número entero entre 1 y 50
+tableNumber invalide || Numero di tavolo non valido || Invalid table number || Ungültige Tischnummer || Número de mesa no válido
+tableNumber est requis || Il numero di tavolo è obbligatorio || Table number is required || Tischnummer ist erforderlich || El número de mesa es obligatorio
+tableNumber trop long (max 20 caractères) || Numero di tavolo troppo lungo (max 20 caratteri) || Table number too long (max 20 characters) || Tischnummer zu lang (max. 20 Zeichen) || Número de mesa demasiado largo (máx. 20 caracteres)
+partySize doit être un entier entre 1 et 50 || Il numero di persone deve essere un intero tra 1 e 50 || Number of guests must be a whole number between 1 and 50 || Die Personenzahl muss eine ganze Zahl zwischen 1 und 50 sein || El número de personas debe ser un entero entre 1 y 50
+Appel introuvable || Chiamata non trovata || Call not found || Ruf nicht gefunden || Llamada no encontrada
+
+# ---- Commandes et paiements ----
+Commande introuvable || Ordine non trovato || Order not found || Bestellung nicht gefunden || Pedido no encontrado
+Cette commande a été annulée || Questo ordine è stato annullato || This order has been cancelled || Diese Bestellung wurde storniert || Este pedido ha sido cancelado
+Cette commande est déjà annulée || Questo ordine è già annullato || This order is already cancelled || Diese Bestellung ist bereits storniert || Este pedido ya está cancelado
+Cette commande est déjà payée || Questo ordine è già pagato || This order is already paid || Diese Bestellung ist bereits bezahlt || Este pedido ya está pagado
+Annulation impossible : la commande est déjà payée, adressez-vous au personnel || Annullamento impossibile: l'ordine è già pagato, rivolgiti al personale || Can't cancel: the order is already paid, please ask the staff || Stornierung nicht möglich: Die Bestellung ist bereits bezahlt, wenden Sie sich an das Personal || No se puede cancelar: el pedido ya está pagado, dirígete al personal
+Annulation impossible : la commande vient d'être prise en charge || Annullamento impossibile: l'ordine è appena stato preso in carico || Can't cancel: the order has just been taken in hand || Stornierung nicht möglich: Die Bestellung wird bereits bearbeitet || No se puede cancelar: el pedido acaba de empezar a prepararse
+Annulation impossible : la commande est déjà « {0} » || Annullamento impossibile: l'ordine è già « {0} » || Can't cancel: the order is already "{0}" || Stornierung nicht möglich: Die Bestellung ist bereits „{0}“ || No se puede cancelar: el pedido ya está «{0}»
+Transition non autorisée : '{0}' → '{1}' || Passaggio non consentito: '{0}' → '{1}' || Transition not allowed: '{0}' → '{1}' || Übergang nicht erlaubt: '{0}' → '{1}' || Transición no permitida: '{0}' → '{1}'
+Statut inconnu : {0} || Stato sconosciuto: {0} || Unknown status: {0} || Unbekannter Status: {0} || Estado desconocido: {0}
+Les paiements en espèces et par carte sont enregistrés par la caisse || I pagamenti in contanti e con carta sono registrati dalla cassa || Cash and card payments are recorded at the till || Bar- und Kartenzahlungen werden an der Kasse erfasst || Los pagos en efectivo y con tarjeta los registra la caja
+Cette clé d'idempotence a déjà été utilisée pour une commande différente || Questa chiave di idempotenza è già stata usata per un ordine diverso || This idempotency key has already been used for a different order || Dieser Idempotenzschlüssel wurde bereits für eine andere Bestellung verwendet || Esta clave de idempotencia ya se usó para otro pedido
+Cette commande ne contient aucun café en gobelet à emporter || Questo ordine non contiene caffè in bicchiere da asporto || This order has no coffee in a takeaway cup || Diese Bestellung enthält keinen Kaffee im Becher zum Mitnehmen || Este pedido no contiene ningún café en vaso para llevar
+items doit être un tableau non vide || Gli articoli devono essere un elenco non vuoto || Items must be a non-empty list || Artikel müssen eine nicht leere Liste sein || Los artículos deben ser una lista no vacía
+note trop longue (max 255 caractères) || Nota troppo lunga (max 255 caratteri) || Note too long (max 255 characters) || Notiz zu lang (max. 255 Zeichen) || Nota demasiado larga (máx. 255 caracteres)
+items[{0}] : produit '{1}' actuellement indisponible || Articolo {0}: prodotto '{1}' attualmente non disponibile || Item {0}: product '{1}' currently unavailable || Artikel {0}: Produkt '{1}' derzeit nicht verfügbar || Artículo {0}: producto '{1}' no disponible actualmente
+items[{0}] : produit #{1} introuvable || Articolo {0}: prodotto #{1} non trovato || Item {0}: product #{1} not found || Artikel {0}: Produkt #{1} nicht gefunden || Artículo {0}: producto #{1} no encontrado
+items[{0}] : le groupe d'options '{1}' est obligatoire (au moins {2} sélection(s) attendue(s)) || Articolo {0}: il gruppo di opzioni '{1}' è obbligatorio (almeno {2} scelta/e) || Item {0}: the option group '{1}' is required (at least {2} selection(s) expected) || Artikel {0}: Die Optionsgruppe '{1}' ist Pflicht (mindestens {2} Auswahl erwartet) || Artículo {0}: el grupo de opciones '{1}' es obligatorio (al menos {2} selección(es))
+items[{0}] : le groupe '{1}' autorise au maximum {2} sélection(s), {3} reçue(s) || Articolo {0}: il gruppo '{1}' consente al massimo {2} scelta/e, ricevute {3} || Item {0}: group '{1}' allows at most {2} selection(s), {3} received || Artikel {0}: Gruppe '{1}' erlaubt höchstens {2} Auswahl(en), {3} erhalten || Artículo {0}: el grupo '{1}' permite como máximo {2} selección(es), {3} recibida(s)
+items[{0}] : le groupe '{1}' requiert au moins {2} sélection(s), {3} reçue(s) || Articolo {0}: il gruppo '{1}' richiede almeno {2} scelta/e, ricevute {3} || Item {0}: group '{1}' requires at least {2} selection(s), {3} received || Artikel {0}: Gruppe '{1}' verlangt mindestens {2} Auswahl(en), {3} erhalten || Artículo {0}: el grupo '{1}' requiere al menos {2} selección(es), {3} recibida(s)
+items[{0}] : l'option #{1} n'est pas autorisée pour le produit '{2}' || Articolo {0}: l'opzione #{1} non è consentita per il prodotto '{2}' || Item {0}: option #{1} isn't allowed for product '{2}' || Artikel {0}: Option #{1} ist für Produkt '{2}' nicht erlaubt || Artículo {0}: la opción #{1} no está permitida para el producto '{2}'
+items[{0}] : option sélectionnée en double || Articolo {0}: opzione selezionata due volte || Item {0}: option selected twice || Artikel {0}: Option doppelt ausgewählt || Artículo {0}: opción seleccionada dos veces
+items[{0}].quantity trop élevée (max 50) || Articolo {0}: quantità troppo elevata (max 50) || Item {0}: quantity too high (max 50) || Artikel {0}: Menge zu hoch (max. 50) || Artículo {0}: cantidad demasiado alta (máx. 50)
+items[{0}].note trop longue (max 255 caractères) || Articolo {0}: nota troppo lunga (max 255 caratteri) || Item {0}: note too long (max 255 characters) || Artikel {0}: Notiz zu lang (max. 255 Zeichen) || Artículo {0}: nota demasiado larga (máx. 255 caracteres)
+
+# ---- Produits ----
+Produit introuvable || Prodotto non trovato || Product not found || Produkt nicht gefunden || Producto no encontrado
+Catégorie inconnue || Categoria sconosciuta || Unknown category || Unbekannte Kategorie || Categoría desconocida
+Votre rôle ne permet pas de modifier {0} d'un produit || Il tuo ruolo non consente di modificare {0} di un prodotto || Your role doesn't allow you to change a product's {0} || Ihre Rolle erlaubt keine Änderung von {0} eines Produkts || Tu rol no permite modificar {0} de un producto
+le nom || il nome || name || den Namen || el nombre
+la description || la descrizione || description || die Beschreibung || la descripción
+Un produit « {0} » existe déjà dans la catégorie {1} || Un prodotto « {0} » esiste già nella categoria {1} || A product "{0}" already exists in the {1} category || Ein Produkt „{0}“ existiert bereits in der Kategorie {1} || Ya existe un producto «{0}» en la categoría {1}
+basePrice doit être un nombre entre 0 (exclu) et 1000 || Il prezzo deve essere un numero tra 0 (escluso) e 1000 || The price must be a number between 0 (excluded) and 1000 || Der Preis muss eine Zahl zwischen 0 (ausgeschlossen) und 1000 sein || El precio debe ser un número entre 0 (excluido) y 1000
+available doit être true ou false || Disponibile deve essere vero o falso || Available must be true or false || Verfügbar muss wahr oder falsch sein || Disponible debe ser verdadero o falso
+calories doit être un entier entre 0 et 3000 || Le calorie devono essere un intero tra 0 e 3000 || Calories must be a whole number between 0 and 3000 || Kalorien müssen eine ganze Zahl zwischen 0 und 3000 sein || Las calorías deben ser un entero entre 0 y 3000
+emoji : un emoji uniquement (ex. ☕) || Emoji: solo un emoji (es. ☕) || Emoji: a single emoji only (e.g. ☕) || Emoji: nur ein Emoji (z. B. ☕) || Emoji: solo un emoji (p. ej. ☕)
+Choisissez un lien d'image OU une photo importée, pas les deux || Scegli un link immagine OPPURE una foto importata, non entrambi || Choose an image link OR an imported photo, not both || Wählen Sie einen Bildlink ODER ein importiertes Foto, nicht beides || Elige un enlace de imagen O una foto importada, no ambos
+imageUrl : lien http(s) ou chemin ../images/… vers une image attendu || Immagine: serve un link http(s) o un percorso ../images/… verso un'immagine || Image: an http(s) link or an ../images/… path to an image is expected || Bild: http(s)-Link oder Pfad ../images/… zu einem Bild erwartet || Imagen: se espera un enlace http(s) o una ruta ../images/… a una imagen
+imageData : photo JPEG, PNG ou WebP attendue || Foto: serve un'immagine JPEG, PNG o WebP || Photo: a JPEG, PNG or WebP image is expected || Foto: JPEG, PNG oder WebP erwartet || Foto: se espera una imagen JPEG, PNG o WebP
+imageData : photo illisible ou trop lourde (2 Mo maximum) || Foto illeggibile o troppo pesante (massimo 2 MB) || Photo unreadable or too large (2 MB max) || Foto unlesbar oder zu groß (max. 2 MB) || Foto ilegible o demasiado pesada (máximo 2 MB)
+imageData : le fichier n'est pas une image valide || Foto: il file non è un'immagine valida || Photo: the file isn't a valid image || Foto: Die Datei ist kein gültiges Bild || Foto: el archivo no es una imagen válida
+Aucun champ à modifier (basePrice, available, name, description) || Nessun campo da modificare (prezzo, disponibilità, nome, descrizione) || Nothing to change (price, availability, name, description) || Nichts zu ändern (Preis, Verfügbarkeit, Name, Beschreibung) || Ningún campo que modificar (precio, disponibilidad, nombre, descripción)
+categoryId est requis || La categoria è obbligatoria || Category is required || Kategorie ist erforderlich || La categoría es obligatoria
+{0} est requis || {0} è obbligatorio || {0} is required || {0} ist erforderlich || {0} es obligatorio
+{0} invalide (max {1} caractères, sans < ni >) || {0} non valido (max {1} caratteri, senza < né >) || Invalid {0} (max {1} characters, no < or >) || Ungültig: {0} (max. {1} Zeichen, ohne < oder >) || {0} no válido (máx. {1} caracteres, sin < ni >)
+{0} doit être une chaîne de caractères || {0} deve essere un testo || {0} must be text || {0} muss Text sein || {0} debe ser un texto
+{0} : valeur inconnue ({1}) || {0}: valore sconosciuto ({1}) || {0}: unknown value ({1}) || {0}: unbekannter Wert ({1}) || {0}: valor desconocido ({1})
+
+# ---- Fidélité ----
+Aucun compte fidélité : renseignez votre téléphone à l'identification || Nessun account fedeltà: indica il tuo telefono all'identificazione || No loyalty account: give your phone number when signing in || Kein Treuekonto: Geben Sie bei der Anmeldung Ihre Telefonnummer an || Ninguna cuenta de fidelidad: indica tu teléfono al identificarte
+Compte fidélité introuvable || Account fedeltà non trovato || Loyalty account not found || Treuekonto nicht gefunden || Cuenta de fidelidad no encontrada
+Solde de points insuffisant || Saldo punti insufficiente || Not enough points || Nicht genug Punkte || Saldo de puntos insuficiente
+Minimum {0} points à utiliser || Minimo {0} punti da usare || Minimum {0} points to redeem || Mindestens {0} Punkte einzulösen || Mínimo {0} puntos por canjear
+Les points s'utilisent par multiples de {0} || I punti si usano in multipli di {0} || Points are redeemed in multiples of {0} || Punkte werden in Vielfachen von {0} eingelöst || Los puntos se canjean en múltiplos de {0}
+Solde insuffisant : {0} points disponibles || Saldo insufficiente: {0} punti disponibili || Not enough points: {0} available || Guthaben reicht nicht: {0} Punkte verfügbar || Saldo insuficiente: {0} puntos disponibles
+Vous pouvez utiliser au maximum {0} points sur cette commande (50 % du montant) || Puoi usare al massimo {0} punti su questo ordine (50% dell'importo) || You can use at most {0} points on this order (50% of the amount) || Sie können höchstens {0} Punkte für diese Bestellung einlösen (50 % des Betrags) || Puedes usar como máximo {0} puntos en este pedido (50 % del importe)
+Le solde ne peut pas devenir négatif ({0} points) || Il saldo non può diventare negativo ({0} punti) || The balance can't go negative ({0} points) || Der Kontostand darf nicht negativ werden ({0} Punkte) || El saldo no puede quedar en negativo ({0} puntos)
+points doit être un entier non nul (±100000 maximum) || I punti devono essere un intero diverso da zero (±100000 massimo) || Points must be a non-zero whole number (±100000 max) || Punkte müssen eine ganze Zahl ungleich null sein (max. ±100000) || Los puntos deben ser un entero distinto de cero (±100000 máximo)
+redeemPoints doit être un entier positif || I punti da usare devono essere un intero positivo || Points to redeem must be a positive whole number || Einzulösende Punkte müssen eine positive ganze Zahl sein || Los puntos por canjear deben ser un entero positivo
+
+# ---- Promotions ----
+Promotion introuvable || Promozione non trovata || Promotion not found || Aktion nicht gefunden || Promoción no encontrada
+Un pourcentage de remise ne peut pas dépasser 90 % || Una percentuale di sconto non può superare il 90% || A discount percentage can't exceed 90% || Ein Rabattprozentsatz darf 90 % nicht übersteigen || Un porcentaje de descuento no puede superar el 90 %
+Remise fixe trop élevée (1000 € maximum) || Sconto fisso troppo elevato (massimo 1000 €) || Fixed discount too high (1000 € max) || Fester Rabatt zu hoch (max. 1000 €) || Descuento fijo demasiado alto (máximo 1000 €)
+value doit être un nombre positif || Il valore deve essere un numero positivo || The value must be a positive number || Der Wert muss eine positive Zahl sein || El valor debe ser un número positivo
+categoryId est requis pour une promotion de catégorie || La categoria è obbligatoria per una promozione di categoria || A category is required for a category promotion || Für eine Kategorieaktion ist eine Kategorie erforderlich || La categoría es obligatoria para una promoción de categoría
+productId est requis pour une promotion de produit || Il prodotto è obbligatorio per una promozione di prodotto || A product is required for a product promotion || Für eine Produktaktion ist ein Produkt erforderlich || El producto es obligatorio para una promoción de producto
+categoryId inconnu || Categoria sconosciuta || Unknown category || Unbekannte Kategorie || Categoría desconocida
+productId inconnu || Prodotto sconosciuto || Unknown product || Unbekanntes Produkt || Producto desconocido
+startTime et endTime vont ensemble || Ora di inizio e ora di fine vanno indicate insieme || Start time and end time go together || Start- und Endzeit gehören zusammen || La hora de inicio y la de fin van juntas
+endDate ne peut pas précéder startDate || La data di fine non può precedere la data di inizio || The end date can't be before the start date || Das Enddatum darf nicht vor dem Startdatum liegen || La fecha de fin no puede ser anterior a la de inicio
+days doit être une liste non vide de jours (0 = lundi … 6 = dimanche) || I giorni devono essere un elenco non vuoto (0 = lunedì … 6 = domenica) || Days must be a non-empty list (0 = Monday … 6 = Sunday) || Tage müssen eine nicht leere Liste sein (0 = Montag … 6 = Sonntag) || Los días deben ser una lista no vacía (0 = lunes … 6 = domingo)
+minOrder doit être un nombre entre 0 et 10000 || L'ordine minimo deve essere un numero tra 0 e 10000 || Minimum order must be a number between 0 and 10000 || Der Mindestbestellwert muss zwischen 0 und 10000 liegen || El pedido mínimo debe ser un número entre 0 y 10000
+Le créneau « {0} » doit contenir au moins une catégorie existante. || La fascia « {0} » deve contenere almeno una categoria esistente. || The "{0}" slot must contain at least one existing category. || Der Zeitraum „{0}“ muss mindestens eine vorhandene Kategorie enthalten. || La franja «{0}» debe contener al menos una categoría existente.
+{0} invalide (format HH:MM) || {0} non valido (formato HH:MM) || Invalid {0} (HH:MM format) || {0} ungültig (Format HH:MM) || {0} no válido (formato HH:MM)
+{0} invalide (format AAAA-MM-JJ) || {0} non valido (formato AAAA-MM-GG) || Invalid {0} (YYYY-MM-DD format) || {0} ungültig (Format JJJJ-MM-TT) || {0} no válido (formato AAAA-MM-DD)
+
+# ---- Surveillance et stock ----
+Signal trop fréquent || Segnale troppo frequente || Signal too frequent || Signal zu häufig || Señal demasiado frecuente
+Notification introuvable || Notifica non trovata || Notification not found || Benachrichtigung nicht gefunden || Notificación no encontrada
+Session introuvable || Sessione non trovata || Session not found || Sitzung nicht gefunden || Sesión no encontrada
+Aucun réglage à modifier || Nessuna impostazione da modificare || No settings to change || Keine Einstellungen zu ändern || Ningún ajuste que modificar
+Les seuils de présence sont des minutes entre 1 et 720 || Le soglie di presenza sono minuti tra 1 e 720 || Presence thresholds are minutes between 1 and 720 || Präsenzschwellen sind Minuten zwischen 1 und 720 || Los umbrales de presencia son minutos entre 1 y 720
+5 seuils au maximum par liste || Massimo 5 soglie per elenco || At most 5 thresholds per list || Höchstens 5 Schwellen pro Liste || Máximo 5 umbrales por lista
+{0} : valeur entre {1} et {2} attendue || {0}: valore tra {1} e {2} richiesto || {0}: a value between {1} and {2} is expected || {0}: Wert zwischen {1} und {2} erwartet || {0}: se espera un valor entre {1} y {2}
+{0} : nombre entier attendu || {0}: numero intero richiesto || {0}: a whole number is expected || {0}: ganze Zahl erwartet || {0}: se espera un número entero
+Délai d'inactivité || Tempo di inattività || Idle delay || Inaktivitätsfrist || Tiempo de inactividad
+Alerte d'inactivité || Avviso di inattività || Inactivity alert || Inaktivitätswarnung || Alerta de inactividad
+Seuil de lenteur || Soglia di lentezza || Slowness threshold || Langsamkeitsschwelle || Umbral de lentitud
+{0} doit être un nombre positif || {0} deve essere un numero positivo || {0} must be a positive number || {0} muss eine positive Zahl sein || {0} debe ser un número positivo
+Le seuil minimum || La soglia minima || The minimum threshold || Der Mindestbestand || El umbral mínimo
+La quantité || La quantità || The quantity || Die Menge || La cantidad
+La quantité par unité || La quantità per unità || The quantity per unit || Die Menge pro Einheit || La cantidad por unidad

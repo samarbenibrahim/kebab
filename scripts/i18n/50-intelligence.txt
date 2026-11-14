@@ -1,0 +1,302 @@
+# Module « Kebab Intelligent » (interface + phrases générées par le serveur) et libellés techniques de l'historique.
+# français || italiano || english || deutsch || español
+
+# ---- Interface ----
+Analyses, prévisions et recommandations calculées sur vos données réelles. Le module propose ; l’équipe décide. || Analisi, previsioni e consigli calcolati sui tuoi dati reali. Il modulo propone; il team decide. || Analyses, forecasts and recommendations calculated from your real data. The module suggests; the team decides. || Analysen, Prognosen und Empfehlungen auf Basis Ihrer echten Daten. Das Modul schlägt vor, das Team entscheidet. || Análisis, previsiones y recomendaciones calculados con tus datos reales. El módulo propone; el equipo decide.
+Insights || Insight || Insights || Erkenntnisse || Análisis
+Smart Stock || Smart Stock || Smart Stock || Smart Stock || Smart Stock
+Idées de promotions || Idee di promozioni || Promotion ideas || Aktionsideen || Ideas de promociones
+Comportements inhabituels || Comportamenti insoliti || Unusual activity || Ungewöhnliches Verhalten || Comportamientos inusuales
+Posez une question sur vos données || Fai una domanda sui tuoi dati || Ask a question about your data || Stellen Sie eine Frage zu Ihren Daten || Haz una pregunta sobre tus datos
+Recommandations selon l’heure || Consigli in base all'ora || Recommendations by time of day || Empfehlungen nach Tageszeit || Recomendaciones según la hora
+Module actif || Modulo attivo || Module on || Modul aktiv || Módulo activo
+Module désactivé || Modulo disattivato || Module off || Modul deaktiviert || Módulo desactivado
+Module intelligent activé || Modulo intelligente attivato || Smart module turned on || Intelligentes Modul aktiviert || Módulo inteligente activado
+Module intelligent désactivé : le site fonctionne comme avant || Modulo intelligente disattivato: il sito funziona come prima || Smart module turned off: the site works as before || Intelligentes Modul deaktiviert: Die Website funktioniert wie zuvor || Módulo inteligente desactivado: el sitio funciona como antes
+Module intelligent indisponible || Modulo intelligente non disponibile || Smart module unavailable || Intelligentes Modul nicht verfügbar || Módulo inteligente no disponible
+Le module intelligent est désactivé. || Il modulo intelligente è disattivato. || The smart module is turned off. || Das intelligente Modul ist deaktiviert. || El módulo inteligente está desactivado.
+Tout le reste du site fonctionne normalement : carte, commandes, cuisine, caisse, administration. || Tutto il resto del sito funziona normalmente: menù, ordini, cucina, cassa, amministrazione. || The rest of the site works normally: menu, orders, kitchen, till, administration. || Der Rest der Website funktioniert normal: Karte, Bestellungen, Küche, Kasse, Verwaltung. || El resto del sitio funciona con normalidad: carta, pedidos, cocina, caja, administración.
+). Le reste de l’administration fonctionne normalement. || ). Il resto dell'amministrazione funziona normalmente. || ). The rest of the administration works normally. || ). Der Rest der Verwaltung funktioniert normal. || ). El resto de la administración funciona con normalidad.
+Analyse… || Analisi… || Analysing… || Analyse… || Analizando…
+Analyse indisponible : || Analisi non disponibile: || Analysis unavailable: || Analyse nicht verfügbar: || Análisis no disponible:
+Analyse indisponible : {0} || Analisi non disponibile: {0} || Analysis unavailable: {0} || Analyse nicht verfügbar: {0} || Análisis no disponible: {0}
+Période || Periodo || Period || Zeitraum || Periodo
+Période : || Periodo: || Period: || Zeitraum: || Periodo:
+Période analysée : || Periodo analizzato: || Period analysed: || Analysierter Zeitraum: || Periodo analizado:
+Aujourd’hui || Oggi || Today || Heute || Hoy
+@{0} jours || {0} giorni || {0} days || {0} Tage || {0} días
+@{0} jour(s) || {0} giorno/i || {0} day(s) || {0} Tag(e) || {0} día(s)
+@{0} prochains jours || prossimi {0} giorni || next {0} days || nächste {0} Tage || próximos {0} días
+@{0} produits || {0} prodotti || {0} products || {0} Produkte || {0} productos
+@{0} vendu(s) || {0} venduto/i || {0} sold || {0} verkauft || {0} vendido(s)
+@{0} sur {1} || {0} su {1} || {0} of {1} || {0} von {1} || {0} de {1}
+@{0} en cours || {0} in corso || {0} in progress || {0} laufend || {0} en curso
+@{0} article(s) || {0} articolo/i || {0} item(s) || {0} Artikel || {0} artículo(s)
+Calculés sur les commandes réelles de la période. || Calcolati sugli ordini reali del periodo. || Calculated from the period's real orders. || Berechnet aus den echten Bestellungen des Zeitraums. || Calculados con los pedidos reales del periodo.
+Montants encaissés. || Importi incassati. || Amounts collected. || Kassierte Beträge. || Importes cobrados.
+Moyens de paiement || Metodi di pagamento || Payment methods || Zahlungsarten || Métodos de pago
+Non encaissé || Non incassato || Not collected || Nicht kassiert || No cobrado
+commandes payées || ordini pagati || paid orders || bezahlte Bestellungen || pedidos pagados
+commande(s) en attente de paiement || ordine/i in attesa di pagamento || order(s) awaiting payment || Bestellung(en) warten auf Zahlung || pedido(s) pendiente(s) de pago
+Commandes par heure || Ordini per ora || Orders by hour || Bestellungen pro Stunde || Pedidos por hora
+Produits les plus vendus || Prodotti più venduti || Best-selling products || Meistverkaufte Produkte || Productos más vendidos
+Taux d’annulation || Tasso di annullamento || Cancellation rate || Stornoquote || Tasa de cancelación
+Sur place / à emporter || Al tavolo / da asporto || Dine in / takeaway || Vor Ort / zum Mitnehmen || En el local / para llevar
+Une commande compte « à emporter » si un article est servi en gobelet. || Un ordine conta come «da asporto» se un articolo è servito in bicchiere. || An order counts as "takeaway" if any item is served in a takeaway cup. || Eine Bestellung gilt als „zum Mitnehmen“, wenn ein Artikel im Becher serviert wird. || Un pedido cuenta como «para llevar» si algún artículo se sirve en vaso.
+Survolez une barre pour le détail. || Passa sopra una barra per il dettaglio. || Hover over a bar for details. || Fahren Sie über einen Balken für Details. || Pasa el ratón por una barra para ver el detalle.
+Prévision || Previsione || Forecast || Prognose || Previsión
+prévision demain || previsione domani || forecast tomorrow || Prognose morgen || previsión mañana
+Prévision des commandes sur 7 jours || Previsione degli ordini su 7 giorni || 7-day order forecast || Bestellprognose für 7 Tage || Previsión de pedidos a 7 días
+Demain || Domani || Tomorrow || Morgen || Mañana
+Demain, heure probablement la plus chargée : || Domani, ora probabilmente più affollata: || Tomorrow, likely busiest hour: || Morgen voraussichtlich stärkste Stunde: || Mañana, hora probablemente más concurrida:
+jour(s). Le trait vertical montre la fourchette probable. || giorno/i. La linea verticale mostra l'intervallo probabile. || day(s). The vertical line shows the likely range. || Tag(e). Die senkrechte Linie zeigt die wahrscheinliche Spanne. || día(s). La línea vertical muestra el intervalo probable.
+Basé sur || Basato su || Based on || Basierend auf || Basado en
+Basé sur {0} commande(s) des 30 derniers jours. || Basato su {0} ordine/i degli ultimi 30 giorni. || Based on {0} order(s) from the last 30 days. || Basierend auf {0} Bestellung(en) der letzten 30 Tage. || Basado en {0} pedido(s) de los últimos 30 días.
+Fiabilité : || Affidabilità: || Reliability: || Zuverlässigkeit: || Fiabilidad:
+Fiabilité : {0} || Affidabilità: {0} || Reliability: {0} || Zuverlässigkeit: {0} || Fiabilidad: {0}
+d’activité · fiabilité || di attività · affidabilità || of activity · reliability || Aktivität · Zuverlässigkeit || de actividad · fiabilidad
+· méthode : || · metodo: || · method: || · Methode: || · método:
+· calcul mis en cache || · calcolo in cache || · cached calculation || · zwischengespeicherte Berechnung || · cálculo en caché
+Méthode || Metodo || Method || Methode || Método
+Source : || Fonte: || Source: || Quelle: || Fuente:
+~faible || bassa || low || niedrig || baja
+~moyenne || media || medium || mittel || media
+~bonne || buona || good || gut || buena
+~forte || alta || high || hoch || alta
+~élevé || elevato || high || hoch || elevado
+~moyen || medio || medium || mittel || medio
+~inconnu || sconosciuto || unknown || unbekannt || desconocido
+~modérée || moderata || moderate || mäßig || moderada
+Charge faible || Carico basso || Light load || Geringe Auslastung || Carga baja
+Charge moyenne || Carico medio || Medium load || Mittlere Auslastung || Carga media
+Charge forte || Carico alto || Heavy load || Hohe Auslastung || Carga alta
+Autonomie || Autonomia || Days of cover || Reichweite || Autonomía
+Consommation || Consumo || Consumption || Verbrauch || Consumo
+Questions fréquentes || Domande frequenti || Common questions || Häufige Fragen || Preguntas frecuentes
+Votre question || La tua domanda || Your question || Ihre Frage || Tu pregunta
+Ex : Quel est le panier moyen cette semaine ? || Es.: Qual è lo scontrino medio questa settimana? || E.g. What is the average basket this week? || Z. B. Wie hoch ist der Durchschnittsbon diese Woche? || P. ej.: ¿Cuál es el ticket medio esta semana?
+Demander || Chiedi || Ask || Fragen || Preguntar
+Réponses calculées uniquement à partir de la base, avec la période analysée. || Risposte calcolate solo dal database, con il periodo analizzato. || Answers calculated only from the database, with the period analysed. || Antworten werden nur aus der Datenbank berechnet, mit dem analysierten Zeitraum. || Respuestas calculadas solo a partir de la base de datos, con el periodo analizado.
+Impossible de répondre : || Impossibile rispondere: || Couldn't answer: || Antwort nicht möglich: || No se pudo responder:
+Impossible de répondre : {0} || Impossibile rispondere: {0} || Couldn't answer: {0} || Antwort nicht möglich: {0} || No se pudo responder: {0}
+Quels sont les produits les plus vendus aujourd’hui ? || Quali sono i prodotti più venduti oggi? || What are today's best-selling products? || Welche Produkte verkaufen sich heute am besten? || ¿Cuáles son los productos más vendidos hoy?
+Quelle est l’heure la plus chargée ? || Qual è l'ora più affollata? || What is the busiest hour? || Was ist die stärkste Stunde? || ¿Cuál es la hora más concurrida?
+Quel produit risque d’être en rupture ? || Quale prodotto rischia di esaurirsi? || Which product might run out? || Welches Produkt droht auszugehen? || ¿Qué producto puede agotarse?
+Quelle est l’évolution des ventes cette semaine ? || Come vanno le vendite questa settimana? || How are sales trending this week? || Wie entwickeln sich die Verkäufe diese Woche? || ¿Cómo evolucionan las ventas esta semana?
+Quels produits sont peu vendus ? || Quali prodotti si vendono poco? || Which products sell poorly? || Welche Produkte verkaufen sich schlecht? || ¿Qué productos se venden poco?
+Quel est le panier moyen ? || Qual è lo scontrino medio? || What is the average basket? || Wie hoch ist der Durchschnittsbon? || ¿Cuál es el ticket medio?
+Quel est le chiffre d’affaires ce mois-ci ? || Qual è il fatturato di questo mese? || What is this month's revenue? || Wie hoch ist der Umsatz diesen Monat? || ¿Cuál es la facturación de este mes?
+Combien de commandes hier ? || Quanti ordini ieri? || How many orders yesterday? || Wie viele Bestellungen gestern? || ¿Cuántos pedidos ayer?
+Quelle part de commandes à emporter ? || Che quota di ordini da asporto? || What share of orders is takeaway? || Welcher Anteil der Bestellungen ist zum Mitnehmen? || ¿Qué parte de los pedidos es para llevar?
+Quels moyens de paiement ? || Quali metodi di pagamento? || Which payment methods? || Welche Zahlungsarten? || ¿Qué métodos de pago?
+Quel est le temps moyen de préparation ? || Qual è il tempo medio di preparazione? || What is the average preparation time? || Wie lange dauert die Zubereitung im Schnitt? || ¿Cuál es el tiempo medio de preparación?
+Quelle est la prévision pour demain ? || Qual è la previsione per domani? || What is tomorrow's forecast? || Wie lautet die Prognose für morgen? || ¿Cuál es la previsión para mañana?
+Y a-t-il des anomalies ? || Ci sono anomalie? || Are there any anomalies? || Gibt es Auffälligkeiten? || ¿Hay anomalías?
+Idées : || Idee: || Ideas: || Ideen: || Ideas:
+Suggestions seulement : rien n’est créé ni activé sans votre validation. || Solo suggerimenti: nulla viene creato né attivato senza la tua conferma. || Suggestions only: nothing is created or turned on without your approval. || Nur Vorschläge: Nichts wird ohne Ihre Bestätigung erstellt oder aktiviert. || Solo sugerencias: no se crea ni activa nada sin tu validación.
+Suggestion du module intelligent : || Suggerimento del modulo intelligente: || Smart module suggestion: || Vorschlag des intelligenten Moduls: || Sugerencia del módulo inteligente:
+Préparer || Prepara || Prepare || Vorbereiten || Preparar
+Aucune opportunité nette pour le moment. || Al momento nessuna opportunità chiara. || No clear opportunity for now. || Derzeit keine klare Gelegenheit. || Ninguna oportunidad clara por ahora.
+Aucun comportement inhabituel aujourd’hui par rapport aux 28 derniers jours. || Nessun comportamento insolito oggi rispetto agli ultimi 28 giorni. || No unusual activity today compared with the last 28 days. || Heute kein ungewöhnliches Verhalten im Vergleich zu den letzten 28 Tagen. || Ningún comportamiento inusual hoy respecto a los últimos 28 días.
+Remboursements : || Rimborsi: || Refunds: || Erstattungen: || Reembolsos:
+Remboursements : {0} || Rimborsi: {0} || Refunds: {0} || Erstattungen: {0} || Reembolsos: {0}
+Catégories mises en avant pour chaque moment de la journée (assistant client et recommandations). Créneau actuel : || Categorie in evidenza per ogni momento della giornata (assistente cliente e consigli). Fascia attuale: || Categories highlighted for each time of day (customer assistant and recommendations). Current slot: || Hervorgehobene Kategorien je Tageszeit (Gästeassistent und Empfehlungen). Aktueller Zeitraum: || Categorías destacadas para cada momento del día (asistente de clientes y recomendaciones). Franja actual:
+Catégories mises en avant pour chaque moment de la journée (assistant client et recommandations). Créneau actuel : {0}. || Categorie in evidenza per ogni momento della giornata (assistente cliente e consigli). Fascia attuale: {0}. || Categories highlighted for each time of day (customer assistant and recommendations). Current slot: {0}. || Hervorgehobene Kategorien je Tageszeit (Gästeassistent und Empfehlungen). Aktueller Zeitraum: {0}. || Categorías destacadas para cada momento del día (asistente de clientes y recomendaciones). Franja actual: {0}.
+Catégories proposées || Categorie proposte || Suggested categories || Vorgeschlagene Kategorien || Categorías propuestas
+Enregistrer les créneaux || Salva le fasce orarie || Save time slots || Zeiträume speichern || Guardar franjas
+Créneaux enregistrés || Fasce orarie salvate || Time slots saved || Zeiträume gespeichert || Franjas guardadas
+Heures vides = toute la journée. Une plage comme 22:00 → 02:00 est acceptée. || Orari vuoti = tutto il giorno. È accettato un intervallo come 22:00 → 02:00. || Empty hours = all day. A range like 22:00 → 02:00 is accepted. || Leere Zeiten = ganzer Tag. Ein Bereich wie 22:00 → 02:00 ist erlaubt. || Horas vacías = todo el día. Se acepta una franja como 22:00 → 02:00.
+Enregistré || Salvato || Saved || Gespeichert || Guardado
+Aucune donnée sur la période. || Nessun dato nel periodo. || No data for this period. || Keine Daten im Zeitraum. || Sin datos en el periodo.
+
+# ---- Smart Stock ----
+Inventaire || Inventario || Stock count || Inventur || Inventario
+Inventaire actuel || Inventario attuale || Current stock count || Aktueller Bestand || Inventario actual
+Inventaire à faire || Inventario da fare || Stock count needed || Inventur fällig || Inventario pendiente
+Inventaire initial || Inventario iniziale || Initial stock count || Anfangsinventur || Inventario inicial
+Livraison || Consegna || Delivery || Lieferung || Entrega
+Recette || Ricetta || Recipe || Rezept || Receta
+Ajouter un article || Aggiungi un articolo || Add an item || Artikel hinzufügen || Añadir un artículo
+Article || Articolo || Item || Artikel || Artículo
+Article ajouté || Articolo aggiunto || Item added || Artikel hinzugefügt || Artículo añadido
+Archiver || Archivia || Archive || Archivieren || Archivar
+Archiver « || Archiviare « || Archive " || Archivieren „ || Archivar «
+Unité || Unità || Unit || Einheit || Unidad
+Seuil || Soglia || Threshold || Schwelle || Umbral
+Seuil minimum || Soglia minima || Minimum threshold || Mindestbestand || Umbral mínimo
+Seuil minimum ( || Soglia minima ( || Minimum threshold ( || Mindestbestand ( || Umbral mínimo (
+Stock estimé || Scorte stimate || Estimated stock || Geschätzter Bestand || Stock estimado
+Rupture estimée || Esaurimento stimato || Estimated stock-out || Voraussichtlich ausverkauft || Agotamiento estimado
+Risque de rupture || Rischio di esaurimento || Risk of running out || Gefahr von Engpässen || Riesgo de agotarse
+À surveiller || Da tenere d'occhio || Keep an eye on || Beobachten || A vigilar
+État || Stato || Status || Status || Estado
+Note || Nota || Note || Notiz || Nota
+Produits attendus : || Prodotti attesi: || Expected products: || Erwartete Produkte: || Productos esperados:
+Quantité constatée ( || Quantità rilevata ( || Counted quantity ( || Gezählte Menge ( || Cantidad contada (
+Quantité reçue ( || Quantità ricevuta ( || Quantity received ( || Erhaltene Menge ( || Cantidad recibida (
+par unité vendue || per unità venduta || per unit sold || pro verkaufter Einheit || por unidad vendida
+Aucune recette liée || Nessuna ricetta collegata || No linked recipe || Kein verknüpftes Rezept || Ninguna receta vinculada
+Aucun article suivi. Ajoutez par exemple « Lait » (L), « Grains de café » (kg) ou « Gobelets » (pièces), puis liez-les aux produits avec une recette. || Nessun articolo monitorato. Aggiungi per esempio «Latte» (L), «Chicchi di caffè» (kg) o «Bicchieri» (pezzi), poi collegali ai prodotti con una ricetta. || No tracked items. Add for example "Milk" (L), "Coffee beans" (kg) or "Cups" (pieces), then link them to products with a recipe. || Keine verfolgten Artikel. Fügen Sie z. B. „Milch“ (L), „Kaffeebohnen“ (kg) oder „Becher“ (Stück) hinzu und verknüpfen Sie sie per Rezept mit Produkten. || Ningún artículo seguido. Añade por ejemplo «Leche» (L), «Granos de café» (kg) o «Vasos» (piezas) y vincúlalos a los productos con una receta.
+Faites un premier inventaire pour suivre ce produit. || Fai un primo inventario per monitorare questo prodotto. || Do a first stock count to track this product. || Machen Sie eine erste Inventur, um dieses Produkt zu verfolgen. || Haz un primer inventario para seguir este producto.
+Stock estimé épuisé : vérifiez et faites un inventaire. || Scorte stimate esaurite: verifica e fai un inventario. || Estimated stock depleted: check and do a stock count. || Geschätzter Bestand aufgebraucht: Prüfen Sie und machen Sie eine Inventur. || Stock estimado agotado: comprueba y haz un inventario.
+Stock suffisant || Scorte sufficienti || Enough stock || Ausreichender Bestand || Stock suficiente
+Aucune recette liée : consommation non estimée. || Nessuna ricetta collegata: consumo non stimato. || No linked recipe: consumption not estimated. || Kein verknüpftes Rezept: Verbrauch nicht geschätzt. || Ninguna receta vinculada: consumo no estimado.
+Stock réel = dernier inventaire + livraisons. La consommation est une estimation (commandes × recettes) et ne modifie jamais le stock enregistré. || Scorte reali = ultimo inventario + consegne. Il consumo è una stima (ordini × ricette) e non modifica mai le scorte registrate. || Real stock = last count + deliveries. Consumption is an estimate (orders × recipes) and never changes the recorded stock. || Echter Bestand = letzte Inventur + Lieferungen. Der Verbrauch ist eine Schätzung (Bestellungen × Rezepte) und ändert nie den erfassten Bestand. || Stock real = último inventario + entregas. El consumo es una estimación (pedidos × recetas) y nunca modifica el stock registrado.
+Lait || Latte || Milk || Milch || Leche
+0 = retirer || 0 = rimuovi || 0 = remove || 0 = entfernen || 0 = quitar
+
+# ---- Phrases générées par le serveur (analyses) ----
+cette semaine || questa settimana || this week || diese Woche || esta semana
+Cette semaine || Questa settimana || This week || Diese Woche || Esta semana
+la semaine dernière || la settimana scorsa || last week || letzte Woche || la semana pasada
+ce mois-ci || questo mese || this month || diesen Monat || este mes
+Ce mois-ci || Questo mese || This month || Diesen Monat || Este mes
+Aujourd'hui || Oggi || Today || Heute || Hoy
+@les {0} derniers jours || gli ultimi {0} giorni || the last {0} days || die letzten {0} Tage || los últimos {0} días
+@Les {0} derniers jours || Gli ultimi {0} giorni || The last {0} days || Die letzten {0} Tage || Los últimos {0} días
+@des {0} derniers jours || degli ultimi {0} giorni || from the last {0} days || der letzten {0} Tage || de los últimos {0} días
+{0} commande(s), {1} || {0} ordine/i, {1} || {0} order(s), {1} || {0} Bestellung(en), {1} || {0} pedido(s), {1}
+Pas assez de commandes sur la période pour dégager une tendance fiable ({0} commande(s)). || Ordini insufficienti nel periodo per individuare una tendenza affidabile ({0} ordine/i). || Not enough orders in the period to show a reliable trend ({0} order(s)). || Zu wenige Bestellungen im Zeitraum für einen verlässlichen Trend ({0} Bestellung(en)). || No hay suficientes pedidos en el periodo para una tendencia fiable ({0} pedido(s)).
+Les commandes sont concentrées entre {0}:00 et {1}:00 ({2} % des commandes). || Gli ordini si concentrano tra le {0}:00 e le {1}:00 ({2}% degli ordini). || Orders are concentrated between {0}:00 and {1}:00 ({2}% of orders). || Die Bestellungen konzentrieren sich zwischen {0}:00 und {1}:00 Uhr ({2} % der Bestellungen). || Los pedidos se concentran entre las {0}:00 y las {1}:00 ({2} % de los pedidos).
+La catégorie « {0} » représente {1} % des ventes. || La categoria « {0} » rappresenta il {1}% delle vendite. || The "{0}" category accounts for {1}% of sales. || Die Kategorie „{0}“ macht {1} % des Umsatzes aus. || La categoría «{0}» representa el {1} % de las ventas.
+Produit le plus vendu : {0} ({1} vendu(s)). || Prodotto più venduto: {0} ({1} venduto/i). || Best-selling product: {0} ({1} sold). || Meistverkauftes Produkt: {0} ({1} verkauft). || Producto más vendido: {0} ({1} vendido(s)).
+{0} % des commandes contiennent au moins un article à emporter. || Il {0}% degli ordini contiene almeno un articolo da asporto. || {0}% of orders include at least one takeaway item. || {0} % der Bestellungen enthalten mindestens einen Artikel zum Mitnehmen. || El {0} % de los pedidos incluye al menos un artículo para llevar.
+Taux d’annulation de {0} % : à surveiller. || Tasso di annullamento del {0}%: da tenere d'occhio. || Cancellation rate of {0}%: worth watching. || Stornoquote von {0} %: beobachten. || Tasa de cancelación del {0} %: a vigilar.
+{0} commande(s) de la période ne sont pas encore encaissées. || {0} ordine/i del periodo non sono ancora stati incassati. || {0} order(s) in the period have not been collected yet. || {0} Bestellung(en) im Zeitraum sind noch nicht kassiert. || {0} pedido(s) del periodo aún no se han cobrado.
+Le {0} est le jour le plus actif ({1} commande(s)). || Il {0} è il giorno più attivo ({1} ordine/i). || {0} is the busiest day ({1} order(s)). || {0} ist der aktivste Tag ({1} Bestellung(en)). || El {0} es el día más activo ({1} pedido(s)).
+Moyenne des commandes par jour (zéros compris), corrigée par jour de semaine quand chaque jour a été observé au moins 2 fois ; répartition horaire et par produit selon l’historique. || Media degli ordini al giorno (zeri compresi), corretta per giorno della settimana quando ogni giorno è stato osservato almeno 2 volte; ripartizione oraria e per prodotto secondo lo storico. || Average orders per day (zeros included), adjusted by weekday once each day has been seen at least twice; hourly and per-product split based on history. || Durchschnittliche Bestellungen pro Tag (Nullen eingeschlossen), nach Wochentag korrigiert, sobald jeder Tag mindestens 2-mal beobachtet wurde; Aufteilung nach Stunde und Produkt laut Verlauf. || Media de pedidos por día (ceros incluidos), corregida por día de la semana cuando cada día se ha observado al menos 2 veces; reparto por hora y por producto según el historial.
+Pas assez d’historique pour une prévision (il faut au moins 3 jours et 3 commandes). || Storico insufficiente per una previsione (servono almeno 3 giorni e 3 ordini). || Not enough history for a forecast (at least 3 days and 3 orders are needed). || Zu wenig Verlauf für eine Prognose (mindestens 3 Tage und 3 Bestellungen nötig). || No hay historial suficiente para una previsión (se necesitan al menos 3 días y 3 pedidos).
+Fiabilité faible : historique très court, à prendre comme un ordre de grandeur. || Affidabilità bassa: storico molto breve, da considerare come ordine di grandezza. || Low reliability: very short history, take it as a ballpark figure. || Geringe Zuverlässigkeit: sehr kurzer Verlauf, nur als Größenordnung. || Fiabilidad baja: historial muy corto, tómalo como un orden de magnitud.
+Comportement inhabituel détecté || Comportamento insolito rilevato || Unusual activity detected || Ungewöhnliches Verhalten erkannt || Comportamiento inusual detectado
+Une alerte signale un écart par rapport à l’habitude. Elle ne désigne ni une fraude ni une erreur : à vérifier par l’équipe. || Un avviso segnala uno scostamento dall'abitudine. Non indica né una frode né un errore: da verificare con il team. || An alert flags a departure from the usual pattern. It points to neither fraud nor an error: the team should check it. || Eine Warnung zeigt eine Abweichung vom Üblichen. Sie bedeutet weder Betrug noch Fehler: vom Team zu prüfen. || Una alerta señala una desviación respecto a lo habitual. No indica fraude ni error: el equipo debe comprobarlo.
+Non suivi : le système ne gère pas de remboursements. || Non monitorato: il sistema non gestisce rimborsi. || Not tracked: the system doesn't handle refunds. || Nicht erfasst: Das System verwaltet keine Erstattungen. || No seguido: el sistema no gestiona reembolsos.
+Détection en attente de données : {0} jour(s) et {1} commande(s) de référence, il en faut au moins 14 jours et 20 commandes. || Rilevamento in attesa di dati: {0} giorno/i e {1} ordine/i di riferimento, ne servono almeno 14 giorni e 20 ordini. || Detection waiting for data: {0} day(s) and {1} reference order(s); at least 14 days and 20 orders are needed. || Erkennung wartet auf Daten: {0} Tag(e) und {1} Referenzbestellung(en), mindestens 14 Tage und 20 Bestellungen nötig. || Detección a la espera de datos: {0} día(s) y {1} pedido(s) de referencia; se necesitan al menos 14 días y 20 pedidos.
+Hausse inhabituelle des commandes aujourd’hui jusqu’à {0}h : {1} contre {2} en moyenne à la même heure. || Aumento insolito degli ordini oggi fino alle {0}: {1} contro {2} in media alla stessa ora. || Unusual rise in orders today up to {0}:00: {1} against {2} on average at the same time. || Ungewöhnlicher Anstieg der Bestellungen heute bis {0} Uhr: {1} statt {2} im Schnitt zur gleichen Zeit. || Aumento inusual de los pedidos hoy hasta las {0} h: {1} frente a {2} de media a la misma hora.
+Baisse inhabituelle des commandes aujourd’hui jusqu’à {0}h : {1} contre {2} en moyenne à la même heure. || Calo insolito degli ordini oggi fino alle {0}: {1} contro {2} in media alla stessa ora. || Unusual drop in orders today up to {0}:00: {1} against {2} on average at the same time. || Ungewöhnlicher Rückgang der Bestellungen heute bis {0} Uhr: {1} statt {2} im Schnitt zur gleichen Zeit. || Descenso inusual de los pedidos hoy hasta las {0} h: {1} frente a {2} de media a la misma hora.
+Hausse inhabituelle des chiffre d’affaires aujourd’hui jusqu’à {0}h : {1} contre {2} en moyenne à la même heure. || Aumento insolito del fatturato oggi fino alle {0}: {1} contro {2} in media alla stessa ora. || Unusual rise in revenue today up to {0}:00: {1} against {2} on average at the same time. || Ungewöhnlicher Umsatzanstieg heute bis {0} Uhr: {1} statt {2} im Schnitt zur gleichen Zeit. || Aumento inusual de la facturación hoy hasta las {0} h: {1} frente a {2} de media a la misma hora.
+Baisse inhabituelle des chiffre d’affaires aujourd’hui jusqu’à {0}h : {1} contre {2} en moyenne à la même heure. || Calo insolito del fatturato oggi fino alle {0}: {1} contro {2} in media alla stessa ora. || Unusual drop in revenue today up to {0}:00: {1} against {2} on average at the same time. || Ungewöhnlicher Umsatzrückgang heute bis {0} Uhr: {1} statt {2} im Schnitt zur gleichen Zeit. || Descenso inusual de la facturación hoy hasta las {0} h: {1} frente a {2} de media a la misma hora.
+Annulations inhabituelles aujourd’hui : {0} sur {1} commandes (habituellement {2} %). || Annullamenti insoliti oggi: {0} su {1} ordini (di solito {2}%). || Unusual cancellations today: {0} out of {1} orders (usually {2}%). || Ungewöhnliche Stornierungen heute: {0} von {1} Bestellungen (üblich {2} %). || Cancelaciones inusuales hoy: {0} de {1} pedidos (habitualmente {2} %).
+{0} : {1} vendu(s) aujourd’hui contre {2} par jour en moyenne. || {0}: {1} venduto/i oggi contro {2} al giorno in media. || {0}: {1} sold today against {2} per day on average. || {0}: heute {1} verkauft statt {2} pro Tag im Schnitt. || {0}: {1} vendido(s) hoy frente a {2} al día de media.
+Activité à une heure inhabituelle : {0} commande(s) vers {1}h, heure sans commande les 28 derniers jours. || Attività a un'ora insolita: {0} ordine/i verso le {1}, ora senza ordini negli ultimi 28 giorni. || Activity at an unusual time: {0} order(s) around {1}:00, a time with no orders in the last 28 days. || Aktivität zu ungewöhnlicher Zeit: {0} Bestellung(en) gegen {1} Uhr, eine Stunde ohne Bestellungen in den letzten 28 Tagen. || Actividad a una hora inusual: {0} pedido(s) hacia las {1} h, hora sin pedidos en los últimos 28 días.
+Mettre en avant {0} || Metti in evidenza {0} || Promote {0} || {0} hervorheben || Destacar {0}
+{0} : {1} vente(s) en 30 jours, contre {2} pour un produit médian. || {0}: {1} vendita/e in 30 giorni, contro {2} per un prodotto medio. || {0}: {1} sale(s) in 30 days, against {2} for a median product. || {0}: {1} Verkauf/Verkäufe in 30 Tagen, gegenüber {2} bei einem mittleren Produkt. || {0}: {1} venta(s) en 30 días, frente a {2} de un producto medio.
+Offre du {0} || Offerta del {0} || {0} offer || Angebot am {0} || Oferta del {0}
+Le {0} compte {1} commande(s) en moyenne, contre {2} sur la semaine. || Il {0} conta {1} ordine/i in media, contro {2} nella settimana. || {0} has {1} order(s) on average, against {2} across the week. || Am {0} gibt es im Schnitt {1} Bestellung(en), gegenüber {2} in der Woche. || El {0} tiene {1} pedido(s) de media, frente a {2} en la semana.
+Duo {0} + {1} || Duo {0} + {1} || Duo {0} + {1} || Duo {0} + {1} || Dúo {0} + {1}
+Commandés ensemble dans {0} commandes : une offre duo peut augmenter le panier moyen. || Ordinati insieme in {0} ordini: un'offerta duo può aumentare lo scontrino medio. || Ordered together in {0} orders: a duo offer could raise the average basket. || In {0} Bestellungen zusammen bestellt: Ein Duo-Angebot kann den Durchschnittsbon erhöhen. || Pedidos juntos en {0} pedidos: una oferta dúo puede aumentar el ticket medio.
+Aucune opportunité nette dans les données actuelles. || Nessuna opportunità chiara nei dati attuali. || No clear opportunity in the current data. || Keine klare Gelegenheit in den aktuellen Daten. || Ninguna oportunidad clara en los datos actuales.
+Pas assez de données : il faut au moins 10 commandes sur 30 jours pour proposer des promotions pertinentes. || Dati insufficienti: servono almeno 10 ordini in 30 giorni per proporre promozioni pertinenti. || Not enough data: at least 10 orders in 30 days are needed to suggest relevant promotions. || Nicht genug Daten: Für passende Aktionen sind mindestens 10 Bestellungen in 30 Tagen nötig. || Datos insuficientes: se necesitan al menos 10 pedidos en 30 días para proponer promociones pertinentes.
+Assez de données pour tester un modèle ML : à évaluer contre la méthode statistique avant activation. || Dati sufficienti per testare un modello ML: da valutare rispetto al metodo statistico prima dell'attivazione. || Enough data to test an ML model: to be evaluated against the statistical method before activation. || Genug Daten, um ein ML-Modell zu testen: vor der Aktivierung mit der statistischen Methode vergleichen. || Datos suficientes para probar un modelo de ML: a evaluar frente al método estadístico antes de activarlo.
+Machine learning non activé : {0} commande(s) sur {1} jour(s), il en faut au moins {2} sur {3} jours. || Machine learning non attivato: {0} ordine/i in {1} giorno/i, ne servono almeno {2} in {3} giorni. || Machine learning not active: {0} order(s) over {1} day(s); at least {2} over {3} days are needed. || Machine Learning nicht aktiv: {0} Bestellung(en) in {1} Tag(en), mindestens {2} in {3} Tagen nötig. || Machine learning no activado: {0} pedido(s) en {1} día(s); se necesitan al menos {2} en {3} días.
+statistiques et règles || statistiche e regole || statistics and rules || Statistik und Regeln || estadísticas y reglas
+règle existante || regola esistente || existing rule || bestehende Regel || regla existente
+module intelligent || modulo intelligente || smart module || intelligentes Modul || módulo inteligente
+hors annulations || annullamenti esclusi || excluding cancellations || ohne Stornierungen || sin cancelaciones
+par commande || per ordine || per order || pro Bestellung || por pedido
+des commandes || degli ordini || of orders || der Bestellungen || de los pedidos
+
+# ---- Assistant de gestion (réponses) ----
+Je ne sais répondre qu’aux questions sur les données du café. Exemples : || So rispondere solo a domande sui dati del bar. Esempi: || I can only answer questions about the café's data. Examples: || Ich beantworte nur Fragen zu den Daten des Cafés. Beispiele: || Solo sé responder preguntas sobre los datos de la cafetería. Ejemplos:
+Base de données Kebab (commandes réelles) || Database Kebab (ordini reali) || Kebab database (real orders) || SOUCOFFE-Datenbank (echte Bestellungen) || Base de datos Kebab (pedidos reales)
+Prévision pour {0} {1} : environ {2} commande(s) (entre {3} et {4}), pour ≈ {5}. Heure probablement la plus chargée : {6}h. || Previsione per {0} {1}: circa {2} ordine/i (tra {3} e {4}), per ≈ {5}. Ora probabilmente più affollata: {6}:00. || Forecast for {0} {1}: about {2} order(s) (between {3} and {4}), for ≈ {5}. Likely busiest hour: {6}:00. || Prognose für {0} {1}: etwa {2} Bestellung(en) (zwischen {3} und {4}), für ≈ {5}. Voraussichtlich stärkste Stunde: {6} Uhr. || Previsión para el {0} {1}: unos {2} pedido(s) (entre {3} y {4}), por ≈ {5}. Hora probablemente más concurrida: {6} h.
+Prévision pour {0} {1} : environ {2} commande(s) (entre {3} et {4}), pour ≈ {5}. || Previsione per {0} {1}: circa {2} ordine/i (tra {3} e {4}), per ≈ {5}. || Forecast for {0} {1}: about {2} order(s) (between {3} and {4}), for ≈ {5}. || Prognose für {0} {1}: etwa {2} Bestellung(en) (zwischen {3} und {4}), für ≈ {5}. || Previsión para el {0} {1}: unos {2} pedido(s) (entre {3} y {4}), por ≈ {5}.
+historique de {0} jour(s), {1} commande(s) || storico di {0} giorno/i, {1} ordine/i || {0} day(s) of history, {1} order(s) || Verlauf von {0} Tag(en), {1} Bestellung(en) || historial de {0} día(s), {1} pedido(s)
+{0} jour(s) de référence || {0} giorno/i di riferimento || {0} reference day(s) || {0} Referenztag(e) || {0} día(s) de referencia
+Aucun comportement inhabituel détecté aujourd’hui par rapport aux 28 derniers jours. || Nessun comportamento insolito rilevato oggi rispetto agli ultimi 28 giorni. || No unusual activity detected today compared with the last 28 days. || Heute kein ungewöhnliches Verhalten im Vergleich zu den letzten 28 Tagen erkannt. || No se ha detectado ningún comportamiento inusual hoy respecto a los últimos 28 días.
+aujourd'hui comparé aux 28 derniers jours || oggi rispetto agli ultimi 28 giorni || today compared with the last 28 days || heute im Vergleich zu den letzten 28 Tagen || hoy en comparación con los últimos 28 días
+Aucun article de stock n’est encore suivi. Ajoutez-en dans Intelligence → Smart Stock. || Nessun articolo di magazzino è ancora monitorato. Aggiungine in Intelligenza → Smart Stock. || No stock items are tracked yet. Add some in Intelligence → Smart Stock. || Noch keine Lagerartikel erfasst. Fügen Sie welche unter Intelligenz → Smart Stock hinzu. || Aún no se sigue ningún artículo de stock. Añádelos en Inteligencia → Smart Stock.
+Aucun article suivi n’est en risque de rupture. || Nessun articolo monitorato rischia di esaurirsi. || No tracked item is at risk of running out. || Kein erfasster Artikel droht auszugehen. || Ningún artículo seguido corre riesgo de agotarse.
+stock estimé maintenant || scorte stimate ora || estimated stock now || geschätzter Bestand jetzt || stock estimado ahora
+Aucune commande enregistrée {0}. || Nessun ordine registrato {0}. || No orders recorded {0}. || Keine Bestellungen erfasst ({0}). || Ningún pedido registrado {0}.
+Produits les plus vendus {0} : {1}. || Prodotti più venduti {0}: {1}. || Best-selling products {0}: {1}. || Meistverkaufte Produkte ({0}): {1}. || Productos más vendidos {0}: {1}.
+{0} produit(s) disponible(s) sans aucune vente {1} || {0} prodotto/i disponibile/i senza vendite {1} || {0} available product(s) with no sales {1} || {0} verfügbare(s) Produkt(e) ohne Verkauf ({1}) || {0} producto(s) disponible(s) sin ninguna venta {1}
+Parmi les produits vendus, les moins demandés : || Tra i prodotti venduti, i meno richiesti: || Among products sold, the least popular: || Unter den verkauften Produkten die am wenigsten gefragten: || Entre los productos vendidos, los menos pedidos:
+L’heure la plus chargée {0} est {1}h–{2}h avec {3} commande(s) sur {4}. || L'ora più affollata {0} è {1}–{2} con {3} ordine/i su {4}. || The busiest hour {0} is {1}:00–{2}:00 with {3} of {4} order(s). || Die stärkste Stunde ({0}) ist {1}–{2} Uhr mit {3} von {4} Bestellung(en). || La hora más concurrida {0} es de {1} h a {2} h con {3} de {4} pedido(s).
+Jour le plus actif {0} : {1} ({2} commande(s)). || Giorno più attivo {0}: {1} ({2} ordine/i). || Busiest day {0}: {1} ({2} order(s)). || Aktivster Tag ({0}): {1} ({2} Bestellung(en)). || Día más activo {0}: {1} ({2} pedido(s)).
+Cette semaine : {0} pour {1} commande(s). La semaine dernière : {2} pour {3} commande(s). Évolution : {4}. || Questa settimana: {0} per {1} ordine/i. La settimana scorsa: {2} per {3} ordine/i. Andamento: {4}. || This week: {0} for {1} order(s). Last week: {2} for {3} order(s). Change: {4}. || Diese Woche: {0} für {1} Bestellung(en). Letzte Woche: {2} für {3} Bestellung(en). Entwicklung: {4}. || Esta semana: {0} por {1} pedido(s). La semana pasada: {2} por {3} pedido(s). Evolución: {4}.
+non comparable (aucune vente la semaine dernière) || non confrontabile (nessuna vendita la settimana scorsa) || not comparable (no sales last week) || nicht vergleichbar (keine Verkäufe letzte Woche) || no comparable (ninguna venta la semana pasada)
+Ventes par jour {0} : {1}. || Vendite per giorno {0}: {1}. || Sales per day {0}: {1}. || Umsatz pro Tag ({0}): {1}. || Ventas por día {0}: {1}.
+Panier moyen {0} : {1} ({2} commande(s)). || Scontrino medio {0}: {1} ({2} ordine/i). || Average basket {0}: {1} ({2} order(s)). || Durchschnittsbon ({0}): {1} ({2} Bestellung(en)). || Ticket medio {0}: {1} ({2} pedido(s)).
+{0} commande(s) annulée(s) {1}, soit {2} % des commandes. || {0} ordine/i annullato/i {1}, pari al {2}% degli ordini. || {0} order(s) cancelled {1}, i.e. {2}% of orders. || {0} Bestellung(en) storniert ({1}), also {2} % der Bestellungen. || {0} pedido(s) cancelado(s) {1}, es decir, el {2} % de los pedidos.
+Encaissé {0} : espèces {1} ({2}), carte {3} ({4}), en ligne {5} ({6}). Non encaissées : {7} commande(s). || Incassato {0}: contanti {1} ({2}), carta {3} ({4}), online {5} ({6}). Non incassati: {7} ordine/i. || Collected {0}: cash {1} ({2}), card {3} ({4}), online {5} ({6}). Not collected: {7} order(s). || Kassiert ({0}): bar {1} ({2}), Karte {3} ({4}), online {5} ({6}). Nicht kassiert: {7} Bestellung(en). || Cobrado {0}: efectivo {1} ({2}), tarjeta {3} ({4}), en línea {5} ({6}). Sin cobrar: {7} pedido(s).
+{0} : {1} commande(s) sur place et {2} avec au moins un article à emporter ({3} %). || {0}: {1} ordine/i al tavolo e {2} con almeno un articolo da asporto ({3}%). || {0}: {1} dine-in order(s) and {2} with at least one takeaway item ({3}%). || {0}: {1} Bestellung(en) vor Ort und {2} mit mindestens einem Artikel zum Mitnehmen ({3} %). || {0}: {1} pedido(s) en el local y {2} con al menos un artículo para llevar ({3} %).
+Temps de préparation non mesurable {0} : aucune commande n’est passée à « Prête » en moins de 90 minutes (les durées plus longues sont ignorées car elles correspondent à des commandes oubliées). || Tempo di preparazione non misurabile {0}: nessun ordine è passato a «Pronto» in meno di 90 minuti (le durate più lunghe sono ignorate perché corrispondono a ordini dimenticati). || Preparation time can't be measured {0}: no order reached "Ready" within 90 minutes (longer durations are ignored as they are forgotten orders). || Zubereitungszeit nicht messbar ({0}): Keine Bestellung wurde in unter 90 Minuten „Fertig“ (längere Dauern werden als vergessene Bestellungen ignoriert). || Tiempo de preparación no medible {0}: ningún pedido pasó a «Listo» en menos de 90 minutos (las duraciones más largas se ignoran porque son pedidos olvidados).
+Temps moyen de préparation {0} : {1} min (sur {2} commande(s)). || Tempo medio di preparazione {0}: {1} min (su {2} ordine/i). || Average preparation time {0}: {1} min (over {2} order(s)). || Durchschnittliche Zubereitungszeit ({0}): {1} Min. (aus {2} Bestellung(en)). || Tiempo medio de preparación {0}: {1} min (sobre {2} pedido(s)).
+Ventes par catégorie {0} : {1}. || Vendite per categoria {0}: {1}. || Sales by category {0}: {1}. || Umsatz nach Kategorie ({0}): {1}. || Ventas por categoría {0}: {1}.
+{0} commande(s) {1} (hors annulations), {2} annulée(s). || {0} ordine/i {1} (annullamenti esclusi), {2} annullato/i. || {0} order(s) {1} (excluding cancellations), {2} cancelled. || {0} Bestellung(en) ({1}, ohne Stornierungen), {2} storniert. || {0} pedido(s) {1} (sin cancelaciones), {2} cancelado(s).
+Ventes {0} : {1} pour {2} commande(s), dont {3} déjà encaissés. || Vendite {0}: {1} per {2} ordine/i, di cui {3} già incassati. || Sales {0}: {1} for {2} order(s), of which {3} already collected. || Umsatz ({0}): {1} für {2} Bestellung(en), davon {3} bereits kassiert. || Ventas {0}: {1} por {2} pedido(s), de los cuales {3} ya cobrados.
+
+# ---- Historique : codes techniques et détails ----
+auth.login || Accesso || Sign-in || Anmeldung || Acceso
+auth.login_failed || Accesso fallito || Failed sign-in || Fehlgeschlagene Anmeldung || Acceso fallido
+auth.login_blocked || Accesso bloccato || Sign-in blocked || Anmeldung gesperrt || Acceso bloqueado
+auth.logout || Disconnessione || Sign-out || Abmeldung || Cierre de sesión
+client.register || Cliente identificato || Customer signed in || Gast angemeldet || Cliente identificado
+client.table_change || Cambio di tavolo || Table change || Tischwechsel || Cambio de mesa
+order.create || Ordine creato || Order created || Bestellung erstellt || Pedido creado
+order.status || Stato dell'ordine || Order status || Bestellstatus || Estado del pedido
+order.payment || Pagamento || Payment || Zahlung || Pago
+order.cancel || Ordine annullato || Order cancelled || Bestellung storniert || Pedido cancelado
+product.create || Prodotto creato || Product created || Produkt erstellt || Producto creado
+product.update || Prodotto modificato || Product updated || Produkt geändert || Producto modificado
+product.price || Prezzo modificato || Price changed || Preis geändert || Precio modificado
+product.delete || Prodotto eliminato || Product deleted || Produkt gelöscht || Producto eliminado
+stock.item_create || Articolo di magazzino creato || Stock item created || Lagerartikel erstellt || Artículo de stock creado
+stock.item_update || Articolo di magazzino modificato || Stock item updated || Lagerartikel geändert || Artículo de stock modificado
+stock.item_archive || Articolo di magazzino archiviato || Stock item archived || Lagerartikel archiviert || Artículo de stock archivado
+stock.delivery || Consegna registrata || Delivery recorded || Lieferung erfasst || Entrega registrada
+stock.count || Inventario registrato || Stock count recorded || Inventur erfasst || Inventario registrado
+stock.recipe || Ricetta modificata || Recipe updated || Rezept geändert || Receta modificada
+presence.settings || Impostazioni monitoraggio || Monitoring settings || Überwachungseinstellungen || Ajustes de supervisión
+ai.settings || Impostazioni intelligenza || Intelligence settings || Intelligenz-Einstellungen || Ajustes de inteligencia
+staff #{0} || personale #{0} || staff #{0} || Mitarbeiter #{0} || empleado #{0}
+client #{0} || cliente #{0} || customer #{0} || Gast #{0} || cliente #{0}
+order #{0} || ordine #{0} || order #{0} || Bestellung #{0} || pedido #{0}
+product #{0} || prodotto #{0} || product #{0} || Produkt #{0} || producto #{0}
+table #{0} || tavolo #{0} || table #{0} || Tisch #{0} || mesa #{0}
+promotion #{0} || promozione #{0} || promotion #{0} || Aktion #{0} || promoción #{0}
+stock_item #{0} || articolo #{0} || stock item #{0} || Lagerartikel #{0} || artículo #{0}
+~personnes || persone || guests || Personen || personas
+fidelite || fedeltà || loyalty || Treue || fidelidad
+~remise || sconto || discount || Rabatt || descuento
+pointsUtilises || punti usati || points used || eingelöste Punkte || puntos usados
+reason || motivo || reason || Grund || motivo
+compte verrouillé || account bloccato || account locked || Konto gesperrt || cuenta bloqueada
+~avant || prima || before || vorher || antes
+~apres || dopo || after || nachher || después
+categorie || categoria || category || Kategorie || categoría
+
+# ---- Divers relevés par le robot ----
+Retirer cette table du plan || Rimuovi questo tavolo dalla pianta || Remove this table from the plan || Diesen Tisch aus dem Plan entfernen || Quitar esta mesa del plano
+Page précédente || Pagina precedente || Previous page || Vorherige Seite || Página anterior
+Page suivante || Pagina successiva || Next page || Nächste Seite || Página siguiente
+Réponse au client || Risposta al cliente || Reply to the customer || Antwort an den Gast || Respuesta al cliente
+Réponse au client (facultatif) || Risposta al cliente (facoltativa) || Reply to the customer (optional) || Antwort an den Gast (optional) || Respuesta al cliente (opcional)
+Motif (obligatoire) || Motivo (obbligatorio) || Reason (required) || Grund (Pflicht) || Motivo (obligatorio)
+± points || ± punti || ± points || ± Punkte || ± puntos
+8 caractères minimum || Minimo 8 caratteri || At least 8 characters || Mindestens 8 Zeichen || Mínimo 8 caracteres
+Ex : Happy hour || Es.: Happy hour || E.g. Happy hour || Z. B. Happy Hour || P. ej.: Happy hour
+Ex : Karim B. || Es.: Karim B. || E.g. Karim B. || Z. B. Karim B. || P. ej.: Karim B.
+ex : karim (minuscules, chiffres, . _ -) || es.: karim (minuscole, cifre, . _ -) || e.g. karim (lowercase, digits, . _ -) || z. B. karim (Kleinbuchstaben, Ziffern, . _ -) || p. ej.: karim (minúsculas, cifras, . _ -)
+ex : karim || es.: karim || e.g. karim || z. B. karim || p. ej.: karim
+facultatif || facoltativo || optional || optional || opcional
+Rechercher (n°, table, client) || Cerca (n°, tavolo, cliente) || Search (no., table, customer) || Suchen (Nr., Tisch, Gast) || Buscar (n.º, mesa, cliente)
+Ex. Kebab poulet crudités || Es. Kebab di pollo con verdure || E.g. Chicken kebab with salad || Z. B. Hähnchen-Kebab mit Salat || Ej. Kebab de pollo con verduras
+Continuer || Continua || Continue || Weiter || Continuar
+@{0} min || {0} min || {0} min || {0} Min. || {0} min
+
+# ---- Compléments ----
+~À || A || To || Bis || A
+~De || Da || From || Von || De
+sur || su || of || von || de
+staff || personale || staff || Mitarbeiter || personal
+username || nome utente || username || Benutzername || usuario
+Charge || Carico || Load || Auslastung || Carga
+@{0} mesure(s) || {0} misurazione/i || {0} measurement(s) || {0} Messung(en) || {0} medición(es)
+lun || lun || Mon || Mo || lun
+mar || mar || Tue || Di || mar
+mer || mer || Wed || Mi || mié
+jeu || gio || Thu || Do || jue
+ven || ven || Fri || Fr || vie
+sam || sab || Sat || Sa || sáb
+dim || dom || Sun || So || dom

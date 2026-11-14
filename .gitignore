@@ -1,0 +1,25 @@
+# Secrets et fichiers locaux
+.env
+api/logs/
+logs/
+*.log
+launch.json
+.vscode/
+
+# Données d'exécution (infos du restaurant saisies dans l'admin)
+api/data/*.json
+
+# Sauvegardes : copies de la base avec des données clients — jamais publiées
+_backups/
+soucoffe_backups/
+
+# Archives et documents personnels
+*.zip
+*.pdf
+*.docx
+
+# Photos et vidéos d'origine à la racine (les versions utilisées sont dans images/ et videos/)
+/*.mp4
+/*.jpg
+/*.jpeg
+/*.png

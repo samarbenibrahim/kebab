@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+
+<html data-role="client" class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Kebab - Ma commande</title>
+<script src="../js/vendor/tailwind-3.4.17-forms-cq.js"></script>
+<link href="../css/soucoffe.css" rel="stylesheet"/>
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/icons.js" defer=""></script>
+<script src="../js/cart.js" defer=""></script>
+<script src="../js/takeaway.js" defer=""></script>
+<script src="../js/cart-smart.js" defer=""></script>
+<script src="../js/coffee-theme.js" defer=""></script>
+<script src="../js/profile.js" defer=""></script>
+<script src="../js/presence.js" defer=""></script>
+<script src="../js/products.js" defer=""></script>
+<script src="../js/recommendations.js" defer=""></script>
+<script src="../js/smart-client.js" defer=""></script>
+<script src="../js/group-order.js" defer=""></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#f4ba96",
+                      "tertiary": "#3f1520",
+                      "surface-variant": "#ebe1d3",
+                      "tertiary-fixed-dim": "#e9bda7",
+                      "on-secondary-fixed": "#251a07",
+                      "on-primary-fixed": "#311300",
+                      "on-primary-container": "#e9b08c",
+                      "secondary-container": "#f6dfc0",
+                      "on-primary": "#ffffff",
+                      "outline-variant": "#d5c3b9",
+                      "surface-tint": "#805437",
+                      "on-surface-variant": "#51443d",
+                      "on-secondary-container": "#726249",
+                      "tertiary-fixed": "#ffdbca",
+                      "on-secondary-fixed-variant": "#53452e",
+                      "on-tertiary-fixed-variant": "#5e402f",
+                      "surface-container-high": "#f1e7d9",
+                      "surface-container": "#f7edde",
+                      "surface": "#fff8f2",
+                      "inverse-primary": "#f4ba96",
+                      "primary-fixed": "#ffdbc7",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-container": "#dfb49e",
+                      "secondary": "#6c5c44",
+                      "on-tertiary-fixed": "#2d1608",
+                      "surface-container-highest": "#ebe1d3",
+                      "primary-container": "#571d29",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface": "#1f1b13",
+                      "error": "#ba1a1a",
+                      "inverse-on-surface": "#f9efe1",
+                      "secondary-fixed": "#f6dfc0",
+                      "surface-container-low": "#fcf2e4",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#644534",
+                      "secondary-fixed-dim": "#d9c4a5",
+                      "inverse-surface": "#353027",
+                      "surface-dim": "#e2d9cb",
+                      "primary": "#571d29",
+                      "on-secondary": "#ffffff",
+                      "outline": "#83746c",
+                      "on-background": "#1f1b13",
+                      "surface-bright": "#fff8f2",
+                      "on-primary-fixed-variant": "#653d22",
+                      "on-error": "#ffffff",
+                      "background": "#fff8f2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "sm": "16px",
+                      "margin-mobile": "16px",
+                      "md": "24px",
+                      "xl": "80px",
+                      "xs": "8px",
+                      "lg": "48px",
+                      "gutter": "20px",
+                      "base": "4px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Arial"],
+                      "title-lg": ["Arial"],
+                      "display-lg-mobile": ["Arial"],
+                      "label-md": ["Arial"],
+                      "headline-md": ["Arial"],
+                      "body-md": ["Arial"],
+                      "headline-sm": ["Arial"],
+                      "body-lg": ["Arial"]
+              },
+              "fontSize": {
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<link rel="manifest" href="../manifest.json"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="Kebab"/>
+<meta name="theme-color" content="#242120"/>
+<link rel="icon" type="image/png" href="../images/brand/favicon-32.png?v=kebab2"/>
+<link rel="apple-touch-icon" href="../images/brand/apple-touch-icon.png?v=kebab2"/>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar (Web) -->
+<header class="hidden md:flex bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline justify-between items-center w-full px-margin-desktop py-4 sticky top-0 z-40">
+<div class="flex items-center gap-8">
+<h1><img alt="Kebab" class="sc-brand-logo" src="../images/brand/logo.png?v=kebab2"/></h1>
+<nav class="flex items-center gap-6">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="../home/home.html">Accueil</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="../menu/index.html">Menu</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md sc-nav-kebab" href="../menu-kebab/index.html">Kebab</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="../02-Menu-Principal/code.html?view=favorites">Favoris</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative">
+<input onkeydown="headerSearch(this.value, event)" class="bg-surface-container-high border-none rounded-full py-2 pl-10 pr-4 font-body-md text-sm text-on-surface focus:ring-2 focus:ring-primary w-64" placeholder="Rechercher au menu…" type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant">search</span>
+</div>
+<div class="flex items-center gap-4">
+<button data-theme-toggle="" onclick="toggleTheme()" type="button" class="text-on-surface-variant hover:text-primary transition-colors text-xl leading-none" aria-label="Changer de thème"><span class="material-symbols-outlined">dark_mode</span></button>
+<button onclick="window.location.href='../05-Suivi-Commande/code.html'" class="text-on-surface-variant hover:text-primary transition-colors flex flex-col items-center">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-label-md text-xs mt-1">Ma commande</span>
+</button>
+<button onclick="window.location.href='../04-Panier/code.html'" class="relative text-on-surface-variant hover:text-primary transition-colors flex flex-col items-center">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-label-md text-xs mt-1">Panier</span>
+<span data-cart-badge="" class="absolute -top-1 -right-2 bg-primary-container text-on-primary-container text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
+</button>
+</div>
+<div class="flex items-center gap-3 border-l border-outline-variant pl-6">
+<button type="button" data-profile-toggle="" class="w-10 h-10 rounded-full flex items-center justify-center text-primary text-[40px] shrink-0 hover:opacity-80 transition-opacity" aria-label="Mon profil" title="Mon profil"><span class="material-symbols-outlined" data-weight="fill">account_circle</span></button>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Table <span data-table-number="">12</span></span>
+<span class="font-body-md text-xs text-on-surface-variant" data-guest-name="">Souad</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Mobile Header (simulated) -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile py-4 bg-surface sticky top-0 z-40 shadow-sm">
+<div class="flex flex-col">
+<h1><img alt="Kebab" class="sc-brand-logo-mobile" src="../images/brand/logo.png?v=kebab2"/></h1>
+<span class="font-label-md text-on-surface-variant text-xs">Table <span data-table-number="">12</span> <span class="material-symbols-outlined text-[6px] mx-1 align-middle" data-weight="fill">circle</span> <span data-guest-name="">Souad</span></span>
+</div>
+<div class="flex items-center gap-4">
+<button type="button" data-profile-toggle="" class="text-primary text-2xl leading-none inline-flex items-center justify-center min-w-[40px] min-h-[40px]" aria-label="Mon profil" title="Mon profil"><span class="material-symbols-outlined">account_circle</span></button>
+<button data-theme-toggle="" onclick="toggleTheme()" type="button" class="text-on-surface-variant text-xl leading-none inline-flex items-center justify-center min-w-[40px] min-h-[40px]" aria-label="Changer de thème"><span class="material-symbols-outlined">dark_mode</span></button>
+<button onclick="focusSearch()" aria-label="Rechercher" class="text-on-surface-variant inline-flex items-center justify-center min-w-[40px] min-h-[40px]">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button onclick="window.location.href='../04-Panier/code.html'" class="relative text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span data-cart-badge="" class="absolute -top-1 -right-1 bg-primary-container text-on-primary-container text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
+</button>
+</div>
+</header>
+<!-- Mobile Search Bar -->
+<div class="md:hidden px-margin-mobile pt-2 pb-1 bg-surface">
+<div class="relative">
+<input onkeydown="headerSearch(this.value, event)" class="w-full bg-surface-container-high border-none rounded-full py-2 pl-10 pr-4 font-body-md text-sm text-on-surface focus:ring-2 focus:ring-primary" placeholder="Rechercher..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+</div>
+</div>
+<!-- Main Content Area -->
+<main class="flex-grow w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-lg pb-32 md:pb-lg flex flex-col lg:flex-row gap-xl">
+<!-- Cart Items Column -->
+<div class="flex-1 min-w-0 flex flex-col gap-md">
+<!-- Page Header -->
+<div class="flex flex-col gap-xs mb-sm">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary">Ma commande</h1>
+<p class="sc-cart-meta font-body-md">
+<span class="sc-meta-chip sc-meta-table"><span class="material-symbols-outlined">table_restaurant</span> Table <span id="cart-table-number" data-table-number="">12</span>
+<button id="table-edit-btn" onclick="openProfile()" type="button" class="text-[11px] opacity-50 hover:opacity-100 transition-opacity inline-flex items-center justify-center min-w-[40px] min-h-[40px]" title="Changer de table (demande à l'administration)" aria-label="Changer de table (demande à l'administration)"><span class="material-symbols-outlined text-base">edit</span></button></span>
+<span class="sc-meta-chip"><span class="material-symbols-outlined">person</span> <span data-guest-name="">Souad</span></span>
+<span class="sc-meta-chip"><span class="material-symbols-outlined">groups</span> <span data-party-size="">1</span> pers.</span>
+</p>
+</div>
+<!-- Cart List (rendered dynamically from the shared cart) -->
+<div class="flex flex-col gap-sm">
+<div id="cart-items" class="flex flex-col gap-sm"></div>
+<div id="cart-empty" class="hidden sc-empty-state">
+<div class="sc-empty-icon"><span class="material-symbols-outlined">shopping_cart</span></div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Votre panier est vide</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Ajoutez quelques articles depuis le menu pour commencer votre commande.</p>
+<a href="../menu/index.html" class="mt-2 inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:text-tertiary transition-colors">Parcourir le menu <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+<div id="cart-empty-extras" class="hidden sc-empty-extras"></div>
+<!-- Add Note Button -->
+<button id="order-note-toggle" onclick="toggleOrderNote()" type="button" class="flex items-center gap-2 text-primary font-label-md text-label-md py-sm hover:text-tertiary transition-colors w-fit">
+<span class="material-symbols-outlined text-[20px]">edit_note</span> <span id="order-note-toggle-label">Ajouter une note à la commande</span>
+                </button>
+<div id="order-note-box" class="hidden">
+<textarea id="order-note" rows="2" maxlength="255" oninput="Cart.setOrderNote(this.value)" placeholder="Une précision pour toute la commande ? (ex : allergie, table près de la fenêtre)" class="w-full bg-surface-container rounded-lg px-3 py-2 font-body-md text-sm text-on-surface placeholder:text-outline/70 border border-transparent focus:border-primary focus:bg-surface-container-lowest focus:ring-0 focus:outline-none transition-colors"></textarea>
+</div>
+</div>
+<div id="cart-recommendations" class="hidden bg-surface-container-lowest rounded-xl p-md shadow-[0_2px_10px_rgba(62,36,21,0.06)] border border-surface-container-high"></div>
+</div>
+<!-- Summary Column -->
+<div class="w-full lg:w-[360px] shrink-0 flex flex-col gap-md min-w-0">
+<!-- Panneau intelligent (js/cart-smart.js) -->
+<section id="cart-smart" class="hidden sc-smart" aria-label="Suggestions pour votre panier"></section>
+<div class="sc-receipt bg-surface-container-lowest rounded-xl p-md shadow-[0_2px_10px_rgba(62,36,21,0.06)] border border-surface-container-high sticky top-24">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-md border-b border-surface-variant pb-xs">Résumé</h2>
+<div class="flex flex-col gap-xs mb-md">
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">Sous-total</span>
+<span id="cart-subtotal" class="font-body-md text-body-md text-on-surface">0,00 €</span>
+</div>
+<div id="cart-promo-row" class="hidden flex justify-between items-center text-tertiary">
+<span id="cart-promo-label" class="font-body-md text-body-md flex items-center gap-1"></span>
+<span id="cart-promo-amount" class="font-body-md text-body-md"></span>
+</div>
+<div id="cart-loyalty-row" class="hidden flex justify-between items-center text-tertiary">
+<span id="cart-loyalty-label" class="font-body-md text-body-md flex items-center gap-1"></span>
+<span id="cart-loyalty-amount" class="font-body-md text-body-md"></span>
+</div>
+</div>
+<div class="border-t border-surface-variant pt-sm mb-lg">
+<div class="flex justify-between items-center">
+<span class="font-title-lg text-title-lg text-primary">Total</span>
+<span id="cart-total" class="font-display-lg-mobile text-display-lg-mobile text-primary">0,00 €</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant text-right mt-1 opacity-70">TTC</p>
+</div>
+<div id="cart-loyalty-box" class="hidden mb-md p-sm rounded-lg bg-surface-container space-y-2">
+<div class="font-label-md text-label-md text-on-surface flex items-center gap-2"><span class="material-symbols-outlined">loyalty</span> <span id="cart-loyalty-title"></span></div>
+<label class="block font-label-md text-xs text-on-surface-variant" for="cart-redeem">Utiliser mes points sur cette commande</label>
+<select id="cart-redeem" onchange="setRedeem(this.value)" class="w-full bg-surface-container-high rounded-lg px-3 py-2 text-sm text-on-surface border border-transparent focus:border-primary focus:ring-0 focus:outline-none"></select>
+<p id="cart-earn" class="text-xs text-on-surface-variant"></p>
+</div>
+<p id="cart-eta" class="hidden mb-md font-label-md text-label-md text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined">schedule</span> <span id="cart-eta-text"></span></p>
+<button id="confirm-order-btn" onclick="confirmOrder()" class="w-full bg-primary-container text-on-primary-container font-label-md text-label-md py-4 rounded-lg hover:bg-tertiary transition-all shadow-md active:scale-[0.98] flex items-center justify-center gap-xs disabled:opacity-50 disabled:cursor-not-allowed">
+                    Confirmer ma commande <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<p id="order-error" role="alert" class="hidden text-error font-body-md text-sm mt-3 whitespace-pre-line"></p>
+</div>
+<div class="bg-surface-container rounded-xl p-sm border border-outline-variant flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">info</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Le paiement s'effectuera à la caisse ou via l'application après confirmation.</p>
+</div>
+<div>
+<button onclick="callWaiter(this)" class="w-full bg-transparent border-[1.5px] border-outline-variant text-on-surface font-label-md text-label-md py-3 rounded-lg hover:bg-surface-container transition-colors disabled:opacity-60 inline-flex items-center justify-center gap-2"><span class="material-symbols-outlined">room_service</span> Appeler le serveur</button>
+<p id="waiter-call-msg" class="hidden text-xs mt-2 text-center"></p>
+</div>
+</div>
+</main>
+<!-- Barre de commande collante (téléphone) -->
+<div id="cart-mobile-bar" class="sc-cartbar" aria-label="Commander">
+<div><span data-bar-count>0 article</span><strong data-bar-total>0,00 €</strong></div>
+<button type="button" onclick="cartBarConfirm()">Commander <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+<!-- Annuler une suppression -->
+<div id="cart-undo" class="sc-undo" role="status" aria-live="polite"><span data-undo-text></span><button type="button" onclick="undoRemove()">Annuler</button></div>
+<!-- BottomNavBar (Visible on Mobile, Hidden on Desktop) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 shadow-[0_-10px_30px_rgba(62,36,21,0.08)] bg-surface">
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all rounded-xl w-16" href="../home/home.html">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label-md text-label-md text-[10px] tracking-normal">Accueil</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all rounded-xl w-16" href="../menu/index.html">
+<span class="material-symbols-outlined mb-1">restaurant_menu</span>
+<span class="font-label-md text-label-md text-[10px] tracking-normal">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all rounded-xl w-16" href="../02-Menu-Principal/code.html?view=favorites">
+<span class="material-symbols-outlined mb-1">favorite</span>
+<span class="font-label-md text-label-md text-[10px] tracking-normal">Favoris</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl p-2 transition-all w-16 shadow-sm" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+<span class="font-label-md text-label-md text-[10px] tracking-normal">Panier</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all rounded-xl w-16" href="../05-Suivi-Commande/code.html">
+<span class="material-symbols-outlined mb-1">receipt_long</span>
+<span class="font-label-md text-label-md text-[10px] tracking-normal">Commande</span>
+</a>
+</nav>
+<!-- Dynamic cart: renders Cart.get(), wires qty/remove, computes totals -->
+<script>
+    (function () {
+        function fmt(n) {
+            return n.toFixed(2).replace('.', ',') + ' €';
+        }
+
+        // item.note is free-text typed by the customer (unlike every other string on
+        // this page, which comes from our own product data) — it must be escaped
+        // before going back into innerHTML/attribute values.
+        function escapeHtml(str) {
+            return String(str || '').replace(/[&<>"]/g, function (c) {
+                return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+            });
+        }
+
+        // Pastilles d'options : lues dans l'identifiant de ligne (« slug|opt|opt »),
+        // plus fiable que le nom (les rubriques du petit-déjeuner contiennent des virgules).
+        function optionChips(item) {
+            return String(item.id).split('|').slice(1).map(function (o) {
+                var label = o.replace(/\s*:\s*/, ' · ');
+                var cls = o === 'Gobelet à emporter' ? ' is-takeaway' : o.indexOf('Tasse en verre') === 0 ? ' is-glass' : '';
+                return '<span class="sc-chip' + cls + '">' + escapeHtml(label) + '</span>';
+            }).join('');
+        }
+        function baseName(item) {
+            var p = Cart.productFor(item);
+            return p ? p.name : String(item.name || '').replace(/\s*\(.*\)\s*$/, '');
+        }
+        function itemCard(item) {
+            var safeId = item.id.replace(/'/g, "\\'");
+            var imgSrc = Cart.imageFor(item);
+            var p = Cart.productFor(item);
+            var style = p && window.CATEGORY_STYLE ? (CATEGORY_STYLE[p.category] || CATEGORY_STYLE['default']) : null;
+            var media = imgSrc
+                ? '<img alt="' + escapeHtml(baseName(item)) + '" src="' + escapeHtml(imgSrc) + '" loading="lazy"/>'
+                : '<span class="sc-citem-icon"' + (style ? ' style="background:' + style.gradient + '"' : '') + '>' + (p && window.productIconHtml ? window.productIconHtml(p) : window.iconHtml('coffee')) + '</span>';
+            var editable = p && window.productOptionsFor && (function (o) { return !!(o.service || o.sizes || (o.levels && o.levels.length) || (o.extras && o.extras.length) || o.groups); })(window.productOptionsFor(p));
+            var editHref = '../02-Menu-Principal/code.html?open=' + encodeURIComponent(p ? p.id : '') + '&edit=' + encodeURIComponent(item.id);
+            var chips = optionChips(item);
+            return '' +
+                '<article class="sc-citem" data-id="' + escapeHtml(item.id) + '">' +
+                '<div class="sc-citem-media">' + media + '</div>' +
+                '<div class="sc-citem-body">' +
+                '<div class="sc-citem-top">' +
+                '<div class="min-w-0"><h3 class="sc-citem-name">' + escapeHtml(baseName(item)) + '</h3>' +
+                '<p class="sc-citem-unit">' + fmt(item.price) + ' l’unité</p></div>' +
+                '<button type="button" aria-label="Retirer ' + escapeHtml(baseName(item)) + '" onclick="removeCartItem(\'' + safeId + '\')" class="sc-citem-remove"><span class="material-symbols-outlined">close</span></button>' +
+                '</div>' +
+                (chips ? '<div class="sc-citem-chips">' + chips + '</div>' : '') +
+                (item.issue === 'reconfigure'
+                    ? '<p class="text-error text-xs mt-1">À reconfigurer : retirez cet article puis ajoutez-le de nouveau depuis le menu.</p>'
+                    : item.issue === 'unavailable_online'
+                        ? '<p class="text-error text-xs mt-1">' + (window.SOUCOFFE_CATALOG_SOURCE === 'local'
+                            ? 'Catalogue en ligne indisponible : cet article ne peut pas être vérifié pour le moment.'
+                            : "Non disponible à la commande en ligne : retirez cet article.") + '</p>'
+                        : '') +
+                '<input type="text" value="' + escapeHtml(item.note) + '" oninput="Cart.setNote(\'' + safeId + '\', this.value)" placeholder="Un commentaire pour cet article ? (ex : sans sucre)" aria-label="Commentaire pour ' + escapeHtml(baseName(item)) + '" class="sc-citem-note"/>' +
+                '<div class="sc-citem-foot">' +
+                '<div class="sc-stepper" role="group" aria-label="Quantité">' +
+                '<button type="button" aria-label="Retirer un" onclick="changeCartQty(\'' + safeId + '\', ' + (item.qty - 1) + ')"><span class="material-symbols-outlined">' + (item.qty > 1 ? 'remove' : 'delete') + '</span></button>' +
+                '<span aria-live="polite">' + item.qty + '</span>' +
+                '<button type="button" aria-label="Ajouter un" onclick="changeCartQty(\'' + safeId + '\', ' + (item.qty + 1) + ')"><span class="material-symbols-outlined">add</span></button>' +
+                '</div>' +
+                (editable ? '<a class="sc-citem-edit" href="' + editHref + '"><span class="material-symbols-outlined">edit</span>Modifier</a>' : '') +
+                '<div class="text-right sc-citem-total"><div class="font-title-lg text-title-lg text-primary">' + fmt(item.qty * item.price) + '</div></div>' +
+                '</div></div></article>';
+        }
+        function render() {
+            var items = Cart.get();
+            var list = document.getElementById('cart-items');
+            var empty = document.getElementById('cart-empty');
+            var confirmBtn = document.getElementById('confirm-order-btn');
+            if (!list) return;
+
+            if (items.length === 0) {
+                list.innerHTML = '';
+                if (empty) empty.classList.remove('hidden');
+                if (confirmBtn) confirmBtn.disabled = true;
+            } else {
+                list.innerHTML = items.map(itemCard).join('');
+                if (empty) empty.classList.add('hidden');
+                if (confirmBtn) confirmBtn.disabled = false;
+                if (window.renderIcons) window.renderIcons();
+            }
+
+            var subtotal = document.getElementById('cart-subtotal');
+            var total = document.getElementById('cart-total');
+            var t = Cart.total();
+            if (subtotal) subtotal.textContent = fmt(t);
+            if (total) total.textContent = fmt(t);
+            window.__cartPreviewTotal = null;
+            refreshPreview();
+            if (window.renderCartSmart) window.renderCartSmart(items, t);
+            updateMobileBar(items.length ? t : null);
+            renderEmptyExtras(items.length === 0);
+
+            var recEl = document.getElementById('cart-recommendations');
+            if (recEl && window.SoucoffeRecommendations) {
+                var recLabel = window.SoucoffeRecommendations.hasCoOccurrenceDataForCart(items)
+                    ? window.iconHtml('local_fire_department') + ' Souvent commandé avec' : window.iconHtml('auto_awesome') + ' Vous pourriez aussi aimer';
+                window.SoucoffeRecommendations.renderRail(recEl, window.SoucoffeRecommendations.getForCart(items, 4), recLabel);
+            }
+        }
+
+        // ---- Aperçu calculé par le serveur : promotion, points de fidélité, total, attente ----
+        var previewTimer = null;
+        var previewSeq = 0;
+        function fmt3(v) { return (parseFloat(v) || 0).toFixed(2).replace('.', ',') + ' €'; }
+        function hidePreviewExtras() {
+            ['cart-promo-row', 'cart-loyalty-row', 'cart-loyalty-box', 'cart-eta'].forEach(function (id) {
+                var el = document.getElementById(id); if (el) el.classList.add('hidden');
+            });
+        }
+        function refreshPreview() {
+            clearTimeout(previewTimer);
+            var items = Cart.normalize();
+            if (!items.length || items.some(function (i) { return i.issue; })) { hidePreviewExtras(); return; }
+            previewTimer = setTimeout(function () {
+                var seq = ++previewSeq;
+                Orders.preview(items).then(function (p) {
+                    if (seq !== previewSeq) return;
+                    applyPreview(p);
+                }).catch(function (err) {
+                    if (seq !== previewSeq) return;
+                    // Points refusés par le serveur (solde, plafond…) : on les retire et on l'explique.
+                    if (Cart.getRedeemPoints() > 0 && err && err.status === 400) {
+                        Cart.setRedeemPoints(0);
+                        if (window.showToast) window.showToast(err.message);
+                        refreshPreview();
+                        return;
+                    }
+                    hidePreviewExtras();
+                });
+            }, 250);
+        }
+        function applyPreview(p) {
+            var promoRow = document.getElementById('cart-promo-row');
+            var loyRow = document.getElementById('cart-loyalty-row');
+            document.getElementById('cart-subtotal').textContent = fmt3(p.subtotal);
+            document.getElementById('cart-total').textContent = fmt3(p.total);
+            window.__cartPreviewTotal = parseFloat(p.total) || 0;
+            updateMobileBar(window.__cartPreviewTotal);
+            if (window.renderCartSmart) window.renderCartSmart(Cart.get(), window.__cartPreviewTotal);
+            if (p.promotion) {
+                document.getElementById('cart-promo-label').innerHTML = window.iconHtml('local_offer') + ' ' + escapeHtml(p.promotion.name);
+                document.getElementById('cart-promo-amount').textContent = '-' + fmt3(p.discount);
+                promoRow.classList.remove('hidden');
+            } else { promoRow.classList.add('hidden'); }
+            if (p.loyaltyPointsUsed > 0) {
+                document.getElementById('cart-loyalty-label').innerHTML = window.iconHtml('loyalty') + ' Points fidélité (' + p.loyaltyPointsUsed + ' pts)';
+                document.getElementById('cart-loyalty-amount').textContent = '-' + fmt3(p.loyaltyDiscount);
+                loyRow.classList.remove('hidden');
+            } else { loyRow.classList.add('hidden'); }
+
+            var box = document.getElementById('cart-loyalty-box');
+            if (p.loyalty) {
+                var sel = document.getElementById('cart-redeem');
+                var current = Cart.getRedeemPoints();
+                var opts = '<option value="0">Ne pas utiliser de points</option>';
+                for (var pts = 50; pts <= Math.min(p.loyalty.points, p.loyalty.maxRedeemPoints); pts += 50) {
+                    opts += '<option value="' + pts + '"' + (pts === current ? ' selected' : '') + '>' + pts + ' points (-' + (pts / 10).toFixed(2).replace('.', ',') + ' €)</option>';
+                }
+                sel.innerHTML = opts;
+                document.getElementById('cart-loyalty-title').textContent = 'Vous avez ' + p.loyalty.points + ' points';
+                document.getElementById('cart-earn').textContent = 'Cette commande vous rapportera environ +' + p.loyalty.estimatedEarn + ' points une fois payée.';
+                box.classList.remove('hidden');
+            } else { box.classList.add('hidden'); }
+
+            var eta = document.getElementById('cart-eta');
+            if (p.waiting) {
+                document.getElementById('cart-eta-text').textContent = 'Temps d’attente estimé : environ ' + p.waiting.etaMinutes + ' min' +
+                    (p.waiting.ordersAhead ? ' (' + p.waiting.ordersAhead + ' commande(s) en file)' : '');
+                eta.classList.remove('hidden');
+            } else { eta.classList.add('hidden'); }
+            if (window.renderIcons) window.renderIcons();
+        }
+        window.setRedeem = function (v) {
+            Cart.setRedeemPoints(parseInt(v, 10) || 0);
+            refreshPreview();
+        };
+
+        window.changeCartQty = function (id, qty) {
+            Cart.setQty(id, qty);
+            render();
+        };
+        // Suppression : la ligne peut revenir pendant 6 s (« Annuler »).
+        var undoTimer = null, lastRemoved = null;
+        window.removeCartItem = function (id) {
+            var items = Cart.get();
+            var index = -1;
+            items.forEach(function (it, i) { if (it.id === id) index = i; });
+            if (index !== -1) lastRemoved = { item: items[index], index: index };
+            Cart.remove(id);
+            render();
+            showUndo(lastRemoved ? baseName(lastRemoved.item) : '');
+        };
+        function showUndo(name) {
+            var bar = document.getElementById('cart-undo');
+            if (!bar || !lastRemoved) return;
+            bar.querySelector('[data-undo-text]').textContent = '« ' + name + ' » retiré du panier';
+            bar.classList.add('is-visible');
+            clearTimeout(undoTimer);
+            undoTimer = setTimeout(function () { bar.classList.remove('is-visible'); lastRemoved = null; }, 6000);
+        }
+        window.undoRemove = function () {
+            var bar = document.getElementById('cart-undo');
+            if (bar) bar.classList.remove('is-visible');
+            clearTimeout(undoTimer);
+            if (!lastRemoved) return;
+            Cart.restoreAt(lastRemoved.item, lastRemoved.index);
+            lastRemoved = null;
+            render();
+        };
+        window.changeCartQty = function (id, qty) {
+            if (qty <= 0) { window.removeCartItem(id); return; }
+            Cart.setQty(id, qty);
+            render();
+        };
+        window.cartRerender = function () { render(); };
+
+        // Barre de commande collante sur téléphone : total + « Commander ».
+        function updateMobileBar(total) {
+            var bar = document.getElementById('cart-mobile-bar');
+            if (!bar) return;
+            var show = total !== null && Cart.count() > 0;
+            bar.classList.toggle('is-visible', show);
+            if (!show) return;
+            bar.querySelector('[data-bar-total]').textContent = fmt(total);
+            var c = Cart.count();
+            bar.querySelector('[data-bar-count]').textContent = c + ' article' + (c > 1 ? 's' : '');
+        }
+        window.cartBarConfirm = function () {
+            var btn = document.getElementById('confirm-order-btn');
+            if (btn && !btn.disabled) window.confirmOrder();
+        };
+
+        // Panier vide : reprendre la dernière commande ou une suggestion du moment.
+        function renderEmptyExtras(isEmpty) {
+            var box = document.getElementById('cart-empty-extras');
+            if (!box) return;
+            if (!isEmpty) { box.innerHTML = ''; box.classList.add('hidden'); return; }
+            var html = '';
+            var last = window.Orders && Orders.getLast();
+            if (last && last.items && last.items.length) {
+                var n = last.items.reduce(function (s, i) { return s + (i.qty || 1); }, 0);
+                html += '<button type="button" class="sc-empty-reorder" onclick="reorderLast()">' + window.iconHtml('history') +
+                    '<span><strong>Recommander ma dernière commande</strong><small>' + n + ' article' + (n > 1 ? 's' : '') + ' · ' + fmt(last.total || 0) + '</small></span>' + window.iconHtml('arrow_forward') + '</button>';
+            }
+            if (window.SoucoffeRecommendations && window.renderProductCard) {
+                var sug = SoucoffeRecommendations.getTimeBasedSuggestions(4);
+                if (sug.products && sug.products.length) {
+                    html += '<p class="sc-empty-sug-label">' + (window.iconHtml ? window.iconHtml(sug.icon, 'align-middle') + ' ' : '') + escapeHtml(sug.text) + '</p><div class="grid grid-cols-2 md:grid-cols-4 gap-3">' +
+                        sug.products.map(function (p, i) { return renderProductCard(p, i); }).join('') + '</div>';
+                }
+            }
+            box.innerHTML = html;
+            box.classList.toggle('hidden', !html);
+            if (window.renderIcons) window.renderIcons();
+        }
+        window.reorderLast = function () {
+            var last = window.Orders && Orders.getLast();
+            if (!last) return;
+            Orders.reorderToCart(last.id);
+            render();
+        };
+        // Phase 3.5 : la commande n'existe que si le serveur l'a créée.
+        // Échec (API injoignable, article invalide, refus serveur…) : message
+        // clair, panier conservé, bouton réactivé pour réessayer — jamais de
+        // commande locale de secours ni de fausse confirmation.
+        var submitting = false;
+        window.confirmOrder = function () {
+            if (submitting || Cart.count() === 0) return;
+            submitting = true;
+            var btn = document.getElementById('confirm-order-btn');
+            var errorEl = document.getElementById('order-error');
+            if (btn) btn.disabled = true;
+            if (errorEl) { errorEl.textContent = ''; errorEl.classList.add('hidden'); }
+
+            // Catalogue frais (recharge forcée s'il était en repli local) pour
+            // retrouver les productId des anciens articles avant validation.
+            var catalogReady = window.loadCatalog
+                ? window.loadCatalog(window.SOUCOFFE_CATALOG_SOURCE !== 'api')
+                : Promise.resolve('local');
+            catalogReady.then(function () {
+                var items = Cart.normalize();
+                render();
+                return Orders.createServerOrder(items).then(function (serverOrder) {
+                    Orders.recordServerOrder(serverOrder, items);
+                    Cart.clear();
+                    window.location.href = '../05-Suivi-Commande/code.html';
+                });
+            }).catch(function (err) {
+                if (errorEl) {
+                    errorEl.textContent = err.message;
+                    errorEl.classList.remove('hidden');
+                }
+                submitting = false;
+                if (btn) btn.disabled = Cart.count() === 0;
+            });
+        };
+
+        // Note de commande : zone de texte affichée à la demande (et d'office si
+        // une note existe déjà), mémorisée dans soucoffe_order_note et envoyée
+        // avec la commande.
+        function syncOrderNoteUi(forceOpen) {
+            var box = document.getElementById('order-note-box');
+            var area = document.getElementById('order-note');
+            var label = document.getElementById('order-note-toggle-label');
+            if (!box || !area) return;
+            var has = Cart.getOrderNote().trim().length > 0;
+            if (forceOpen || has) box.classList.remove('hidden');
+            if (has && area.value !== Cart.getOrderNote()) area.value = Cart.getOrderNote();
+            if (label) label.textContent = box.classList.contains('hidden')
+                ? 'Ajouter une note à la commande' : 'Masquer la note de commande';
+        }
+        window.toggleOrderNote = function () {
+            var box = document.getElementById('order-note-box');
+            if (!box) return;
+            if (box.classList.contains('hidden')) {
+                syncOrderNoteUi(true);
+                document.getElementById('order-note').focus();
+            } else if (!Cart.getOrderNote().trim()) {
+                box.classList.add('hidden');
+                syncOrderNoteUi(false);
+            }
+        };
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            render();
+            syncOrderNoteUi(false);
+            // Une fois le catalogue connu, on normalise les anciens paniers
+            // (productId retrouvé si certain, sinon article signalé — jamais
+            // supprimé) puis on réaffiche.
+            if (window.loadCatalog) {
+                window.loadCatalog().then(function () {
+                    Cart.normalize();
+                    Cart.backfillImages();
+                    render();
+                });
+            }
+        });
+    })();
+</script>
+</body></html>

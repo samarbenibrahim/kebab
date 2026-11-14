@@ -1,0 +1,124 @@
+# Identité restaurant : accueil (hero, restaurant, galerie, horaires et accès), page d'entrée, admin « Infos du restaurant » (2026-11-01).
+# français || italiano || english || deutsch || español
+
+# ---- Accueil : hero ----
+Une vraie cuisine, || Una vera cucina, || Real food, || Echte Küche, || Una cocina de verdad,
+servie à votre table. || servita al tuo tavolo. || served at your table. || serviert an Ihrem Tisch. || servida en tu mesa.
+Kebab à la broche, paninis, assiettes, petits-déjeuners, desserts et boissons : commandez depuis votre table et suivez votre commande en direct. || Kebab allo spiedo, panini, piatti, colazioni, dolci e bevande: ordina dal tuo tavolo e segui il tuo ordine in diretta. || Spit-roasted kebab, paninis, platters, breakfasts, desserts and drinks: order from your table and follow your order live. || Kebab vom Spieß, Paninis, Teller, Frühstück, Desserts und Getränke: Bestellen Sie vom Tisch aus und verfolgen Sie Ihre Bestellung live. || Kebab al espetón, paninis, platos, desayunos, postres y bebidas: pide desde tu mesa y sigue tu pedido en directo.
+Horaires et accès || Orari e indicazioni || Opening hours & directions || Öffnungszeiten & Anfahrt || Horarios y cómo llegar
+Panini grillé au poulet curry || Panino grigliato al pollo al curry || Grilled curry chicken panini || Gegrilltes Curry-Hähnchen-Panini || Panini a la plancha de pollo al curry
+Club sandwich || Club sandwich || Club sandwich || Club-Sandwich || Sándwich club
+Petits-déjeuners à composer || Colazioni da comporre || Build-your-own breakfasts || Frühstück nach Wahl || Desayunos a tu gusto
+
+# ---- Notre restaurant ----
+Notre restaurant || Il nostro ristorante || Our restaurant || Unser Restaurant || Nuestro restaurante
+Une table pour chaque moment de la journée. || Un tavolo per ogni momento della giornata. || A table for every moment of the day. || Ein Tisch für jeden Moment des Tages. || Una mesa para cada momento del día.
+Chez Kebab, on vient pour bien manger. Du petit-déjeuner au repas du soir, la cuisine prépare kebab, paninis, assiettes et douceurs, pendant que le bar sert cafés, jus frais, smoothies et mojitos. || Da Kebab si viene per mangiare bene. Dalla colazione alla cena, la cucina prepara kebab, panini, piatti e dolci, mentre il bar serve caffè, succhi freschi, smoothie e mojito. || At Kebab, people come to eat well. From breakfast to dinner, the kitchen prepares kebab, paninis, platters and sweets, while the bar serves coffees, fresh juices, smoothies and mojitos. || Bei Kebab isst man gut. Vom Frühstück bis zum Abendessen bereitet die Küche Kebab, Paninis, Teller und Süßes zu, während die Bar Kaffee, frische Säfte, Smoothies und Mojitos serviert. || En Kebab se viene a comer bien. Del desayuno a la cena, la cocina prepara kebab, paninis, platos y dulces, mientras la barra sirve cafés, zumos naturales, smoothies y mojitos.
+Le grill || La griglia || The grill || Der Grill || La parrilla
+Kebab à la broche, paninis, piadines et assiettes. || Kebab allo spiedo, panini, piadine e piatti. || Spit-roasted kebab, paninis, piadinas and platters. || Kebab vom Spieß, Paninis, Piadinas und Teller. || Kebab al espetón, paninis, piadinas y platos.
+Petits-déjeuners sucrés, salés, healthy ou à la turque. || Colazioni dolci, salate, healthy o alla turca. || Sweet, savoury, healthy or Turkish breakfasts. || Süßes, herzhaftes, gesundes oder türkisches Frühstück. || Desayunos dulces, salados, saludables o a la turca.
+Les desserts || I dolci || Desserts || Desserts || Los postres
+Tiramisu, cheesecake, fondant au chocolat. || Tiramisù, cheesecake, tortino al cioccolato. || Tiramisu, cheesecake, chocolate fondant. || Tiramisu, Käsekuchen, Schokoladenfondant. || Tiramisú, tarta de queso, coulant de chocolate.
+Le bar || Il bar || The bar || Die Bar || La barra
+Cafés, jus frais, smoothies, mojitos et sodas. || Caffè, succhi freschi, smoothie, mojito e bibite. || Coffees, fresh juices, smoothies, mojitos and sodas. || Kaffee, frische Säfte, Smoothies, Mojitos und Softdrinks. || Cafés, zumos naturales, smoothies, mojitos y refrescos.
+Découvrir la carte || Scopri il menù || Discover the menu || Speisekarte entdecken || Descubrir la carta
+Voir la galerie || Vedi la galleria || See the gallery || Zur Galerie || Ver la galería
+Restaurant || Ristorante || Restaurant || Restaurant || Restaurante
+Bar · Café || Bar · Caffè || Bar · Café || Bar · Café || Bar · Café
+
+# ---- La carte, spécialités, moments ----
+Plats, douceurs et boissons || Piatti, dolci e bevande || Dishes, sweets and drinks || Gerichte, Süßes und Getränke || Platos, dulces y bebidas
+Spécialités || Specialità || Specialities || Spezialitäten || Especialidades
+Le bar & café || Il bar e caffè || The bar & café || Bar & Café || El bar y café
+Du petit-déjeuner au dernier dessert. || Dalla colazione all'ultimo dolce. || From breakfast to the last dessert. || Vom Frühstück bis zum letzten Dessert. || Del desayuno al último postre.
+Chaque moment de la journée a son plaisir. Choisissez le vôtre, on vous l'apporte à table. || Ogni momento della giornata ha il suo piacere. Scegli il tuo, te lo portiamo al tavolo. || Every moment of the day has its treat. Choose yours, we bring it to your table. || Jeder Moment des Tages hat seinen Genuss. Wählen Sie Ihren, wir bringen ihn an den Tisch. || Cada momento del día tiene su placer. Elige el tuyo, te lo llevamos a la mesa.
+Le midi et le soir || A pranzo e a cena || Lunch and dinner || Mittags und abends || Comida y cena
+Kebab, assiettes, paninis & sandwichs || Kebab, piatti, panini e sandwich || Kebab, platters, paninis & sandwiches || Kebab, Teller, Paninis & Sandwiches || Kebab, platos, paninis y sándwiches
+Parcourez la carte et personnalisez vos plats et vos boissons. || Sfoglia il menù e personalizza piatti e bevande. || Browse the menu and customise your dishes and drinks. || Durchstöbern Sie die Karte und passen Sie Gerichte und Getränke an. || Explora la carta y personaliza tus platos y bebidas.
+
+# ---- Galerie ----
+Galerie || Galleria || Gallery || Galerie || Galería
+À la carte, en images || Il menù, in immagini || The menu, in pictures || Die Karte in Bildern || La carta, en imágenes
+Panini poulet curry || Panino pollo al curry || Curry chicken panini || Curry-Hähnchen-Panini || Panini de pollo al curry
+Petit-déjeuner turc || Colazione turca || Turkish breakfast || Türkisches Frühstück || Desayuno turco
+Petits-déjeuners : sucré, salé, healthy et turc || Colazioni: dolce, salata, healthy e turca || Breakfasts: sweet, savoury, healthy and Turkish || Frühstück: süß, herzhaft, gesund und türkisch || Desayunos: dulce, salado, saludable y turco
+Tiramisu || Tiramisù || Tiramisu || Tiramisu || Tiramisú
+Mojito à la fraise || Mojito alla fragola || Strawberry mojito || Erdbeer-Mojito || Mojito de fresa
+Avocado toast || Avocado toast || Avocado toast || Avocado-Toast || Tostada de aguacate
+Cheesecake || Cheesecake || Cheesecake || Käsekuchen || Tarta de queso
+Café latte art || Caffè latte art || Latte art coffee || Kaffee mit Latte Art || Café con latte art
+
+# ---- Horaires et accès ----
+Infos pratiques || Informazioni utili || Practical info || Praktische Infos || Información práctica
+Horaires d'ouverture || Orari di apertura || Opening hours || Öffnungszeiten || Horario de apertura
+Nous trouver || Dove siamo || Find us || So finden Sie uns || Dónde estamos
+Itinéraire || Indicazioni stradali || Directions || Route || Cómo llegar
+Contact et réservation || Contatti e prenotazioni || Contact & bookings || Kontakt & Reservierung || Contacto y reservas
+Pour réserver une table ou pour toute question, contactez-nous. || Per prenotare un tavolo o per qualsiasi domanda, contattaci. || To book a table or for any question, get in touch. || Für Tischreservierungen oder Fragen kontaktieren Sie uns. || Para reservar mesa o cualquier pregunta, contáctanos.
+Ouvert maintenant || Aperto ora || Open now || Jetzt geöffnet || Abierto ahora
+Fermé pour le moment || Chiuso al momento || Closed right now || Derzeit geschlossen || Cerrado ahora
+Fermé || Chiuso || Closed || Geschlossen || Cerrado
+Restaurant, bar et café : kebab, paninis, assiettes, petits-déjeuners, desserts et boissons, servis à votre table. || Ristorante, bar e caffè: kebab, panini, piatti, colazioni, dolci e bevande, serviti al tuo tavolo. || Restaurant, bar and café: kebab, paninis, platters, breakfasts, desserts and drinks, served at your table. || Restaurant, Bar und Café: Kebab, Paninis, Teller, Frühstück, Desserts und Getränke, serviert an Ihrem Tisch. || Restaurante, bar y café: kebab, paninis, platos, desayunos, postres y bebidas, servidos en tu mesa.
+
+# ---- Page d'entrée (QR code) ----
+Bienvenue || Benvenuti || Welcome || Willkommen || Bienvenidos
+à table. || a tavola. || to the table. || zu Tisch. || a la mesa.
+Kebab, paninis, petits-déjeuners, desserts et cafés : installez-vous, commandez depuis votre table et laissez-nous faire le reste. || Kebab, panini, colazioni, dolci e caffè: accomodati, ordina dal tuo tavolo e al resto pensiamo noi. || Kebab, paninis, breakfasts, desserts and coffees: take a seat, order from your table and leave the rest to us. || Kebab, Paninis, Frühstück, Desserts und Kaffee: Nehmen Sie Platz, bestellen Sie vom Tisch aus, den Rest erledigen wir. || Kebab, paninis, desayunos, postres y cafés: siéntate, pide desde tu mesa y déjanos el resto.
+Commencer || Inizia || Get started || Los geht's || Empezar
+
+# ---- Admin : Infos du restaurant ----
+Infos du restaurant || Informazioni del ristorante || Restaurant info || Restaurant-Infos || Información del restaurante
+Affichées sur l’accueil (section « Horaires et accès »). Un champ laissé vide n’est pas affiché. || Mostrate nella home (sezione «Orari e indicazioni»). Un campo vuoto non viene mostrato. || Shown on the home page ("Opening hours & directions" section). An empty field is not displayed. || Auf der Startseite angezeigt (Bereich „Öffnungszeiten & Anfahrt“). Ein leeres Feld wird nicht angezeigt. || Se muestran en la portada (sección «Horarios y cómo llegar»). Un campo vacío no se muestra.
+Adresse || Indirizzo || Address || Adresse || Dirección
+Ville || Città || City || Stadt || Ciudad
+E-mail || E-mail || E-mail || E-Mail || Correo electrónico
+Lien Google Maps (https://…) || Link Google Maps (https://…) || Google Maps link (https://…) || Google-Maps-Link (https://…) || Enlace de Google Maps (https://…)
+Horaires d’ouverture || Orari di apertura || Opening hours || Öffnungszeiten || Horario de apertura
+Remarque sur les horaires (facultatif) || Nota sugli orari (facoltativa) || Note about opening hours (optional) || Hinweis zu den Öffnungszeiten (optional) || Nota sobre el horario (opcional)
+Enregistrement… || Salvataggio… || Saving… || Speichern… || Guardando…
+Enregistré : visible sur l’accueil. || Salvato: visibile nella home. || Saved: visible on the home page. || Gespeichert: auf der Startseite sichtbar. || Guardado: visible en la portada.
+Infos du restaurant enregistrées || Informazioni del ristorante salvate || Restaurant info saved || Restaurant-Infos gespeichert || Información del restaurante guardada
+Non enregistré : {0} || Non salvato: {0} || Not saved: {0} || Nicht gespeichert: {0} || No guardado: {0}
+Infos du restaurant indisponibles : {0} || Informazioni del ristorante non disponibili: {0} || Restaurant info unavailable: {0} || Restaurant-Infos nicht verfügbar: {0} || Información del restaurante no disponible: {0}
+
+# ---- Libellés existants sans traduction ----
+Idéal après-midi || Ideale per il pomeriggio || Perfect for the afternoon || Ideal für den Nachmittag || Ideal para la tarde
+
+# ---- Photos kebab (images/media/kebab-*.jpg) ----
+Plateau kebab et grillades || Vassoio di kebab e grigliate || Kebab and grill platter || Kebab- und Grillplatte || Bandeja de kebab y parrillada
+Brochettes grillées || Spiedini alla griglia || Grilled skewers || Gegrillte Spieße || Brochetas a la parrilla
+Viandes et légumes sur le grill || Carni e verdure alla griglia || Meat and vegetables on the grill || Fleisch und Gemüse vom Grill || Carnes y verduras a la parrilla
+Kebab — Restaurant · Bar · Café || Kebab — Ristorante · Bar · Caffè || Kebab — Restaurant · Bar · Café || Kebab — Restaurant · Bar · Café || Kebab — Restaurante · Bar · Café
+Image 5 || Immagine 5 || Image 5 || Bild 5 || Imagen 5
+Idéal le soir || Ideale per la sera || Perfect for the evening || Ideal für den Abend || Ideal para la noche
+
+# ---- Restaurant intelligent ----
+Restaurant intelligent · Bar · Café || Ristorante intelligente · Bar · Caffè || Smart restaurant · Bar · Café || Smartes Restaurant · Bar · Café || Restaurante inteligente · Bar · Café
+Kebab — Restaurant intelligent · Bar · Café || Kebab — Ristorante intelligente · Bar · Caffè || Kebab — Smart restaurant · Bar · Café || Kebab — Smartes Restaurant · Bar · Café || Kebab — Restaurante inteligente · Bar · Café
+Restaurant intelligent || Ristorante intelligente || Smart restaurant || Smartes Restaurant || Restaurante inteligente
+intelligent || intelligente || smart || smart || inteligente
+Le service à table, en plus malin. || Il servizio al tavolo, più intelligente. || Table service, only smarter. || Service am Tisch, nur cleverer. || El servicio en mesa, más inteligente.
+Votre téléphone devient votre serveur personnel : il comprend votre commande, respecte vos allergies, réunit toute la table et vous prévient quand c'est prêt. || Il tuo telefono diventa il tuo cameriere personale: capisce il tuo ordine, rispetta le tue allergie, riunisce tutto il tavolo e ti avvisa quando è pronto. || Your phone becomes your personal waiter: it understands your order, respects your allergies, brings the whole table together and tells you when it's ready. || Ihr Handy wird Ihr persönlicher Kellner: Es versteht Ihre Bestellung, beachtet Ihre Allergien, vereint den ganzen Tisch und sagt Bescheid, wenn es fertig ist. || Tu teléfono se convierte en tu camarero personal: entiende tu pedido, respeta tus alergias, reúne a toda la mesa y te avisa cuando está listo.
+Dites ou écrivez « 2 kebabs sans oignon et un coca » : les plats et vos choix sont retrouvés, en 5 langues. || Di' o scrivi «2 kebab senza cipolla e una coca»: piatti e scelte vengono riconosciuti, in 5 lingue. || Say or type "2 kebabs without onion and a coke": dishes and choices are recognised, in 5 languages. || Sagen oder schreiben Sie „2 Kebabs ohne Zwiebeln und eine Cola“: Gerichte und Wünsche werden erkannt, in 5 Sprachen. || Di o escribe «2 kebabs sin cebolla y una coca»: se reconocen platos y opciones, en 5 idiomas.
+Essayer || Prova || Try it || Ausprobieren || Probar
+Indiquez vos allergies et votre régime : chaque plat est marqué compatible, à éviter ou à vérifier. || Indica allergie e dieta: ogni piatto è segnato come compatibile, da evitare o da verificare. || Set your allergies and diet: every dish is marked compatible, to avoid or to check. || Geben Sie Allergien und Ernährung an: Jedes Gericht wird als passend, zu meiden oder zu prüfen markiert. || Indica tus alergias y tu dieta: cada plato se marca como compatible, a evitar o a verificar.
+Configurer || Configura || Set up || Einrichten || Configurar
+Chaque téléphone ajoute ses plats au panier commun, une seule commande part en cuisine, l'addition se partage. || Ogni telefono aggiunge i suoi piatti al carrello comune, parte un solo ordine in cucina, il conto si divide. || Each phone adds its dishes to the shared basket, one single order goes to the kitchen, the bill is split. || Jedes Handy legt seine Gerichte in den gemeinsamen Warenkorb, eine einzige Bestellung geht in die Küche, die Rechnung wird geteilt. || Cada teléfono añade sus platos al carrito común, sale un solo pedido a cocina y la cuenta se reparte.
+Commander ensemble || Ordina insieme || Order together || Zusammen bestellen || Pedir juntos
+Suggestions sur mesure || Suggerimenti su misura || Tailored suggestions || Maßgeschneiderte Vorschläge || Sugerencias a medida
+Décrivez votre envie, vos habitudes et l'heure font le reste : on vous propose les bons plats. || Descrivi la tua voglia, abitudini e orario fanno il resto: ti proponiamo i piatti giusti. || Describe what you fancy, your habits and the time of day do the rest: we suggest the right dishes. || Beschreiben Sie Ihre Lust, Gewohnheiten und Uhrzeit erledigen den Rest: Wir schlagen die passenden Gerichte vor. || Describe lo que te apetece, tus costumbres y la hora hacen el resto: te proponemos los platos adecuados.
+Demander || Chiedi || Ask || Fragen || Preguntar
+Temps d'attente calculé sur la vraie activité de la cuisine, alerte et vibration quand votre commande est prête. || Tempo di attesa calcolato sulla reale attività della cucina, avviso e vibrazione quando il tuo ordine è pronto. || Waiting time based on the kitchen's real activity, with an alert and vibration when your order is ready. || Wartezeit nach der echten Küchenauslastung, mit Hinweis und Vibration, wenn Ihre Bestellung fertig ist. || Tiempo de espera calculado con la actividad real de la cocina, aviso y vibración cuando tu pedido está listo.
+Appel du serveur || Chiamata del cameriere || Call the waiter || Kellner rufen || Llamar al camarero
+Besoin de quelque chose ? Prévenez le serveur depuis votre table, sans lever la main. L'addition se demande depuis le suivi de commande. || Ti serve qualcosa? Avvisa il cameriere dal tuo tavolo, senza alzare la mano. Il conto si chiede dalla pagina dell'ordine. || Need something? Let the waiter know from your table, no need to raise your hand. The bill is requested from the order tracking page. || Brauchen Sie etwas? Rufen Sie den Kellner vom Tisch aus, ohne die Hand zu heben. Die Rechnung fordern Sie in der Bestellverfolgung an. || ¿Necesitas algo? Avisa al camarero desde tu mesa, sin levantar la mano. La cuenta se pide desde el seguimiento del pedido.
+Restaurant intelligent, bar et café : kebab, paninis, assiettes, petits-déjeuners, desserts et boissons, commandés depuis votre téléphone et servis à votre table. || Ristorante intelligente, bar e caffè: kebab, panini, piatti, colazioni, dolci e bevande, ordinati dal tuo telefono e serviti al tuo tavolo. || Smart restaurant, bar and café: kebab, paninis, platters, breakfasts, desserts and drinks, ordered from your phone and served at your table. || Smartes Restaurant, Bar und Café: Kebab, Paninis, Teller, Frühstück, Desserts und Getränke, per Handy bestellt und am Tisch serviert. || Restaurante inteligente, bar y café: kebab, paninis, platos, desayunos, postres y bebidas, pedidos desde tu teléfono y servidos en tu mesa.
+
+# ---- La cafétéria fait partie du restaurant (2026-11-04) ----
+Restaurant intelligent · Cuisine & cafétéria || Ristorante intelligente · Cucina e caffetteria || Smart restaurant · Kitchen & cafeteria || Smartes Restaurant · Küche & Cafeteria || Restaurante inteligente · Cocina y cafetería
+Kebab — Restaurant intelligent · Cuisine & cafétéria || Kebab — Ristorante intelligente · Cucina e caffetteria || Kebab — Smart restaurant · Kitchen & cafeteria || Kebab — Smartes Restaurant · Küche & Cafeteria || Kebab — Restaurante inteligente · Cocina y cafetería
+Kebab - Restaurant intelligent avec cafétéria || Kebab - Ristorante intelligente con caffetteria || Kebab - Smart restaurant with cafeteria || Kebab - Smartes Restaurant mit Cafeteria || Kebab - Restaurante inteligente con cafetería
+Chez Kebab, on vient pour bien manger. Du petit-déjeuner au repas du soir, la cuisine prépare kebab, paninis, assiettes et douceurs, pendant que la cafétéria du restaurant sert cafés, jus frais, smoothies et mojitos. || Da Kebab si viene per mangiare bene. Dalla colazione alla cena, la cucina prepara kebab, panini, piatti e dolci, mentre la caffetteria del ristorante serve caffè, succhi freschi, smoothie e mojito. || At Kebab, people come to eat well. From breakfast to dinner, the kitchen prepares kebab, paninis, platters and sweets, while the restaurant's cafeteria serves coffees, fresh juices, smoothies and mojitos. || Bei Kebab isst man gut. Vom Frühstück bis zum Abendessen bereitet die Küche Kebab, Paninis, Teller und Süßes zu, während die Cafeteria des Restaurants Kaffee, frische Säfte, Smoothies und Mojitos serviert. || En Kebab se viene a comer bien. Del desayuno a la cena, la cocina prepara kebab, paninis, platos y dulces, mientras la cafetería del restaurante sirve cafés, zumos naturales, smoothies y mojitos.
+La cafétéria || La caffetteria || The cafeteria || Die Cafeteria || La cafetería
+La cafétéria du restaurant || La caffetteria del ristorante || The restaurant's cafeteria || Die Cafeteria des Restaurants || La cafetería del restaurante
+Restaurant intelligent, avec sa cafétéria : kebab, paninis, assiettes, petits-déjeuners, desserts, cafés et boissons, commandés depuis votre téléphone et servis à votre table. || Ristorante intelligente, con la sua caffetteria: kebab, panini, piatti, colazioni, dolci, caffè e bevande, ordinati dal tuo telefono e serviti al tuo tavolo. || Smart restaurant with its own cafeteria: kebab, paninis, platters, breakfasts, desserts, coffees and drinks, ordered from your phone and served at your table. || Smartes Restaurant mit eigener Cafeteria: Kebab, Paninis, Teller, Frühstück, Desserts, Kaffee und Getränke, per Handy bestellt und am Tisch serviert. || Restaurante inteligente con su cafetería: kebab, paninis, platos, desayunos, postres, cafés y bebidas, pedidos desde tu teléfono y servidos en tu mesa.
+En cuisine et à la cafétéria, tout se prépare. || In cucina e in caffetteria si prepara tutto. || The kitchen and cafeteria are preparing everything. || Küche und Cafeteria bereiten alles zu. || En la cocina y en la cafetería se prepara todo.

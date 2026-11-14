@@ -1,0 +1,509 @@
+# Espace client : accueil, identification, menu, cafés, panier, suivi, profil.
+# français || italiano || english || deutsch || español
+
+# ---- Titres de pages ----
+Kebab — All You Need Is Coffee || Kebab — All You Need Is Coffee || Kebab — All You Need Is Coffee || Kebab — All You Need Is Coffee || Kebab — All You Need Is Coffee
+Kebab - Bienvenue || Kebab - Benvenuti || Kebab - Welcome || Kebab - Willkommen || Kebab - Bienvenidos
+Kebab - Identification || Kebab - Identificazione || Kebab - Sign in || Kebab - Anmeldung || Kebab - Identificación
+Kebab - Menu Numérique || Kebab - Menù Digitale || Kebab - Digital Menu || Kebab - Digitale Speisekarte || Kebab - Carta Digital
+Kebab - Nos Cafés || Kebab - I nostri Caffè || Kebab - Our Coffees || Kebab - Unsere Kaffees || Kebab - Nuestros Cafés
+Kebab - Ma commande || Kebab - Il mio ordine || Kebab - My order || Kebab - Meine Bestellung || Kebab - Mi pedido
+Kebab - Suivi de commande || Kebab - Stato dell'ordine || Kebab - Order tracking || Kebab - Bestellverfolgung || Kebab - Seguimiento del pedido
+Kebab - Votre pause café, à votre façon || Kebab - La tua pausa caffè, a modo tuo || Kebab - Your coffee break, your way || Kebab - Ihre Kaffeepause, wie Sie sie mögen || Kebab - Tu pausa café, a tu manera
+
+# ---- Bienvenue (00) ----
+Bienvenue chez Kebab || Benvenuti da Kebab || Welcome to Kebab || Willkommen bei Kebab || Bienvenido a Kebab
+Bienvenue chez Kebab || Benvenuti da Kebab || Welcome to Kebab || Willkommen bei Kebab || Bienvenido a Kebab
+Bienvenue chez Kebab : scannez, commandez depuis votre table et savourez. || Benvenuti da Kebab: scansiona, ordina dal tuo tavolo e gusta. || Welcome to Kebab: scan, order from your table and enjoy. || Willkommen bei Kebab: scannen, vom Tisch bestellen und genießen. || Bienvenido a Kebab: escanea, pide desde tu mesa y disfruta.
+Installez-vous, commandez depuis votre table et laissez-nous faire le reste. || Accomodati, ordina dal tuo tavolo e al resto pensiamo noi. || Take a seat, order from your table and leave the rest to us. || Nehmen Sie Platz, bestellen Sie vom Tisch aus und überlassen Sie uns den Rest. || Siéntate, pide desde tu mesa y déjanos hacer el resto.
+Comment ça marche || Come funziona || How it works || So funktioniert's || Cómo funciona
+Scannez || Scansiona || Scan || Scannen || Escanea
+Commandez || Ordina || Order || Bestellen || Pide
+Savourez || Gusta || Enjoy || Genießen || Disfruta
+Get Started || Inizia || Get Started || Los geht's || Empezar
+Commande à table · suivi en direct || Ordine al tavolo · stato in tempo reale || Order at your table · live tracking || Bestellung am Tisch · Live-Verfolgung || Pedido en mesa · seguimiento en directo
+All You Need || All You Need || All You Need || All You Need || All You Need
+Is Coffee || Is Coffee || Is Coffee || Is Coffee || Is Coffee
+
+# ---- Index technique (index.html) ----
+Bienvenue! Redirection en cours... || Benvenuti! Reindirizzamento in corso... || Welcome! Redirecting... || Willkommen! Weiterleitung... || ¡Bienvenido! Redirigiendo...
+Ou choisissez une page: || Oppure scegli una pagina: || Or choose a page: || Oder wählen Sie eine Seite: || O elige una página:
+Bienvenue (QR code) || Benvenuti (codice QR) || Welcome (QR code) || Willkommen (QR-Code) || Bienvenida (código QR)
+Menu Principal || Menù principale || Main menu || Hauptmenü || Menú principal
+Suivi Commande || Stato ordine || Order tracking || Bestellverfolgung || Seguimiento del pedido
+Admin Dashboard || Dashboard amministrazione || Admin dashboard || Admin-Dashboard || Panel de administración
+
+# ---- Navigation commune ----
+Accueil || Home || Home || Startseite || Inicio
+Menu || Menù || Menu || Speisekarte || Carta
+Le menu || Il menù || The menu || Die Speisekarte || La carta
+La carte || Il menù || The menu || Die Karte || La carta
+Notre carte || Il nostro menù || Our menu || Unsere Karte || Nuestra carta
+Voir la carte || Vedi il menù || See the menu || Karte ansehen || Ver la carta
+Voir le menu || Vedi il menù || See the menu || Speisekarte ansehen || Ver la carta
+Tout le menu || Tutto il menù || Full menu || Ganze Karte || Toda la carta
+Panier || Carrello || Basket || Warenkorb || Cesta
+Mon panier || Il mio carrello || My basket || Mein Warenkorb || Mi cesta
+Voir le panier || Vedi il carrello || View basket || Warenkorb ansehen || Ver la cesta
+Ma commande || Il mio ordine || My order || Meine Bestellung || Mi pedido
+Ma visite || La mia visita || My visit || Mein Besuch || Mi visita
+Favoris || Preferiti || Favourites || Favoriten || Favoritos
+Mes favoris || I miei preferiti || My favourites || Meine Favoriten || Mis favoritos
+Vos favoris || I tuoi preferiti || Your favourites || Ihre Favoriten || Tus favoritos
+Nos cafés || I nostri caffè || Our coffees || Unsere Kaffees || Nuestros cafés
+Nos Cafés || I nostri Caffè || Our Coffees || Unsere Kaffees || Nuestros Cafés
+Explorer || Esplora || Explore || Entdecken || Explorar
+Suivi en direct || Stato in tempo reale || Live tracking || Live-Verfolgung || Seguimiento en directo
+Suivre ma commande || Segui il mio ordine || Track my order || Meine Bestellung verfolgen || Seguir mi pedido
+Points fidélité || Punti fedeltà || Loyalty points || Treuepunkte || Puntos de fidelidad
+Commande à table || Ordine al tavolo || Order at your table || Bestellung am Tisch || Pedido en mesa
+Commandez depuis votre table, on vous l’apporte. || Ordina dal tuo tavolo, te lo portiamo noi. || Order from your table, we'll bring it to you. || Bestellen Sie vom Tisch, wir bringen es Ihnen. || Pide desde tu mesa, te lo llevamos.
+Fait avec passion, servi avec le sourire. || Fatto con passione, servito con il sorriso. || Made with passion, served with a smile. || Mit Leidenschaft gemacht, mit einem Lächeln serviert. || Hecho con pasión, servido con una sonrisa.
+Votre pause café, à votre façon. Grains moulus à la minute, petits-déjeuners maison et service à table. || La tua pausa caffè, a modo tuo. Chicchi macinati al momento, colazioni fatte in casa e servizio al tavolo. || Your coffee break, your way. Freshly ground beans, homemade breakfasts and table service. || Ihre Kaffeepause, wie Sie sie mögen. Frisch gemahlene Bohnen, hausgemachtes Frühstück und Service am Tisch. || Tu pausa café, a tu manera. Granos molidos al momento, desayunos caseros y servicio en mesa.
+Une petite envie ? || Una voglia? || Feeling peckish? || Lust auf etwas? || ¿Un antojo?
+Changer de thème || Cambia tema || Change theme || Design wechseln || Cambiar tema
+Mode clair || Modalità chiara || Light mode || Heller Modus || Modo claro
+Mode sombre || Modalità scura || Dark mode || Dunkler Modus || Modo oscuro
+Passer en mode clair || Passa alla modalità chiara || Switch to light mode || Zum hellen Modus wechseln || Cambiar a modo claro
+Passer en mode sombre || Passa alla modalità scura || Switch to dark mode || Zum dunklen Modus wechseln || Cambiar a modo oscuro
+Revenir en haut de la page || Torna in cima alla pagina || Back to top || Nach oben || Volver arriba
+Rechercher || Cerca || Search || Suchen || Buscar
+Rechercher... || Cerca... || Search... || Suchen... || Buscar...
+Rechercher au menu… || Cerca nel menù… || Search the menu… || Speisekarte durchsuchen… || Buscar en la carta…
+Fermer || Chiudi || Close || Schließen || Cerrar
+Annuler || Annulla || Cancel || Abbrechen || Cancelar
+Enregistrer || Salva || Save || Speichern || Guardar
+Modifier || Modifica || Edit || Bearbeiten || Editar
+Supprimer || Elimina || Delete || Löschen || Eliminar
+Ajouter || Aggiungi || Add || Hinzufügen || Añadir
+Choisir || Scegli || Choose || Wählen || Elegir
+Retirer || Rimuovi || Remove || Entfernen || Quitar
+
+# ---- Accueil (home) ----
+Bonjour || Buongiorno || Hello || Guten Tag || Hola
+Coffee shop · Commande à table || Coffee shop · Ordine al tavolo || Coffee shop · Order at your table || Coffeeshop · Bestellung am Tisch || Cafetería · Pedido en mesa
+Votre pause café, || La tua pausa caffè, || Your coffee break, || Ihre Kaffeepause, || Tu pausa café,
+à votre façon. || a modo tuo. || your way. || wie Sie sie mögen. || a tu manera.
+Parcourez la carte, commandez depuis votre table et suivez votre commande en direct. || Sfoglia il menù, ordina dal tuo tavolo e segui il tuo ordine in tempo reale. || Browse the menu, order from your table and track your order live. || Stöbern Sie in der Karte, bestellen Sie vom Tisch und verfolgen Sie Ihre Bestellung live. || Explora la carta, pide desde tu mesa y sigue tu pedido en directo.
+Découvrir nos cafés || Scopri i nostri caffè || Discover our coffees || Unsere Kaffees entdecken || Descubre nuestros cafés
+Recommander ma dernière commande || Ripeti il mio ultimo ordine || Reorder my last order || Letzte Bestellung wiederholen || Repetir mi último pedido
+Vus récemment || Visti di recente || Recently viewed || Zuletzt angesehen || Vistos recientemente
+Nos incontournables || I nostri imperdibili || Our must-haves || Unsere Klassiker || Nuestros imprescindibles
+Voir tout || Vedi tutto || See all || Alle ansehen || Ver todo
+Sélection || Selezione || Selection || Auswahl || Selección
+Parcourir par envie || Sfoglia per voglia || Browse by craving || Nach Lust stöbern || Explorar por antojo
+Cafés, croissants & viennoiseries || Caffè, cornetti e viennoiserie || Coffees, croissants & pastries || Kaffee, Croissants & Feingebäck || Cafés, cruasanes y bollería
+Mojitos, smoothies & boissons glacées || Mojito, frullati e bevande fredde || Mojitos, smoothies & iced drinks || Mojitos, Smoothies & Eisgetränke || Mojitos, batidos y bebidas frías
+Sandwichs, paninis & jus frais || Panini, toast e succhi freschi || Sandwiches, paninis & fresh juices || Sandwiches, Paninis & frische Säfte || Sándwiches, paninis y zumos naturales
+Tiramisu, cheesecake & fondant || Tiramisù, cheesecake e tortino || Tiramisu, cheesecake & fondant || Tiramisu, Käsekuchen & Fondant || Tiramisú, tarta de queso y coulant
+Plateaux de petits-déjeuners : sucré, salé, healthy et turc || Vassoi colazione: dolce, salata, healthy e turca || Breakfast platters: sweet, savoury, healthy and Turkish || Frühstücksplatten: süß, herzhaft, gesund und türkisch || Bandejas de desayuno: dulce, salado, saludable y turco
+Les petits-déjeuners || Le colazioni || Breakfasts || Frühstück || Los desayunos
+healthy, sucrés, salés ou à la turque, tous les matins. || healthy, dolci, salate o alla turca, ogni mattina. || healthy, sweet, savoury or Turkish-style, every morning. || gesund, süß, herzhaft oder türkisch, jeden Morgen. || saludables, dulces, salados o a la turca, cada mañana.
+Nouveau · Petit-déjeuner || Novità · Colazione || New · Breakfast || Neu · Frühstück || Nuevo · Desayuno
+Composez votre petit-déjeuner. || Componi la tua colazione. || Build your breakfast. || Stellen Sie Ihr Frühstück zusammen. || Compón tu desayuno.
+Boisson chaude, jus frais, viennoiseries, œufs, salé, douceurs : choisissez dans la liste, le prix s’affiche au fur et à mesure. || Bevanda calda, succo fresco, viennoiserie, uova, salato, dolcezze: scegli dall'elenco, il prezzo si aggiorna man mano. || Hot drink, fresh juice, pastries, eggs, savoury, sweet treats: choose from the list, the price updates as you go. || Heißgetränk, frischer Saft, Gebäck, Eier, Herzhaftes, Süßes: Wählen Sie aus der Liste, der Preis wird laufend angezeigt. || Bebida caliente, zumo natural, bollería, huevos, salado, dulces: elige de la lista, el precio se actualiza al momento.
+Je compose || Componi || Build it || Zusammenstellen || Lo compongo
+Faites votre choix || Fai la tua scelta || Make your choice || Treffen Sie Ihre Wahl || Haz tu elección
+Chaque moment de la journée a sa tasse. Choisissez le vôtre, on vous l'apporte à table. || Ogni momento della giornata ha la sua tazza. Scegli il tuo, te la portiamo al tavolo. || Every moment of the day has its cup. Pick yours, we'll bring it to your table. || Jeder Moment des Tages hat seine Tasse. Wählen Sie Ihre, wir bringen sie an den Tisch. || Cada momento del día tiene su taza. Elige el tuyo, te la llevamos a la mesa.
+Le matin || Il mattino || Morning || Morgens || Por la mañana
+Le midi || A pranzo || Lunchtime || Mittags || Al mediodía
+L'après-midi || Il pomeriggio || Afternoon || Nachmittags || Por la tarde
+Afternoon || Pomeriggio || Afternoon || Nachmittag || Tarde
+À toute heure || A qualsiasi ora || Any time || Zu jeder Zeit || A cualquier hora
+Espresso, latte, café turc || Espresso, latte, caffè turco || Espresso, latte, Turkish coffee || Espresso, Latte, türkischer Kaffee || Espresso, latte, café turco
+L'espresso, tiré à la minute || L'espresso, estratto al momento || Espresso, pulled to order || Espresso, frisch gezogen || El espresso, recién hecho
+Grains fraîchement moulus || Chicchi appena macinati || Freshly ground beans || Frisch gemahlene Bohnen || Granos recién molidos
+pour chaque tasse, jamais à l'avance. || per ogni tazza, mai in anticipo. || for every cup, never in advance. || für jede Tasse, nie im Voraus. || para cada taza, nunca con antelación.
+: servis en tasse de verre ou en gobelet à emporter. || : serviti in tazza di vetro o in bicchiere da asporto. || : served in a glass cup or a takeaway cup. || : in der Glastasse oder im Becher zum Mitnehmen serviert. || : servidos en taza de cristal o en vaso para llevar.
+L'art du café || L'arte del caffè || The art of coffee || Die Kunst des Kaffees || El arte del café
+Du grain à la tasse, avec soin. || Dal chicco alla tazza, con cura. || From bean to cup, with care. || Von der Bohne bis zur Tasse, mit Sorgfalt. || Del grano a la taza, con mimo.
+Nos grains sont torréfiés avec attention, moulus à la minute et extraits par nos baristas pour révéler toute leur rondeur. || I nostri chicchi sono tostati con attenzione, macinati al momento ed estratti dai nostri baristi per rivelarne tutta la rotondità. || Our beans are carefully roasted, freshly ground and extracted by our baristas to bring out their full roundness. || Unsere Bohnen werden sorgfältig geröstet, frisch gemahlen und von unseren Baristas extrahiert, um ihre ganze Fülle zu entfalten. || Nuestros granos se tuestan con esmero, se muelen al momento y nuestros baristas los extraen para revelar toda su redondez.
+Torréfié avec passion || Tostato con passione || Roasted with passion || Mit Leidenschaft geröstet || Tostado con pasión
+Nos atouts || I nostri punti di forza || Why us || Unsere Stärken || Nuestras ventajas
+Sans attendre au comptoir || Senza attese al bancone || No queuing at the counter || Ohne Warten an der Theke || Sin esperar en la barra
+De la cuisine à votre table || Dalla cucina al tuo tavolo || From the kitchen to your table || Von der Küche an Ihren Tisch || De la cocina a tu mesa
+Détendez-vous, nous vous servons à votre table en quelques minutes. || Rilassati, ti serviamo al tavolo in pochi minuti. || Relax, we'll serve you at your table in a few minutes. || Entspannen Sie sich, wir servieren in wenigen Minuten an Ihrem Tisch. || Relájate, te servimos en tu mesa en unos minutos.
+Des points à chaque commande || Punti a ogni ordine || Points with every order || Punkte bei jeder Bestellung || Puntos en cada pedido
+Fidélité récompensée || Fedeltà premiata || Loyalty rewarded || Treue wird belohnt || Fidelidad recompensada
+Du premier espresso au dernier dessert. || Dal primo espresso all'ultimo dolce. || From the first espresso to the last dessert. || Vom ersten Espresso bis zum letzten Dessert. || Del primer espresso al último postre.
+La touche sucrée || Il tocco dolce || The sweet touch || Die süße Note || El toque dulce
+Scannez le QR code || Scansiona il codice QR || Scan the QR code || QR-Code scannen || Escanea el código QR
+Trouvez le QR code sur votre table et scannez-le avec votre smartphone. || Trova il codice QR sul tuo tavolo e scansionalo con lo smartphone. || Find the QR code on your table and scan it with your smartphone. || Finden Sie den QR-Code auf Ihrem Tisch und scannen Sie ihn mit dem Smartphone. || Busca el código QR en tu mesa y escanéalo con tu móvil.
+Parcourez la carte et personnalisez vos boissons et pâtisseries. || Sfoglia il menù e personalizza bevande e dolci. || Browse the menu and customise your drinks and pastries. || Stöbern Sie in der Karte und passen Sie Getränke und Gebäck an. || Explora la carta y personaliza tus bebidas y pasteles.
+Suggérez-moi || Suggeriscimi || Suggest something || Schlagen Sie mir etwas vor || Sugiéreme
+Dites-nous ce qui vous ferait plaisir, ou laissez-nous deviner. || Dicci cosa ti farebbe piacere, o lascia che indoviniamo noi. || Tell us what you fancy, or let us guess. || Sagen Sie uns, worauf Sie Lust haben, oder lassen Sie uns raten. || Dinos qué te apetece o deja que lo adivinemos.
+Décrivez votre envie || Descrivi la tua voglia || Describe your craving || Beschreiben Sie Ihre Lust || Describe tu antojo
+Un café serré, un truc frais et pas cher… || Un caffè ristretto, qualcosa di fresco ed economico… || A strong coffee, something cool and cheap… || Ein starker Kaffee, etwas Frisches und Günstiges… || Un café cargado, algo fresco y barato…
+Horloge formée de tasses de café au latte art || Orologio formato da tazze di caffè con latte art || Clock made of latte art coffee cups || Uhr aus Kaffeetassen mit Latte Art || Reloj formado por tazas de café con latte art
+Trois tasses : café moulu, latte art et grains || Tre tazze: caffè macinato, latte art e chicchi || Three cups: ground coffee, latte art and beans || Drei Tassen: gemahlener Kaffee, Latte Art und Bohnen || Tres tazas: café molido, latte art y granos
+Porte-filtres remplis de grains et de café moulu, et un espresso || Portafiltri pieni di chicchi e caffè macinato, e un espresso || Portafilters filled with beans and ground coffee, and an espresso || Siebträger mit Bohnen und gemahlenem Kaffee, dazu ein Espresso || Portafiltros llenos de granos y café molido, y un espresso
+Porte-filtres de grains et de café moulu, et un espresso || Portafiltri con chicchi e caffè macinato, e un espresso || Portafilters of beans and ground coffee, and an espresso || Siebträger mit Bohnen und gemahlenem Kaffee, dazu ein Espresso || Portafiltros de granos y café molido, y un espresso
+Vidéo : grains de café et préparation || Video: chicchi di caffè e preparazione || Video: coffee beans and preparation || Video: Kaffeebohnen und Zubereitung || Vídeo: granos de café y preparación
+Image 1 || Immagine 1 || Image 1 || Bild 1 || Imagen 1
+Image 2 || Immagine 2 || Image 2 || Bild 2 || Imagen 2
+Image 3 || Immagine 3 || Image 3 || Bild 3 || Imagen 3
+Image 4 || Immagine 4 || Image 4 || Bild 4 || Imagen 4
+Image précédente || Immagine precedente || Previous image || Vorheriges Bild || Imagen anterior
+Image suivante || Immagine successiva || Next image || Nächstes Bild || Imagen siguiente
+
+# ---- Identification (01) ----
+Connexion client || Accesso cliente || Customer sign-in || Kundenanmeldung || Acceso de cliente
+Retour à l’accueil || Torna alla home || Back to home || Zurück zur Startseite || Volver al inicio
+Retour à l'accueil || Torna alla home || Back to home || Zurück zur Startseite || Volver al inicio
+Comment pouvons-nous vous appeler ? || Come possiamo chiamarti? || What should we call you? || Wie dürfen wir Sie nennen? || ¿Cómo te llamamos?
+Quelques infos avant de commencer, et on s'occupe du reste. || Qualche informazione prima di iniziare, e al resto pensiamo noi. || A few details before we start, and we'll take care of the rest. || Ein paar Angaben vorab, um den Rest kümmern wir uns. || Unos datos antes de empezar y nosotros nos ocupamos del resto.
+Prénom * || Nome * || First name * || Vorname * || Nombre *
+Nom * || Cognome * || Last name * || Nachname * || Apellido *
+N° table * || N° tavolo * || Table no. * || Tisch-Nr. * || N.º de mesa *
+Nombre de personnes || Numero di persone || Number of guests || Anzahl der Personen || Número de personas
+Téléphone (facultatif · points de fidélité) || Telefono (facoltativo · punti fedeltà) || Phone (optional · loyalty points) || Telefon (optional · Treuepunkte) || Teléfono (opcional · puntos de fidelidad)
+Les champs marqués d'une étoile (*) sont obligatoires. Pour changer de table plus tard, vous préviendrez l'administration depuis votre profil. || I campi contrassegnati da un asterisco (*) sono obbligatori. Per cambiare tavolo in seguito, avviserai l'amministrazione dal tuo profilo. || Fields marked with an asterisk (*) are required. To change table later, you'll notify the management from your profile. || Mit Sternchen (*) markierte Felder sind Pflichtfelder. Um später den Tisch zu wechseln, benachrichtigen Sie die Verwaltung über Ihr Profil. || Los campos marcados con asterisco (*) son obligatorios. Para cambiar de mesa más adelante, avisarás a la administración desde tu perfil.
+Commencer ma commande || Inizia il mio ordine || Start my order || Bestellung beginnen || Empezar mi pedido
+Profitez de l'expérience, nous préparons votre table. || Goditi l'esperienza, stiamo preparando il tuo tavolo. || Enjoy the experience, we're getting your table ready. || Genießen Sie es, wir bereiten Ihren Tisch vor. || Disfruta de la experiencia, estamos preparando tu mesa.
+Session en cours : || Sessione in corso: || Current session: || Aktuelle Sitzung: || Sesión en curso:
+Ce n'est pas moi || Non sono io || That's not me || Das bin nicht ich || No soy yo
+Indiquez votre prénom. || Indica il tuo nome. || Enter your first name. || Geben Sie Ihren Vornamen ein. || Indica tu nombre.
+Indiquez votre nom. || Indica il tuo cognome. || Enter your last name. || Geben Sie Ihren Nachnamen ein. || Indica tu apellido.
+Indiquez votre numéro de table pour que l'on sache où vous servir. || Indica il numero del tuo tavolo, così sappiamo dove servirti. || Enter your table number so we know where to serve you. || Geben Sie Ihre Tischnummer an, damit wir wissen, wo wir servieren. || Indica tu número de mesa para saber dónde servirte.
+Pour changer de table, utilisez l'icône de votre profil : l'administration doit d'abord donner son accord. || Per cambiare tavolo, usa l'icona del tuo profilo: l'amministrazione deve prima dare il suo consenso. || To change table, use your profile icon: the management must approve it first. || Um den Tisch zu wechseln, nutzen Sie das Profilsymbol: Die Verwaltung muss zuerst zustimmen. || Para cambiar de mesa, usa el icono de tu perfil: la administración debe aprobarlo antes.
+Votre session a expiré : identifiez-vous à nouveau. || La sessione è scaduta: identificati di nuovo. || Your session has expired: please sign in again. || Ihre Sitzung ist abgelaufen: Bitte melden Sie sich erneut an. || Tu sesión ha caducado: identifícate de nuevo.
+Je suis un client : m'identifier || Sono un cliente: identificarmi || I'm a customer: sign in || Ich bin Gast: anmelden || Soy cliente: identificarme
+
+# ---- Menu & Cafés (02, 03) ----
+Nos offres du moment || Le nostre offerte del momento || Current offers || Aktuelle Angebote || Nuestras ofertas del momento
+(appliquée automatiquement) || (applicata automaticamente) || (applied automatically) || (automatisch angewendet) || (aplicada automáticamente)
+Nouveautés || Novità || New || Neuheiten || Novedades
+Popularité || Popolarità || Popularity || Beliebtheit || Popularidad
+Prix croissant || Prezzo crescente || Price: low to high || Preis aufsteigend || Precio ascendente
+Prix décroissant || Prezzo decrescente || Price: high to low || Preis absteigend || Precio descendente
+Tous les prix || Tutti i prezzi || All prices || Alle Preise || Todos los precios
+Trier : || Ordina: || Sort: || Sortieren: || Ordenar:
+Prix : || Prezzo: || Price: || Preis: || Precio:
+Régime : || Dieta: || Diet: || Ernährung: || Dieta:
+Tous || Tutti || All || Alle || Todos
+Tout || Tutto || All || Alle || Todo
+All || Tutti || All || Alle || Todos
+Special || Speciale || Special || Spezial || Especial
+Réinitialiser les filtres || Azzera i filtri || Reset filters || Filter zurücksetzen || Restablecer filtros
+Aucun résultat || Nessun risultato || No results || Keine Ergebnisse || Sin resultados
+Aucun article ne correspond à votre recherche. || Nessun articolo corrisponde alla tua ricerca. || No item matches your search. || Kein Artikel entspricht Ihrer Suche. || Ningún artículo coincide con tu búsqueda.
+Pas encore de favoris || Ancora nessun preferito || No favourites yet || Noch keine Favoriten || Aún no hay favoritos
+Appuyez sur le cœur d'un article pour l'ajouter ici. || Tocca il cuore di un articolo per aggiungerlo qui. || Tap the heart on an item to add it here. || Tippen Sie auf das Herz eines Artikels, um ihn hier hinzuzufügen. || Toca el corazón de un artículo para añadirlo aquí.
+Quantité || Quantità || Quantity || Menge || Cantidad
+Découvrez notre sélection de cafés soigneusement choisis, torréfiés avec soin pour révéler des saveurs riches et nuancées. || Scopri la nostra selezione di caffè scelti con cura, tostati con attenzione per rivelare sapori ricchi e sfumati. || Discover our selection of carefully chosen coffees, roasted with care to reveal rich, nuanced flavours. || Entdecken Sie unsere sorgfältig ausgewählten Kaffees, behutsam geröstet für reiche, nuancierte Aromen. || Descubre nuestra selección de cafés elegidos con mimo, tostados con cuidado para revelar sabores ricos y matizados.
+Espresso, latte, café turc… en tasse ou à emporter. || Espresso, latte, caffè turco… in tazza o da asporto. || Espresso, latte, Turkish coffee… in a cup or to take away. || Espresso, Latte, türkischer Kaffee… in der Tasse oder zum Mitnehmen. || Espresso, latte, café turco… en taza o para llevar.
+Torréfiés avec soin || Tostati con cura || Carefully roasted || Sorgfältig geröstet || Tostados con mimo
+Ajouter aux favoris || Aggiungi ai preferiti || Add to favourites || Zu Favoriten hinzufügen || Añadir a favoritos
+Retirer des favoris || Rimuovi dai preferiti || Remove from favourites || Aus Favoriten entfernen || Quitar de favoritos
+Comment souhaitez-vous votre café ? || Come desideri il tuo caffè? || How would you like your coffee? || Wie möchten Sie Ihren Kaffee? || ¿Cómo quieres tu café?
+Votre composition || La tua composizione || Your selection || Ihre Zusammenstellung || Tu composición
+Obligatoire · 1 choix || Obbligatorio · 1 scelta || Required · 1 choice || Pflicht · 1 Auswahl || Obligatorio · 1 opción
+Facultatif · 1 choix || Facoltativo · 1 scelta || Optional · 1 choice || Optional · 1 Auswahl || Opcional · 1 opción
+Au choix || A scelta || Your choice || Nach Wahl || A elegir
+Inclus || Incluso || Included || Inklusive || Incluido
+~dès || da || from || ab || desde
+Sur place || Al tavolo || Dine in || Vor Ort || En el local
+Article mis à jour || Articolo aggiornato || Item updated || Artikel aktualisiert || Artículo actualizado
+Suggestions de recherche || Suggerimenti di ricerca || Search suggestions || Suchvorschläge || Sugerencias de búsqueda
+Populaire || Popolare || Popular || Beliebt || Popular
+Nouveau || Novità || New || Neu || Nuevo
+Souvent commandé avec || Spesso ordinato con || Often ordered with || Oft bestellt mit || Pedido a menudo con
+Vous pourriez aussi aimer || Potrebbe piacerti anche || You might also like || Das könnte Ihnen auch gefallen || También te puede gustar
+Idéal pour ce matin || Ideale per stamattina || Perfect for this morning || Ideal für heute Morgen || Ideal para esta mañana
+Pour votre pause déjeuner || Per la tua pausa pranzo || For your lunch break || Für Ihre Mittagspause || Para tu pausa del almuerzo
+Pour votre soirée || Per la tua serata || For your evening || Für Ihren Abend || Para tu velada
+Une pause gourmande ? || Una pausa golosa? || A sweet break? || Eine süße Pause? || ¿Una pausa golosa?
+Ajouter au panier || Aggiungi al carrello || Add to basket || In den Warenkorb || Añadir a la cesta
+
+# ---- Panier (04) ----
+Votre panier est vide || Il tuo carrello è vuoto || Your basket is empty || Ihr Warenkorb ist leer || Tu cesta está vacía
+Votre panier est vide. || Il tuo carrello è vuoto. || Your basket is empty. || Ihr Warenkorb ist leer. || Tu cesta está vacía.
+Ajoutez quelques articles depuis le menu pour commencer votre commande. || Aggiungi qualche articolo dal menù per iniziare il tuo ordine. || Add a few items from the menu to start your order. || Fügen Sie Artikel aus der Speisekarte hinzu, um Ihre Bestellung zu beginnen. || Añade algunos artículos de la carta para empezar tu pedido.
+Parcourir le menu || Sfoglia il menù || Browse the menu || Speisekarte durchsuchen || Explorar la carta
+Résumé || Riepilogo || Summary || Übersicht || Resumen
+Sous-total || Subtotale || Subtotal || Zwischensumme || Subtotal
+TTC || IVA incl. || incl. VAT || inkl. MwSt. || IVA incl.
+Total || Totale || Total || Gesamt || Total
+Commander || Ordina || Order || Bestellen || Pedir
+Confirmer ma commande || Conferma il mio ordine || Confirm my order || Bestellung bestätigen || Confirmar mi pedido
+Le paiement s'effectuera à la caisse ou via l'application après confirmation. || Il pagamento avverrà alla cassa o tramite l'app dopo la conferma. || Payment will be made at the till or via the app after confirmation. || Die Zahlung erfolgt nach der Bestätigung an der Kasse oder über die App. || El pago se realizará en caja o en la aplicación tras la confirmación.
+Ajouter une note à la commande || Aggiungi una nota all'ordine || Add a note to the order || Notiz zur Bestellung hinzufügen || Añadir una nota al pedido
+Masquer la note de commande || Nascondi la nota dell'ordine || Hide the order note || Bestellnotiz ausblenden || Ocultar la nota del pedido
+Une précision pour toute la commande ? (ex : allergie, table près de la fenêtre) || Una precisazione per tutto l'ordine? (es.: allergia, tavolo vicino alla finestra) || Any note for the whole order? (e.g. allergy, table by the window) || Ein Hinweis zur ganzen Bestellung? (z. B. Allergie, Tisch am Fenster) || ¿Alguna indicación para todo el pedido? (p. ej.: alergia, mesa junto a la ventana)
+Appeler le serveur || Chiama il cameriere || Call the waiter || Bedienung rufen || Llamar al camarero
+Serveur prévenu || Cameriere avvisato || Waiter notified || Bedienung benachrichtigt || Camarero avisado
+Le serveur a été prévenu, il arrive. || Il cameriere è stato avvisato, arriva subito. || The waiter has been notified and is on the way. || Die Bedienung wurde benachrichtigt und kommt gleich. || Hemos avisado al camarero, ya viene.
+Changer de table (demande à l'administration) || Cambia tavolo (richiesta all'amministrazione) || Change table (request to management) || Tisch wechseln (Anfrage an die Verwaltung) || Cambiar de mesa (solicitud a la administración)
+Suggestions pour votre panier || Suggerimenti per il tuo carrello || Suggestions for your basket || Vorschläge für Ihren Warenkorb || Sugerencias para tu cesta
+Utiliser mes points sur cette commande || Usa i miei punti per questo ordine || Use my points on this order || Meine Punkte für diese Bestellung nutzen || Usar mis puntos en este pedido
+Cette commande vous rapportera environ + || Questo ordine ti farà guadagnare circa + || This order will earn you about + || Diese Bestellung bringt Ihnen etwa + || Este pedido te dará unos +
+points une fois payée. || punti una volta pagato. || points once paid. || Punkte nach der Bezahlung. || puntos una vez pagado.
+Points fidélité ( || Punti fedeltà ( || Loyalty points ( || Treuepunkte ( || Puntos de fidelidad (
+Vous avez || Hai || You have || Sie haben || Tienes
+l’unité || cad. || each || pro Stück || la unidad
+Temps d’attente estimé : environ || Tempo di attesa stimato: circa || Estimated waiting time: about || Geschätzte Wartezeit: etwa || Tiempo de espera estimado: unos
+commande(s) en file) || ordine/i in coda) || order(s) in the queue) || Bestellung(en) in der Warteschlange) || pedido(s) en cola)
+Gobelet à emporter || Bicchiere da asporto || Takeaway cup || Becher zum Mitnehmen || Vaso para llevar
+» retiré du panier || » rimosso dal carrello || » removed from basket || » aus dem Warenkorb entfernt || » quitado de la cesta
+Non disponible à la commande en ligne : retirez cet article. || Non disponibile per l'ordine online: rimuovi questo articolo. || Not available for online ordering: please remove this item. || Online nicht bestellbar: Bitte entfernen Sie diesen Artikel. || No disponible para pedidos en línea: quita este artículo.
+Catalogue en ligne indisponible : cet article ne peut pas être vérifié pour le moment. || Catalogo online non disponibile: questo articolo non può essere verificato al momento. || Online catalogue unavailable: this item can't be checked right now. || Online-Katalog nicht verfügbar: Dieser Artikel kann gerade nicht geprüft werden. || Catálogo en línea no disponible: no se puede comprobar este artículo por ahora.
+Ajouté || Aggiunto || Added || Hinzugefügt || Añadido
+Ajouté au panier || Aggiunto al carrello || Added to basket || Zum Warenkorb hinzugefügt || Añadido a la cesta
+Panier incomplet || Carrello incompleto || Incomplete basket || Unvollständiger Warenkorb || Cesta incompleta
+Une commande est déjà en cours d’envoi. || Un ordine è già in fase di invio. || An order is already being sent. || Eine Bestellung wird bereits gesendet. || Ya se está enviando un pedido.
+Indiquez votre numéro de table (icône crayon à côté de « Table »). || Indica il numero del tuo tavolo (icona matita accanto a «Tavolo»). || Enter your table number (pencil icon next to "Table"). || Geben Sie Ihre Tischnummer an (Stiftsymbol neben „Tisch“). || Indica tu número de mesa (icono de lápiz junto a «Mesa»).
+Indiquez d’abord votre numéro de table (icône crayon sur la page Panier). || Indica prima il numero del tuo tavolo (icona matita nella pagina Carrello). || First enter your table number (pencil icon on the Basket page). || Geben Sie zuerst Ihre Tischnummer an (Stiftsymbol auf der Warenkorbseite). || Indica primero tu número de mesa (icono de lápiz en la página Cesta).
+Numéro de table trop long (20 caractères maximum). || Numero di tavolo troppo lungo (massimo 20 caratteri). || Table number too long (20 characters max). || Tischnummer zu lang (maximal 20 Zeichen). || Número de mesa demasiado largo (máximo 20 caracteres).
+Nombre de personnes invalide (1 à 50). || Numero di persone non valido (da 1 a 50). || Invalid number of guests (1 to 50). || Ungültige Personenzahl (1 bis 50). || Número de personas no válido (de 1 a 50).
+La note de commande est trop longue (255 caractères maximum). || La nota dell'ordine è troppo lunga (massimo 255 caratteri). || The order note is too long (255 characters max). || Die Bestellnotiz ist zu lang (maximal 255 Zeichen). || La nota del pedido es demasiado larga (máximo 255 caracteres).
+Impossible de joindre le serveur. Votre panier est conservé : réessayez dans un instant. || Impossibile contattare il server. Il tuo carrello è stato conservato: riprova tra un istante. || Can't reach the server. Your basket is saved: please try again shortly. || Server nicht erreichbar. Ihr Warenkorb bleibt erhalten: Versuchen Sie es gleich noch einmal. || No se puede contactar con el servidor. Tu cesta se ha guardado: inténtalo de nuevo en un momento.
+Le serveur n'a pas répondu à temps. Réessayez : si la commande avait été enregistrée, elle ne sera pas dupliquée. || Il server non ha risposto in tempo. Riprova: se l'ordine era già stato registrato, non verrà duplicato. || The server didn't respond in time. Try again: if the order was already recorded, it won't be duplicated. || Der Server hat nicht rechtzeitig geantwortet. Versuchen Sie es erneut: Eine bereits erfasste Bestellung wird nicht doppelt angelegt. || El servidor no respondió a tiempo. Inténtalo de nuevo: si el pedido ya se registró, no se duplicará.
+Commande non connectée au serveur || Ordine non collegato al server || Order not connected to the server || Bestellung nicht mit dem Server verbunden || Pedido no conectado al servidor
+Commande en cours : suivre || Ordine in corso: segui || Order in progress: track || Laufende Bestellung: verfolgen || Pedido en curso: seguir
+Connexion au serveur perdue — nouvelle tentative… || Connessione al server persa — nuovo tentativo… || Connection to the server lost — retrying… || Verbindung zum Server verloren — neuer Versuch… || Conexión con el servidor perdida — reintentando…
+Vous êtes hors ligne — reconnexion automatique… || Sei offline — riconnessione automatica… || You're offline — reconnecting automatically… || Sie sind offline — automatische Wiederverbindung… || Estás sin conexión — reconectando automáticamente…
+Connexion rétablie || Connessione ripristinata || Connection restored || Verbindung wiederhergestellt || Conexión restablecida
+Serveur injoignable : votre appel n’a pas été envoyé. Réessayez. || Server non raggiungibile: la tua chiamata non è stata inviata. Riprova. || Server unreachable: your call wasn't sent. Please try again. || Server nicht erreichbar: Ihr Ruf wurde nicht gesendet. Bitte erneut versuchen. || Servidor inaccesible: tu llamada no se ha enviado. Inténtalo de nuevo.
+Impossible de joindre le serveur. Vérifiez que l’API est démarrée, puis réessayez. || Impossibile contattare il server. Verifica che l'API sia avviata, poi riprova. || Can't reach the server. Check that the API is running, then try again. || Server nicht erreichbar. Prüfen Sie, ob die API läuft, und versuchen Sie es erneut. || No se puede contactar con el servidor. Comprueba que la API está en marcha e inténtalo de nuevo.
+Mettre à jour || Aggiorna || Update || Aktualisieren || Actualizar
+À choisir : || Da scegliere: || To choose: || Noch auszuwählen: || Por elegir:
+Ajouter — || Aggiungi — || Add — || Hinzufügen — || Añadir —
+Mettre à jour — || Aggiorna — || Update — || Aktualisieren — || Actualizar —
+Aucun produit pour « || Nessun prodotto per « || No products for " || Keine Produkte für „ || Ningún producto para «
+Voir tous les résultats pour « || Vedi tutti i risultati per « || See all results for " || Alle Ergebnisse für „ || Ver todos los resultados para «
+
+# ---- Suggestions du panier (cart-smart) ----
+Et pour accompagner ? || E per accompagnare? || Something to go with it? || Und dazu? || ¿Y para acompañar?
+Un petit quelque chose avec votre boisson ? || Qualcosa da abbinare alla tua bevanda? || A little something with your drink? || Eine Kleinigkeit zu Ihrem Getränk? || ¿Algo para acompañar tu bebida?
+Une boisson avec votre commande || Una bevanda con il tuo ordine || A drink with your order || Ein Getränk zu Ihrer Bestellung || Una bebida con tu pedido
+Souvent pris ensemble || Spesso presi insieme || Often bought together || Oft zusammen bestellt || Se piden juntos a menudo
+Pour vous || Per te || For you || Für Sie || Para ti
+Promotion à portée || Promozione a portata di mano || Offer within reach || Angebot in Reichweite || Promoción al alcance
+Plus que || Ancora || Only || Nur noch || Solo faltan
+pour profiter de « || per approfittare di « || to get " || um „ || para aprovechar «
+Service de vos cafés || Servizio dei tuoi caffè || How your coffees are served || Servierart Ihrer Kaffees || Servicio de tus cafés
+Tous vos cafés sont servis en tasse || Tutti i tuoi caffè sono serviti in tazza || All your coffees are served in a cup || Alle Ihre Kaffees werden in der Tasse serviert || Todos tus cafés se sirven en taza
+Tous vos cafés sont à emporter || Tutti i tuoi caffè sono da asporto || All your coffees are to take away || Alle Ihre Kaffees sind zum Mitnehmen || Todos tus cafés son para llevar
+Tout sur place || Tutto al tavolo || All dine-in || Alles vor Ort || Todo en el local
+Tout à emporter || Tutto da asporto || All takeaway || Alles zum Mitnehmen || Todo para llevar
+Addition partagée || Conto diviso || Split bill || Geteilte Rechnung || Cuenta dividida
+Repères || Riferimenti || At a glance || Überblick || Referencias
+Contient : || Contiene: || Contains: || Enthält: || Contiene:
+à emporter || da asporto || to take away || zum Mitnehmen || para llevar
+café || caffè || coffee || Kaffee || café
+
+# ---- Suivi de commande (05) ----
+Aucune commande en cours || Nessun ordine in corso || No order in progress || Keine laufende Bestellung || Ningún pedido en curso
+Vous n'avez pas encore passé de commande. Direction le menu pour vous régaler. || Non hai ancora fatto un ordine. Vai al menù e lasciati tentare. || You haven't placed an order yet. Head to the menu for a treat. || Sie haben noch nicht bestellt. Ab zur Speisekarte und genießen! || Aún no has hecho ningún pedido. Ve a la carta y date un capricho.
+Commande envoyée ! || Ordine inviato! || Order sent! || Bestellung gesendet! || ¡Pedido enviado!
+Commande envoyée || Ordine inviato || Order sent || Bestellung gesendet || Pedido enviado
+Merci pour votre commande, || Grazie per il tuo ordine, || Thank you for your order, || Vielen Dank für Ihre Bestellung, || Gracias por tu pedido,
+Récapitulatif || Riepilogo || Summary || Zusammenfassung || Resumen
+Retour au menu || Torna al menù || Back to menu || Zurück zur Speisekarte || Volver a la carta
+Demander l'addition || Chiedi il conto || Ask for the bill || Rechnung anfordern || Pedir la cuenta
+Addition demandée || Conto richiesto || Bill requested || Rechnung angefordert || Cuenta solicitada
+Addition demandée : un membre de l’équipe arrive avec la note. || Conto richiesto: un membro dello staff arriva con il conto. || Bill requested: a team member is on the way with it. || Rechnung angefordert: Ein Teammitglied bringt sie gleich. || Cuenta solicitada: un miembro del equipo viene con ella.
+Commande reçue || Ordine ricevuto || Order received || Bestellung erhalten || Pedido recibido
+Préparation || Preparazione || Preparation || Zubereitung || Preparación
+En préparation || In preparazione || Being prepared || In Zubereitung || En preparación
+Prête || Pronto || Ready || Fertig || Listo
+Servie || Servito || Served || Serviert || Servido
+Nouvelle || Nuovo || New || Neu || Nuevo
+Annulée || Annullato || Cancelled || Storniert || Cancelado
+Commande annulée || Ordine annullato || Order cancelled || Bestellung storniert || Pedido cancelado
+Payée || Pagato || Paid || Bezahlt || Pagado
+Payée en espèces || Pagato in contanti || Paid in cash || Bar bezahlt || Pagado en efectivo
+Payée en ligne || Pagato online || Paid online || Online bezahlt || Pagado en línea
+Payée par carte || Pagato con carta || Paid by card || Mit Karte bezahlt || Pagado con tarjeta
+Paiement enregistré ! || Pagamento registrato! || Payment recorded! || Zahlung erfasst! || ¡Pago registrado!
+Estimation en cours… || Stima in corso… || Estimating… || Wird geschätzt… || Calculando…
+Estimation indisponible || Stima non disponibile || Estimate unavailable || Schätzung nicht verfügbar || Estimación no disponible
+Statut mis à jour : || Stato aggiornato: || Status updated: || Status aktualisiert: || Estado actualizado:
+Points gagnés sur cette commande || Punti guadagnati con questo ordine || Points earned on this order || Mit dieser Bestellung gesammelte Punkte || Puntos ganados con este pedido
+Serveur injoignable : la commande n'a pas été annulée. Réessayez. || Server non raggiungibile: l'ordine non è stato annullato. Riprova. || Server unreachable: the order wasn't cancelled. Please try again. || Server nicht erreichbar: Die Bestellung wurde nicht storniert. Bitte erneut versuchen. || Servidor inaccesible: el pedido no se ha cancelado. Inténtalo de nuevo.
+Serveur injoignable : votre demande n’a pas été envoyée. || Server non raggiungibile: la tua richiesta non è stata inviata. || Server unreachable: your request wasn't sent. || Server nicht erreichbar: Ihre Anfrage wurde nicht gesendet. || Servidor inaccesible: tu solicitud no se ha enviado.
+). Réessayez ou réglez à la caisse. || ). Riprova o paga alla cassa. || ). Try again or pay at the till. || ). Versuchen Sie es erneut oder zahlen Sie an der Kasse. || ). Inténtalo de nuevo o paga en caja.
+Le paiement n'a pas pu être enregistré ( || Il pagamento non è stato registrato ( || The payment couldn't be recorded ( || Die Zahlung konnte nicht erfasst werden ( || No se ha podido registrar el pago (
+Annuler la commande || Annulla l'ordine || Cancel the order || Bestellung stornieren || Cancelar el pedido
+Payer en ligne || Paga online || Pay online || Online bezahlen || Pagar en línea
+Ticket || Scontrino || Receipt || Beleg || Ticket
+Bonne dégustation ! || Buona degustazione! || Enjoy! || Guten Appetit! || ¡Que aproveche!
+C’est prêt ! || È pronto! || It's ready! || Es ist fertig! || ¡Está listo!
+Le barista a votre commande. || Il barista ha il tuo ordine. || The barista has your order. || Der Barista hat Ihre Bestellung. || El barista tiene tu pedido.
+Mouture et extraction en cours. || Macinatura ed estrazione in corso. || Grinding and brewing in progress. || Mahlen und Extraktion laufen. || Molienda y extracción en curso.
+Votre commande arrive à table. || Il tuo ordine sta arrivando al tavolo. || Your order is on its way to your table. || Ihre Bestellung kommt an den Tisch. || Tu pedido llega a la mesa.
+On met l’eau à chauffer… || Mettiamo l'acqua a scaldare… || Putting the kettle on… || Wir setzen das Wasser auf… || Ponemos el agua a calentar…
+Servi || Servito || Served || Serviert || Servido
+
+# ---- À emporter (takeaway) ----
+À emporter ? Prévenez l’équipe || Da asporto? Avvisa lo staff || Taking away? Let the team know || Zum Mitnehmen? Sagen Sie dem Team Bescheid || ¿Para llevar? Avisa al equipo
+Votre commande contient des cafés en gobelet à emporter. Dites-nous quand vous partez : on les prépare pour vous. || Il tuo ordine contiene caffè in bicchiere da asporto. Dicci quando vai via: li prepariamo per te. || Your order includes coffees in takeaway cups. Tell us when you're leaving: we'll get them ready. || Ihre Bestellung enthält Kaffee im Becher zum Mitnehmen. Sagen Sie uns, wann Sie gehen: Wir bereiten ihn vor. || Tu pedido incluye cafés en vaso para llevar. Dinos cuándo te vas: te los preparamos.
+Je passe dans 10 min || Passo tra 10 min || I'll be there in 10 min || Ich komme in 10 Min. || Paso en 10 min
+J’arrive dans 5 min || Arrivo tra 5 min || I'll be there in 5 min || Ich bin in 5 Min. da || Llego en 5 min
+Je patiente au comptoir || Aspetto al bancone || I'm waiting at the counter || Ich warte an der Theke || Espero en la barra
+Un mot pour l’équipe (facultatif) || Un messaggio per lo staff (facoltativo) || A note for the team (optional) || Eine Nachricht ans Team (optional) || Un mensaje para el equipo (opcional)
+Prévenir l’équipe || Avvisa lo staff || Notify the team || Team benachrichtigen || Avisar al equipo
+Demande envoyée à l’équipe || Richiesta inviata allo staff || Request sent to the team || Anfrage an das Team gesendet || Solicitud enviada al equipo
+À emporter : réponse de l’équipe || Da asporto: risposta dello staff || Takeaway: team reply || Zum Mitnehmen: Antwort des Teams || Para llevar: respuesta del equipo
+À emporter : l’équipe a accepté || Da asporto: lo staff ha accettato || Takeaway: the team accepted || Zum Mitnehmen: Das Team hat zugestimmt || Para llevar: el equipo ha aceptado
+L’équipe a accepté || Lo staff ha accettato || The team accepted || Das Team hat zugestimmt || El equipo ha aceptado
+L’équipe ne peut pas pour le moment || Lo staff al momento non può || The team can't right now || Das Team kann gerade nicht || El equipo no puede por ahora
+C’est noté, votre commande vous attend. || Perfetto, il tuo ordine ti aspetta. || Noted, your order will be waiting for you. || Notiert, Ihre Bestellung wartet auf Sie. || Anotado, tu pedido te espera.
+Rapprochez-vous du comptoir. || Avvicinati al bancone. || Please come to the counter. || Bitte kommen Sie zur Theke. || Acércate a la barra.
+Envoyer une nouvelle demande || Invia una nuova richiesta || Send a new request || Neue Anfrage senden || Enviar una nueva solicitud
+Serveur injoignable : réessayez dans un instant. || Server non raggiungibile: riprova tra un istante. || Server unreachable: please try again shortly. || Server nicht erreichbar: Bitte gleich erneut versuchen. || Servidor inaccesible: inténtalo de nuevo en un momento.
+en gobelet carton. Après la commande, vous pourrez prévenir l’équipe de votre départ depuis le suivi. || in bicchiere di cartone. Dopo l'ordine potrai avvisare lo staff della tua partenza dalla pagina di stato. || in a paper cup. After ordering, you can let the team know you're leaving from the tracking page. || im Pappbecher. Nach der Bestellung können Sie dem Team über die Verfolgung Bescheid geben, wann Sie gehen. || en vaso de cartón. Tras el pedido, podrás avisar al equipo de tu salida desde el seguimiento.
+
+# ---- Profil, table, fidélité (profile.js) ----
+Mon profil || Il mio profilo || My profile || Mein Profil || Mi perfil
+Nom || Nome || Name || Name || Nombre
+Téléphone || Telefono || Phone || Telefon || Teléfono
+Personnes || Persone || Guests || Personen || Personas
+Plus de personnes || Più persone || More guests || Mehr Personen || Más personas
+Moins de personnes || Meno persone || Fewer guests || Weniger Personen || Menos personas
+Nombre de personnes mis à jour || Numero di persone aggiornato || Number of guests updated || Personenzahl aktualisiert || Número de personas actualizado
+Votre table — changer de table || Il tuo tavolo — cambia tavolo || Your table — change table || Ihr Tisch — Tisch wechseln || Tu mesa — cambiar de mesa
+Changer de table || Cambia tavolo || Change table || Tisch wechseln || Cambiar de mesa
+Table souhaitée (facultatif) || Tavolo desiderato (facoltativo) || Preferred table (optional) || Gewünschter Tisch (optional) || Mesa deseada (opcional)
+Motif (facultatif) || Motivo (facoltativo) || Reason (optional) || Grund (optional) || Motivo (opcional)
+Ex : trop de bruit, groupe plus nombreux… || Es.: troppo rumore, gruppo più numeroso… || E.g. too noisy, larger group… || Z. B. zu laut, größere Gruppe… || P. ej.: demasiado ruido, grupo más numeroso…
+Prévenir l’administration || Avvisa l'amministrazione || Notify the management || Verwaltung benachrichtigen || Avisar a la administración
+Demande envoyée à l’administration || Richiesta inviata all'amministrazione || Request sent to the management || Anfrage an die Verwaltung gesendet || Solicitud enviada a la administración
+Administration prévenue || Amministrazione avvisata || Management notified || Verwaltung benachrichtigt || Administración avisada
+Annuler ma demande || Annulla la mia richiesta || Cancel my request || Meine Anfrage zurückziehen || Cancelar mi solicitud
+Confirmer le changement de table || Conferma il cambio di tavolo || Confirm the table change || Tischwechsel bestätigen || Confirmar el cambio de mesa
+Confirmer (le panier sera vidé) || Conferma (il carrello sarà svuotato) || Confirm (the basket will be emptied) || Bestätigen (der Warenkorb wird geleert) || Confirmar (se vaciará la cesta)
+Votre nouvelle table || Il tuo nuovo tavolo || Your new table || Ihr neuer Tisch || Tu nueva mesa
+Votre table a bien été changée. || Il tuo tavolo è stato cambiato. || Your table has been changed. || Ihr Tisch wurde gewechselt. || Tu mesa se ha cambiado.
+Votre demande a été refusée || La tua richiesta è stata rifiutata || Your request was declined || Ihre Anfrage wurde abgelehnt || Tu solicitud ha sido rechazada
+Votre demande a été refusée. || La tua richiesta è stata rifiutata. || Your request was declined. || Ihre Anfrage wurde abgelehnt. || Tu solicitud ha sido rechazada.
+Votre demande de changement de table a été refusée || La tua richiesta di cambio tavolo è stata rifiutata || Your table change request was declined || Ihre Anfrage zum Tischwechsel wurde abgelehnt || Tu solicitud de cambio de mesa ha sido rechazada
+Indiquez la table. || Indica il tavolo. || Enter the table. || Geben Sie den Tisch an. || Indica la mesa.
+Une erreur est survenue || Si è verificato un errore || An error occurred || Ein Fehler ist aufgetreten || Se ha producido un error
+Terminer ma session || Termina la mia sessione || End my session || Meine Sitzung beenden || Terminar mi sesión
+Fidélité || Fedeltà || Loyalty || Treue || Fidelidad
+Programme de fidélité indisponible. || Programma fedeltà non disponibile. || Loyalty programme unavailable. || Treueprogramm nicht verfügbar. || Programa de fidelidad no disponible.
+Gain || Guadagno || Earned || Gutschrift || Ganancia
+Utilisation || Utilizzo || Redeemed || Einlösung || Uso
+Ajustement || Rettifica || Adjustment || Korrektur || Ajuste
+Restitution || Restituzione || Refund of points || Rückbuchung || Devolución
+Bronze || Bronzo || Bronze || Bronze || Bronce
+~Argent || Argento || Silver || Silber || Plata
+~Or || Oro || Gold || Gold || Oro
+Encore || Ancora || Still || Noch || Aún
+# Messages assemblés du profil
+L’administration vous attribue la table {0} — cliquez sur votre profil pour confirmer || L'amministrazione ti assegna il tavolo {0} — clicca sul tuo profilo per confermare || The management has assigned you table {0} — click your profile to confirm || Die Verwaltung weist Ihnen Tisch {0} zu — klicken Sie zur Bestätigung auf Ihr Profil || La administración te asigna la mesa {0} — haz clic en tu perfil para confirmar
+Vous êtes maintenant à la table {0} || Ora sei al tavolo {0} || You're now at table {0} || Sie sitzen jetzt an Tisch {0} || Ahora estás en la mesa {0}
+Vous êtes à la table {0}. Pour en changer, prévenez l’administration : elle vous indiquera une table disponible. || Sei al tavolo {0}. Per cambiarlo, avvisa l'amministrazione: ti indicherà un tavolo libero. || You're at table {0}. To change, notify the management: they'll tell you which table is free. || Sie sitzen an Tisch {0}. Für einen Wechsel benachrichtigen Sie die Verwaltung: Sie nennt Ihnen einen freien Tisch. || Estás en la mesa {0}. Para cambiarla, avisa a la administración: te indicará una mesa libre.
+Votre demande a été refusée : « {0} » || La tua richiesta è stata rifiutata: « {0} » || Your request was declined: "{0}" || Ihre Anfrage wurde abgelehnt: „{0}“ || Tu solicitud ha sido rechazada: «{0}»
+Encore {0} points avant le palier {1} || Ancora {0} punti per il livello {1} || {0} more points to reach {1} || Noch {0} Punkte bis zur Stufe {1} || Faltan {0} puntos para el nivel {1}
+1 point par € payé · 10 points = 1 € · à utiliser depuis le Panier (minimum {0} points). || 1 punto per ogni € pagato · 10 punti = 1 € · da usare dal Carrello (minimo {0} punti). || 1 point per € paid · 10 points = 1 € · redeem from the Basket (minimum {0} points). || 1 Punkt pro bezahltem € · 10 Punkte = 1 € · im Warenkorb einlösbar (mindestens {0} Punkte). || 1 punto por € pagado · 10 puntos = 1 € · se canjean en la Cesta (mínimo {0} puntos).
+= {0} € de remise · palier {1} (x{2}) || = {0} € di sconto · livello {1} (x{2}) || = {0} € off · {1} tier (x{2}) || = {0} € Rabatt · Stufe {1} (x{2}) || = {0} € de descuento · nivel {1} (x{2})
+Table {0} || Tavolo {0} || Table {0} || Tisch {0} || Mesa {0}
+Ajouté au panier — {0} || Aggiunto al carrello — {0} || Added to basket — {0} || Zum Warenkorb hinzugefügt — {0} || Añadido a la cesta — {0}
+× {0} au panier || × {0} nel carrello || × {0} in basket || × {0} im Warenkorb || × {0} en la cesta
+Au choix · jusqu’à {0} || A scelta · fino a {0} || Your choice · up to {0} || Nach Wahl · bis zu {0} || A elegir · hasta {0}
+{0} : {1} choix maximum || {0}: massimo {1} scelte || {0}: {1} choices max || {0}: höchstens {1} Auswahl(en) || {0}: máximo {1} opciones
+À choisir : {0} || Da scegliere: {0} || To choose: {0} || Noch auszuwählen: {0} || Por elegir: {0}
+Allergènes : {0} || Allergeni: {0} || Allergens: {0} || Allergene: {0} || Alérgenos: {0}
+{0} en vidéo || {0} in video || {0} on video || {0} im Video || {0} en vídeo
+{0} doit être reconfiguré : retirez-le puis ajoutez-le de nouveau depuis le menu. || {0} deve essere riconfigurato: rimuovilo e aggiungilo di nuovo dal menù. || {0} needs to be set up again: remove it and add it back from the menu. || {0} muss neu konfiguriert werden: Entfernen Sie den Artikel und fügen Sie ihn erneut aus der Speisekarte hinzu. || {0} debe configurarse de nuevo: quítalo y vuelve a añadirlo desde la carta.
+{0} : le catalogue en ligne est indisponible, impossible de vérifier cet article pour le moment. || {0}: il catalogo online non è disponibile, impossibile verificare questo articolo al momento. || {0}: the online catalogue is unavailable, this item can't be checked right now. || {0}: Der Online-Katalog ist nicht verfügbar, der Artikel kann gerade nicht geprüft werden. || {0}: el catálogo en línea no está disponible, no se puede comprobar este artículo por ahora.
+{0} : quantité invalide (1 à 50). || {0}: quantità non valida (da 1 a 50). || {0}: invalid quantity (1 to 50). || {0}: ungültige Menge (1 bis 50). || {0}: cantidad no válida (de 1 a 50).
+{0} : commentaire trop long (255 caractères maximum). || {0}: commento troppo lungo (massimo 255 caratteri). || {0}: comment too long (255 characters max). || {0}: Kommentar zu lang (maximal 255 Zeichen). || {0}: comentario demasiado largo (máximo 255 caracteres).
+Le serveur a refusé la commande (HTTP {0}). || Il server ha rifiutato l'ordine (HTTP {0}). || The server rejected the order (HTTP {0}). || Der Server hat die Bestellung abgelehnt (HTTP {0}). || El servidor rechazó el pedido (HTTP {0}).
+Vous cherchez {0} ? Voici notre sélection. || Cerchi {0}? Ecco la nostra selezione. || Looking for {0}? Here's our selection. || Sie suchen {0}? Hier ist unsere Auswahl. || ¿Buscas {0}? Esta es nuestra selección.
+Voici ce qui correspond le mieux à "{0}". || Ecco ciò che corrisponde meglio a "{0}". || Here's the best match for "{0}". || Das passt am besten zu „{0}“. || Esto es lo que mejor encaja con «{0}».
+Rien ne correspond exactement, mais jetez un œil à notre carte complète. || Niente corrisponde esattamente, ma dai un'occhiata al nostro menù completo. || Nothing matches exactly, but have a look at our full menu. || Nichts passt genau, aber werfen Sie einen Blick auf unsere ganze Karte. || Nada coincide exactamente, pero echa un vistazo a nuestra carta completa.
+un bon café chaud || un buon caffè caldo || a nice hot coffee || einen guten heißen Kaffee || un buen café caliente
+quelque chose de sucré || qualcosa di dolce || something sweet || etwas Süßes || algo dulce
+un repas salé || un pasto salato || a savoury meal || eine herzhafte Mahlzeit || una comida salada
+~et || e || and || und || y
+
+# ---- Assistant client (ai-client.js) ----
+Je cherche… || Sto cercando… || Searching… || Ich suche… || Buscando…
+Associations proposées || Abbinamenti suggeriti || Suggested pairings || Vorgeschlagene Kombinationen || Combinaciones sugeridas
+Tient compte de vos commandes précédentes. || Tiene conto dei tuoi ordini precedenti. || Takes your previous orders into account. || Berücksichtigt Ihre früheren Bestellungen. || Tiene en cuenta tus pedidos anteriores.
+Rien n’est ajouté automatiquement : touchez « + » ou ouvrez un produit pour le choisir. || Nulla viene aggiunto automaticamente: tocca «+» o apri un prodotto per sceglierlo. || Nothing is added automatically: tap "+" or open a product to choose it. || Nichts wird automatisch hinzugefügt: Tippen Sie auf „+“ oder öffnen Sie ein Produkt. || No se añade nada automáticamente: toca «+» o abre un producto para elegirlo.
+Petit prix (jusqu’à {0}) || Prezzo contenuto (fino a {0}) || Low price (up to {0}) || Günstig (bis {0}) || Precio bajo (hasta {0})
+Quelque chose de frais || Qualcosa di fresco || Something cool || Etwas Frisches || Algo fresco
+Quelque chose de chaud || Qualcosa di caldo || Something hot || Etwas Warmes || Algo caliente
+Peu sucré || Poco dolce || Not too sweet || Wenig süß || Poco dulce
+Léger (peu de calories) || Leggero (poche calorie) || Light (low calorie) || Leicht (wenig Kalorien) || Ligero (pocas calorías)
+Bien copieux || Bello abbondante || Nice and hearty || Schön sättigend || Bien abundante
+Une association ({0}) || Un abbinamento ({0}) || A pairing ({0}) || Eine Kombination ({0}) || Una combinación ({0})
+le plus commandé || il più ordinato || most ordered || am häufigsten bestellt || el más pedido
+vous l’avez déjà apprécié || ti è già piaciuto || you've enjoyed it before || hat Ihnen schon geschmeckt || ya te gustó
+vous l’avez déjà pris || l'hai già preso || you've had it before || hatten Sie schon || ya lo pediste
+choisissez « Sucre : peu » dans la fiche || scegli «Zucchero: poco» nella scheda || choose "Sugar: a little" on the product page || wählen Sie „Zucker: wenig“ im Produkt || elige «Azúcar: poco» en la ficha
+servi frais || servito fresco || served cold || kalt serviert || servido frío
+souvent pris ensemble ({0} commandes) || spesso presi insieme ({0} ordini) || often bought together ({0} orders) || oft zusammen bestellt ({0} Bestellungen) || se piden juntos a menudo ({0} pedidos)
+Suggestion générale (heure de la journée et popularité) || Suggerimento generale (ora del giorno e popolarità) || General suggestion (time of day and popularity) || Allgemeiner Vorschlag (Tageszeit und Beliebtheit) || Sugerencia general (hora del día y popularidad)
+Basé sur vos commandes précédentes || Basato sui tuoi ordini precedenti || Based on your previous orders || Basierend auf Ihren früheren Bestellungen || Basado en tus pedidos anteriores
+Basé sur ce que commandent les autres clients || Basato su ciò che ordinano gli altri clienti || Based on what other customers order || Basierend auf dem, was andere Gäste bestellen || Basado en lo que piden otros clientes
+Rien dans cette catégorie ne correspond à tous vos critères : voici les produits les plus proches. || Niente in questa categoria soddisfa tutti i tuoi criteri: ecco i prodotti più simili. || Nothing in this category meets all your criteria: here are the closest products. || Nichts in dieser Kategorie erfüllt alle Kriterien: Hier die passendsten Produkte. || Nada en esta categoría cumple todos tus criterios: estos son los productos más cercanos.
+Aucun produit ne coche toutes les cases : nous avons élargi au chaud et au froid. || Nessun prodotto soddisfa tutto: abbiamo incluso caldo e freddo. || No product ticks every box: we've widened to hot and cold. || Kein Produkt erfüllt alles: Wir haben auf warm und kalt erweitert. || Ningún producto cumple todo: hemos ampliado a frío y caliente.
+Aucun produit de moins de 250 kcal ne correspond : voici les plus légers possibles. || Nessun prodotto sotto le 250 kcal corrisponde: ecco i più leggeri possibili. || No product under 250 kcal matches: here are the lightest options. || Kein Produkt unter 250 kcal passt: Hier die leichtesten. || Ningún producto de menos de 250 kcal coincide: estos son los más ligeros.
+Aucune association ne tient dans votre budget. || Nessun abbinamento rientra nel tuo budget. || No pairing fits your budget. || Keine Kombination passt in Ihr Budget. || Ninguna combinación entra en tu presupuesto.
+Suggestion générale pour {0}. || Suggerimento generale per {0}. || General suggestion for {0}. || Allgemeiner Vorschlag für {0}. || Sugerencia general para {0}.
+Suggestion générale. || Suggerimento generale. || General suggestion. || Allgemeiner Vorschlag. || Sugerencia general.
+Aucun produit disponible ne correspond. Parcourez le menu complet. || Nessun prodotto disponibile corrisponde. Sfoglia il menù completo. || No available product matches. Browse the full menu. || Kein verfügbares Produkt passt. Durchsuchen Sie die ganze Karte. || Ningún producto disponible coincide. Explora la carta completa.
+le matin || il mattino || the morning || den Morgen || la mañana
+le midi || il pranzo || lunchtime || die Mittagszeit || el mediodía
+l'après-midi || il pomeriggio || the afternoon || den Nachmittag || la tarde
+le soir || la sera || the evening || den Abend || la noche
+la nuit || la notte || the night || die Nacht || la noche
+Le soir || La sera || Evening || Abends || Por la noche
+La nuit || La notte || Night || Nachts || Por la noche
+
+# ---- Libellés d'accessibilité et compteurs (relevés par le robot) ----
+Ajouter {0} au panier || Aggiungi {0} al carrello || Add {0} to basket || {0} in den Warenkorb || Añadir {0} a la cesta
+Voir {0} || Vedi {0} || View {0} || {0} ansehen || Ver {0}
+@{0} articles || {0} articoli || {0} items || {0} Artikel || {0} artículos
+@{0} article || {0} articolo || {0} item || {0} Artikel || {0} artículo
+@({0} produits) || ({0} prodotti) || ({0} products) || ({0} Produkte) || ({0} productos)
+@({0} produit) || ({0} prodotto) || ({0} product) || ({0} Produkt) || ({0} producto)
+
+# ---- Compléments (textes conditionnels repérés dans le code) ----
+Envoi… || Invio… || Sending… || Wird gesendet… || Enviando…
+Bonsoir || Buonasera || Good evening || Guten Abend || Buenas noches
+Latte & croissant du matin || Latte e cornetto del mattino || Morning latte & croissant || Morgendlicher Latte & Croissant || Latte y cruasán de la mañana
+Parcourir le menu complet || Sfoglia il menù completo || Browse the full menu || Ganze Karte ansehen || Explorar la carta completa
+Votre dernière commande || Il tuo ultimo ordine || Your last order || Ihre letzte Bestellung || Tu último pedido
+Votre habitude || La tua abitudine || Your usual || Ihr Üblicher || Lo de siempre
+Recommander || Ordina di nuovo || Order again || Erneut bestellen || Volver a pedir
+Voir || Vedi || View || Ansehen || Ver
+Mes commandes précédentes || I miei ordini precedenti || My previous orders || Meine früheren Bestellungen || Mis pedidos anteriores
+Annuler définitivement cette commande ? || Annullare definitivamente questo ordine? || Cancel this order for good? || Diese Bestellung endgültig stornieren? || ¿Cancelar definitivamente este pedido?
+Cette commande ne sera pas préparée. || Questo ordine non verrà preparato. || This order won't be prepared. || Diese Bestellung wird nicht zubereitet. || Este pedido no se preparará.
+Commande annulée — aucun paiement dû. || Ordine annullato — nessun pagamento dovuto. || Order cancelled — nothing to pay. || Bestellung storniert — keine Zahlung fällig. || Pedido cancelado — no hay nada que pagar.
+Paiement en ligne indisponible pour cette commande — réglez à la caisse. || Pagamento online non disponibile per questo ordine — paga alla cassa. || Online payment unavailable for this order — please pay at the till. || Online-Zahlung für diese Bestellung nicht verfügbar — bitte an der Kasse zahlen. || Pago en línea no disponible para este pedido — paga en caja.
+Payer en ligne (simulé) || Paga online (simulato) || Pay online (simulated) || Online bezahlen (simuliert) || Pagar en línea (simulado)
+Ne pas utiliser de points || Non usare punti || Don't use points || Keine Punkte einlösen || No usar puntos
+Un commentaire pour cet article ? (ex : sans sucre) || Un commento per questo articolo? (es.: senza zucchero) || A comment for this item? (e.g. no sugar) || Ein Kommentar zu diesem Artikel? (z. B. ohne Zucker) || ¿Un comentario para este artículo? (p. ej.: sin azúcar)
+Commentaire pour {0} || Commento per {0} || Comment for {0} || Kommentar zu {0} || Comentario para {0}
+Ajouter un {0} || Aggiungi un {0} || Add one {0} || Ein {0} hinzufügen || Añadir un {0}
+Retirer un {0} || Togli un {0} || Remove one {0} || Ein {0} entfernen || Quitar un {0}
+À reconfigurer : retirez cet article puis ajoutez-le de nouveau depuis le menu. || Da riconfigurare: rimuovi questo articolo e aggiungilo di nuovo dal menù. || Needs setting up again: remove this item and add it back from the menu. || Neu zu konfigurieren: Entfernen Sie den Artikel und fügen Sie ihn erneut aus der Speisekarte hinzu. || Por reconfigurar: quita este artículo y vuelve a añadirlo desde la carta.
+Service de tous les cafés || Servizio di tutti i caffè || How all coffees are served || Servierart aller Kaffees || Servicio de todos los cafés
+Service du café || Servizio del caffè || How the coffee is served || Servierart des Kaffees || Servicio del café
+Message pour l’équipe || Messaggio per lo staff || Message for the team || Nachricht ans Team || Mensaje para el equipo
+Réponse en attente… || Risposta in attesa… || Waiting for a reply… || Antwort ausstehend… || Respuesta pendiente…
+L’équipe a accepté ({0}) || Lo staff ha accettato ({0}) || The team accepted ({0}) || Das Team hat zugestimmt ({0}) || El equipo ha aceptado ({0})
+{0} n'est pas disponible à la commande en ligne : retirez-le du panier. || {0} non è disponibile per l'ordine online: rimuovilo dal carrello. || {0} isn't available for online ordering: please remove it from the basket. || {0} ist online nicht bestellbar: Bitte aus dem Warenkorb entfernen. || {0} no está disponible para pedidos en línea: quítalo de la cesta.
+{0} n'est plus disponible. || {0} non è più disponibile. || {0} is no longer available. || {0} ist nicht mehr verfügbar. || {0} ya no está disponible.
+{0} : choisissez une option pour « {1} » (ouvrez la fiche du produit). || {0}: scegli un'opzione per « {1} » (apri la scheda del prodotto). || {0}: choose an option for "{1}" (open the product page). || {0}: Wählen Sie eine Option für „{1}“ (Produkt öffnen). || {0}: elige una opción para «{1}» (abre la ficha del producto).
+{0} : trop d'options choisies pour « {1} ». || {0}: troppe opzioni scelte per « {1} ». || {0}: too many options chosen for "{1}". || {0}: zu viele Optionen für „{1}“ gewählt. || {0}: demasiadas opciones elegidas para «{1}».
+{0} : une option ne correspond pas à ce produit, reconfigurez l'article. || {0}: un'opzione non corrisponde a questo prodotto, riconfigura l'articolo. || {0}: an option doesn't match this product, please set the item up again. || {0}: Eine Option passt nicht zu diesem Produkt, bitte Artikel neu konfigurieren. || {0}: una opción no corresponde a este producto, vuelve a configurar el artículo.
+@({0} commande(s) avant la vôtre) || ({0} ordine/i prima del tuo) || ({0} order(s) ahead of yours) || ({0} Bestellung(en) vor Ihrer) || ({0} pedido(s) antes del tuyo)
+Session en cours : {0} — table {1}, {2} pers. || Sessione in corso: {0} — tavolo {1}, {2} pers. || Current session: {0} — table {1}, {2} guests || Aktuelle Sitzung: {0} — Tisch {1}, {2} Pers. || Sesión en curso: {0} — mesa {1}, {2} pers.
+table || tavolo || table || Tisch || mesa
+Identification || Identificazione || Sign in || Anmeldung || Identificación
+Ajouter un || Aggiungi uno || Add one || Eins hinzufügen || Añadir uno
+Retirer un || Togli uno || Remove one || Eins entfernen || Quitar uno
+Vous l’avez déjà pris || L'hai già preso || You've had it before || Hatten Sie schon || Ya lo pediste
+Vous l’avez déjà apprécié || Ti è già piaciuto || You've enjoyed it before || Hat Ihnen schon geschmeckt || Ya te gustó
+Le plus commandé || Il più ordinato || Most ordered || Am häufigsten bestellt || El más pedido
+Servi frais || Servito fresco || Served cold || Kalt serviert || Servido frío
+Rapide à préparer || Veloce da preparare || Quick to prepare || Schnell zubereitet || Rápido de preparar
+Souvent pris ensemble ({0} commandes) || Spesso presi insieme ({0} ordini) || Often bought together ({0} orders) || Oft zusammen bestellt ({0} Bestellungen) || Se piden juntos a menudo ({0} pedidos)

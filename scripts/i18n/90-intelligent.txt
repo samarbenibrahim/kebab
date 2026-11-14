@@ -1,0 +1,180 @@
+# Photos multiples, choix, commande express, allergies, commande de groupe (migration 024, 2026-11-01).
+# français || italiano || english || deutsch || español
+
+# ---- Nouveaux choix (database/seed_choix.php) ----
+Pain || Pane || Bread || Brot || Pan
+Pain turc || Pane turco || Turkish bread || Türkisches Brot || Pan turco
+Piadina || Piadina || Piadina || Piadina || Piadina
+Pain complet || Pane integrale || Wholemeal bread || Vollkornbrot || Pan integral
+Cuisson de l'œuf || Cottura dell'uovo || How the egg is cooked || Eizubereitung || Punto del huevo
+Au plat || All'occhio di bue || Fried || Spiegelei || Frito
+Brouillés || Strapazzate || Scrambled || Rührei || Revueltos
+Omelette || Frittata || Omelette || Omelett || Tortilla francesa
+Dur || Sodo || Hard-boiled || Hart gekocht || Duro
+Préférences || Preferenze || Preferences || Vorlieben || Preferencias
+Sans gluten si possible || Senza glutine se possibile || Gluten-free if possible || Glutenfrei, wenn möglich || Sin gluten si es posible
+Sans lactose si possible || Senza lattosio se possibile || Lactose-free if possible || Laktosefrei, wenn möglich || Sin lactosa si es posible
+Sans sucre ajouté || Senza zuccheri aggiunti || No added sugar || Ohne Zuckerzusatz || Sin azúcar añadido
+Servi || Servito || Served || Serviert || Servido
+À part || A parte || On the side || Separat || Aparte
+Dans le plat || Nel piatto || In the dish || Im Gericht || En el plato
+
+# ---- Fiche produit ----
+Votre choix || La tua scelta || Your choice || Ihre Auswahl || Tu elección
+À vous de choisir || A te la scelta || Up to you || Sie haben die Wahl || Tú eliges
+Photo précédente || Foto precedente || Previous photo || Vorheriges Foto || Foto anterior
+Photo suivante || Foto successiva || Next photo || Nächstes Foto || Foto siguiente
+{0} — photo {1} || {0} — foto {1} || {0} — photo {1} || {0} — Foto {1} || {0} — foto {1}
+Passez en menu pour +{0} || Passa al menù per +{0} || Make it a meal for +{0} || Als Menü für +{0} || Pásate al menú por +{0}
+Passez en menu || Passa al menù || Make it a meal || Als Menü nehmen || Pásate al menú
+
+# ---- Commande express (voix / texte) ----
+Commande express || Ordine express || Express order || Express-Bestellung || Pedido exprés
+Dites ou écrivez || Dillo o scrivilo || Say it or type it || Sagen oder schreiben || Dilo o escríbelo
+Dites ou écrivez votre commande || Dì o scrivi il tuo ordine || Say or type your order || Sagen oder schreiben Sie Ihre Bestellung || Di o escribe tu pedido
+Ex. « 2 sandwichs kebab sans oignon sauce piquante et un coca » || Es. « 2 panini kebab senza cipolla salsa piccante e una coca » || E.g. "2 kebab sandwiches without onion, hot sauce and a coke" || Z. B. „2 Kebab-Sandwiches ohne Zwiebeln, scharfe Soße und eine Cola“ || Ej. «2 bocadillos kebab sin cebolla salsa picante y una coca»
+Parler || Parla || Speak || Sprechen || Hablar
+Appuyez et parlez || Tocca e parla || Tap and speak || Tippen und sprechen || Toca y habla
+Je vous écoute… || Ti ascolto… || Listening… || Ich höre zu… || Te escucho…
+Micro refusé : écrivez votre commande || Microfono negato: scrivi il tuo ordine || Microphone blocked: type your order || Mikrofon blockiert: Schreiben Sie Ihre Bestellung || Micrófono bloqueado: escribe tu pedido
+Je n'ai pas compris, réessayez || Non ho capito, riprova || I didn't catch that, please try again || Nicht verstanden, bitte noch einmal || No te he entendido, inténtalo de nuevo
+Votre commande, en toutes lettres… || Il tuo ordine, a parole… || Your order, in your own words… || Ihre Bestellung, in eigenen Worten… || Tu pedido, con tus palabras…
+Analyser || Analizza || Analyse || Analysieren || Analizar
+Astuce : touchez le micro du clavier de votre téléphone pour dicter dans le champ. || Suggerimento: tocca il microfono della tastiera del telefono per dettare nel campo. || Tip: tap the microphone on your phone's keyboard to dictate into the field. || Tipp: Tippen Sie auf das Mikrofon Ihrer Handytastatur, um ins Feld zu diktieren. || Consejo: toca el micrófono del teclado de tu móvil para dictar en el campo.
+Compris || Capito || Understood || Verstanden || Entendido
+Moins || Meno || Less || Weniger || Menos
+Choisir le produit || Scegli il prodotto || Choose the product || Produkt wählen || Elegir el producto
+Pas compris : « {0} » || Non capito: « {0} » || Not understood: "{0}" || Nicht verstanden: „{0}“ || No entendido: «{0}»
+Aucun article reconnu. Essayez avec le nom affiché sur le menu. || Nessun articolo riconosciuto. Prova con il nome indicato nel menù. || No item recognised. Try the name shown on the menu. || Kein Artikel erkannt. Versuchen Sie es mit dem Namen auf der Karte. || Ningún artículo reconocido. Prueba con el nombre de la carta.
+{0} article(s) ajouté(s) au panier || {0} articolo/i aggiunto/i al carrello || {0} item(s) added to the basket || {0} Artikel in den Warenkorb gelegt || {0} artículo(s) añadido(s) a la cesta
+
+# ---- Profil allergies / régime ----
+Mes allergies || Le mie allergie || My allergies || Meine Allergien || Mis alergias
+Menu adapté || Menù su misura || Tailored menu || Angepasste Karte || Carta adaptada
+Profil personnel || Profilo personale || Personal profile || Persönliches Profil || Perfil personal
+Mes allergies et mon régime || Le mie allergie e la mia dieta || My allergies and diet || Meine Allergien und Ernährung || Mis alergias y mi dieta
+Gardé uniquement sur ce téléphone. Le menu signale ce qui vous convient. || Salvato solo su questo telefono. Il menù segnala ciò che fa per te. || Kept only on this phone. The menu shows what suits you. || Nur auf diesem Handy gespeichert. Die Karte zeigt, was zu Ihnen passt. || Guardado solo en este móvil. La carta indica lo que te conviene.
+Je suis allergique à || Sono allergico a || I'm allergic to || Ich bin allergisch gegen || Soy alérgico a
+Mon régime || La mia dieta || My diet || Meine Ernährung || Mi dieta
+Plats qui ne me conviennent pas || Piatti non adatti a me || Dishes that don't suit me || Gerichte, die nicht passen || Platos que no me convienen
+Les signaler || Segnalarli || Flag them || Markieren || Señalarlos
+Les masquer || Nasconderli || Hide them || Ausblenden || Ocultarlos
+Informations indicatives fournies par le restaurant. En cas d'allergie sévère, confirmez toujours avec le personnel. || Informazioni indicative fornite dal ristorante. In caso di allergia grave, chiedi sempre conferma al personale. || Indicative information provided by the restaurant. If you have a severe allergy, always check with the staff. || Unverbindliche Angaben des Restaurants. Bei schweren Allergien bitte immer beim Personal nachfragen. || Información orientativa del restaurante. En caso de alergia grave, confírmalo siempre con el personal.
+Tout effacer || Cancella tutto || Clear all || Alles löschen || Borrar todo
+Profil enregistré : le menu est adapté || Profilo salvato: il menù è su misura || Profile saved: the menu is tailored to you || Profil gespeichert: Die Karte ist angepasst || Perfil guardado: la carta está adaptada
+Profil effacé || Profilo cancellato || Profile cleared || Profil gelöscht || Perfil borrado
+Compatible || Compatibile || Suitable || Geeignet || Compatible
+À vérifier || Da verificare || To check || Zu prüfen || Por verificar
+Attention : contient {0} || Attenzione: contiene {0} || Warning: contains {0} || Achtung: enthält {0} || Atención: contiene {0}
+D'après votre profil allergies. Demandez conseil au personnel. || Secondo il tuo profilo allergie. Chiedi consiglio al personale. || Based on your allergy profile. Ask the staff for advice. || Laut Ihrem Allergieprofil. Fragen Sie das Personal. || Según tu perfil de alergias. Pide consejo al personal.
+À vérifier avec le personnel || Da verificare con il personale || Check with the staff || Beim Personal nachfragen || Consúltalo con el personal
+Informations non renseignées : {0}. || Informazioni non indicate: {0}. || Information not provided: {0}. || Keine Angaben: {0}. || Información no indicada: {0}.
+allergènes || allergeni || allergens || Allergene || alérgenos
+Compatible avec votre profil || Compatibile con il tuo profilo || Suits your profile || Passt zu Ihrem Profil || Compatible con tu perfil
+D'après les informations du restaurant. || Secondo le informazioni del ristorante. || Based on the restaurant's information. || Laut Angaben des Restaurants. || Según la información del restaurante.
+
+# ---- Panier : passez en menu ----
+Plus avantageux || Più conveniente || Better value || Günstiger || Más ventajoso
+Passez votre {0} en menu pour +{1} || Passa il tuo {0} al menù per +{1} || Make your {0} a meal for +{1} || Ihr {0} als Menü für +{1} || Pasa tu {0} a menú por +{1}
+Passez votre {0} en menu || Passa il tuo {0} al menù || Make your {0} a meal || Ihr {0} als Menü || Pasa tu {0} a menú
+Vos choix sont conservés. || Le tue scelte restano invariate. || Your choices are kept. || Ihre Auswahl bleibt erhalten. || Se mantienen tus elecciones.
+Passer en menu || Passa al menù || Make it a meal || Als Menü nehmen || Pasar a menú
+
+# ---- Commande de groupe à table ----
+Commande de la table || Ordine del tavolo || Table order || Tischbestellung || Pedido de la mesa
+Commande de la table {0} || Ordine del tavolo {0} || Table {0} order || Bestellung Tisch {0} || Pedido de la mesa {0}
+Commandez à plusieurs, une seule commande part en cuisine || Ordinate insieme, un solo ordine va in cucina || Order together, a single order goes to the kitchen || Gemeinsam bestellen, nur eine Bestellung geht in die Küche || Pedid juntos, un solo pedido va a la cocina
+{0} personne(s) · {1} article(s) · {2} || {0} persona/e · {1} articolo/i · {2} || {0} person(s) · {1} item(s) · {2} || {0} Person(en) · {1} Artikel · {2} || {0} persona(s) · {1} artículo(s) · {2}
+moi || io || me || ich || yo
+Chacun remplit son panier || Ognuno riempie il suo carrello || Everyone fills their own basket || Jeder füllt seinen Warenkorb || Cada uno llena su cesta
+et l'ajoute à la table || e lo aggiunge al tavolo || and adds it to the table || und fügt ihn zum Tisch hinzu || y la añade a la mesa
+Une personne envoie tout en cuisine || Una persona invia tutto in cucina || One person sends everything to the kitchen || Eine Person schickt alles in die Küche || Una persona lo envía todo a la cocina
+Ajouter mon panier à la table ({0}) || Aggiungi il mio carrello al tavolo ({0}) || Add my basket to the table ({0}) || Meinen Warenkorb zum Tisch hinzufügen ({0}) || Añadir mi cesta a la mesa ({0})
+Envoyer la commande de la table || Invia l'ordine del tavolo || Send the table order || Tischbestellung senden || Enviar el pedido de la mesa
+Confirmer l'envoi · {0} || Conferma l'invio · {0} || Confirm sending · {0} || Senden bestätigen · {0} || Confirmar envío · {0}
+Commande de la table : {0} || Ordine del tavolo: {0} || Table order: {0} || Tischbestellung: {0} || Pedido de la mesa: {0}
+N° {0} · total {1} || N. {0} · totale {1} || No. {0} · total {1} || Nr. {0} · gesamt {1} || N.º {0} · total {1}
+Partager l'addition || Dividi il conto || Split the bill || Rechnung teilen || Dividir la cuenta
+Ou à parts égales ({0}) || Oppure in parti uguali ({0}) || Or split equally ({0}) || Oder zu gleichen Teilen ({0}) || O a partes iguales ({0})
+{0} chacun || {0} a testa || {0} each || {0} pro Person || {0} cada uno
+Ajouté au panier de la table || Aggiunto al carrello del tavolo || Added to the table basket || Zum Tisch-Warenkorb hinzugefügt || Añadido a la cesta de la mesa
+Non ajouté : {0} || Non aggiunto: {0} || Not added: {0} || Nicht hinzugefügt: {0} || No añadido: {0}
+Commande de la table envoyée en cuisine || Ordine del tavolo inviato in cucina || Table order sent to the kitchen || Tischbestellung an die Küche gesendet || Pedido de la mesa enviado a la cocina
+Non envoyée : {0} || Non inviato: {0} || Not sent: {0} || Nicht gesendet: {0} || No enviado: {0}
+Pour {0} || Per {0} || For {0} || Für {0} || Para {0}
+Commande de groupe || Ordine di gruppo || Group order || Gruppenbestellung || Pedido de grupo
+
+# ---- Admin : photos et choix ----
+Photos et choix || Foto e scelte || Photos & choices || Fotos & Auswahl || Fotos y opciones
+Photos || Foto || Photos || Fotos || Fotos
+{0}/6 · la 1re est la photo principale || {0}/6 · la prima è la foto principale || {0}/6 · the first one is the main photo || {0}/6 · das erste ist das Hauptfoto || {0}/6 · la primera es la foto principal
+Principale || Principale || Main || Haupt || Principal
+Mettre en photo principale || Imposta come foto principale || Set as main photo || Als Hauptfoto festlegen || Poner como foto principal
+Retirer cette photo || Rimuovi questa foto || Remove this photo || Dieses Foto entfernen || Quitar esta foto
+Ajouter des photos || Aggiungi foto || Add photos || Fotos hinzufügen || Añadir fotos
+Ou coller un lien d'image (https://…) || Oppure incolla un link immagine (https://…) || Or paste an image link (https://…) || Oder einen Bildlink einfügen (https://…) || O pega un enlace de imagen (https://…)
+Lien invalide : il doit commencer par https:// || Link non valido: deve iniziare con https:// || Invalid link: it must start with https:// || Ungültiger Link: Er muss mit https:// beginnen || Enlace no válido: debe empezar por https://
+{0} photos maximum. || Massimo {0} foto. || {0} photos maximum. || Höchstens {0} Fotos. || Máximo {0} fotos.
+Traitement de {0} photo(s)… || Elaborazione di {0} foto… || Processing {0} photo(s)… || {0} Foto(s) werden verarbeitet… || Procesando {0} foto(s)…
+{0} photo(s) prête(s). || {0} foto pronte. || {0} photo(s) ready. || {0} Foto(s) bereit. || {0} foto(s) lista(s).
+Chargement des choix… || Caricamento delle scelte… || Loading choices… || Auswahl wird geladen… || Cargando opciones…
+Choix indisponibles : {0} || Scelte non disponibili: {0} || Choices unavailable: {0} || Auswahl nicht verfügbar: {0} || Opciones no disponibles: {0}
+Choix proposés au client || Scelte proposte al cliente || Choices offered to the customer || Auswahl für den Gast || Opciones para el cliente
+Nouveau groupe || Nuovo gruppo || New group || Neue Gruppe || Nuevo grupo
+{0} groupe(s) coché(s), dans l'ordre affiché au client. || {0} gruppo/i selezionato/i, nell'ordine mostrato al cliente. || {0} group(s) ticked, in the order shown to the customer. || {0} Gruppe(n) ausgewählt, in der Reihenfolge für den Gast. || {0} grupo(s) marcado(s), en el orden que verá el cliente.
+Aucun choix : le produit s'ajoute directement au panier. || Nessuna scelta: il prodotto va direttamente nel carrello. || No choices: the product goes straight into the basket. || Keine Auswahl: Das Produkt kommt direkt in den Warenkorb. || Sin opciones: el producto va directamente a la cesta.
+Monter || Su || Move up || Nach oben || Subir
+Descendre || Giù || Move down || Nach unten || Bajar
+Modifier le groupe || Modifica il gruppo || Edit group || Gruppe bearbeiten || Editar grupo
+Modifier le groupe {0} || Modifica il gruppo {0} || Edit group {0} || Gruppe {0} bearbeiten || Editar grupo {0}
+Facultatif || Facoltativo || Optional || Optional || Opcional
+Facultatif · jusqu’à {0} || Facoltativo · fino a {0} || Optional · up to {0} || Optional · bis zu {0} || Opcional · hasta {0}
+Obligatoire · jusqu’à {0} || Obbligatorio · fino a {0} || Required · up to {0} || Pflicht · bis zu {0} || Obligatorio · hasta {0}
+Facultatif · plusieurs choix || Facoltativo · più scelte || Optional · several choices || Optional · mehrere Auswahlen || Opcional · varias opciones
+Obligatoire · plusieurs choix || Obbligatorio · più scelte || Required · several choices || Pflicht · mehrere Auswahlen || Obligatorio · varias opciones
+Choix habituels de la catégorie cochés : {0}. || Scelte abituali della categoria selezionate: {0}. || Usual choices for this category ticked: {0}. || Übliche Auswahl der Kategorie markiert: {0}. || Opciones habituales de la categoría marcadas: {0}.
+Nouveau groupe de choix || Nuovo gruppo di scelte || New choice group || Neue Auswahlgruppe || Nuevo grupo de opciones
+Modifier le groupe de choix || Modifica il gruppo di scelte || Edit choice group || Auswahlgruppe bearbeiten || Editar grupo de opciones
+Ex. « Pain » : Pain turc, Piadina, Pain complet (+0,50 €). || Es. « Pane »: Pane turco, Piadina, Pane integrale (+0,50 €). || E.g. "Bread": Turkish bread, Piadina, Wholemeal bread (+0.50 €). || Z. B. „Brot“: Türkisches Brot, Piadina, Vollkornbrot (+0,50 €). || Ej. «Pan»: Pan turco, Piadina, Pan integral (+0,50 €).
+Nom du groupe * || Nome del gruppo * || Group name * || Gruppenname * || Nombre del grupo *
+Ex. Pain, Sauce, Cuisson || Es. Pane, Salsa, Cottura || E.g. Bread, Sauce, Cooking || Z. B. Brot, Soße, Garstufe || Ej. Pan, Salsa, Cocción
+Type de choix || Tipo di scelta || Choice type || Art der Auswahl || Tipo de opción
+Un seul choix || Una sola scelta || One choice || Eine Auswahl || Una sola opción
+Ex. le pain || Es. il pane || E.g. the bread || Z. B. das Brot || Ej. el pan
+Plusieurs choix || Più scelte || Several choices || Mehrere Auswahlen || Varias opciones
+Ex. les sauces || Es. le salse || E.g. the sauces || Z. B. die Soßen || Ej. las salsas
+Maximum || Massimo || Maximum || Maximum || Máximo
+Choix (supplément 0 = inclus) || Scelte (supplemento 0 = incluso) || Choices (extra 0 = included) || Auswahl (Aufpreis 0 = inklusive) || Opciones (suplemento 0 = incluido)
+Ex. Pain complet || Es. Pane integrale || E.g. Wholemeal bread || Z. B. Vollkornbrot || Ej. Pan integral
+Libellé du choix || Nome della scelta || Choice label || Bezeichnung der Auswahl || Nombre de la opción
+Supplément en euros || Supplemento in euro || Extra charge in euros || Aufpreis in Euro || Suplemento en euros
+Retirer ce choix || Rimuovi questa scelta || Remove this choice || Diese Auswahl entfernen || Quitar esta opción
+Déjà commandé : conservé pour l'historique || Già ordinato: conservato per lo storico || Already ordered: kept for the history || Bereits bestellt: für den Verlauf behalten || Ya pedido: se conserva para el historial
+Ajouter un choix || Aggiungi una scelta || Add a choice || Auswahl hinzufügen || Añadir una opción
+Utilisé par : {0} || Usato da: {0} || Used by: {0} || Verwendet von: {0} || Usado por: {0}
+Indiquez le nom du groupe. || Indica il nome del gruppo. || Enter the group name. || Geben Sie den Gruppennamen an. || Indica el nombre del grupo.
+Supplément invalide : entre 0 et 100 €. || Supplemento non valido: tra 0 e 100 €. || Invalid extra: between 0 and 100 €. || Ungültiger Aufpreis: zwischen 0 und 100 €. || Suplemento no válido: entre 0 y 100 €.
+Ajoutez au moins un choix. || Aggiungi almeno una scelta. || Add at least one choice. || Fügen Sie mindestens eine Auswahl hinzu. || Añade al menos una opción.
+Groupe de choix enregistré || Gruppo di scelte salvato || Choice group saved || Auswahlgruppe gespeichert || Grupo de opciones guardado
+Groupe de choix créé : {0} || Gruppo di scelte creato: {0} || Choice group created: {0} || Auswahlgruppe erstellt: {0} || Grupo de opciones creado: {0}
+Groupe de choix supprimé || Gruppo di scelte eliminato || Choice group deleted || Auswahlgruppe gelöscht || Grupo de opciones eliminado
+Photos et choix : visibles aussitôt sur tous les téléphones. || Foto e scelte: visibili subito su tutti i telefoni. || Photos & choices: visible right away on every phone. || Fotos & Auswahl: sofort auf allen Handys sichtbar. || Fotos y opciones: visibles al instante en todos los móviles.
+Produit indisponible : {0} || Prodotto non disponibile: {0} || Product unavailable: {0} || Produkt nicht verfügbar: {0} || Producto no disponible: {0}
+Produit non enregistré en base || Prodotto non salvato nel database || Product not saved in the database || Produkt nicht in der Datenbank gespeichert || Producto no guardado en la base de datos
+Enregistré : {0} || Salvato: {0} || Saved: {0} || Gespeichert: {0} || Guardado: {0}
+Groupes de choix || Gruppi di scelte || Choice groups || Auswahlgruppen || Grupos de opciones
+Pain, sauces, cuisson… Cochez-les ensuite sur chaque produit (Produits > Photos et choix). || Pane, salse, cottura… Selezionali poi su ogni prodotto (Prodotti > Foto e scelte). || Bread, sauces, cooking… Then tick them on each product (Products > Photos & choices). || Brot, Soßen, Garstufe… Danach bei jedem Produkt ankreuzen (Produkte > Fotos & Auswahl). || Pan, salsas, cocción… Márcalas luego en cada producto (Productos > Fotos y opciones).
+Groupes de choix indisponibles : {0} || Gruppi di scelte non disponibili: {0} || Choice groups unavailable: {0} || Auswahlgruppen nicht verfügbar: {0} || Grupos de opciones no disponibles: {0}
+{0} produit(s) || {0} prodotto/i || {0} product(s) || {0} Produkt(e) || {0} producto(s)
+
+# ---- Compléments (textes du panier et de l'admin restés sans traduction) ----
+Plus || Più || More || Mehr || Más
+Obligatoire || Obbligatorio || Required || Pflicht || Obligatorio
+Contient : {0} || Contiene: {0} || Contains: {0} || Enthält: {0} || Contiene: {0}
+Pain · {0} || Pane · {0} || Bread · {0} || Brot · {0} || Pan · {0}
+Retirer {0} || Rimuovi {0} || Remove {0} || {0} entfernen || Quitar {0}
+{0} € l’unité || {0} € cad. || {0} € each || {0} € pro Stück || {0} € la unidad
+par personne || a persona || per person || pro Person || por persona
+Ticket · Table {0} || Scontrino · Tavolo {0} || Receipt · Table {0} || Beleg · Tisch {0} || Ticket · Mesa {0}
+pers. || pers. || ppl || Pers. || pers.
+@{0} article || {0} articolo || {0} item || {0} Artikel || {0} artículo

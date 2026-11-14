@@ -1,0 +1,7 @@
+# Choix des menus (menu/index.html sans ?m=) et textes admin « Kebab » (2026-11-14).
+# français || italiano || english || deutsch || español
+Nos menus || I nostri menù || Our menus || Unsere Menüs || Nuestros menús
+Choisissez la carte que vous voulez découvrir. || Scegli il menù che vuoi scoprire. || Choose the menu you want to explore. || Wählen Sie die Karte, die Sie entdecken möchten. || Elige la carta que quieres descubrir.
+Kebab - Nos menus || Kebab - I nostri menù || Kebab - Our menus || Kebab - Unsere Menüs || Kebab - Nuestros menús
+{0} plats || {0} piatti || {0} dishes || {0} Gerichte || {0} platos
+1 plat || 1 piatto || 1 dish || 1 Gericht || 1 plato

@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kebab - Connexion du personnel</title>
+<!-- Google Fonts -->
+<!-- Tailwind CSS -->
+<script src="../js/vendor/tailwind-3.4.17-forms-cq.js"></script>
+<link href="../css/soucoffe.css" rel="stylesheet"/>
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/auth.js"></script>
+<!-- Kebab icon system & shared cart/guest state -->
+<script src="../js/icons.js" defer=""></script>
+<script src="../js/cart.js" defer=""></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#f4ba96",
+                        "tertiary": "#3f1520",
+                        "surface-variant": "#ebe1d3",
+                        "tertiary-fixed-dim": "#e9bda7",
+                        "on-secondary-fixed": "#251a07",
+                        "on-primary-fixed": "#311300",
+                        "on-primary-container": "#e9b08c",
+                        "secondary-container": "#f6dfc0",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#d5c3b9",
+                        "surface-tint": "#805437",
+                        "on-surface-variant": "#51443d",
+                        "on-secondary-container": "#726249",
+                        "tertiary-fixed": "#ffdbca",
+                        "on-secondary-fixed-variant": "#53452e",
+                        "on-tertiary-fixed-variant": "#5e402f",
+                        "surface-container-high": "#f1e7d9",
+                        "surface-container": "#f7edde",
+                        "surface": "#fff8f2",
+                        "inverse-primary": "#f4ba96",
+                        "primary-fixed": "#ffdbc7",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#dfb49e",
+                        "secondary": "#6c5c44",
+                        "on-tertiary-fixed": "#2d1608",
+                        "surface-container-highest": "#ebe1d3",
+                        "primary-container": "#571d29",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1f1b13",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f9efe1",
+                        "secondary-fixed": "#f6dfc0",
+                        "surface-container-low": "#fcf2e4",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#644534",
+                        "secondary-fixed-dim": "#d9c4a5",
+                        "inverse-surface": "#353027",
+                        "surface-dim": "#e2d9cb",
+                        "primary": "#571d29",
+                        "on-secondary": "#ffffff",
+                        "outline": "#83746c",
+                        "on-background": "#1f1b13",
+                        "surface-bright": "#fff8f2",
+                        "on-primary-fixed-variant": "#653d22",
+                        "on-error": "#ffffff",
+                        "background": "#fff8f2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "sm": "16px",
+                        "margin-mobile": "16px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "xs": "8px",
+                        "lg": "48px",
+                        "gutter": "20px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Arial"],
+                        "title-lg": ["Arial"],
+                        "display-lg-mobile": ["Arial"],
+                        "label-md": ["Arial"],
+                        "headline-md": ["Arial"],
+                        "body-md": ["Arial"],
+                        "headline-sm": ["Arial"],
+                        "body-lg": ["Arial"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<meta name="theme-color" content="#242120"/>
+<link rel="icon" type="image/png" href="../images/brand/favicon-32.png?v=kebab2"/>
+<link rel="apple-touch-icon" href="../images/brand/apple-touch-icon.png?v=kebab2"/>
+</head>
+<body class="bg-surface text-on-surface antialiased sc-auth sc-staff-login min-h-screen relative flex items-center justify-center overflow-x-hidden py-10">
+<div class="sc-auth-bg fixed inset-0 z-0">
+<div class="sc-auth-photo w-full h-full bg-cover bg-center" style="background-image: url('../images/media/kebab-grill.jpg')"></div>
+<div class="sc-auth-overlay absolute inset-0"></div>
+</div>
+<main class="relative z-10 w-full max-w-md px-margin-mobile md:px-0 flex flex-col items-center">
+<div class="sc-card-enter w-full bg-surface-container-lowest rounded-[24px] p-8 md:p-10 shadow-[0_2px_10px_rgba(62,36,21,0.06)] flex flex-col items-center text-center border border-outline-variant/30">
+<div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-4 text-3xl text-primary"><span class="material-symbols-outlined">lock</span></div>
+<span class="sc-heading-accent"></span>
+<h1 class="mb-2 tracking-tight"><img alt="Kebab" class="sc-brand-logo mx-auto" src="../images/brand/logo.png?v=kebab2"/></h1>
+<h2 class="font-title-lg text-title-lg text-on-surface mb-1">Espace personnel</h2>
+<p class="font-body-md text-body-md text-on-surface-variant/80 mb-6 max-w-xs">Connectez-vous avec votre compte : administrateur, manager, serveur, caissier ou cuisine.</p>
+<form id="login-form" class="w-full space-y-4 text-left" autocomplete="on" novalidate>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant/80 mb-2 uppercase tracking-wide" for="username">Identifiant</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors"><span class="material-symbols-outlined">person</span></div>
+<input id="username" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="50" required class="block w-full pl-12 pr-3 py-4 bg-surface text-on-surface font-body-lg text-body-lg rounded-xl border-1.5 border-transparent focus:border-primary focus:bg-surface-container-lowest focus:ring-0 focus:outline-none transition-all duration-300 shadow-inner placeholder:text-outline/70" placeholder="ex : karim"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant/80 mb-2 uppercase tracking-wide" for="password">Mot de passe</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors"><span class="material-symbols-outlined">lock</span></div>
+<input id="password" name="password" type="password" autocomplete="current-password" maxlength="72" required class="block w-full pl-12 pr-3 py-4 bg-surface text-on-surface font-body-lg text-body-lg rounded-xl border-1.5 border-transparent focus:border-primary focus:bg-surface-container-lowest focus:ring-0 focus:outline-none transition-all duration-300 shadow-inner placeholder:text-outline/70" placeholder="••••••••"/>
+</div>
+</div>
+<p id="login-error" role="alert" class="hidden text-error font-body-md text-sm"></p>
+<button id="login-btn" type="submit" class="w-full flex items-center justify-center gap-3 bg-primary-container text-on-primary font-label-md text-label-md py-4 px-6 rounded-xl shadow-md hover:shadow-lg hover:bg-primary transition-all duration-300 active:scale-95 disabled:opacity-60">
+<span>Se connecter</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+</div>
+<a href="../01-Identification/log.html" class="mt-6 inline-flex items-center gap-1 font-label-md text-xs text-on-surface-variant/70 hover:text-primary transition-colors"><span class="material-symbols-outlined">person</span> Je suis un client : m'identifier</a>
+</main>
+<script>
+    (function () {
+        const form = document.getElementById('login-form');
+        const errorEl = document.getElementById('login-error');
+        const btn = document.getElementById('login-btn');
+
+        function showError(message) {
+            errorEl.textContent = message;
+            errorEl.classList.toggle('hidden', !message);
+        }
+
+        // Déjà connecté (session encore valide) : on va directement à son espace.
+        const existing = Auth.staff();
+        if (existing) {
+            Auth.api('/auth/me').then((r) => {
+                if (r.user && Auth.HOME_BY_ROLE[r.user.role]) location.replace(Auth.HOME_BY_ROLE[r.user.role]);
+            }).catch(() => { /* session morte : formulaire normal */ });
+        }
+        if (new URLSearchParams(location.search).get('expired')) {
+            showError('Votre session a expiré : reconnectez-vous.');
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value;
+            if (!username || !password) { showError('Renseignez votre identifiant et votre mot de passe.'); return; }
+            showError('');
+            btn.disabled = true;
+            Auth.loginStaff(username, password).then((user) => {
+                // Le rôle décide de l'espace : chacun atterrit sur SA page (ou la page demandée si son rôle y a droit).
+                location.replace(Auth.homeFor(user.role, new URLSearchParams(location.search).get('next')));
+            }).catch((err) => {
+                showError(err.message);
+                document.getElementById('password').value = '';
+                btn.disabled = false;
+            });
+        });
+    })();
+</script>
+</body></html>

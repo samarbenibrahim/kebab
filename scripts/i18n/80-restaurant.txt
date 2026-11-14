@@ -1,0 +1,74 @@
+# Carte Kebab (database/seed_kebab.php) et textes « restaurant avant tout ».
+# français || italiano || english || deutsch || español
+
+# ---- Accueil / pied de page ----
+Kebab - Restaurant & café, à votre façon || Kebab - Ristorante e caffè, a modo tuo || Kebab - Restaurant & café, your way || Kebab - Restaurant & Café, wie Sie es mögen || Kebab - Restaurante y café, a tu manera
+Restaurant & café · Commande à table || Ristorante e caffè · Ordine al tavolo || Restaurant & café · Order at your table || Restaurant & Café · Bestellung am Tisch || Restaurante y café · Pedido en mesa
+Votre repas, || Il tuo pasto, || Your meal, || Ihre Mahlzeit, || Tu comida,
+Kebab, plats, petits-déjeuners et cafés : commandez depuis votre table et suivez votre commande en direct. || Kebab, piatti, colazioni e caffè: ordina dal tuo tavolo e segui il tuo ordine in tempo reale. || Kebab, dishes, breakfasts and coffees: order from your table and track your order live. || Kebab, Gerichte, Frühstück und Kaffee: Bestellen Sie vom Tisch und verfolgen Sie Ihre Bestellung live. || Kebab, platos, desayunos y cafés: pide desde tu mesa y sigue tu pedido en directo.
+Restaurant & café : kebab, plats, petits-déjeuners et cafés, servis à votre table. || Ristorante e caffè: kebab, piatti, colazioni e caffè, serviti al tuo tavolo. || Restaurant & café: kebab, dishes, breakfasts and coffees, served at your table. || Restaurant & Café: Kebab, Gerichte, Frühstück und Kaffee, an Ihren Tisch serviert. || Restaurante y café: kebab, platos, desayunos y cafés, servidos en tu mesa.
+
+# ---- Groupes d'options et options ----
+Sauce kebab || Salsa || Sauce || Soße || Salsa
+Suppléments kebab || Extra || Extras || Extras || Extras
+Boisson du menu || Bibita del menù || Meal drink || Getränk zum Menü || Bebida del menú
+Sauce yaourt || Salsa yogurt || Yoghurt sauce || Joghurtsoße || Salsa de yogur
+Sauce piquante || Salsa piccante || Hot sauce || Scharfe Soße || Salsa picante
+Sauce barbecue || Salsa barbecue || Barbecue sauce || Barbecuesoße || Salsa barbacoa
+Ketchup || Ketchup || Ketchup || Ketchup || Kétchup
+Mayonnaise || Maionese || Mayonnaise || Mayonnaise || Mayonesa
+Supplément viande || Extra carne || Extra meat || Extra Fleisch || Extra de carne
+Supplément fromage || Extra formaggio || Extra cheese || Extra Käse || Extra de queso
+Eau minérale || Acqua minerale || Mineral water || Mineralwasser || Agua mineral
+
+# ---- Produits ----
+Sandwich kebab || Panino Kebab || Kebab sandwich || Kebab-Sandwich || Bocadillo de kebab
+Piadina kebab || Piadina Kebab || Kebab piadina || Kebab-Piadina || Piadina de kebab
+Durum kebab || Durum Kebab || Durum kebab || Dürüm Kebab || Durum kebab
+Döner kebab || Doner Kebab || Doner kebab || Döner Kebab || Döner kebab
+Assiette kebab || Piatto Kebab || Kebab plate || Kebab-Teller || Plato de kebab
+Assiette kebab et frites || Piatto Kebab con patatine || Kebab plate with fries || Kebab-Teller mit Pommes || Plato de kebab con patatas
+Assiette kebab et riz || Piatto Kebab con riso || Kebab plate with rice || Kebab-Teller mit Reis || Plato de kebab con arroz
+Assiette kebab et salade || Piatto Kebab con insalata || Kebab plate with salad || Kebab-Teller mit Salat || Plato de kebab con ensalada
+Assiette viande seule || Piatto solo carne || Meat-only plate || Teller nur Fleisch || Plato solo carne
+Menu sandwich kebab || Menu Panino Kebab || Kebab sandwich meal || Kebab-Sandwich-Menü || Menú bocadillo de kebab
+Menu piadina kebab || Menu Piadina Kebab || Kebab piadina meal || Kebab-Piadina-Menü || Menú piadina de kebab
+Menu durum kebab || Menu Durum Kebab || Durum kebab meal || Dürüm-Kebab-Menü || Menú durum kebab
+Menu assiette kebab || Menu Piatto Kebab || Kebab plate meal || Kebab-Teller-Menü || Menú plato de kebab
+Sandwich falafel || Falafel Panino || Falafel sandwich || Falafel-Sandwich || Bocadillo de falafel
+Piadina falafel || Falafel Piadina || Falafel piadina || Falafel-Piadina || Piadina de falafel
+Frites || Patatine fritte || Fries || Pommes frites || Patatas fritas
+Onion rings || Onion rings || Onion rings || Zwiebelringe || Aros de cebolla
+
+# ---- Descriptions ----
+Pain moelleux, viande kebab grillée, crudités fraîches et sauce au choix. || Pane morbido, carne kebab alla griglia, verdure fresche e salsa a scelta. || Soft bread, grilled kebab meat, fresh salad and a sauce of your choice. || Weiches Brot, gegrilltes Kebabfleisch, frischer Salat und Soße nach Wahl. || Pan tierno, carne de kebab a la parrilla, verduras frescas y salsa a elegir.
+Piadina chaude garnie de viande kebab, salade, tomate, oignon et sauce. || Piadina calda farcita con carne kebab, insalata, pomodoro, cipolla e salsa. || Warm piadina filled with kebab meat, lettuce, tomato, onion and sauce. || Warme Piadina mit Kebabfleisch, Salat, Tomate, Zwiebel und Soße. || Piadina caliente rellena de carne de kebab, lechuga, tomate, cebolla y salsa.
+Galette roulée et grillée, viande kebab, crudités et sauce au choix. || Piadina arrotolata e grigliata, carne kebab, verdure e salsa a scelta. || Rolled, grilled flatbread with kebab meat, salad and a sauce of your choice. || Gerolltes, gegrilltes Fladenbrot mit Kebabfleisch, Salat und Soße nach Wahl. || Pan plano enrollado y a la plancha, carne de kebab, verduras y salsa a elegir.
+Le classique : pain turc, viande à la broche, crudités et sauce yaourt. || Il classico: pane turco, carne allo spiedo, verdure e salsa yogurt. || The classic: Turkish bread, spit-roasted meat, salad and yoghurt sauce. || Der Klassiker: türkisches Brot, Fleisch vom Spieß, Salat und Joghurtsoße. || El clásico: pan turco, carne al asador, verduras y salsa de yogur.
+Viande kebab, crudités, pain et sauce au choix. || Carne kebab, verdure, pane e salsa a scelta. || Kebab meat, salad, bread and a sauce of your choice. || Kebabfleisch, Salat, Brot und Soße nach Wahl. || Carne de kebab, verduras, pan y salsa a elegir.
+Viande kebab, frites croustillantes, crudités et sauce au choix. || Carne kebab, patatine croccanti, verdure e salsa a scelta. || Kebab meat, crispy fries, salad and a sauce of your choice. || Kebabfleisch, knusprige Pommes, Salat und Soße nach Wahl. || Carne de kebab, patatas crujientes, verduras y salsa a elegir.
+Viande kebab, riz épicé, crudités et sauce au choix. || Carne kebab, riso speziato, verdure e salsa a scelta. || Kebab meat, spiced rice, salad and a sauce of your choice. || Kebabfleisch, Gewürzreis, Salat und Soße nach Wahl. || Carne de kebab, arroz especiado, verduras y salsa a elegir.
+Viande kebab sur une salade fraîche de saison, sauce au choix. || Carne kebab su un'insalata fresca di stagione, salsa a scelta. || Kebab meat on a fresh seasonal salad, sauce of your choice. || Kebabfleisch auf frischem Saisonsalat, Soße nach Wahl. || Carne de kebab sobre una ensalada fresca de temporada, salsa a elegir.
+Une généreuse portion de viande kebab grillée, sauce au choix. || Una porzione abbondante di carne kebab alla griglia, salsa a scelta. || A generous portion of grilled kebab meat, sauce of your choice. || Eine große Portion gegrilltes Kebabfleisch, Soße nach Wahl. || Una generosa ración de carne de kebab a la parrilla, salsa a elegir.
+Sandwich kebab, frites et boisson au choix. || Panino Kebab, patatine e bibita a scelta. || Kebab sandwich, fries and a drink of your choice. || Kebab-Sandwich, Pommes und Getränk nach Wahl. || Bocadillo de kebab, patatas y bebida a elegir.
+Piadina kebab, frites et boisson au choix. || Piadina Kebab, patatine e bibita a scelta. || Kebab piadina, fries and a drink of your choice. || Kebab-Piadina, Pommes und Getränk nach Wahl. || Piadina de kebab, patatas y bebida a elegir.
+Durum kebab, frites et boisson au choix. || Durum Kebab, patatine e bibita a scelta. || Durum kebab, fries and a drink of your choice. || Dürüm Kebab, Pommes und Getränk nach Wahl. || Durum kebab, patatas y bebida a elegir.
+Assiette kebab, frites et boisson au choix. || Piatto Kebab, patatine e bibita a scelta. || Kebab plate, fries and a drink of your choice. || Kebab-Teller, Pommes und Getränk nach Wahl. || Plato de kebab, patatas y bebida a elegir.
+Pain moelleux, falafels croustillants, crudités et sauce au choix. || Pane morbido, falafel croccanti, verdure e salsa a scelta. || Soft bread, crispy falafel, salad and a sauce of your choice. || Weiches Brot, knusprige Falafel, Salat und Soße nach Wahl. || Pan tierno, falafel crujientes, verduras y salsa a elegir.
+Piadina chaude, falafels, salade, tomate et sauce au choix. || Piadina calda, falafel, insalata, pomodoro e salsa a scelta. || Warm piadina, falafel, lettuce, tomato and a sauce of your choice. || Warme Piadina, Falafel, Salat, Tomate und Soße nach Wahl. || Piadina caliente, falafel, lechuga, tomate y salsa a elegir.
+Frites dorées et croustillantes. || Patatine dorate e croccanti. || Golden, crispy fries. || Goldene, knusprige Pommes. || Patatas fritas doradas y crujientes.
+Rondelles d’oignon panées et frites. || Anelli di cipolla impanati e fritti. || Breaded, fried onion rings. || Panierte, frittierte Zwiebelringe. || Aros de cebolla rebozados y fritos.
+Sauce au yaourt et aux herbes, en portion. || Salsa allo yogurt e alle erbe, in porzione. || Yoghurt and herb sauce, single portion. || Joghurt-Kräuter-Soße, Portion. || Salsa de yogur y hierbas, en ración.
+Sauce pimentée maison, en portion. || Salsa piccante della casa, in porzione. || Homemade hot sauce, single portion. || Hausgemachte scharfe Soße, Portion. || Salsa picante casera, en ración.
+Sauce barbecue fumée, en portion. || Salsa barbecue affumicata, in porzione. || Smoky barbecue sauce, single portion. || Rauchige Barbecuesoße, Portion. || Salsa barbacoa ahumada, en ración.
+Portion de ketchup. || Porzione di ketchup. || Portion of ketchup. || Portion Ketchup. || Ración de kétchup.
+Portion de mayonnaise. || Porzione di maionese. || Portion of mayonnaise. || Portion Mayonnaise. || Ración de mayonesa.
+Portion supplémentaire de viande kebab. || Porzione extra di carne kebab. || Extra portion of kebab meat. || Extra Portion Kebabfleisch. || Ración extra de carne de kebab.
+Portion de fromage fondu. || Porzione di formaggio fuso. || Portion of melted cheese. || Portion geschmolzener Käse. || Ración de queso fundido.
+
+# ---- Design Kebab : badges ----
+Cuit à la broche || Cotto allo spiedo || Spit-roasted || Vom Spieß || Asado al espetón
+Pain frais du jour || Pane fresco del giorno || Fresh bread daily || Täglich frisches Brot || Pan fresco del día
+Sauces maison || Salse della casa || Homemade sauces || Hausgemachte Soßen || Salsas caseras
+Menu Kebab · Grill || Menù Kebab · Grill || Kebab menu · Grill || Kebab-Karte · Grill || Carta Kebab · Grill
+Le vrai goût du Kebab || Il vero gusto del Kebab || The real taste of kebab || Der echte Kebab-Geschmack || El auténtico sabor del kebab

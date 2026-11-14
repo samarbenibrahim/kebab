@@ -1,0 +1,164 @@
+# Personnel : connexion, serveur, caisse, cuisine, plan de salle, à emporter.
+# français || italiano || english || deutsch || español
+
+# ---- Durées (expressions avec nombres, reconnues partout) ----
+@{0} min pour tout préparer || {0} min per preparare tutto || {0} min to prepare everything || {0} Min. für alles || {0} min para prepararlo todo
+@{0} poste(s) || {0} postazione/i || {0} station(s) || {0} Station(en) || {0} puesto(s)
+@il y a {0} h {1} || {0} h {1} fa || {0} h {1} ago || vor {0} Std. {1} || hace {0} h {1}
+@il y a {0} min || {0} min fa || {0} min ago || vor {0} Min. || hace {0} min
+@il y a {0} h || {0} h fa || {0} h ago || vor {0} Std. || hace {0} h
+@il y a {0} s || {0} s fa || {0} s ago || vor {0} Sek. || hace {0} s
+@{0} j {1} h || {0} g {1} h || {0} d {1} h || {0} T. {1} Std. || {0} d {1} h
+@{0} pers. || {0} pers. || {0} ppl || {0} Pers. || {0} pers.
+@{0} commande(s) en attente de préparation || {0} ordine/i in attesa di preparazione || {0} order(s) waiting to be prepared || {0} Bestellung(en) warten auf Zubereitung || {0} pedido(s) pendiente(s) de preparación
+@{0} produit(s) en rupture de stock || {0} prodotto/i esaurito/i || {0} product(s) out of stock || {0} Produkt(e) ausverkauft || {0} producto(s) agotado(s)
+à l’instant || proprio ora || just now || gerade eben || ahora mismo
+à l'instant || proprio ora || just now || gerade eben || ahora mismo
+il y a || fa || ago || vor || hace
+~depuis || da || for || seit || desde hace
+
+# ---- Connexion du personnel (09) ----
+Kebab - Connexion du personnel || Kebab - Accesso del personale || Kebab - Staff sign-in || Kebab - Mitarbeiter-Anmeldung || Kebab - Acceso del personal
+Espace personnel || Area personale || Staff area || Mitarbeiterbereich || Área del personal
+Connectez-vous avec votre compte : administrateur, manager, serveur, caissier ou cuisine. || Accedi con il tuo account: amministratore, manager, cameriere, cassiere o cucina. || Sign in with your account: administrator, manager, waiter, cashier or kitchen. || Melden Sie sich mit Ihrem Konto an: Administrator, Manager, Service, Kasse oder Küche. || Inicia sesión con tu cuenta: administrador, encargado, camarero, cajero o cocina.
+Identifiant || Nome utente || Username || Benutzername || Usuario
+Mot de passe || Password || Password || Passwort || Contraseña
+Se connecter || Accedi || Sign in || Anmelden || Iniciar sesión
+Se déconnecter || Esci || Sign out || Abmelden || Cerrar sesión
+Renseignez votre identifiant et votre mot de passe. || Inserisci nome utente e password. || Enter your username and password. || Geben Sie Benutzername und Passwort ein. || Introduce tu usuario y contraseña.
+Votre session a expiré : reconnectez-vous. || La sessione è scaduta: accedi di nuovo. || Your session has expired: please sign in again. || Ihre Sitzung ist abgelaufen: Bitte melden Sie sich erneut an. || Tu sesión ha caducado: vuelve a iniciar sesión.
+Afficher le mot de passe || Mostra password || Show password || Passwort anzeigen || Mostrar contraseña
+Masquer le mot de passe || Nascondi password || Hide password || Passwort verbergen || Ocultar contraseña
+
+# ---- Rôles ----
+Administrateur || Amministratore || Administrator || Administrator || Administrador
+Manager || Manager || Manager || Manager || Encargado
+Serveur || Cameriere || Waiter || Service || Camarero
+Caissier || Cassiere || Cashier || Kasse || Cajero
+Cuisine || Cucina || Kitchen || Küche || Cocina
+Admin || Admin || Admin || Admin || Admin
+Client || Cliente || Customer || Gast || Cliente
+Système || Sistema || System || System || Sistema
+
+# ---- Espace serveur (10) ----
+Kebab - Espace serveur || Kebab - Area camerieri || Kebab - Waiter area || Kebab - Servicebereich || Kebab - Área de camareros
+Espace serveur || Area camerieri || Waiter area || Servicebereich || Área de camareros
+Quelles tables servez-vous ? || Quali tavoli servi? || Which tables do you serve? || Welche Tische bedienen Sie? || ¿Qué mesas atiendes?
+Renseignez vos tables pour recevoir leurs commandes et leurs appels. || Indica i tuoi tavoli per ricevere ordini e chiamate. || Enter your tables to receive their orders and calls. || Geben Sie Ihre Tische an, um deren Bestellungen und Rufe zu erhalten. || Indica tus mesas para recibir sus pedidos y llamadas.
+Numéros de table, séparés par des virgules || Numeri dei tavoli, separati da virgole || Table numbers, separated by commas || Tischnummern, durch Kommas getrennt || Números de mesa, separados por comas
+Enregistrer mes tables || Salva i miei tavoli || Save my tables || Meine Tische speichern || Guardar mis mesas
+Mes tables : || I miei tavoli: || My tables: || Meine Tische: || Mis mesas:
+Mes tables en direct || I miei tavoli in tempo reale || My tables live || Meine Tische live || Mis mesas en directo
+Commandes de mes tables || Ordini dei miei tavoli || Orders from my tables || Bestellungen meiner Tische || Pedidos de mis mesas
+Afficher les commandes servies || Mostra gli ordini serviti || Show served orders || Servierte Bestellungen anzeigen || Mostrar pedidos servidos
+Aucune commande pour vos tables pour le moment. || Al momento nessun ordine per i tuoi tavoli. || No orders for your tables right now. || Derzeit keine Bestellungen für Ihre Tische. || Por ahora no hay pedidos para tus mesas.
+Appels || Chiamate || Calls || Rufe || Llamadas
+Vu || Visto || Seen || Gesehen || Visto
+Commencer la préparation || Inizia la preparazione || Start preparing || Zubereitung starten || Empezar la preparación
+Marquer prête || Segna come pronto || Mark as ready || Als fertig markieren || Marcar como listo
+Marquer servie || Segna come servito || Mark as served || Als serviert markieren || Marcar como servido
+Encaisser (espèces) || Incassa (contanti) || Take payment (cash) || Kassieren (bar) || Cobrar (efectivo)
+Encaissement enregistré || Incasso registrato || Payment recorded || Zahlung erfasst || Cobro registrado
+Tables enregistrées || Tavoli salvati || Tables saved || Tische gespeichert || Mesas guardadas
+Indiquez au moins une table que vous servez. || Indica almeno un tavolo che servi. || Enter at least one table you serve. || Geben Sie mindestens einen Tisch an, den Sie bedienen. || Indica al menos una mesa que atiendes.
+Note de commande : || Nota dell'ordine: || Order note: || Bestellnotiz: || Nota del pedido:
+(en ligne) || (online) || (online) || (online) || (en línea)
+(espèces) || (contanti) || (cash) || (bar) || (efectivo)
+Impossible : || Impossibile: || Not possible: || Nicht möglich: || No es posible:
+Impossible : {0} || Impossibile: {0} || Not possible: {0} || Nicht möglich: {0} || No es posible: {0}
+Impossible de charger vos tables : {0} || Impossibile caricare i tuoi tavoli: {0} || Couldn't load your tables: {0} || Ihre Tische konnten nicht geladen werden: {0} || No se pudieron cargar tus mesas: {0}
+Nouvelle commande — table {0} || Nuovo ordine — tavolo {0} || New order — table {0} || Neue Bestellung — Tisch {0} || Nuevo pedido — mesa {0}
+Appel — table {0} || Chiamata — tavolo {0} || Call — table {0} || Ruf — Tisch {0} || Llamada — mesa {0}
+Total || Totale || Total || Gesamt || Total
+
+# ---- Caisse (11) ----
+Kebab - Caisse || Kebab - Cassa || Kebab - Till || Kebab - Kasse || Kebab - Caja
+Caisse || Cassa || Till || Kasse || Caja
+Encaissé aujourd'hui || Incassato oggi || Taken today || Heute eingenommen || Cobrado hoy
+Derniers encaissements || Ultimi incassi || Latest payments || Letzte Zahlungen || Últimos cobros
+Tables || Tavoli || Tables || Tische || Mesas
+Tables à libérer / nettoyer || Tavoli da liberare / pulire || Tables to free / clean || Tische freigeben / reinigen || Mesas por liberar / limpiar
+Aucun encaissement pour l’instant. || Ancora nessun incasso. || No payments yet. || Noch keine Zahlungen. || Aún no hay cobros.
+Espèces || Contanti || Cash || Bar || Efectivo
+espèces || contanti || cash || bar || efectivo
+Carte || Carta || Card || Karte || Tarjeta
+En ligne || Online || Online || Online || En línea
+Impossible de charger : || Impossibile caricare: || Couldn't load: || Laden nicht möglich: || No se pudo cargar:
+Impossible de charger : {0} || Impossibile caricare: {0} || Couldn't load: {0} || Laden nicht möglich: {0} || No se pudo cargar: {0}
+
+# ---- Cuisine (12) ----
+Kebab - Cuisine || Kebab - Cucina || Kebab - Kitchen || Kebab - Küche || Kebab - Cocina
+À lancer || Da avviare || To start || Zu starten || Por empezar
+Prêtes à servir || Pronti da servire || Ready to serve || Servierbereit || Listos para servir
+Rechercher un produit || Cerca un prodotto || Search for a product || Produkt suchen || Buscar un producto
+Décochez un produit épuisé : il n'est plus proposé aux clients. (La cuisine ne peut pas modifier les prix.) || Togli la spunta a un prodotto esaurito: non sarà più proposto ai clienti. (La cucina non può modificare i prezzi.) || Untick a sold-out product: it will no longer be offered to customers. (The kitchen can't change prices.) || Deaktivieren Sie ausverkaufte Produkte: Sie werden Gästen nicht mehr angeboten. (Die Küche kann keine Preise ändern.) || Desmarca un producto agotado: dejará de ofrecerse a los clientes. (La cocina no puede cambiar los precios.)
+Aucun produit. || Nessun prodotto. || No products. || Keine Produkte. || Ningún producto.
+Aucune commande prête. || Nessun ordine pronto. || No orders ready. || Keine fertigen Bestellungen. || Ningún pedido listo.
+Rien en préparation. || Niente in preparazione. || Nothing being prepared. || Nichts in Zubereitung. || Nada en preparación.
+Rien à lancer. || Niente da avviare. || Nothing to start. || Nichts zu starten. || Nada por empezar.
+Produit de nouveau disponible || Prodotto di nuovo disponibile || Product available again || Produkt wieder verfügbar || Producto disponible de nuevo
+Produit déclaré en rupture || Prodotto segnalato come esaurito || Product marked as sold out || Produkt als ausverkauft gemeldet || Producto marcado como agotado
+— rupture || — esaurito || — sold out || — ausverkauft || — agotado
+Disponible : {0} || Disponibile: {0} || Available: {0} || Verfügbar: {0} || Disponible: {0}
+Préparation moyenne || Preparazione media || Average preparation || Durchschnittliche Zubereitung || Preparación media
+{0} ({1} commandes) || {0} ({1} ordini) || {0} ({1} orders) || {0} ({1} Bestellungen) || {0} ({1} pedidos)
+historique || storico || history || Verlauf || historial
+estimation par défaut || stima predefinita || default estimate || Standardschätzung || estimación por defecto
+Commandes en attente || Ordini in attesa || Orders waiting || Wartende Bestellungen || Pedidos en espera
+En cours || In corso || In progress || Laufend || En curso
+
+# ---- Assistant cuisine (ai-kitchen) ----
+Assistant cuisine || Assistente cucina || Kitchen assistant || Küchenassistent || Asistente de cocina
+Ordre suggéré pour lancer — vous gardez la main || Ordine suggerito per l'avvio — decidi tu || Suggested start order — you stay in control || Vorgeschlagene Reihenfolge — Sie entscheiden || Orden sugerido para empezar — tú decides
+Aucune commande à lancer. || Nessun ordine da avviare. || No orders to start. || Keine Bestellungen zu starten. || Ningún pedido por empezar.
+(en retard) || (in ritardo) || (late) || (verspätet) || (con retraso)
+en retard || in ritardo || late || verspätet || con retraso
+rapide à préparer || veloce da preparare || quick to prepare || schnell zubereitet || rápido de preparar
+En préparation : || In preparazione: || Being prepared: || In Zubereitung: || En preparación:
+min pour tout préparer · || min per preparare tutto · || min to prepare everything · || Min. für alles · || min para prepararlo todo ·
+· préparation estimée || · preparazione stimata || · estimated preparation || · geschätzte Zubereitung || · preparación estimada
+— encore ≈ || — ancora ≈ || — about ≈ || — noch ≈ || — aún ≈
+en parallèle || in parallelo || in parallel || parallel || en paralelo
+
+# ---- Plan de salle (floor.js) ----
+Plan de salle || Pianta della sala || Floor plan || Raumplan || Plano de sala
+Libre || Libero || Free || Frei || Libre
+Occupée || Occupato || Occupied || Besetzt || Ocupada
+Commande en préparation || Ordine in preparazione || Order being prepared || Bestellung in Zubereitung || Pedido en preparación
+À nettoyer || Da pulire || To clean || Zu reinigen || Por limpiar
+à nettoyer || da pulire || to clean || zu reinigen || por limpiar
+À encaisser || Da incassare || To collect || Zu kassieren || Por cobrar
+Encaisser || Incassa || Take payment || Kassieren || Cobrar
+Libérer la table || Libera il tavolo || Free the table || Tisch freigeben || Liberar la mesa
+Marquer nettoyée || Segna come pulito || Mark as cleaned || Als gereinigt markieren || Marcar como limpia
+Retirer la table || Rimuovi il tavolo || Remove the table || Tisch entfernen || Quitar la mesa
+Retirer la table {0} || Rimuovi il tavolo {0} || Remove table {0} || Tisch {0} entfernen || Quitar la mesa {0}
+Retirer la table {0} du plan de salle ? || Rimuovere il tavolo {0} dalla pianta della sala? || Remove table {0} from the floor plan? || Tisch {0} aus dem Raumplan entfernen? || ¿Quitar la mesa {0} del plano de sala?
+Table libérée : à nettoyer || Tavolo liberato: da pulire || Table freed: to clean || Tisch freigegeben: zu reinigen || Mesa liberada: por limpiar
+Table nettoyée : de nouveau libre || Tavolo pulito: di nuovo libero || Table cleaned: free again || Tisch gereinigt: wieder frei || Mesa limpia: libre de nuevo
+Table retirée || Tavolo rimosso || Table removed || Tisch entfernt || Mesa quitada
+Rien à encaisser sur cette table || Niente da incassare su questo tavolo || Nothing to collect at this table || An diesem Tisch ist nichts zu kassieren || No hay nada que cobrar en esta mesa
+Aucune table à afficher. || Nessun tavolo da mostrare. || No tables to show. || Keine Tische anzuzeigen. || No hay mesas que mostrar.
+Montant reçu (€) || Importo ricevuto (€) || Amount received (€) || Erhaltener Betrag (€) || Importe recibido (€)
+Rendu || Resto || Change || Rückgeld || Cambio
+Validez après le passage de la carte sur le terminal. || Conferma dopo il passaggio della carta sul terminale. || Confirm once the card has gone through on the terminal. || Bestätigen Sie, nachdem die Karte am Terminal durchgegangen ist. || Confirma después de pasar la tarjeta por el terminal.
+Tables libres ( || Tavoli liberi ( || Free tables ( || Freie Tische ( || Mesas libres (
+commande(s) encaissée(s) — || ordine/i incassato/i — || order(s) paid — || Bestellung(en) kassiert — || pedido(s) cobrado(s) —
+L'état de chaque table est calculé en direct : libre, occupée, commande en préparation, addition demandée, à nettoyer. || Lo stato di ogni tavolo è calcolato in tempo reale: libero, occupato, ordine in preparazione, conto richiesto, da pulire. || Each table's status is calculated live: free, occupied, order being prepared, bill requested, to clean. || Der Status jedes Tisches wird live berechnet: frei, besetzt, Bestellung in Zubereitung, Rechnung angefordert, zu reinigen. || El estado de cada mesa se calcula en directo: libre, ocupada, pedido en preparación, cuenta solicitada, por limpiar.
+Ajouter une table || Aggiungi un tavolo || Add a table || Tisch hinzufügen || Añadir una mesa
+Numéro de la nouvelle table || Numero del nuovo tavolo || New table number || Nummer des neuen Tisches || Número de la nueva mesa
+Nombre de places || Numero di posti || Number of seats || Anzahl der Plätze || Número de plazas
+Places || Posti || Seats || Plätze || Plazas
+N° table || N° tavolo || Table no. || Tisch-Nr. || N.º de mesa
+
+# ---- Demandes à emporter (takeaway-admin) ----
+Demandes à emporter || Richieste da asporto || Takeaway requests || Anfragen zum Mitnehmen || Solicitudes para llevar
+Accepter || Accetta || Accept || Annehmen || Aceptar
+Refuser || Rifiuta || Decline || Ablehnen || Rechazar
+Prêt dans 10 min || Pronto tra 10 min || Ready in 10 min || Fertig in 10 Min. || Listo en 10 min
+Prêt au comptoir dans 5 min || Pronto al bancone tra 5 min || Ready at the counter in 5 min || In 5 Min. an der Theke bereit || Listo en la barra en 5 min
+Nous vous l’apportons à table || Te lo portiamo al tavolo || We'll bring it to your table || Wir bringen es an Ihren Tisch || Te lo llevamos a la mesa
+Impossible pour le moment || Al momento non è possibile || Not possible right now || Derzeit nicht möglich || No es posible por ahora
+À emporter ({0}) || Da asporto ({0}) || Takeaway ({0}) || Zum Mitnehmen ({0}) || Para llevar ({0})
+{0} en attente || {0} in attesa || {0} waiting || {0} wartend || {0} en espera
+{0} notification || {0} notifica || {0} notification || {0} Benachrichtigung || {0} notificación

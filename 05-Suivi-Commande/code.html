@@ -1,0 +1,646 @@
+﻿<!DOCTYPE html>
+
+<html data-role="client" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Kebab - Suivi de commande</title>
+<script src="../js/vendor/tailwind-3.4.17-forms-cq.js"></script>
+<link href="../css/soucoffe.css" rel="stylesheet"/>
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/icons.js" defer=""></script>
+<script src="../js/cart.js" defer=""></script>
+<script src="../js/products.js" defer=""></script>
+<script src="../js/takeaway.js" defer=""></script>
+<script src="../js/profile.js" defer=""></script>
+<script src="../js/presence.js" defer=""></script>
+<script src="../js/coffee-theme.js" defer=""></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#f4ba96",
+                        "tertiary": "#3f1520",
+                        "surface-variant": "#ebe1d3",
+                        "tertiary-fixed-dim": "#e9bda7",
+                        "on-secondary-fixed": "#251a07",
+                        "on-primary-fixed": "#311300",
+                        "on-primary-container": "#e9b08c",
+                        "secondary-container": "#f6dfc0",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#d5c3b9",
+                        "surface-tint": "#805437",
+                        "on-surface-variant": "#51443d",
+                        "on-secondary-container": "#726249",
+                        "tertiary-fixed": "#ffdbca",
+                        "on-secondary-fixed-variant": "#53452e",
+                        "on-tertiary-fixed-variant": "#5e402f",
+                        "surface-container-high": "#f1e7d9",
+                        "surface-container": "#f7edde",
+                        "surface": "#fff8f2",
+                        "inverse-primary": "#f4ba96",
+                        "primary-fixed": "#ffdbc7",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#dfb49e",
+                        "secondary": "#6c5c44",
+                        "on-tertiary-fixed": "#2d1608",
+                        "surface-container-highest": "#ebe1d3",
+                        "primary-container": "#571d29",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1f1b13",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f9efe1",
+                        "secondary-fixed": "#f6dfc0",
+                        "surface-container-low": "#fcf2e4",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#644534",
+                        "secondary-fixed-dim": "#d9c4a5",
+                        "inverse-surface": "#353027",
+                        "surface-dim": "#e2d9cb",
+                        "primary": "#571d29",
+                        "on-secondary": "#ffffff",
+                        "outline": "#83746c",
+                        "on-background": "#1f1b13",
+                        "surface-bright": "#fff8f2",
+                        "on-primary-fixed-variant": "#653d22",
+                        "on-error": "#ffffff",
+                        "background": "#fff8f2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "sm": "16px",
+                        "margin-mobile": "16px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "xs": "8px",
+                        "lg": "48px",
+                        "gutter": "20px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Arial"],
+                        "title-lg": ["Arial"],
+                        "display-lg-mobile": ["Arial"],
+                        "label-md": ["Arial"],
+                        "headline-md": ["Arial"],
+                        "body-md": ["Arial"],
+                        "headline-sm": ["Arial"],
+                        "body-lg": ["Arial"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .pulse-ring {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(87, 29, 41, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(87, 29, 41, 0); }
+            100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(87, 29, 41, 0); }
+        }
+        .step-line-active {
+            background: linear-gradient(to bottom, #571d29 50%, #d5c3b9 50%);
+            background-size: 100% 200%;
+            background-position: bottom;
+            transition: all 0.5s ease;
+        }
+        .step-line-active.filled {
+            background-position: top;
+        }
+    </style>
+<link rel="manifest" href="../manifest.json"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="Kebab"/>
+<meta name="theme-color" content="#242120"/>
+<link rel="icon" type="image/png" href="../images/brand/favicon-32.png?v=kebab2"/>
+<link rel="apple-touch-icon" href="../images/brand/apple-touch-icon.png?v=kebab2"/>
+</head>
+<body class="sc-track bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col items-center justify-center p-margin-mobile md:p-margin-desktop">
+<!-- Top Navigation Placeholder - Nav suppressed for transactional success screen -->
+<main class="w-full max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto bg-surface-container-lowest rounded-xl shadow-[0_2px_10px_rgba(62,36,21,0.06)] p-md md:p-lg lg:p-xl flex flex-col items-center relative overflow-hidden">
+<img alt="Kebab" class="sc-brand-logo mb-4" src="../images/brand/logo.png?v=kebab2"/>
+<!-- Decorative subtle background element -->
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-secondary-container rounded-full opacity-20 blur-3xl pointer-events-none"></div>
+<!-- Empty state: no order in progress -->
+<div id="order-empty" class="hidden sc-empty-state relative z-10">
+<div class="sc-empty-icon"><span class="material-symbols-outlined">receipt_long</span></div>
+<h1 class="font-headline-md text-headline-md text-primary">Aucune commande en cours</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Vous n'avez pas encore passé de commande. Direction le menu pour vous régaler.</p>
+<a href="../menu/index.html" class="mt-2 inline-flex items-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">Voir le menu <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+<!-- Order content: shown when a last order exists -->
+<div id="order-content" class="hidden flex-col items-center w-full lg:grid lg:grid-cols-2 lg:auto-rows-min lg:gap-x-xl lg:gap-y-lg lg:items-start">
+<!-- Success Animation / Hero -->
+<div class="relative flex items-center justify-center w-32 h-32 mb-8 lg:col-start-1 lg:row-start-1 lg:mx-auto">
+<div class="absolute inset-0 bg-primary-fixed rounded-full opacity-50 pulse-ring"></div>
+<div class="relative z-10 w-24 h-24 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Title & Order Details -->
+<div class="text-center mb-6 lg:col-start-1 lg:row-start-2 lg:w-full">
+<p class="sc-ok-kicker">Restaurant intelligent · Cuisine &amp; cafétéria</p>
+<h1 class="font-headline-md text-headline-md text-primary mb-2">Commande envoyée&nbsp;! <span class="sc-h1-icon material-symbols-outlined align-middle">room_service</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Merci pour votre commande, <span data-guest-name="">Souad</span>.</p>
+<div class="flex flex-wrap justify-center gap-3 sm:gap-4">
+<div class="bg-surface-container py-2 px-4 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">tag</span>
+<span id="order-id" class="font-label-md text-label-md text-on-surface">SOU-1048</span>
+</div>
+<div class="bg-surface-container py-2 px-4 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">table_restaurant</span>
+<span class="font-label-md text-label-md text-on-surface">Table <span id="order-table">12</span></span>
+</div>
+<div class="bg-surface-container py-2 px-4 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">groups</span>
+<span id="order-party-size" class="font-label-md text-label-md text-on-surface">1 pers.</span>
+</div>
+<div id="order-eta" class="hidden bg-surface-container py-2 px-4 rounded-lg items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">schedule</span>
+<span id="order-eta-text" class="font-label-md text-label-md text-on-surface"></span>
+</div>
+</div>
+</div>
+<!-- Récapitulatif -->
+<div class="sc-ticket w-full bg-surface-container rounded-xl p-md mb-8 lg:col-start-2 lg:row-start-1 lg:mb-0">
+<div class="sc-ticket-head">
+<h2 class="sc-ticket-title font-label-md text-label-md text-on-surface-variant uppercase tracking-wider"><img class="sc-ticket-logo" src="../images/brand/logo.png?v=kebab2" alt="" aria-hidden="true"/>Récapitulatif</h2>
+<span id="order-time" class="sc-ticket-time" translate="no"></span>
+</div>
+<div id="order-items" class="flex flex-col gap-2 mb-3"></div>
+<div id="order-discounts" class="flex flex-col gap-1 mb-3"></div>
+<div class="border-t border-outline-variant pt-3 flex justify-between items-center">
+<span class="font-title-lg text-title-lg text-primary">Total</span>
+<span id="order-total" class="font-title-lg text-title-lg text-primary">0,00 €</span>
+</div>
+<div id="payment-block" class="border-t border-outline-variant pt-3 mt-3"></div>
+<div id="cancel-block" class="mt-3"></div>
+</div>
+<!-- À emporter : prévenir l'équipe et suivre sa réponse (js/takeaway.js) -->
+<div id="takeaway-block" class="hidden w-full mb-8 lg:col-start-1 lg:mb-0"></div>
+<!-- Tracking Timeline (rendered from the order's real status) -->
+<div class="w-full px-sm mb-8 lg:col-start-2 lg:row-start-2 lg:mb-0">
+<div id="tracking-steps" class="sc-tsteps relative border-l-2 border-outline-variant ml-4 md:ml-6 space-y-8"></div>
+</div>
+<!-- Action Buttons -->
+<div class="sc-ok-actions w-full mt-6 space-y-4 lg:col-start-1 lg:row-start-3 lg:mt-2">
+<button class="w-full bg-primary-container text-on-primary h-12 rounded-lg font-label-md text-label-md hover:bg-tertiary transition-colors flex items-center justify-center gap-2" onclick="window.location.href='../menu/index.html'">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+                Retour au menu
+            </button>
+<button class="sc-ok-tile sc-ok-waiter w-full bg-transparent border-[1.5px] border-outline-variant text-on-surface h-12 rounded-lg font-label-md text-label-md hover:bg-surface-container transition-colors disabled:opacity-60 inline-flex items-center justify-center gap-2" onclick="callWaiter(this)"><span class="material-symbols-outlined">room_service</span> Appeler le serveur</button>
+<p id="waiter-call-msg" class="hidden text-xs text-center"></p>
+<button class="sc-ok-tile sc-ok-bill w-full bg-transparent border-[1.5px] border-outline-variant text-on-surface h-12 rounded-lg font-label-md text-label-md hover:bg-surface-container transition-colors disabled:opacity-60 inline-flex items-center justify-center gap-2" onclick="requestBill(this)"><span class="material-symbols-outlined">receipt_long</span> Demander l'addition</button>
+<p id="bill-msg" class="hidden text-xs text-center"></p>
+<button class="sc-ok-home w-full bg-transparent border-[1.5px] border-outline-variant text-on-surface h-12 rounded-lg font-label-md text-label-md hover:bg-surface-container transition-colors" onclick="window.location.href='../home/home.html'">
+                Retour à l'accueil
+            </button>
+</div>
+</div>
+<!-- Historique des commandes précédentes (rempli par renderOrderHistory) -->
+<div id="order-history" class="hidden w-full mt-8 border-t border-outline-variant pt-6 relative z-10"></div>
+</main>
+<!-- Bottom Nav Suppressed due to Transactional Success State -->
+<script>
+        // item.note is free-text typed by the customer in the cart — escape it
+        // before it goes back into innerHTML (item.name/qty/price are our own data).
+        function escapeHtml(str) {
+            return String(str || '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+        }
+
+        // "Commande envoyée" is always done (that's this page's own confirmation);
+        // the other 4 steps map to Orders.STATUSES (Nouvelle/En préparation/Prête/Servie).
+        function renderTimeline(status) {
+            const tracked = Orders.getLast();
+            if (tracked && tracked.cancelledAt) {
+                document.getElementById('tracking-steps').innerHTML = `<div class="relative flex items-center group">
+                        <div class="absolute -left-[9px] w-4 h-4 bg-error rounded-full border-2 border-surface-container-lowest"></div>
+                        <div class="pl-8">
+                            <h3 class="font-title-lg text-title-lg text-error">Commande annulée</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Cette commande ne sera pas préparée.</p>
+                        </div>
+                    </div>`;
+                return;
+            }
+            const stepLabels = ['Commande envoyée', 'Commande reçue', 'Préparation', 'Prête', 'Servie'];
+            const stepIcons = ['send', 'done_all', 'skillet', 'room_service', 'restaurant'];
+            const ico = (i) => (window.iconHtml ? '<span class="sc-tstep-ico">' + window.iconHtml(stepIcons[i]) + '</span>' : '');
+            let statusIdx = Orders.STATUSES.indexOf(status);
+            if (statusIdx === -1) statusIdx = 0;
+            const currentStep = statusIdx + 1;
+
+            const stepsEl = document.getElementById('tracking-steps');
+            stepsEl.innerHTML = stepLabels.map((label, i) => {
+                if (i < currentStep) {
+                    return `<div class="sc-tstep is-done relative flex items-center group">
+                        <div class="absolute -left-[9px] w-4 h-4 bg-primary rounded-full border-2 border-surface-container-lowest"></div>
+                        <div class="pl-8"><h3 class="font-label-md text-label-md text-primary">${ico(i)}${label}</h3></div>
+                    </div>`;
+                }
+                if (i === currentStep) {
+                    return `<div class="sc-tstep is-current relative flex items-center group">
+                        <div class="absolute -left-[13px] w-6 h-6 bg-surface-container-lowest border-2 border-primary rounded-full flex items-center justify-center">
+                            <div class="w-2 h-2 bg-primary rounded-full pulse-ring"></div>
+                        </div>
+                        <div class="pl-8">
+                            <h3 class="font-title-lg text-title-lg text-primary">${ico(i)}${label}</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">En cours...</p>
+                        </div>
+                    </div>`;
+                }
+                return `<div class="sc-tstep is-todo relative flex items-center group opacity-50">
+                    <div class="absolute -left-[9px] w-4 h-4 bg-outline-variant rounded-full border-2 border-surface-container-lowest"></div>
+                    <div class="pl-8"><h3 class="font-label-md text-label-md text-on-surface-variant">${ico(i)}${label}</h3></div>
+                </div>`;
+            }).join('');
+        }
+
+        // Phase "espace client smart" : suivi vivant + ETA. Constante locale à
+        // cette page, comme chaque fichier du projet possède déjà la sienne
+        // (js/cart.js, js/products.js) plutôt qu'une config partagée.
+        const ORDERS_API_BASE = window.SOUCOFFE_API_BASE || 'http://localhost:8000/api';
+
+        // Attente estimée : calculée par le SERVEUR à partir de l'historique réel de
+        // la cuisine et de la file d'attente (jamais un chiffre inventé ici).
+        let etaState = { at: 0, data: null, failed: false, pending: false };
+        function renderEtaChip(order) {
+            const chip = document.getElementById('order-eta');
+            const text = document.getElementById('order-eta-text');
+            if (!chip || !text) return;
+            if (order.cancelledAt || order.status === 'Prête' || order.status === 'Servie') {
+                chip.classList.add('hidden'); chip.classList.remove('flex');
+                return;
+            }
+            const paint = () => {
+                if (etaState.data) {
+                    const d = etaState.data;
+                    text.textContent = d.status === 'En préparation'
+                        ? '~' + d.etaMinutes + ' min restantes'
+                        : '~' + d.etaMinutes + ' min' + (d.ordersAhead ? ' (' + d.ordersAhead + ' commande(s) avant la vôtre)' : '');
+                } else {
+                    text.textContent = etaState.failed ? 'Estimation indisponible' : 'Estimation en cours…';
+                }
+                chip.classList.remove('hidden'); chip.classList.add('flex');
+            };
+            paint();
+            if (!order.serverId || etaState.pending || Date.now() - etaState.at < 5000) return;
+            etaState.pending = true;
+            Auth.api('/orders/' + order.serverId + '/eta').then((d) => { etaState.data = d; etaState.failed = false; })
+                .catch(() => { etaState.failed = true; })
+                .then(() => { etaState.at = Date.now(); etaState.pending = false; paint(); });
+        }
+
+        // Paiement (suivi simulé, pas de vrai prestataire configuré). Affiche
+        // trois états honnêtes : déjà payée, payable en ligne (commande
+        // connectée au serveur), ou non payable en ligne (commande créée en
+        // repli local — aucun bouton qui ne pourrait de toute façon pas
+        // fonctionner, jamais de faux "Payée").
+        function renderPaymentBlock(order) {
+            const block = document.getElementById('payment-block');
+            if (!block) return;
+            if (order.cancelledAt) {
+                block.innerHTML = '<p class="font-body-md text-xs text-on-surface-variant">Commande annulée — aucun paiement dû.</p>';
+                return;
+            }
+            if (order.paymentStatus === 'paid') {
+                const label = order.paymentMethod === 'cash' ? 'Payée en espèces' : order.paymentMethod === 'card' ? 'Payée par carte' : 'Payée en ligne';
+                block.innerHTML = `<p class="font-label-md text-label-md text-tertiary flex items-center gap-2">${window.iconHtml('check_circle')} ${label}</p>`;
+            } else if (order.serverId) {
+                block.innerHTML =
+                    '<button id="pay-online-btn" onclick="payOnline()" class="w-full bg-primary-container text-on-primary-container font-label-md text-label-md py-2.5 rounded-lg hover:bg-primary hover:text-on-primary transition-all">Payer en ligne (simulé)</button>' +
+                    '<p id="payment-error" class="hidden text-error text-xs mt-2"></p>';
+            } else {
+                block.innerHTML = '<p class="font-body-md text-xs text-on-surface-variant">Paiement en ligne indisponible pour cette commande — réglez à la caisse.</p>';
+            }
+        }
+
+        window.payOnline = function () {
+            const order = Orders.getLast();
+            if (!order) return;
+            const btn = document.getElementById('pay-online-btn');
+            const errorEl = document.getElementById('payment-error');
+            if (btn) btn.disabled = true;
+            Orders.tryPayOnline(order.serverId).then((serverOrder) => {
+                Orders.recordPayment(order.id, serverOrder);
+                refreshAll();
+                if (window.showToast) window.showToast('Paiement enregistré !');
+            }).catch((err) => {
+                if (btn) btn.disabled = false;
+                if (errorEl) {
+                    errorEl.textContent = "Le paiement n'a pas pu être enregistré (" + err.message + "). Réessayez ou réglez à la caisse.";
+                    errorEl.classList.remove('hidden');
+                }
+            });
+        };
+
+        // Annulation : proposée seulement tant que la commande est "Nouvelle",
+        // non payée et non annulée. Le serveur a le dernier mot (409 sinon).
+        function renderCancelBlock(order) {
+            const block = document.getElementById('cancel-block');
+            if (!block) return;
+            const cancellable = !order.cancelledAt && order.status === 'Nouvelle' && order.paymentStatus !== 'paid';
+            if (!cancellable) { block.innerHTML = ''; return; }
+            block.innerHTML =
+                '<button id="cancel-order-btn" onclick="askCancelOrder()" class="w-full bg-transparent border-[1.5px] border-outline-variant text-error font-label-md text-label-md py-2.5 rounded-lg hover:bg-error-container transition-colors">Annuler la commande</button>' +
+                '<p id="cancel-error" class="hidden text-error text-xs mt-2"></p>';
+        }
+
+        // Remises calculées par le serveur (promotion, points de fidélité) et points gagnés.
+        function renderDiscountLines(order) {
+            const box = document.getElementById('order-discounts');
+            if (!box) return;
+            const rows = [];
+            if (order.discount > 0) rows.push(['local_offer', 'Promotion' + (order.promotionName ? ' « ' + escapeHtml(order.promotionName) + ' »' : ''), '-' + order.discount.toFixed(2).replace('.', ',') + ' €']);
+            if (order.loyaltyDiscount > 0) rows.push(['loyalty', 'Points fidélité (' + order.loyaltyPointsUsed + ' pts)', '-' + order.loyaltyDiscount.toFixed(2).replace('.', ',') + ' €']);
+            if (order.pointsEarned > 0) rows.push(['stars', 'Points gagnés sur cette commande', '+' + order.pointsEarned + ' pts']);
+            box.innerHTML = rows.map((r) => `<div class="flex justify-between items-center font-body-md text-sm text-tertiary gap-2"><span class="flex items-center gap-1">${window.iconHtml(r[0])} ${r[1]}</span><span class="whitespace-nowrap">${r[2]}</span></div>`).join('');
+        }
+
+        // Demande d'addition : le serveur vérifie qu'il reste bien quelque chose à régler.
+        window.requestBill = function (btn) {
+            const msg = document.getElementById('bill-msg');
+            const say = (text, isError) => {
+                if (!msg) return;
+                msg.textContent = text;
+                msg.classList.remove('hidden');
+                msg.classList.toggle('text-error', !!isError);
+                msg.classList.toggle('text-on-surface-variant', !isError);
+            };
+            if (btn) btn.disabled = true;
+            Auth.api('/tables/bill-request', Auth.json('POST')).then(() => {
+                say('Addition demandée : un membre de l’équipe arrive avec la note.', false);
+                if (window.showToast) window.showToast('Addition demandée');
+            }).catch((e) => {
+                say(e.status ? e.message : 'Serveur injoignable : votre demande n’a pas été envoyée.', true);
+                if (btn) btn.disabled = false;
+            });
+        };
+
+        function refreshAll() {
+            const order = Orders.getLast();
+            if (!order) return;
+            renderTimeline(order.status);
+            renderEtaChip(order);
+            renderDiscountLines(order);
+            renderPaymentBlock(order);
+            renderCancelBlock(order);
+        }
+
+        // Historique : toutes les commandes précédentes de CE navigateur (hors
+        // la commande suivie ci-dessus), avec rachat en un clic.
+        function renderOrderHistory() {
+            const box = document.getElementById('order-history');
+            if (!box) return;
+            const current = Orders.getLast();
+            const past = Orders.getAll().filter((o) => !current || o.id !== current.id).slice(0, 20);
+            if (!past.length) { box.classList.add('hidden'); box.innerHTML = ''; return; }
+            box.innerHTML = '<h2 class="font-label-md text-label-md text-on-surface-variant mb-3 uppercase tracking-wider">Mes commandes précédentes</h2>' +
+                '<div class="flex flex-col gap-3">' + past.map((o) => {
+                    const items = o.items || [];
+                    const count = items.reduce((s, i) => s + (i.qty || 1), 0);
+                    const summary = items.slice(0, 2).map((i) => (i.qty || 1) + '× ' + escapeHtml(i.name)).join(', ') + (items.length > 2 ? '…' : '');
+                    const state = o.cancelledAt ? 'Annulée' : o.status;
+                    const date = new Date(o.createdAt).toLocaleString('fr-FR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+                    return '<div class="bg-surface-container rounded-xl p-sm flex items-center justify-between gap-3">' +
+                        '<div class="min-w-0"><div class="font-label-md text-label-md text-primary">' + escapeHtml(o.id) +
+                        ' <span class="text-on-surface-variant font-normal">' + window.iconHtml('circle', 'text-[6px] mx-1', true) + ' ' + date + ' ' + window.iconHtml('circle', 'text-[6px] mx-1', true) + ' ' + escapeHtml(state) + '</span></div>' +
+                        '<div class="font-body-md text-xs text-on-surface-variant truncate">' + summary + '</div>' +
+                        '<div class="font-label-md text-xs text-on-surface">' + count + ' article' + (count > 1 ? 's' : '') + ' ' + window.iconHtml('circle', 'text-[6px] mx-1', true) + ' ' + (o.total || 0).toFixed(2).replace('.', ',') + ' €</div></div>' +
+                        '<button onclick="reorderPastOrder(\'' + escapeHtml(o.id) + '\', this)" class="shrink-0 bg-primary-container text-on-primary-container font-label-md text-label-md px-3 py-2 rounded-lg hover:bg-primary hover:text-on-primary transition-all">Recommander</button></div>';
+                }).join('') + '</div>';
+            box.classList.remove('hidden');
+        }
+
+        window.reorderPastOrder = function (id, btn) {
+            if (btn) { btn.disabled = true; btn.innerHTML = window.iconHtml('check') + ' Ajouté'; }
+            Orders.reorderToCart(id);
+            setTimeout(() => { window.location.href = '../04-Panier/code.html'; }, 400);
+        };
+
+        // Rafraîchit (par GET individuel, jamais la liste de tout le monde) les
+        // quelques commandes passées de ce navigateur encore en cours côté serveur.
+        function refreshPastOrders() {
+            const current = Orders.getLast();
+            Orders.getAll()
+                .filter((o) => typeof o.serverId === 'number' && o.status !== 'Servie' && !o.cancelledAt && (!current || o.id !== current.id))
+                .slice(0, 5)
+                .forEach((o) => {
+                    fetch(ORDERS_API_BASE + '/orders/' + o.serverId).then((r) => (r.ok ? r.json() : null)).then((json) => {
+                        if (json && Orders.importServerOrders([json])) renderOrderHistory();
+                    }).catch(() => { /* serveur injoignable : on garde l'état local */ });
+                });
+        }
+
+        window.askCancelOrder = function () {
+            const block = document.getElementById('cancel-block');
+            if (!block) return;
+            block.innerHTML =
+                '<p class="font-body-md text-sm text-on-surface mb-2">Annuler définitivement cette commande ?</p>' +
+                '<div class="flex gap-2">' +
+                '<button onclick="confirmCancelOrder()" id="cancel-confirm-btn" class="flex-1 bg-error text-on-error font-label-md text-label-md py-2.5 rounded-lg hover:opacity-90 transition-opacity">Oui, annuler</button>' +
+                '<button onclick="refreshAll()" class="flex-1 bg-transparent border-[1.5px] border-outline-variant text-on-surface font-label-md text-label-md py-2.5 rounded-lg hover:bg-surface-variant transition-colors">Non, garder</button>' +
+                '</div><p id="cancel-error" class="hidden text-error text-xs mt-2"></p>';
+        };
+        window.refreshAll = refreshAll;
+
+        window.confirmCancelOrder = function () {
+            const order = Orders.getLast();
+            if (!order) return;
+            const btn = document.getElementById('cancel-confirm-btn');
+            if (btn) btn.disabled = true;
+            const done = () => { refreshAll(); if (window.showToast) window.showToast('Commande annulée'); };
+            if (typeof order.serverId === 'number') {
+                Orders.cancelServer(order.serverId).then((so) => {
+                    Orders.importServerOrders([so]);
+                    done();
+                }).catch((err) => {
+                    if (btn) btn.disabled = false;
+                    const el = document.getElementById('cancel-error');
+                    if (el) {
+                        el.textContent = err.status ? err.message : 'Serveur injoignable : la commande n\'a pas été annulée. Réessayez.';
+                        el.classList.remove('hidden');
+                    }
+                });
+            } else {
+                Orders.markCancelledLocally(order.id);
+                done();
+            }
+        };
+
+        // Best-effort, jamais bloquant : une commande créée réellement côté
+        // serveur (order.serverId, Phase "commandes réelles") est interrogée
+        // par polling (pas de WebSocket/SSE) pour refléter les changements de
+        // statut faits depuis l'admin sans recharger cette page.
+        function pollServerOrder(serverId, localId) {
+            // Premier GET immédiat (rechargement de la page : l'état affiché
+            // doit venir du serveur sans attendre le premier intervalle),
+            // puis polling régulier.
+            const syncOnce = () => {
+                fetch(ORDERS_API_BASE + '/orders/' + serverId).then((res) => {
+                    if (!res.ok) throw new Error('HTTP ' + res.status);
+                    return res.json();
+                }).then((json) => {
+                    const before = Orders.getLast();
+                    if (!before || before.id !== localId) return;
+                    // Le serveur est la vérité : on applique statut, historique,
+                    // paiement et annulation d'un coup, puis on réaffiche.
+                    Orders.importServerOrders([json]);
+                    const after = Orders.getLast();
+                    if (JSON.stringify(after) === JSON.stringify(before)) return;
+                    refreshAll();
+                    if (window.showToast) {
+                        if (after.cancelledAt && !before.cancelledAt) window.showToast('Commande annulée');
+                        else if (after.status !== before.status) window.showToast('Statut mis à jour : ' + after.status);
+                    }
+                    if (!after.cancelledAt && after.status !== before.status) alertStatusChange(after.status);
+                    if (window.showToast) {
+                        if (after.paymentStatus === 'paid' && before.paymentStatus !== 'paid') window.showToast('Paiement enregistré !');
+                    }
+                }).catch((err) => {
+                    console.info('[SOUCOFFE] Suivi serveur indisponible pour #' + serverId + ' : ' + err.message);
+                });
+            };
+            syncOnce();
+            setInterval(syncOnce, 8000);
+        }
+
+        // Alerte de changement de statut, pensée pour le téléphone posé sur la
+        // table : vibration, petit « ding » quand la commande est prête (Web
+        // Audio, aucun fichier), et titre de l'onglet marqué jusqu'à ce que la
+        // page soit regardée de nouveau.
+        const BASE_TITLE = document.title;
+        let audioCtx = null;
+        document.addEventListener('pointerdown', () => {
+            // Les navigateurs n'autorisent le son qu'après un geste de l'utilisateur.
+            try { audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)(); if (audioCtx.state === 'suspended') audioCtx.resume(); } catch (e) { /* pas de son */ }
+        }, { once: true });
+        function ding() {
+            if (!audioCtx) return;
+            try {
+                const now = audioCtx.currentTime;
+                [880, 1318.5].forEach((freq, i) => {
+                    const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+                    o.type = 'sine'; o.frequency.value = freq;
+                    g.gain.setValueAtTime(0.0001, now + i * 0.18);
+                    g.gain.exponentialRampToValueAtTime(0.25, now + i * 0.18 + 0.02);
+                    g.gain.exponentialRampToValueAtTime(0.0001, now + i * 0.18 + 0.5);
+                    o.connect(g).connect(audioCtx.destination);
+                    o.start(now + i * 0.18); o.stop(now + i * 0.18 + 0.55);
+                });
+            } catch (e) { /* pas de son */ }
+        }
+        function alertStatusChange(status) {
+            const ready = status === 'Prête';
+            if (navigator.vibrate) { try { navigator.vibrate(ready ? [220, 120, 220, 120, 320] : [120]); } catch (e) { /* non pris en charge */ } }
+            if (ready) ding();
+            if (document.hidden) {
+                document.title = '● ' + status + ' — ' + BASE_TITLE;
+                const restore = () => { if (!document.hidden) { document.title = BASE_TITLE; document.removeEventListener('visibilitychange', restore); } };
+                document.addEventListener('visibilitychange', restore);
+            }
+        }
+        window.alertStatusChange = alertStatusChange;
+
+        // Filet de sécurité pour les commandes sans serverId (repli local) :
+        // 'storage' réagit à un autre onglet (ex. l'admin ouvert à côté), le
+        // setInterval couvre le cas même onglet où 'storage' ne se déclenche
+        // jamais. Toujours du polling, jamais de push.
+        function watchLocalOrder(localId) {
+            const snap = (o) => o && [o.status, o.paymentStatus, o.cancelledAt].join('|');
+            let lastKnown = snap(Orders.getLast());
+            let lastStatus = Orders.getLast() && Orders.getLast().status;
+            let lastPay = Orders.getLast() && Orders.getLast().paymentStatus;
+            function refreshFromLocal() {
+                const current = Orders.getLast();
+                if (!current || current.id !== localId) return;
+                if (snap(current) === lastKnown) return;
+                lastKnown = snap(current);
+                const prevStatus = lastStatus, prevPay = lastPay;
+                lastStatus = current.status;
+                lastPay = current.paymentStatus;
+                // Commande SQL : pollServerOrder affiche déjà le changement et sa
+                // notification (évite une seconde notification identique).
+                if (typeof current.serverId === 'number') return;
+                refreshAll();
+                if (window.showToast) {
+                    if (current.cancelledAt) window.showToast('Commande annulée');
+                    else if (current.status !== prevStatus) window.showToast('Statut mis à jour : ' + current.status);
+                    if (current.paymentStatus === 'paid' && prevPay !== 'paid') window.showToast('Paiement enregistré !');
+                }
+                if (!current.cancelledAt && current.status !== prevStatus) alertStatusChange(current.status);
+            }
+            window.addEventListener('storage', (e) => {
+                if (e.key === 'soucoffe_last_order' || e.key === 'soucoffe_order_history') refreshFromLocal();
+            });
+            setInterval(refreshFromLocal, 5000);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const order = Orders.getLast();
+            const emptyEl = document.getElementById('order-empty');
+            const contentEl = document.getElementById('order-content');
+
+            if (!order) {
+                emptyEl.classList.remove('hidden');
+                return;
+            }
+
+            contentEl.classList.remove('hidden');
+            contentEl.classList.add('flex');
+
+            document.getElementById('order-id').textContent = order.id;
+            document.getElementById('order-total').textContent = order.total.toFixed(2).replace('.', ',') + ' €';
+            const tableEl = document.getElementById('order-table');
+            if (tableEl && order.table) tableEl.textContent = order.table;
+            const timeEl = document.getElementById('order-time');
+            if (timeEl && order.createdAt) {
+                const at = new Date(order.createdAt);
+                if (!isNaN(at)) timeEl.textContent = at.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            }
+            const partyEl = document.getElementById('order-party-size');
+            if (partyEl && order.partySize) partyEl.textContent = order.partySize + ' pers.';
+
+            const itemsEl = document.getElementById('order-items');
+            // Récapitulatif (redessiné une fois le catalogue chargé : images des
+            // articles d'une commande récupérée depuis le serveur).
+            const paintItems = (order) => { itemsEl.innerHTML = order.items.map((item) => `
+                <div class="flex justify-between items-start font-body-md text-sm text-on-surface gap-2">
+                    ${(window.Cart && Cart.imageFor(item)) ? `<img src="${escapeHtml(Cart.imageFor(item))}" alt="" class="sc-recap-img" loading="lazy"/>` : ''}
+                    <span class="flex-1 min-w-0">${item.qty} × ${escapeHtml(item.name)}${item.note ? '<br><span class="text-xs text-on-surface-variant">— ' + escapeHtml(item.note) + '</span>' : ''}</span>
+                    <span class="text-on-surface-variant whitespace-nowrap">${(item.qty * item.price).toFixed(2).replace('.', ',')} €</span>
+                </div>
+            `).join('') + (order.note ? `<div class="text-xs text-on-surface-variant bg-surface rounded-lg px-3 py-2">${window.iconHtml('chat_bubble')} Note de commande : ${escapeHtml(order.note)}</div>` : ''); };
+            paintItems(order);
+            if (window.loadCatalog) window.loadCatalog().then(() => { const fresh = Orders.getLast(); if (fresh && fresh.id === order.id) paintItems(fresh); });
+
+            refreshAll();
+            renderOrderHistory();
+            refreshPastOrders();
+            if (order.serverId) pollServerOrder(order.serverId, order.id);
+            watchLocalOrder(order.id);
+        });
+    </script>
+</body></html>

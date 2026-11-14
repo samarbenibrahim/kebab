@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+
+<html data-role="staff" data-allow="server" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kebab - Espace serveur</title>
+<!-- Google Fonts -->
+<!-- Tailwind CSS -->
+<script src="../js/vendor/tailwind-3.4.17-forms-cq.js"></script>
+<link href="../css/soucoffe.css" rel="stylesheet"/>
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/auth.js"></script>
+<!-- Kebab icon system & shared cart/guest state -->
+<script src="../js/icons.js" defer=""></script>
+<script src="../js/floor.js" defer=""></script>
+<script src="../js/server.js" defer=""></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#f4ba96",
+                        "tertiary": "#3f1520",
+                        "surface-variant": "#ebe1d3",
+                        "tertiary-fixed-dim": "#e9bda7",
+                        "on-secondary-fixed": "#251a07",
+                        "on-primary-fixed": "#311300",
+                        "on-primary-container": "#e9b08c",
+                        "secondary-container": "#f6dfc0",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#d5c3b9",
+                        "surface-tint": "#805437",
+                        "on-surface-variant": "#51443d",
+                        "on-secondary-container": "#726249",
+                        "tertiary-fixed": "#ffdbca",
+                        "on-secondary-fixed-variant": "#53452e",
+                        "on-tertiary-fixed-variant": "#5e402f",
+                        "surface-container-high": "#f1e7d9",
+                        "surface-container": "#f7edde",
+                        "surface": "#fff8f2",
+                        "inverse-primary": "#f4ba96",
+                        "primary-fixed": "#ffdbc7",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#dfb49e",
+                        "secondary": "#6c5c44",
+                        "on-tertiary-fixed": "#2d1608",
+                        "surface-container-highest": "#ebe1d3",
+                        "primary-container": "#571d29",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1f1b13",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f9efe1",
+                        "secondary-fixed": "#f6dfc0",
+                        "surface-container-low": "#fcf2e4",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#644534",
+                        "secondary-fixed-dim": "#d9c4a5",
+                        "inverse-surface": "#353027",
+                        "surface-dim": "#e2d9cb",
+                        "primary": "#571d29",
+                        "on-secondary": "#ffffff",
+                        "outline": "#83746c",
+                        "on-background": "#1f1b13",
+                        "surface-bright": "#fff8f2",
+                        "on-primary-fixed-variant": "#653d22",
+                        "on-error": "#ffffff",
+                        "background": "#fff8f2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "sm": "16px",
+                        "margin-mobile": "16px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "xs": "8px",
+                        "lg": "48px",
+                        "gutter": "20px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Arial"],
+                        "title-lg": ["Arial"],
+                        "display-lg-mobile": ["Arial"],
+                        "label-md": ["Arial"],
+                        "headline-md": ["Arial"],
+                        "body-md": ["Arial"],
+                        "headline-sm": ["Arial"],
+                        "body-lg": ["Arial"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<meta name="theme-color" content="#242120"/>
+<link rel="icon" type="image/png" href="../images/brand/favicon-32.png?v=kebab2"/>
+<link rel="apple-touch-icon" href="../images/brand/apple-touch-icon.png?v=kebab2"/>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<header class="bg-surface border-b border-outline-variant sticky top-0 z-30">
+<div class="max-w-6xl mx-auto px-margin-mobile md:px-margin-desktop py-3 flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<img alt="Kebab" class="w-11 h-11 object-contain shrink-0" src="../images/brand/logo.png?v=kebab2"/>
+<div class="min-w-0">
+<h1 class="font-title-lg text-title-lg text-primary leading-tight truncate">Espace serveur</h1>
+<p class="font-label-md text-xs text-on-surface-variant truncate"><span data-server-name=""></span></p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button data-theme-toggle="" onclick="toggleTheme()" type="button" class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary text-xl" aria-label="Changer de thème"><span class="material-symbols-outlined">dark_mode</span></button>
+<button onclick="serverLogout()" type="button" class="h-10 inline-flex items-center gap-2 px-3 rounded-lg border border-outline-variant text-on-surface font-label-md text-xs hover:bg-surface-container transition-colors"><span class="material-symbols-outlined">logout</span><span class="sc-hide-xs">Se déconnecter</span></button>
+</div>
+</div>
+</header>
+
+<main class="flex-1 max-w-6xl w-full mx-auto px-margin-mobile md:px-margin-desktop py-6 space-y-6">
+
+<!-- Tables servies : obligatoire avant de voir les commandes -->
+<section id="tables-gate" class="hidden bg-surface-container-lowest rounded-2xl p-6 shadow-[0_2px_10px_rgba(62,36,21,0.06)] max-w-xl mx-auto space-y-4">
+<div class="flex items-center gap-3">
+<span class="w-12 h-12 rounded-full bg-secondary-container text-primary flex items-center justify-center text-[28px]"><span class="material-symbols-outlined">table_restaurant</span></span>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface">Quelles tables servez-vous ?</h2>
+<p class="font-body-md text-sm text-on-surface-variant">Renseignez vos tables pour recevoir leurs commandes et leurs appels.</p>
+</div>
+</div>
+<form id="tables-form" class="space-y-3" novalidate>
+<label class="block font-label-md text-xs text-on-surface-variant" for="tables-input">Numéros de table, séparés par des virgules</label>
+<input id="tables-input" type="text" placeholder="Ex : 1, 2, 3" class="w-full bg-surface-container-high rounded-lg px-4 py-3 font-body-md text-on-surface border border-transparent focus:border-primary focus:ring-0 focus:outline-none"/>
+<p id="tables-error" role="alert" class="hidden text-error text-sm"></p>
+<div class="flex gap-2">
+<button type="button" id="tables-cancel" onclick="cancelTablesEdit()" class="hidden flex-1 py-3 rounded-lg border-[1.5px] border-outline-variant text-on-surface font-label-md text-label-md hover:bg-surface-container">Annuler</button>
+<button type="submit" id="tables-save" class="flex-1 py-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors disabled:opacity-60">Enregistrer mes tables</button>
+</div>
+</form>
+</section>
+
+<!-- Tableau de bord du serveur -->
+<div id="board" class="hidden space-y-6">
+<section class="flex flex-wrap items-center gap-3">
+<span class="font-label-md text-label-md text-on-surface-variant">Mes tables :</span>
+<div id="my-tables" class="flex flex-wrap gap-2"></div>
+<button onclick="editTables()" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-xs hover:bg-surface-variant"><span class="material-symbols-outlined">edit</span> Modifier</button>
+</section>
+
+<section class="space-y-3">
+<h2 class="font-title-lg text-title-lg text-primary">Mes tables en direct</h2>
+<div id="floor-legend"></div>
+<div id="tables-list"></div>
+</section>
+
+<section id="calls-section" class="hidden">
+<h2 class="font-title-lg text-title-lg text-error mb-2 flex items-center gap-2"><span class="material-symbols-outlined">room_service</span> <span>Appels</span></h2>
+<div id="calls-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+</section>
+
+<section>
+<div class="flex items-center justify-between mb-3">
+<h2 class="font-title-lg text-title-lg text-primary">Commandes de mes tables</h2>
+<label class="inline-flex items-center gap-2 text-sm text-on-surface-variant"><input id="show-served" type="checkbox" class="accent-primary w-4 h-4"/> Afficher les commandes servies</label>
+</div>
+<p id="orders-empty" class="hidden text-on-surface-variant">Aucune commande pour vos tables pour le moment.</p>
+<div id="orders-list" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3"></div>
+</section>
+</div>
+</main>
+<div id="toast-host" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-[80] flex flex-col gap-2 items-center pointer-events-none"></div>
+</body></html>

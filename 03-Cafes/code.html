@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+
+<html data-role="client" class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Kebab - Nos Cafés</title>
+<meta name="description" content="La cafétéria du restaurant Kebab : espresso, latte, café turc, jus frais, smoothies et mojitos, servis à votre table."/>
+<!-- Google Fonts -->
+<!-- Tailwind CSS -->
+<script src="../js/vendor/tailwind-3.4.17-forms-cq.js"></script>
+<link href="../css/soucoffe.css" rel="stylesheet"/>
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<!-- Kebab icon system & shared cart -->
+<script src="../js/auth.js"></script>
+<script src="../js/icons.js" defer=""></script>
+<script src="../js/cart.js" defer=""></script>
+<script src="../js/profile.js" defer=""></script>
+<script src="../js/presence.js" defer=""></script>
+<script src="../js/products.js" defer=""></script>
+<script src="../js/recommendations.js" defer=""></script>
+<script src="../js/smart-client.js" defer=""></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#f4ba96",
+                    "tertiary": "#3f1520",
+                    "surface-variant": "#ebe1d3",
+                    "tertiary-fixed-dim": "#e9bda7",
+                    "on-secondary-fixed": "#251a07",
+                    "on-primary-fixed": "#311300",
+                    "on-primary-container": "#e9b08c",
+                    "secondary-container": "#f6dfc0",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#d5c3b9",
+                    "surface-tint": "#805437",
+                    "on-surface-variant": "#51443d",
+                    "on-secondary-container": "#726249",
+                    "tertiary-fixed": "#ffdbca",
+                    "on-secondary-fixed-variant": "#53452e",
+                    "on-tertiary-fixed-variant": "#5e402f",
+                    "surface-container-high": "#f1e7d9",
+                    "surface-container": "#f7edde",
+                    "surface": "#fff8f2",
+                    "inverse-primary": "#f4ba96",
+                    "primary-fixed": "#ffdbc7",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#dfb49e",
+                    "secondary": "#6c5c44",
+                    "on-tertiary-fixed": "#2d1608",
+                    "surface-container-highest": "#ebe1d3",
+                    "primary-container": "#571d29",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1f1b13",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f9efe1",
+                    "secondary-fixed": "#f6dfc0",
+                    "surface-container-low": "#fcf2e4",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#644534",
+                    "secondary-fixed-dim": "#d9c4a5",
+                    "inverse-surface": "#353027",
+                    "surface-dim": "#e2d9cb",
+                    "primary": "#571d29",
+                    "on-secondary": "#ffffff",
+                    "outline": "#83746c",
+                    "on-background": "#1f1b13",
+                    "surface-bright": "#fff8f2",
+                    "on-primary-fixed-variant": "#653d22",
+                    "on-error": "#ffffff",
+                    "background": "#fff8f2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "sm": "16px",
+                    "margin-mobile": "16px",
+                    "md": "24px",
+                    "xl": "80px",
+                    "xs": "8px",
+                    "lg": "48px",
+                    "gutter": "20px",
+                    "base": "4px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Arial"],
+                    "title-lg": ["Arial"],
+                    "display-lg-mobile": ["Arial"],
+                    "label-md": ["Arial"],
+                    "headline-md": ["Arial"],
+                    "body-md": ["Arial"],
+                    "headline-sm": ["Arial"],
+                    "body-lg": ["Arial"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            background-color: #fff8f2; /* Custom fallback to match theme */
+        }
+    </style>
+<link rel="manifest" href="../manifest.json"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="Kebab"/>
+<meta name="theme-color" content="#242120"/>
+<link rel="icon" type="image/png" href="../images/brand/favicon-32.png?v=kebab2"/>
+<link rel="apple-touch-icon" href="../images/brand/apple-touch-icon.png?v=kebab2"/>
+</head>
+<body class="bg-surface text-on-surface min-h-screen font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar (Web) -->
+<header class="hidden md:flex bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline justify-between items-center w-full px-margin-desktop py-4 sticky top-0 z-40">
+<div class="flex items-center gap-8">
+<h1><img alt="Kebab" class="sc-brand-logo" src="../images/brand/logo.png?v=kebab2"/></h1>
+<nav class="flex items-center gap-6">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="../home/home.html">Accueil</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="../menu/index.html">Menu</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md sc-nav-kebab" href="../menu-kebab/index.html">Kebab</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="../02-Menu-Principal/code.html?view=favorites">Favoris</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative">
+<input onkeydown="headerSearch(this.value, event)" class="bg-surface-container-high border-none rounded-full py-2 pl-10 pr-4 font-body-md text-sm text-on-surface focus:ring-2 focus:ring-primary w-64" placeholder="Rechercher au menu…" type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant">search</span>
+</div>
+<div class="flex items-center gap-4">
+<button data-theme-toggle="" onclick="toggleTheme()" type="button" class="text-on-surface-variant hover:text-primary transition-colors text-xl leading-none" aria-label="Changer de thème"><span class="material-symbols-outlined">dark_mode</span></button>
+<button onclick="window.location.href='../05-Suivi-Commande/code.html'" class="text-on-surface-variant hover:text-primary transition-colors flex flex-col items-center">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-label-md text-xs mt-1">Ma commande</span>
+</button>
+<button onclick="window.location.href='../04-Panier/code.html'" class="relative text-on-surface-variant hover:text-primary transition-colors flex flex-col items-center">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-label-md text-xs mt-1">Panier</span>
+<span data-cart-badge="" class="absolute -top-1 -right-2 bg-primary-container text-on-primary-container text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
+</button>
+</div>
+<div class="flex items-center gap-3 border-l border-outline-variant pl-6">
+<button type="button" data-profile-toggle="" class="w-10 h-10 rounded-full flex items-center justify-center text-primary text-[40px] shrink-0 hover:opacity-80 transition-opacity" aria-label="Mon profil" title="Mon profil"><span class="material-symbols-outlined" data-weight="fill">account_circle</span></button>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Table <span data-table-number="">12</span></span>
+<span class="font-body-md text-xs text-on-surface-variant" data-guest-name="">Souad</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Mobile Header (simulated) -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile py-4 bg-surface sticky top-0 z-40 shadow-sm">
+<div class="flex flex-col">
+<h1><img alt="Kebab" class="sc-brand-logo-mobile" src="../images/brand/logo.png?v=kebab2"/></h1>
+<span class="font-label-md text-on-surface-variant text-xs">Table <span data-table-number="">12</span> <span class="material-symbols-outlined text-[6px] mx-1 align-middle" data-weight="fill">circle</span> <span data-guest-name="">Souad</span></span>
+</div>
+<div class="flex items-center gap-4">
+<button type="button" data-profile-toggle="" class="text-primary text-2xl leading-none inline-flex items-center justify-center min-w-[40px] min-h-[40px]" aria-label="Mon profil" title="Mon profil"><span class="material-symbols-outlined">account_circle</span></button>
+<button data-theme-toggle="" onclick="toggleTheme()" type="button" class="text-on-surface-variant text-xl leading-none inline-flex items-center justify-center min-w-[40px] min-h-[40px]" aria-label="Changer de thème"><span class="material-symbols-outlined">dark_mode</span></button>
+<button onclick="focusSearch()" aria-label="Rechercher" class="text-on-surface-variant inline-flex items-center justify-center min-w-[40px] min-h-[40px]">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button onclick="window.location.href='../04-Panier/code.html'" class="relative text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span data-cart-badge="" class="absolute -top-1 -right-1 bg-primary-container text-on-primary-container text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
+</button>
+</div>
+</header>
+<!-- Mobile Search Bar -->
+<div class="md:hidden px-margin-mobile pt-2 pb-1 bg-surface">
+<div class="relative">
+<input onkeydown="headerSearch(this.value, event)" class="w-full bg-surface-container-high border-none rounded-full py-2 pl-10 pr-4 font-body-md text-sm text-on-surface focus:ring-2 focus:ring-primary" placeholder="Rechercher..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+</div>
+</div>
+<!-- Context & Header Section -->
+<header class="px-margin-mobile md:px-margin-desktop pt-md pb-sm flex flex-col md:flex-row md:justify-between md:items-end gap-sm mt-4 md:mt-0">
+<div>
+<!-- Context Chip -->
+<div class="inline-flex items-center gap-2 bg-surface-container-high px-3 py-1 rounded-full mb-4 border border-outline-variant shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">table_restaurant</span>
+<span class="font-label-md text-label-md text-on-surface">Table <span data-table-number="">12</span> <span class="material-symbols-outlined text-[6px] mx-1 align-middle" data-weight="fill">circle</span> <span data-guest-name="">Souad</span> <span class="material-symbols-outlined text-[6px] mx-1 align-middle" data-weight="fill">circle</span> <span data-party-size="">1</span> pers.</span>
+</div>
+<p class="sc-kicker mb-2">La cafétéria du restaurant</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight">Nos Cafés <span class="material-symbols-outlined align-middle">coffee</span></h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">Découvrez notre sélection de cafés soigneusement choisis, torréfiés avec soin pour révéler des saveurs riches et nuancées. <span id="product-count" class="text-on-surface-variant"></span></p>
+</div>
+<!-- Sort -->
+<div class="sc-filters flex items-center gap-2 w-full sm:w-auto">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">tune</span>
+<select id="price-filter" onchange="filterCafesByPrice(this.value)" class="bg-surface-container-high border border-outline-variant rounded-lg px-3 py-2 font-label-md text-sm text-on-surface focus:ring-2 focus:ring-primary">
+<option value="">Tous les prix</option>
+<option value="0-5">&lt; 5 €</option>
+<option value="5-8">5–8 €</option>
+<option value="8-">&gt; 8 €</option>
+</select>
+<select id="sort-select" onchange="sortMenu(this.value)" class="bg-surface-container-high border border-outline-variant rounded-lg px-3 py-2 font-label-md text-sm text-on-surface focus:ring-2 focus:ring-primary">
+<option value="popular">Popularité</option>
+<option value="price-asc">Prix croissant</option>
+<option value="price-desc">Prix décroissant</option>
+<option value="new">Nouveautés</option>
+</select>
+</div>
+</header>
+<!-- Main Content Area: Product Grid -->
+<main class="px-margin-mobile md:px-margin-desktop py-lg pb-32">
+<div class="sc-cafes-banner" style="background-image:url('../images/media/coffee-barista.jpg')" role="img" aria-label="Porte-filtres de grains et de café moulu, et un espresso"><div><p>Torréfiés avec soin</p><h2>Espresso, latte, café turc… en tasse ou à emporter.</h2></div></div>
+<div id="product-grid" class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-gutter md:gap-lg" aria-busy="true"><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div></div>
+</main>
+<!-- Pied de page -->
+<footer class="sc-footer">
+<div class="sc-footer-cta">
+<div>
+<p class="sc-footer-eyebrow">Une petite envie ?</p>
+<h2 class="sc-footer-cta-title">Commandez depuis votre table, on vous l’apporte.</h2>
+</div>
+<a class="sc-footer-cta-btn" href="../menu/index.html">Voir la carte <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="sc-footer-inner">
+<div class="sc-footer-brand">
+<img src="../images/brand/logo.png?v=kebab2" alt="Kebab"/>
+<p>Restaurant intelligent, avec sa cafétéria : kebab, paninis, assiettes, petits-déjeuners, desserts, cafés et boissons, commandés depuis votre téléphone et servis à votre table.</p>
+<ul class="sc-footer-perks">
+<li><span class="material-symbols-outlined">qr_code_scanner</span> Commande à table</li>
+<li><span class="material-symbols-outlined">schedule</span> Suivi en direct</li>
+<li><span class="material-symbols-outlined">loyalty</span> Points fidélité</li>
+</ul>
+</div>
+<nav class="sc-footer-links" aria-label="Explorer">
+<p>Explorer</p>
+<a href="../home/home.html">Accueil</a>
+<a href="../menu/index.html">Le menu</a>
+<a href="../03-Cafes/code.html">La cafétéria</a>
+<a href="../menu-kebab/index.html">Menu kebab</a>
+<a href="../02-Menu-Principal/code.html?view=favorites">Mes favoris</a>
+</nav>
+<nav class="sc-footer-links" aria-label="La carte">
+<p>La carte</p>
+<a href="../02-Menu-Principal/code.html?category=Caf%C3%A9s">Cafés</a>
+<a href="../02-Menu-Principal/code.html?category=Petit-d%C3%A9jeuner">Petit-déjeuner</a>
+<a href="../02-Menu-Principal/code.html?category=Desserts">Desserts</a>
+<a href="../02-Menu-Principal/code.html?category=Jus">Jus frais</a>
+</nav>
+<nav class="sc-footer-links" aria-label="Ma visite">
+<p>Ma visite</p>
+<a href="../04-Panier/code.html">Mon panier</a>
+<a href="../05-Suivi-Commande/code.html">Suivre ma commande</a>
+</nav>
+</div>
+<div class="sc-footer-bottom"><span>© <span id="sc-year">2026</span> Kebab</span><span>Fait avec passion, servi avec le sourire.</span></div>
+</footer>
+<script>(function(){var y=document.getElementById('sc-year');if(y)y.textContent=new Date().getFullYear();})();</script>
+<!-- Product Detail Modal -->
+<div id="product-modal" class="hidden fixed inset-0 z-[60] flex items-end md:items-center justify-center">
+<div onclick="closeProductModal()" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+<div class="sc-modal-panel relative bg-surface-container-lowest w-full md:max-w-md md:rounded-2xl rounded-t-2xl max-h-[85vh] overflow-y-auto p-6 shadow-2xl">
+<button onclick="closeProductModal()" aria-label="Fermer" class="absolute top-4 right-4 text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div id="modal-emoji-tile" class="sc-tile-shine w-full h-32 rounded-xl flex items-center justify-center mb-4"></div>
+<h3 id="modal-name" class="font-headline-sm text-headline-sm text-primary mb-1"></h3>
+<p id="modal-desc" class="font-body-md text-sm text-on-surface-variant mb-2"></p>
+<div id="modal-diet" class="mb-4"></div>
+<div id="modal-sizes" class="mb-4"></div>
+<div id="modal-levels"></div>
+<div id="modal-extras" class="mb-4"></div>
+<div id="modal-recommendations" class="mb-4"></div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-md text-label-md text-on-surface-variant">Quantité</span>
+<div class="flex items-center bg-surface-container rounded-lg border border-outline-variant">
+<button onclick="modalChangeQty(-1)" class="w-9 h-9 flex items-center justify-center text-primary hover:bg-surface-variant rounded-l-lg transition-colors"><span class="material-symbols-outlined text-[18px]">remove</span></button>
+<span id="modal-qty" class="w-8 text-center font-label-md text-label-md text-on-surface">1</span>
+<button onclick="modalChangeQty(1)" class="w-9 h-9 flex items-center justify-center text-primary hover:bg-surface-variant rounded-r-lg transition-colors"><span class="material-symbols-outlined text-[18px]">add</span></button>
+</div>
+</div>
+<button id="modal-add-btn" onclick="confirmModalAdd()" class="w-full bg-primary-container text-on-primary-container font-label-md text-label-md py-3 rounded-lg hover:bg-primary hover:text-on-primary hover:shadow-[0_4px_14px_rgba(62,36,21,0.2)] hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+Ajouter — <span id="modal-total-price">0,00 €</span>
+</button>
+</div>
+</div>
+<!-- Barre panier flottante : visible dès qu'il y a au moins un article, pour
+     confirmer/vérifier sans quitter la page. Mise à jour par Cart.updateBadges(). -->
+<div id="cart-float-bar" class="hidden fixed inset-x-0 bottom-[76px] md:bottom-4 z-40 px-4">
+<div class="max-w-md mx-auto bg-primary-container text-on-primary-container rounded-xl shadow-lg p-3 flex items-center justify-between gap-3">
+<div class="flex flex-col leading-tight">
+<span id="cart-float-count" class="font-label-md text-label-md">0 article</span>
+<span id="cart-float-total" class="font-title-lg text-title-lg">0,00 €</span>
+</div>
+<button onclick="window.location.href='../04-Panier/code.html'" class="bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg hover:opacity-90 transition-all flex items-center gap-1">Voir le panier <span class="material-symbols-outlined text-[18px]">arrow_forward</span></button>
+</div>
+</div>
+<!-- BottomNavBar (Visible only on Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 shadow-[0_-10px_30px_rgba(62,36,21,0.08)] bg-surface text-primary font-display-lg text-display-lg-mobile border-t-0">
+<!-- Home (Inactive) -->
+<div class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all cursor-pointer active:scale-90 duration-150 rounded-xl" onclick="window.location.href='../home/home.html'">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-[10px] mt-1">Accueil</span>
+</div>
+<!-- Menu (Inactive: Cafés is a sub-page, not the Menu grid itself) -->
+<div class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all cursor-pointer active:scale-90 duration-150 rounded-xl" onclick="window.location.href='../menu/index.html'">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">restaurant_menu</span>
+<span class="font-label-md text-[10px] mt-1">Menu</span>
+</div>
+<!-- Favorites (Inactive) -->
+<div class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all cursor-pointer active:scale-90 duration-150 rounded-xl" onclick="window.location.href='../02-Menu-Principal/code.html?view=favorites'">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">favorite</span>
+<span class="font-label-md text-[10px] mt-1">Favoris</span>
+</div>
+<!-- Cart (Inactive) -->
+<div class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all cursor-pointer active:scale-90 duration-150 rounded-xl" onclick="window.location.href='../04-Panier/code.html'">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+<span class="font-label-md text-[10px] mt-1">Panier</span>
+</div>
+<!-- Order (Inactive) -->
+<div class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all cursor-pointer active:scale-90 duration-150 rounded-xl" onclick="window.location.href='../05-Suivi-Commande/code.html'">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">receipt_long</span>
+<span class="font-label-md text-[10px] mt-1">Commande</span>
+</div>
+</nav>
+<!-- Renders the Cafés category from the shared catalog (js/products.js) -->
+<script>
+    (function () {
+        var sortBy = 'popular';
+        var minPrice = null;
+        var maxPrice = null;
+
+        function renderGrid() {
+            var list = window.filterAndSortProducts(PRODUCTS, {
+                category: 'Cafés', minPrice: minPrice, maxPrice: maxPrice, sortBy: sortBy
+            });
+
+            var grid = document.getElementById('product-grid');
+            if (grid) {
+                grid.innerHTML = list.map(renderProductCard).join('');
+                if (window.renderIcons) renderIcons();
+            }
+            var count = document.getElementById('product-count');
+            if (count) count.innerHTML = window.iconHtml('circle', 'text-[6px] mx-1', true) + ' ' + list.length + ' produits';
+        }
+
+        window.sortMenu = function (value) {
+            sortBy = value;
+            renderGrid();
+        };
+
+        window.filterCafesByPrice = function (value) {
+            if (!value) {
+                minPrice = null; maxPrice = null;
+            } else {
+                var parts = value.split('-');
+                minPrice = parts[0] === '' ? null : parseFloat(parts[0]);
+                maxPrice = parts[1] === '' ? null : parseFloat(parts[1]);
+            }
+            renderGrid();
+        };
+
+        // Phase 2 : tente le catalogue API avant le premier rendu, avec
+        // repli local automatique si indisponible — voir js/products.js:loadCatalog().
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.loadCatalog) {
+                window.loadCatalog().then(renderGrid);
+            } else {
+                renderGrid();
+            }
+        });
+    })();
+</script>
+</body></html>

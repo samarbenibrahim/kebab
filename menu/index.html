@@ -1,0 +1,657 @@
+﻿<!DOCTYPE html>
+
+<html data-role="client" class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Kebab - Menu Kebab</title>
+<meta name="description" content="Le menu Kebab : paninis, piadines, assiettes et menus, à commander depuis votre table."/>
+<script src="../js/vendor/tailwind-3.4.17-forms-cq.js"></script>
+<link href="../css/soucoffe.css" rel="stylesheet"/>
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/icons.js" defer=""></script>
+<script src="../js/cart.js" defer=""></script>
+<script src="../js/profile.js" defer=""></script>
+<script src="../js/presence.js" defer=""></script>
+<script src="../js/products.js" defer=""></script>
+<script src="../js/recommendations.js" defer=""></script>
+<script src="../js/smart-client.js" defer=""></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#f4ba96",
+                      "tertiary": "#3f1520",
+                      "surface-variant": "#ebe1d3",
+                      "tertiary-fixed-dim": "#e9bda7",
+                      "on-secondary-fixed": "#251a07",
+                      "on-primary-fixed": "#311300",
+                      "on-primary-container": "#e9b08c",
+                      "secondary-container": "#f6dfc0",
+                      "on-primary": "#ffffff",
+                      "outline-variant": "#d5c3b9",
+                      "surface-tint": "#805437",
+                      "on-surface-variant": "#51443d",
+                      "on-secondary-container": "#726249",
+                      "tertiary-fixed": "#ffdbca",
+                      "on-secondary-fixed-variant": "#53452e",
+                      "on-tertiary-fixed-variant": "#5e402f",
+                      "surface-container-high": "#f1e7d9",
+                      "surface-container": "#f7edde",
+                      "surface": "#fff8f2",
+                      "inverse-primary": "#f4ba96",
+                      "primary-fixed": "#ffdbc7",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-container": "#dfb49e",
+                      "secondary": "#6c5c44",
+                      "on-tertiary-fixed": "#2d1608",
+                      "surface-container-highest": "#ebe1d3",
+                      "primary-container": "#571d29",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface": "#1f1b13",
+                      "error": "#ba1a1a",
+                      "inverse-on-surface": "#f9efe1",
+                      "secondary-fixed": "#f6dfc0",
+                      "surface-container-low": "#fcf2e4",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#644534",
+                      "secondary-fixed-dim": "#d9c4a5",
+                      "inverse-surface": "#353027",
+                      "surface-dim": "#e2d9cb",
+                      "primary": "#571d29",
+                      "on-secondary": "#ffffff",
+                      "outline": "#83746c",
+                      "on-background": "#1f1b13",
+                      "surface-bright": "#fff8f2",
+                      "on-primary-fixed-variant": "#653d22",
+                      "on-error": "#ffffff",
+                      "background": "#fff8f2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "sm": "16px",
+                      "margin-mobile": "16px",
+                      "md": "24px",
+                      "xl": "80px",
+                      "xs": "8px",
+                      "lg": "48px",
+                      "gutter": "20px",
+                      "base": "4px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Arial"],
+                      "title-lg": ["Arial"],
+                      "display-lg-mobile": ["Arial"],
+                      "label-md": ["Arial"],
+                      "headline-md": ["Arial"],
+                      "body-md": ["Arial"],
+                      "headline-sm": ["Arial"],
+                      "body-lg": ["Arial"]
+              },
+              "fontSize": {
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.surface');
+            color: theme('colors.on-surface');
+            -webkit-font-smoothing: antialiased;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<link rel="manifest" href="../manifest.json"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="Kebab"/>
+<meta name="theme-color" content="#242120"/>
+<link rel="icon" type="image/png" href="../images/brand/favicon-32.png?v=kebab2"/>
+<link rel="apple-touch-icon" href="../images/brand/apple-touch-icon.png?v=kebab2"/>
+</head>
+<body class="font-body-md min-h-screen flex flex-col relative pb-[88px] md:pb-0">
+<!-- TopNavBar (Web) -->
+<header class="hidden md:flex bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline justify-between items-center w-full px-margin-desktop py-4 sticky top-0 z-40 flat no shadows">
+<div class="flex items-center gap-8">
+<h1><img alt="Kebab" class="sc-brand-logo" src="../images/brand/logo.png?v=kebab2"/></h1>
+<nav class="flex items-center gap-6">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="../home/home.html">Accueil</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="../menu/index.html">Menu</a>
+<a data-menu-navlink="" class="sc-nav-kebab text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md" href="#" aria-current="page">Kebab</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary-container transition-colors cursor-pointer active:scale-95 font-label-md text-label-md sc-nav-kebab" href="../02-Menu-Principal/code.html?view=favorites">Favoris</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative">
+<input oninput="filterMenu(this.value)" id="menu-search-desktop" class="bg-surface-container-high border-none rounded-full py-2 pl-10 pr-4 font-body-md text-sm text-on-surface focus:ring-2 focus:ring-primary w-64" placeholder="Rechercher au menu…" type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant">search</span>
+</div>
+<div class="flex items-center gap-4">
+<button data-theme-toggle="" onclick="toggleTheme()" type="button" class="text-on-surface-variant hover:text-primary transition-colors text-xl leading-none" aria-label="Changer de thème"><span class="material-symbols-outlined">dark_mode</span></button>
+<button onclick="window.location.href='../05-Suivi-Commande/code.html'" class="text-on-surface-variant hover:text-primary transition-colors flex flex-col items-center">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-label-md text-xs mt-1">Ma commande</span>
+</button>
+<button onclick="window.location.href='../04-Panier/code.html'" class="relative text-on-surface-variant hover:text-primary transition-colors flex flex-col items-center">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-label-md text-xs mt-1">Panier</span>
+<span data-cart-badge="" class="absolute -top-1 -right-2 bg-primary-container text-on-primary-container text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
+</button>
+</div>
+<div class="flex items-center gap-3 border-l border-outline-variant pl-6">
+<button type="button" data-profile-toggle="" class="w-10 h-10 rounded-full flex items-center justify-center text-primary text-[40px] shrink-0 hover:opacity-80 transition-opacity" aria-label="Mon profil" title="Mon profil"><span class="material-symbols-outlined" data-weight="fill">account_circle</span></button>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Table <span data-table-number="">12</span></span>
+<span class="font-body-md text-xs text-on-surface-variant" data-guest-name="">Souad</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Mobile Header (simulated) -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile py-4 bg-surface sticky top-0 z-40 shadow-sm">
+<div class="flex flex-col">
+<h1><img alt="Kebab" class="sc-brand-logo-mobile" src="../images/brand/logo.png?v=kebab2"/></h1>
+<span class="font-label-md text-on-surface-variant text-xs">Table <span data-table-number="">12</span> <span class="material-symbols-outlined text-[6px] mx-1 align-middle" data-weight="fill">circle</span> <span data-guest-name="">Souad</span></span>
+</div>
+<div class="flex items-center gap-4">
+<button type="button" data-profile-toggle="" class="text-primary text-2xl leading-none inline-flex items-center justify-center min-w-[40px] min-h-[40px]" aria-label="Mon profil" title="Mon profil"><span class="material-symbols-outlined">account_circle</span></button>
+<button data-theme-toggle="" onclick="toggleTheme()" type="button" class="text-on-surface-variant text-xl leading-none inline-flex items-center justify-center min-w-[40px] min-h-[40px]" aria-label="Changer de thème"><span class="material-symbols-outlined">dark_mode</span></button>
+<button onclick="focusSearch()" aria-label="Rechercher" class="text-on-surface-variant inline-flex items-center justify-center min-w-[40px] min-h-[40px]">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button onclick="window.location.href='../04-Panier/code.html'" class="relative text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span data-cart-badge="" class="absolute -top-1 -right-1 bg-primary-container text-on-primary-container text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
+</button>
+</div>
+</header>
+<!-- Mobile Search Bar -->
+<div class="md:hidden px-margin-mobile pt-2 pb-1 bg-surface">
+<div class="relative">
+<input oninput="filterMenu(this.value)" id="menu-search-mobile" class="w-full bg-surface-container-high border-none rounded-full py-2 pl-10 pr-4 font-body-md text-sm text-on-surface focus:ring-2 focus:ring-primary" placeholder="Rechercher..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+</div>
+</div>
+<main class="flex-grow w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-md">
+<!-- Choix du menu : page ouverte sans ?m= (bouton « Menu » de la navigation). -->
+<section id="menu-chooser" class="sc-chooser" aria-labelledby="menu-chooser-title">
+<p class="sc-kicker">Restaurant intelligent</p>
+<h1 id="menu-chooser-title" class="sc-chooser-title">Nos menus</h1>
+<p class="sc-chooser-sub">Choisissez la carte que vous voulez découvrir.</p>
+<div id="menu-chooser-grid" class="sc-chooser-grid" aria-busy="true"><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div></div>
+</section>
+<!-- En-tête du menu (nom, accroche, photo facultative images/menus/<menu>.jpg) -->
+<section class="sc-menu-hero mb-lg" aria-labelledby="menu-title">
+<div class="sc-menu-hero-media" id="menu-hero-media" aria-hidden="true"><span class="material-symbols-outlined">kebab_dining</span></div>
+<div class="sc-menu-hero-text">
+<p class="sc-menu-hero-kicker">Kebab</p>
+<h1 id="menu-title" class="sc-menu-hero-title">Menu Kebab</h1>
+<p id="menu-tagline" class="sc-menu-hero-sub">Goût, fraîcheur et saveur à chaque bouchée.</p>
+<ul id="menu-hero-chips" class="sc-kebab-chips hidden" aria-label="Nos atouts"><li><span class="material-symbols-outlined" aria-hidden="true">local_fire_department</span>Cuit à la broche</li><li><span class="material-symbols-outlined" aria-hidden="true">bakery_dining</span>Pain frais du jour</li><li><span class="material-symbols-outlined" aria-hidden="true">water_drop</span>Sauces maison</li></ul>
+</div>
+</section>
+<!-- Category Carousel -->
+<section class="mb-lg overflow-hidden">
+<!-- Menus (Café | Kebab | …), js/products.js:scRenderMenuTabs -->
+<nav id="menu-tabs" class="hidden flex gap-2 overflow-x-auto hide-scrollbar pb-3 px-1" aria-label="Menus"></nav>
+<div id="category-pills" class="flex gap-4 overflow-x-auto hide-scrollbar py-2 px-1">
+<button onclick="filterByCategory(this)" data-category="All" class="pill-active whitespace-nowrap px-6 py-2 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md shadow-sm transition-transform active:scale-95">All</button>
+</div>
+</section>
+<!-- Notre carte (Product Grid, rendered from js/products.js) -->
+<section class="mb-xl">
+<span class="sc-heading-accent"></span>
+<div class="flex justify-between items-end mb-6 gap-4 flex-wrap">
+<div>
+<h2 id="product-grid-heading" class="font-headline-md text-headline-md text-primary md:font-headline-sm md:text-headline-sm inline">Au menu</h2>
+<span id="product-count" class="font-body-md text-sm text-on-surface-variant ml-2"></span>
+</div>
+<div class="sc-filters flex items-center gap-2 w-full sm:w-auto">
+<label class="font-label-md text-label-md text-on-surface-variant hidden sm:inline" for="price-filter">Prix :</label>
+<select id="price-filter" onchange="filterMenuByPrice(this.value)" class="bg-surface-container-high border border-outline-variant rounded-lg px-3 py-2 font-label-md text-sm text-on-surface focus:ring-2 focus:ring-primary">
+<option value="">Tous les prix</option>
+<option value="0-5">&lt; 5 €</option>
+<option value="5-8">5–8 €</option>
+<option value="8-">&gt; 8 €</option>
+</select>
+<label class="font-label-md text-label-md text-on-surface-variant hidden sm:inline" for="diet-filter">Régime :</label>
+<select id="diet-filter" onchange="filterMenuByDiet(this.value)" class="bg-surface-container-high border border-outline-variant rounded-lg px-3 py-2 font-label-md text-sm text-on-surface focus:ring-2 focus:ring-primary">
+<option value="">Tous</option>
+<option value="vegetarien">Végétarien</option>
+<option value="vegan">Végan</option>
+<option value="sans-gluten">Sans gluten</option>
+</select>
+<label class="font-label-md text-label-md text-on-surface-variant hidden sm:inline" for="sort-select">Trier :</label>
+<select id="sort-select" onchange="sortMenu(this.value)" class="bg-surface-container-high border border-outline-variant rounded-lg px-3 py-2 font-label-md text-sm text-on-surface focus:ring-2 focus:ring-primary">
+<option value="popular">Popularité</option>
+<option value="price-asc">Prix croissant</option>
+<option value="price-desc">Prix décroissant</option>
+<option value="new">Nouveautés</option>
+</select>
+</div>
+</div>
+<div id="product-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6" aria-busy="true"><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div><div class="sc-skel" aria-hidden="true"><i></i><b></b><u></u><s></s></div></div>
+<div id="menu-soon" class="hidden sc-empty-state">
+<div class="sc-empty-icon"><span class="material-symbols-outlined">schedule</span></div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Bientôt disponible</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Ce menu arrive très bientôt. En attendant, découvrez notre carte café.</p>
+<a href="../menu/index.html" class="mt-2 inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:text-tertiary transition-colors">Voir le menu café <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div id="no-results" class="hidden sc-empty-state">
+<div class="sc-empty-icon"><span class="material-symbols-outlined">search</span></div>
+<h3 id="no-results-title" class="font-title-lg text-title-lg text-on-surface">Aucun résultat</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Aucun article ne correspond à votre recherche.</p>
+<button id="no-results-reset" onclick="resetMenuFilters()" class="mt-2 inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:text-tertiary transition-colors">Réinitialiser les filtres</button>
+</div>
+</section>
+</main>
+<!-- Pied de page -->
+<footer class="sc-footer">
+<div class="sc-footer-cta">
+<div>
+<p class="sc-footer-eyebrow">Une petite envie ?</p>
+<h2 class="sc-footer-cta-title">Commandez depuis votre table, on vous l’apporte.</h2>
+</div>
+<a class="sc-footer-cta-btn" href="../menu/index.html">Voir la carte <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="sc-footer-inner">
+<div class="sc-footer-brand">
+<img src="../images/brand/logo.png?v=kebab2" alt="Kebab"/>
+<p>Restaurant intelligent, avec sa cafétéria : kebab, paninis, assiettes, petits-déjeuners, desserts, cafés et boissons, commandés depuis votre téléphone et servis à votre table.</p>
+<ul class="sc-footer-perks">
+<li><span class="material-symbols-outlined">qr_code_scanner</span> Commande à table</li>
+<li><span class="material-symbols-outlined">schedule</span> Suivi en direct</li>
+<li><span class="material-symbols-outlined">loyalty</span> Points fidélité</li>
+</ul>
+</div>
+<nav class="sc-footer-links" aria-label="Explorer">
+<p>Explorer</p>
+<a href="../home/home.html">Accueil</a>
+<a href="../menu/index.html">Le menu</a>
+<a href="../03-Cafes/code.html">La cafétéria</a>
+<a href="../menu-kebab/index.html">Menu kebab</a>
+<a href="../02-Menu-Principal/code.html?view=favorites">Mes favoris</a>
+</nav>
+<nav class="sc-footer-links" aria-label="La carte">
+<p>La carte</p>
+<a href="../02-Menu-Principal/code.html?category=Caf%C3%A9s">Cafés</a>
+<a href="../02-Menu-Principal/code.html?category=Petit-d%C3%A9jeuner">Petit-déjeuner</a>
+<a href="../02-Menu-Principal/code.html?category=Desserts">Desserts</a>
+<a href="../02-Menu-Principal/code.html?category=Jus">Jus frais</a>
+</nav>
+<nav class="sc-footer-links" aria-label="Ma visite">
+<p>Ma visite</p>
+<a href="../04-Panier/code.html">Mon panier</a>
+<a href="../05-Suivi-Commande/code.html">Suivre ma commande</a>
+</nav>
+</div>
+<div class="sc-footer-bottom"><span>© <span id="sc-year">2026</span> Kebab</span><span>Fait avec passion, servi avec le sourire.</span></div>
+</footer>
+<script>(function(){var y=document.getElementById('sc-year');if(y)y.textContent=new Date().getFullYear();})();</script>
+<!-- Product Detail Modal -->
+<div id="product-modal" class="hidden fixed inset-0 z-[60] flex items-end md:items-center justify-center">
+<div onclick="closeProductModal()" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+<div class="sc-modal-panel relative bg-surface-container-lowest w-full md:max-w-md md:rounded-2xl rounded-t-2xl max-h-[85vh] overflow-y-auto p-6 shadow-2xl">
+<button onclick="closeProductModal()" aria-label="Fermer" class="absolute top-4 right-4 text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div id="modal-emoji-tile" class="sc-tile-shine w-full h-32 rounded-xl flex items-center justify-center mb-4"></div>
+<h3 id="modal-name" class="font-headline-sm text-headline-sm text-primary mb-1"></h3>
+<p id="modal-desc" class="font-body-md text-sm text-on-surface-variant mb-2"></p>
+<div id="modal-diet" class="mb-4"></div>
+<div id="modal-sizes" class="mb-4"></div>
+<div id="modal-levels"></div>
+<div id="modal-extras" class="mb-4"></div>
+<div id="modal-recommendations" class="mb-4"></div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-md text-label-md text-on-surface-variant">Quantité</span>
+<div class="flex items-center bg-surface-container rounded-lg border border-outline-variant">
+<button onclick="modalChangeQty(-1)" class="w-9 h-9 flex items-center justify-center text-primary hover:bg-surface-variant rounded-l-lg transition-colors"><span class="material-symbols-outlined text-[18px]">remove</span></button>
+<span id="modal-qty" class="w-8 text-center font-label-md text-label-md text-on-surface">1</span>
+<button onclick="modalChangeQty(1)" class="w-9 h-9 flex items-center justify-center text-primary hover:bg-surface-variant rounded-r-lg transition-colors"><span class="material-symbols-outlined text-[18px]">add</span></button>
+</div>
+</div>
+<button id="modal-add-btn" onclick="confirmModalAdd()" class="w-full bg-primary-container text-on-primary-container font-label-md text-label-md py-3 rounded-lg hover:bg-primary hover:text-on-primary hover:shadow-[0_4px_14px_rgba(62,36,21,0.2)] hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+Ajouter — <span id="modal-total-price">0,00 €</span>
+</button>
+</div>
+</div>
+<!-- Barre panier flottante : visible dès qu'il y a au moins un article, pour
+     confirmer/vérifier sans quitter le menu. Mise à jour par Cart.updateBadges(). -->
+<div id="cart-float-bar" class="hidden fixed inset-x-0 bottom-[76px] md:bottom-4 z-40 px-4">
+<div class="max-w-md mx-auto bg-primary-container text-on-primary-container rounded-xl shadow-lg p-3 flex items-center justify-between gap-3">
+<div class="flex flex-col leading-tight">
+<span id="cart-float-count" class="font-label-md text-label-md">0 article</span>
+<span id="cart-float-total" class="font-title-lg text-title-lg">0,00 €</span>
+</div>
+<button onclick="window.location.href='../04-Panier/code.html'" class="bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg hover:opacity-90 transition-all flex items-center gap-1">Voir le panier <span class="material-symbols-outlined text-[18px]">arrow_forward</span></button>
+</div>
+</div>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 shadow-[0_-10px_30px_rgba(62,36,21,0.08)] bg-surface shadow-lg">
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all" href="../home/home.html">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="font-label-md text-[10px] mt-1">Accueil</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl p-2 hover:bg-secondary-container transition-all Active: scale-90 duration-150" href="../menu/index.html">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="font-label-md text-[10px] mt-1">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all" href="../02-Menu-Principal/code.html?view=favorites">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+<span class="font-label-md text-[10px] mt-1">Favoris</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all relative" href="../04-Panier/code.html">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span class="font-label-md text-[10px] mt-1">Panier</span>
+<span data-cart-badge="" class="absolute top-1 right-2 bg-primary-container text-on-primary-container text-[8px] font-bold h-3 w-3 rounded-full flex items-center justify-center">0</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant p-2 hover:bg-secondary-container transition-all" href="../05-Suivi-Commande/code.html">
+<span class="material-symbols-outlined text-2xl">receipt_long</span>
+<span class="font-label-md text-[10px] mt-1">Commande</span>
+</a>
+</nav>
+<!-- Smart menu: category filter, live search, favorites persistence -->
+<script>
+    (function () {
+        // Menu affiché : ?m=<menu> (kebab par défaut). Les favoris restent sur la page Menu café.
+        var MENU = (new URLSearchParams(window.location.search).get('m') || 'kebab').toLowerCase().replace(/[^a-z0-9-]/g, '') || 'kebab';
+        // Sans ?m= (ni recherche, ni fiche à ouvrir) : la page propose le choix des menus.
+        var qs = new URLSearchParams(window.location.search);
+        var CHOOSE = !qs.get('m') && !qs.get('search') && !qs.get('open') && !qs.get('category');
+        document.documentElement.classList.toggle('sc-choose', CHOOSE);
+        document.documentElement.setAttribute('data-menu', CHOOSE ? 'choose' : MENU);
+        var activeCategory = 'All';
+        var initialSearch = new URLSearchParams(window.location.search).get('search') || '';
+        var searchTerm = initialSearch.trim().toLowerCase();
+        var sortBy = 'popular';
+        var favoritesOnly = false;
+        var minPrice = null;
+        var maxPrice = null;
+        var dietaryTag = '';
+
+        function renderGrid() {
+            var list = window.filterAndSortProducts(PRODUCTS, {
+                menu: MENU, category: activeCategory, searchTerm: searchTerm, favoritesOnly: favoritesOnly,
+                minPrice: minPrice, maxPrice: maxPrice, dietaryTag: dietaryTag, sortBy: sortBy
+            });
+            var grid = document.getElementById('product-grid');
+            var noResults = document.getElementById('no-results');
+            var count = document.getElementById('product-count');
+            if (grid) {
+                grid.innerHTML = list.map(renderProductCard).join('');
+                if (window.renderIcons) renderIcons();
+            }
+            if (count) count.textContent = '(' + list.length + ' produit' + (list.length !== 1 ? 's' : '') + ')';
+            if (noResults) {
+                var title = document.getElementById('no-results-title');
+                var resetBtn = document.getElementById('no-results-reset');
+                if (favoritesOnly) {
+                    if (title) title.textContent = 'Pas encore de favoris';
+                    noResults.querySelector('p').textContent = "Appuyez sur le cœur d'un article pour l'ajouter ici.";
+                    if (resetBtn) resetBtn.classList.add('hidden');
+                } else {
+                    if (title) title.textContent = 'Aucun résultat';
+                    noResults.querySelector('p').textContent = 'Aucun article ne correspond à votre recherche.';
+                    if (resetBtn) resetBtn.classList.remove('hidden');
+                }
+                var soonEl = document.getElementById('menu-soon');
+                noResults.classList.toggle('hidden', list.length !== 0 || (soonEl && !soonEl.classList.contains('hidden')));
+            }
+        }
+
+        window.filterMenuByPrice = function (value) {
+            if (!value) {
+                minPrice = null; maxPrice = null;
+            } else {
+                var parts = value.split('-');
+                minPrice = parts[0] === '' ? null : parseFloat(parts[0]);
+                maxPrice = parts[1] === '' ? null : parseFloat(parts[1]);
+            }
+            renderGrid();
+        };
+
+        window.filterMenuByDiet = function (value) {
+            dietaryTag = value || '';
+            renderGrid();
+        };
+
+        window.resetMenuFilters = function () {
+            searchTerm = '';
+            activeCategory = 'All';
+            minPrice = null;
+            maxPrice = null;
+            dietaryTag = '';
+            var priceFilter = document.getElementById('price-filter');
+            if (priceFilter) priceFilter.value = '';
+            var dietFilter = document.getElementById('diet-filter');
+            if (dietFilter) dietFilter.value = '';
+            var desktop = document.getElementById('menu-search-desktop');
+            var mobile = document.getElementById('menu-search-mobile');
+            if (desktop) desktop.value = '';
+            if (mobile) mobile.value = '';
+            document.querySelectorAll('#category-pills button').forEach(function (b) {
+                var isActive = b.getAttribute('data-category') === 'All';
+                b.classList.toggle('bg-primary-container', isActive);
+                b.classList.toggle('text-on-primary-container', isActive);
+                b.classList.toggle('shadow-sm', isActive);
+                b.classList.toggle('bg-surface-container-high', !isActive);
+                b.classList.toggle('text-on-surface', !isActive);
+            });
+            renderGrid();
+        };
+
+        window.filterByCategory = function (btn) {
+            activeCategory = btn.getAttribute('data-category');
+            document.querySelectorAll('#category-pills button').forEach(function (b) {
+                var isActive = b === btn;
+                b.classList.toggle('bg-primary-container', isActive);
+                b.classList.toggle('text-on-primary-container', isActive);
+                b.classList.toggle('shadow-sm', isActive);
+                b.classList.toggle('bg-surface-container-high', !isActive);
+                b.classList.toggle('text-on-surface', !isActive);
+            });
+            renderGrid();
+        };
+
+        window.filterMenu = function (value) {
+            searchTerm = value.trim().toLowerCase();
+            var desktop = document.getElementById('menu-search-desktop');
+            var mobile = document.getElementById('menu-search-mobile');
+            if (desktop && desktop.value !== value) desktop.value = value;
+            if (mobile && mobile.value !== value) mobile.value = value;
+            renderGrid();
+        };
+
+        window.sortMenu = function (value) {
+            sortBy = value;
+            renderGrid();
+        };
+
+        window.onFavoriteToggled = function () {
+            if (favoritesOnly) renderGrid();
+        };
+
+        function applyMenuHeader() {
+            var menus = window.scMenus ? window.scMenus() : [];
+            var menu = menus.filter(function (m) { return m.slug === MENU; })[0];
+            var known = !!menu;
+            var name = known ? menu.name : 'Kebab';
+            // Design propre au menu (css : html[data-menu="kebab"]) ; les autres menus gardent le style du site.
+            document.documentElement.setAttribute('data-menu', MENU);
+            var chips = document.getElementById('menu-hero-chips');
+            if (chips) chips.classList.toggle('hidden', MENU !== 'kebab');
+            var title = document.getElementById('menu-title');
+            if (title) title.textContent = 'Menu ' + name;
+            document.title = 'Kebab - Menu ' + name;
+            var link = document.querySelector('[data-menu-navlink]');
+            if (link) link.textContent = name;
+            // Accroche saisie dans l'admin (API /menus).
+            fetch((window.SOUCOFFE_API_BASE || '') + '/menus').then(function (r) { return r.ok ? r.json() : null; }).then(function (r) {
+                var m = r && (r.content || []).filter(function (x) { return x.slug === MENU; })[0];
+                var tag = document.getElementById('menu-tagline');
+                if (m && tag) tag.textContent = m.tagline || '';
+            }).catch(function () { /* accroche par défaut conservée */ });
+            var media = document.getElementById('menu-hero-media');
+            if (media) {
+                var img = new Image();
+                img.onload = function () { media.style.backgroundImage = 'url("' + img.src + '")'; media.classList.add('has-photo'); };
+                img.src = '../images/menus/' + MENU + '.jpg';
+            }
+            if (window.SOUCOFFE_CATALOG_SOURCE === 'api') {
+                window.scRenderCategoryPills(document.getElementById('category-pills'), MENU);
+                window.scRenderMenuTabs(document.getElementById('menu-tabs'), MENU);
+            }
+            var has = (window.PRODUCTS || []).some(function (p) { return (p.menu || 'cafe') === MENU && isAvailable(p); });
+            var soon = document.getElementById('menu-soon');
+            if (soon) soon.classList.toggle('hidden', has);
+        }
+        function isAvailable(p) { return window.isProductAvailable ? window.isProductAvailable(p) : p.available !== false; }
+
+        // Choix des menus : une carte par menu qui a au moins un produit disponible
+        // (photo images/menus/<menu>.jpg, sinon la photo d'un de ses produits).
+        function renderChooser() {
+            var grid = document.getElementById('menu-chooser-grid');
+            if (!grid) return;
+            document.title = 'Kebab - Nos menus';
+            var link = document.querySelector('[data-menu-navlink]');
+            if (link) link.classList.add('hidden');
+            document.querySelectorAll('header nav a[href="../menu/index.html"]').forEach(function (a) {
+                a.classList.remove('text-on-surface-variant'); a.classList.add('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1'); a.setAttribute('aria-current', 'page');
+            });
+            var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+            var byMenu = {};
+            (window.PRODUCTS || []).forEach(function (p) {
+                if (!isAvailable(p)) return;
+                var k = p.menu || 'cafe';
+                (byMenu[k] = byMenu[k] || []).push(p);
+            });
+            var menus = (window.scMenus ? window.scMenus() : []).filter(function (m) { return byMenu[m.slug] && byMenu[m.slug].length; });
+            if (!menus.length) { window.location.replace('../02-Menu-Principal/code.html'); return; }
+            var ICON = { cafe: 'local_cafe', kebab: 'kebab_dining' };
+            grid.innerHTML = menus.map(function (m) {
+                var list = byMenu[m.slug];
+                var photo = (list.filter(function (p) { return p.img; })[0] || {}).img || '';
+                var n = list.length;
+                var label = /^menu\b/i.test(m.name) ? m.name : 'Menu ' + m.name;
+                return '<a class="sc-chooser-card" href="' + esc(window.scMenuUrl(m.slug)) + '" data-menu-slug="' + esc(m.slug) + '">' +
+                    '<span class="sc-chooser-media" data-photo="' + esc(photo) + '">' + (window.iconHtml ? window.iconHtml(ICON[m.slug] || 'restaurant_menu') : '') + '</span>' +
+                    '<span class="sc-chooser-body">' +
+                    '<span class="sc-chooser-count">' + (n === 1 ? '1 plat' : n + ' plats') + '</span>' +
+                    '<strong>' + esc(label) + '</strong>' +
+                    (m.tagline ? '<small>' + esc(m.tagline) + '</small>' : '') +
+                    '<span class="sc-chooser-go">Voir le menu ' + (window.iconHtml ? window.iconHtml('arrow_forward') : '') + '</span>' +
+                    '</span></a>';
+            }).join('');
+            grid.removeAttribute('aria-busy');
+            // Photo : celle du menu (images/menus/<slug>.jpg) si elle existe, sinon celle d'un produit.
+            grid.querySelectorAll('.sc-chooser-card').forEach(function (card) {
+                var media = card.querySelector('.sc-chooser-media');
+                var set = function (src) { media.style.backgroundImage = 'url("' + src + '")'; media.classList.add('has-photo'); };
+                var img = new Image();
+                img.onload = function () { set(img.src); };
+                img.onerror = function () { if (media.getAttribute('data-photo')) set(media.getAttribute('data-photo')); };
+                img.src = '../images/menus/' + card.getAttribute('data-menu-slug') + '.jpg';
+            });
+            // Accroches saisies dans l'admin (API /menus), si les menus du catalogue n'en ont pas.
+            fetch((window.SOUCOFFE_API_BASE || '') + '/menus').then(function (r) { return r.ok ? r.json() : null; }).then(function (r) {
+                (r && r.content || []).forEach(function (x) {
+                    var card = grid.querySelector('[data-menu-slug="' + x.slug + '"] .sc-chooser-body');
+                    if (!card || !x.tagline || card.querySelector('small')) return;
+                    var s = document.createElement('small');
+                    s.textContent = x.tagline;
+                    card.insertBefore(s, card.querySelector('.sc-chooser-go'));
+                });
+            }).catch(function () { /* sans accroche */ });
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            if (initialSearch) {
+                var desktopInput = document.getElementById('menu-search-desktop');
+                var mobileInput = document.getElementById('menu-search-mobile');
+                if (desktopInput) desktopInput.value = initialSearch;
+                if (mobileInput) mobileInput.value = initialSearch;
+            }
+            if (favoritesOnly) {
+                var heading = document.getElementById('product-grid-heading');
+                if (heading) heading.innerHTML = 'Vos favoris ' + (window.iconHtml ? window.iconHtml('favorite', 'text-error', true) : '');
+                document.querySelectorAll('#category-pills button').forEach(function (b) {
+                    b.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-sm');
+                    b.classList.add('bg-surface-container-high', 'text-on-surface');
+                });
+            }
+            // Phase 2 : tente le catalogue API (avec repli local automatique
+            // et transparent si indisponible/invalide/trop lent) avant le
+            // premier rendu — voir js/products.js:loadCatalog().
+            // ?open=<slug> : ouvre directement la fiche d'un produit (utilisé
+            // par les pages sans fiche — accueil, panier — pour les produits
+            // à options obligatoires).
+            var openSlug = new URLSearchParams(window.location.search).get('open');
+            // ?category=<nom> : pré-sélectionne une catégorie (liens de l'accueil).
+            var initialCategory = new URLSearchParams(window.location.search).get('category');
+            function afterCatalog() {
+                if (CHOOSE) { renderChooser(); return; }
+                applyMenuHeader();
+
+                var pill = initialCategory && Array.prototype.find.call(
+                    document.querySelectorAll('#category-pills button'),
+                    function (b) { return b.getAttribute('data-category') === initialCategory; });
+                if (pill && !favoritesOnly) { window.filterByCategory(pill); } else { renderGrid(); }
+                if (openSlug && window.openProductModal) window.openProductModal(openSlug);
+            }
+            if (window.loadCatalog) {
+                window.loadCatalog().then(afterCatalog);
+            } else {
+                afterCatalog();
+            }
+        });
+    })();
+</script>
+<script>
+    // Offres en vigueur (promotions automatiques) : bandeau au-dessus des catégories.
+    document.addEventListener('DOMContentLoaded', function () {
+        fetch((window.SOUCOFFE_API_BASE || 'http://localhost:8000/api') + '/promotions/active').then(function (r) { return r.ok ? r.json() : null; }).then(function (r) {
+            var list = r && r.content;
+            var anchor = document.getElementById('category-pills');
+            if (!list || !list.length || !anchor) return;
+            var box = document.createElement('div');
+            box.id = 'promo-banner';
+            box.className = 'mb-4 flex flex-col gap-2';
+            list.slice(0, 3).forEach(function (p) {
+                var row = document.createElement('div');
+                row.className = 'flex items-center gap-2 px-4 py-3 rounded-xl bg-tertiary-container text-on-tertiary-container font-label-md text-sm';
+                row.innerHTML = window.iconHtml('local_offer') + ' ';
+                var t = document.createElement('span');
+                t.textContent = p.name + ' — ' + p.summary + ' (appliquée automatiquement)';
+                row.appendChild(t);
+                box.appendChild(row);
+            });
+            (anchor.parentElement || anchor).insertAdjacentElement('beforebegin', box);
+        }).catch(function () { /* pas d'offres affichées si l'API est injoignable */ });
+    });
+</script>
+</body></html>

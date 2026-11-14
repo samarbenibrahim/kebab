@@ -1,0 +1,466 @@
+# Dashboard administrateur / manager.
+# français || italiano || english || deutsch || español
+
+# ---- Structure ----
+Admin Dashboard | Kebab || Dashboard amministrazione | Kebab || Admin dashboard | Kebab || Admin-Dashboard | Kebab || Panel de administración | Kebab
+Administration || Amministrazione || Administration || Verwaltung || Administración
+Kebab Management || Gestione Kebab || Kebab Management || SOUCOFFE-Verwaltung || Gestión Kebab
+Tableau de bord || Dashboard || Dashboard || Übersicht || Panel
+Commandes || Ordini || Orders || Bestellungen || Pedidos
+Produits || Prodotti || Products || Produkte || Productos
+Statistiques || Statistiche || Statistics || Statistiken || Estadísticas
+Employés || Personale || Staff || Mitarbeiter || Empleados
+Clients connectés || Clienti connessi || Connected customers || Verbundene Gäste || Clientes conectados
+Promotions || Promozioni || Promotions || Aktionen || Promociones
+Historique || Cronologia || History || Verlauf || Historial
+Intelligence || Intelligenza || Intelligence || Intelligenz || Inteligencia
+Gérer les produits || Gestisci prodotti || Manage products || Produkte verwalten || Gestionar productos
+Vue d'ensemble || Panoramica || Overview || Überblick || Resumen
+Aujourd'hui || Oggi || Today || Heute || Hoy
+aujourd'hui || oggi || today || heute || hoy
+Activer les alertes || Attiva gli avvisi || Turn on alerts || Benachrichtigungen aktivieren || Activar alertas
+Alertes activées || Avvisi attivi || Alerts on || Benachrichtigungen aktiv || Alertas activadas
+Toutes les dates || Tutte le date || All dates || Alle Daten || Todas las fechas
+Rapport || Report || Report || Bericht || Informe
+Ventes || Vendite || Sales || Umsatz || Ventas
+Total encaissé || Totale incassato || Total collected || Insgesamt kassiert || Total cobrado
+Commandes reçues || Ordini ricevuti || Orders received || Eingegangene Bestellungen || Pedidos recibidos
+Panier moyen || Scontrino medio || Average basket || Durchschnittlicher Bon || Ticket medio
+Par commande || Per ordine || Per order || Pro Bestellung || Por pedido
+Top Produit || Prodotto top || Top product || Top-Produkt || Producto estrella
+vendu(s) au total || venduto/i in totale || sold in total || insgesamt verkauft || vendido(s) en total
+Ventes par heure || Vendite per ora || Sales by hour || Umsatz pro Stunde || Ventas por hora
+Flux de commandes || Flusso degli ordini || Order feed || Bestellverlauf || Flujo de pedidos
+Pas encore de commande || Ancora nessun ordine || No orders yet || Noch keine Bestellungen || Aún no hay pedidos
+Aucune commande pour l'instant. || Ancora nessun ordine. || No orders yet. || Noch keine Bestellungen. || Aún no hay pedidos.
+Appels serveur ( || Chiamate al cameriere ( || Waiter calls ( || Service-Rufe ( || Llamadas al camarero (
+Acquittement impossible : || Conferma impossibile: || Couldn't acknowledge: || Bestätigung nicht möglich: || No se pudo confirmar:
+Nouvelle commande — || Nuovo ordine — || New order — || Neue Bestellung — || Nuevo pedido —
+Nouvelle commande — {0} || Nuovo ordine — {0} || New order — {0} || Neue Bestellung — {0} || Nuevo pedido — {0}
+Meilleure vente || Più venduto || Best seller || Bestseller || Más vendido
+Vente rapide || Vendita veloce || Fast seller || Verkauft sich schnell || Venta rápida
+Disponible || Disponibile || Available || Verfügbar || Disponible
+Rupture || Esaurito || Sold out || Ausverkauft || Agotado
+Ruptures de stock || Prodotti esauriti || Out of stock || Ausverkaufte Produkte || Productos agotados
+Tous les produits sont disponibles. || Tutti i prodotti sono disponibili. || All products are available. || Alle Produkte sind verfügbar. || Todos los productos están disponibles.
+produit(s) en rupture de stock || prodotto/i esaurito/i || product(s) out of stock || Produkt(e) ausverkauft || producto(s) agotado(s)
+commande(s) en attente de préparation || ordine/i in attesa di preparazione || order(s) waiting to be prepared || Bestellung(en) warten auf Zubereitung || pedido(s) pendiente(s) de preparación
+) — pensez à vérifier le stock || ) — ricordati di controllare le scorte || ) — remember to check stock || ) — denken Sie an die Bestandsprüfung || ) — recuerda revisar el stock
+produit(s) se vendent vite aujourd'hui ( || prodotto/i si vendono velocemente oggi ( || product(s) selling fast today ( || Produkt(e) verkaufen sich heute schnell ( || producto(s) se venden rápido hoy (
+
+# ---- Commandes ----
+Toutes || Tutti || All || Alle || Todos
+Aucune || Nessuna || None || Keine || Ninguna
+En attente || In attesa || Waiting || Wartend || En espera
+Aucune commande ne correspond à ce filtre. || Nessun ordine corrisponde a questo filtro. || No order matches this filter. || Keine Bestellung entspricht diesem Filter. || Ningún pedido coincide con este filtro.
+Commande || Ordine || Order || Bestellung || Pedido
+Commande : || Ordine: || Order: || Bestellung: || Pedido:
+Date || Data || Date || Datum || Fecha
+Statut || Stato || Status || Status || Estado
+Articles || Articoli || Items || Artikel || Artículos
+Commentaires || Commenti || Comments || Kommentare || Comentarios
+Total (€) || Totale (€) || Total (€) || Gesamt (€) || Total (€)
+Table || Tavolo || Table || Tisch || Mesa
+(carte) || (carta) || (card) || (Karte) || (tarjeta)
+Paiement non enregistré : || Pagamento non registrato: || Payment not recorded: || Zahlung nicht erfasst: || Pago no registrado:
+Statut refusé : || Stato rifiutato: || Status rejected: || Status abgelehnt: || Estado rechazado:
+Préparée en || Preparato in || Prepared in || Zubereitet in || Preparado en
+Préparée en {0} min || Preparato in {0} min || Prepared in {0} min || In {0} Min. zubereitet || Preparado en {0} min
+
+# ---- Produits ----
+Rechercher un produit || Cerca un prodotto || Search for a product || Produkt suchen || Buscar un producto
+Toutes catégories || Tutte le categorie || All categories || Alle Kategorien || Todas las categorías
+Trier: Nom || Ordina: Nome || Sort: Name || Sortieren: Name || Ordenar: Nombre
+Trier: Prix croissant || Ordina: Prezzo crescente || Sort: Price low to high || Sortieren: Preis aufsteigend || Ordenar: Precio ascendente
+Trier: Prix décroissant || Ordina: Prezzo decrescente || Sort: Price high to low || Sortieren: Preis absteigend || Ordenar: Precio descendente
+Trier: Meilleures ventes || Ordina: Più venduti || Sort: Best sellers || Sortieren: Bestseller || Ordenar: Más vendidos
+en rupture || esaurito/i || sold out || ausverkauft || agotado(s)
+disponible(s) || disponibile/i || available || verfügbar || disponible(s)
+@{0} en rupture || {0} esaurito/i || {0} sold out || {0} ausverkauft || {0} agotado(s)
+@{0} disponible(s) / {1} || {0} disponibile/i / {1} || {0} available / {1} || {0} verfügbar / {1} || {0} disponible(s) / {1}
+Aucun produit ne correspond à ce filtre. || Nessun prodotto corrisponde a questo filtro. || No product matches this filter. || Kein Produkt entspricht diesem Filter. || Ningún producto coincide con este filtro.
+Prix, disponibilité, image et mise en avant modifiés ici se répercutent immédiatement sur les menus des clients. || Prezzo, disponibilità, immagine e messa in evidenza modificati qui si riflettono subito sui menù dei clienti. || Price, availability, image and highlights changed here are reflected immediately in the customer menus. || Hier geänderte Preise, Verfügbarkeit, Bilder und Hervorhebungen erscheinen sofort in den Menüs der Gäste. || El precio, la disponibilidad, la imagen y el destacado modificados aquí se reflejan de inmediato en los menús de los clientes.
+Produit || Prodotto || Product || Produkt || Producto
+Image du produit || Immagine del prodotto || Product image || Produktbild || Imagen del producto
+Coller un lien, ou importer une photo ci-dessous || Incolla un link o importa una foto qui sotto || Paste a link, or import a photo below || Link einfügen oder unten ein Foto importieren || Pega un enlace o importa una foto abajo
+Importer depuis l'appareil || Importa dal dispositivo || Import from device || Vom Gerät importieren || Importar desde el dispositivo
+Prix (€) || Prezzo (€) || Price (€) || Preis (€) || Precio (€)
+Disponible à la vente || Disponibile alla vendita || Available for sale || Im Verkauf || Disponible para la venta
+Mise en avant || Messa in evidenza || Highlight || Hervorhebung || Destacado
+Réinitialiser || Ripristina || Reset || Zurücksetzen || Restablecer
+Supprimer le produit || Elimina il prodotto || Delete product || Produkt löschen || Eliminar producto
+Confirmer la suppression ? || Confermare l'eliminazione? || Confirm deletion? || Löschen bestätigen? || ¿Confirmar la eliminación?
+Produit enregistré || Prodotto salvato || Product saved || Produkt gespeichert || Producto guardado
+Produit supprimé || Prodotto eliminato || Product deleted || Produkt gelöscht || Producto eliminado
+Image actuelle : importée depuis un appareil. || Immagine attuale: importata da un dispositivo. || Current image: imported from a device. || Aktuelles Bild: von einem Gerät importiert. || Imagen actual: importada desde un dispositivo.
+Image importée ( || Immagine importata ( || Image imported ( || Bild importiert ( || Imagen importada (
+Ko après compression). || KB dopo la compressione). || KB after compression). || KB nach Komprimierung). || KB tras la compresión).
+Image importée ({0} Ko après compression). || Immagine importata ({0} KB dopo la compressione). || Image imported ({0} KB after compression). || Bild importiert ({0} KB nach Komprimierung). || Imagen importada ({0} KB tras la compresión).
+Ce fichier n'est pas une image. || Questo file non è un'immagine. || This file isn't an image. || Diese Datei ist kein Bild. || Este archivo no es una imagen.
+Fichier trop volumineux (max 20 Mo). || File troppo grande (max 20 MB). || File too large (max 20 MB). || Datei zu groß (max. 20 MB). || Archivo demasiado grande (máx. 20 MB).
+Image invalide ou corrompue. || Immagine non valida o danneggiata. || Invalid or corrupted image. || Ungültiges oder beschädigtes Bild. || Imagen no válida o dañada.
+Impossible de lire ce fichier. || Impossibile leggere questo file. || Couldn't read this file. || Datei konnte nicht gelesen werden. || No se pudo leer este archivo.
+Traitement de l'image… || Elaborazione dell'immagine… || Processing image… || Bild wird verarbeitet… || Procesando la imagen…
+Non enregistré : || Non salvato: || Not saved: || Nicht gespeichert: || No guardado:
+Non enregistré : {0} || Non salvato: {0} || Not saved: {0} || Nicht gespeichert: {0} || No guardado: {0}
+Suppression impossible : || Eliminazione impossibile: || Couldn't delete: || Löschen nicht möglich: || No se pudo eliminar:
+Suppression impossible : {0} || Eliminazione impossibile: {0} || Couldn't delete: {0} || Löschen nicht möglich: {0} || No se pudo eliminar: {0}
+Votre rôle ne permet pas de modifier || Il tuo ruolo non consente di modificare || Your role doesn't allow you to change || Ihre Rolle erlaubt keine Änderung an || Tu rol no permite modificar
+Votre rôle ne permet pas de modifier {0}. || Il tuo ruolo non consente di modificare {0}. || Your role doesn't allow you to change {0}. || Ihre Rolle erlaubt keine Änderung an {0}. || Tu rol no permite modificar {0}.
+le prix || il prezzo || the price || dem Preis || el precio
+la disponibilité || la disponibilità || availability || der Verfügbarkeit || la disponibilidad
+~ni || né || or || noch || ni
+Aucune || Nessuna || None || Keine || Ninguna
+
+# ---- Ajout de produit ----
+Ajouter un produit || Aggiungi un prodotto || Add a product || Produkt hinzufügen || Añadir un producto
+Nouveau produit || Nuovo prodotto || New product || Neues Produkt || Nuevo producto
+Visible aussitôt dans les menus des clients, sur tous les appareils. || Visibile subito nei menù dei clienti, su tutti i dispositivi. || Visible right away in the customer menus, on every device. || Sofort in den Menüs der Gäste sichtbar, auf allen Geräten. || Visible al instante en los menús de los clientes, en todos los dispositivos.
+Catégorie * || Categoria * || Category * || Kategorie * || Categoría *
+Prix (€) * || Prezzo (€) * || Price (€) * || Preis (€) * || Precio (€) *
+Choisir… || Scegli… || Choose… || Auswählen… || Elegir…
+Description || Descrizione || Description || Beschreibung || Descripción
+Courte description affichée au client || Breve descrizione mostrata al cliente || Short description shown to customers || Kurzbeschreibung für Gäste || Breve descripción que verá el cliente
+Image || Immagine || Image || Bild || Imagen
+Aucune image || Nessuna immagine || No image || Kein Bild || Sin imagen
+Image introuvable à ce lien || Immagine non trovata a questo link || Image not found at this link || Unter diesem Link kein Bild gefunden || Imagen no encontrada en este enlace
+Coller un lien (https://…), ou importer une photo ci-dessous || Incolla un link (https://…) o importa una foto qui sotto || Paste a link (https://…), or import a photo below || Link einfügen (https://…) oder unten ein Foto importieren || Pega un enlace (https://…) o importa una foto abajo
+Retirer la photo || Rimuovi la foto || Remove photo || Foto entfernen || Quitar la foto
+Emoji (si pas d'image) || Emoji (se manca l'immagine) || Emoji (if no image) || Emoji (ohne Bild) || Emoji (si no hay imagen)
+Calories (kcal) || Calorie (kcal) || Calories (kcal) || Kalorien (kcal) || Calorías (kcal)
+Allergènes et régime || Allergeni e dieta || Allergens and diet || Allergene und Ernährung || Alérgenos y dieta
+Allergènes (rien de coché = non renseigné) || Allergeni (nessuna spunta = non indicato) || Allergens (nothing ticked = not specified) || Allergene (nichts angekreuzt = keine Angabe) || Alérgenos (nada marcado = sin indicar)
+Régime || Dieta || Diet || Ernährung || Dieta
+Disponible à la commande || Disponibile all'ordine || Available to order || Bestellbar || Disponible para pedir
+Ajouter le produit || Aggiungi il prodotto || Add product || Produkt hinzufügen || Añadir producto
+Indiquez le nom du produit. || Indica il nome del prodotto. || Enter the product name. || Geben Sie den Produktnamen ein. || Indica el nombre del producto.
+Choisissez une catégorie. || Scegli una categoria. || Choose a category. || Wählen Sie eine Kategorie. || Elige una categoría.
+Indiquez un prix entre 0,01 et 1000 €. || Indica un prezzo tra 0,01 e 1000 €. || Enter a price between 0.01 and 1000 €. || Geben Sie einen Preis zwischen 0,01 und 1000 € an. || Indica un precio entre 0,01 y 1000 €.
+Options ajoutées automatiquement : || Opzioni aggiunte automaticamente: || Options added automatically: || Automatisch hinzugefügte Optionen: || Opciones añadidas automáticamente:
+Options ajoutées automatiquement : {0}. || Opzioni aggiunte automaticamente: {0}. || Options added automatically: {0}. || Automatisch hinzugefügte Optionen: {0}. || Opciones añadidas automáticamente: {0}.
+Aucune option : catégorie sans produit pour l'instant. || Nessuna opzione: categoria ancora senza prodotti. || No options: this category has no products yet. || Keine Optionen: Kategorie noch ohne Produkte. || Sin opciones: categoría aún sin productos.
+Aucune option commune dans cette catégorie : le produit sera vendu sans option. || Nessuna opzione comune in questa categoria: il prodotto sarà venduto senza opzioni. || No common options in this category: the product will be sold without options. || Keine gemeinsamen Optionen in dieser Kategorie: Das Produkt wird ohne Optionen verkauft. || Ninguna opción común en esta categoría: el producto se venderá sin opciones.
+Traitement de la photo… || Elaborazione della foto… || Processing photo… || Foto wird verarbeitet… || Procesando la foto…
+Photo prête ({0} Ko après compression). || Foto pronta ({0} KB dopo la compressione). || Photo ready ({0} KB after compression). || Foto bereit ({0} KB nach Komprimierung). || Foto lista ({0} KB tras la compresión).
+Produit ajouté : {0} || Prodotto aggiunto: {0} || Product added: {0} || Produkt hinzugefügt: {0} || Producto añadido: {0}
+Catégories indisponibles : {0} || Categorie non disponibili: {0} || Categories unavailable: {0} || Kategorien nicht verfügbar: {0} || Categorías no disponibles: {0}
+
+# ---- Statistiques ----
+Heures de pointe & performance || Ore di punta e prestazioni || Peak hours & performance || Stoßzeiten & Leistung || Horas punta y rendimiento
+Heure de pointe || Ora di punta || Peak hour || Stoßzeit || Hora punta
+Jour de pointe || Giorno di punta || Peak day || Stärkster Tag || Día punta
+Préparation moyenne || Preparazione media || Average preparation || Durchschnittliche Zubereitung || Preparación media
+Pas assez de données || Dati insufficienti || Not enough data || Nicht genug Daten || Datos insuficientes
+Pas encore de commandes à analyser. || Ancora nessun ordine da analizzare. || No orders to analyse yet. || Noch keine Bestellungen zum Auswerten. || Aún no hay pedidos que analizar.
+Pas encore de durée fiable (préparations de 30 s à 90 min) || Ancora nessuna durata affidabile (preparazioni da 30 s a 90 min) || No reliable duration yet (preparations from 30 s to 90 min) || Noch keine verlässliche Dauer (Zubereitungen von 30 s bis 90 Min.) || Aún no hay una duración fiable (preparaciones de 30 s a 90 min)
+commande(s) à cette heure || ordine/i a quest'ora || order(s) at this time || Bestellung(en) zu dieser Stunde || pedido(s) a esta hora
+commande(s) ce jour-là || ordine/i quel giorno || order(s) that day || Bestellung(en) an diesem Tag || pedido(s) ese día
+commande(s) préparée(s) || ordine/i preparato/i || order(s) prepared || zubereitete Bestellung(en) || pedido(s) preparado(s)
+@sur {0} commande(s) préparée(s) || su {0} ordine/i preparato/i || from {0} prepared order(s) || aus {0} zubereiteten Bestellung(en) || sobre {0} pedido(s) preparado(s)
+Commandes par heure (historique complet, || Ordini per ora (storico completo, || Orders by hour (full history, || Bestellungen pro Stunde (gesamter Verlauf, || Pedidos por hora (historial completo,
+Commandes par heure (historique complet, {0} commande(s)) || Ordini per ora (storico completo, {0} ordine/i) || Orders by hour (full history, {0} order(s)) || Bestellungen pro Stunde (gesamter Verlauf, {0} Bestellung(en)) || Pedidos por hora (historial completo, {0} pedido(s))
+Commandes par jour de la semaine || Ordini per giorno della settimana || Orders by day of the week || Bestellungen nach Wochentag || Pedidos por día de la semana
+Ventes par catégorie || Vendite per categoria || Sales by category || Umsatz nach Kategorie || Ventas por categoría
+Top produits || Prodotti top || Top products || Top-Produkte || Productos estrella
+~Lun || Lun || Mon || Mo || Lun
+~Mar || Mar || Tue || Di || Mar
+~Mer || Mer || Wed || Mi || Mié
+~Jeu || Gio || Thu || Do || Jue
+~Ven || Ven || Fri || Fr || Vie
+~Sam || Sab || Sat || Sa || Sáb
+~Dim || Dom || Sun || So || Dom
+Lundi || Lunedì || Monday || Montag || Lunes
+Mardi || Martedì || Tuesday || Dienstag || Martes
+Mercredi || Mercoledì || Wednesday || Mittwoch || Miércoles
+Jeudi || Giovedì || Thursday || Donnerstag || Jueves
+Vendredi || Venerdì || Friday || Freitag || Viernes
+Samedi || Sabato || Saturday || Samstag || Sábado
+Dimanche || Domenica || Sunday || Sonntag || Domingo
+lundi || lunedì || Monday || Montag || lunes
+mardi || martedì || Tuesday || Dienstag || martes
+mercredi || mercoledì || Wednesday || Mittwoch || miércoles
+jeudi || giovedì || Thursday || Donnerstag || jueves
+vendredi || venerdì || Friday || Freitag || viernes
+samedi || sabato || Saturday || Samstag || sábado
+dimanche || domenica || Sunday || Sonntag || domingo
+Statistiques indisponibles : || Statistiche non disponibili: || Statistics unavailable: || Statistiken nicht verfügbar: || Estadísticas no disponibles:
+Statistiques indisponibles : {0} || Statistiche non disponibili: {0} || Statistics unavailable: {0} || Statistiken nicht verfügbar: {0} || Estadísticas no disponibles: {0}
+Chiffres du serveur ( || Dati del server ( || Server figures ( || Serverzahlen ( || Cifras del servidor (
+ventes brutes || vendite lorde || gross sales || Bruttoumsatz || ventas brutas
+Remises accordées || Sconti concessi || Discounts given || Gewährte Rabatte || Descuentos concedidos
+promotions + points fidélité || promozioni + punti fedeltà || promotions + loyalty points || Aktionen + Treuepunkte || promociones + puntos de fidelidad
+commande(s) payée(s) || ordine/i pagato/i || paid order(s) || bezahlte Bestellung(en) || pedido(s) pagado(s)
+annulée(s) || annullato/i || cancelled || storniert || cancelado(s)
+commande(s) || ordine/i || order(s) || Bestellung(en) || pedido(s)
+Préparation moyenne : || Preparazione media: || Average preparation: || Durchschnittliche Zubereitung: || Preparación media:
+File actuelle : || Coda attuale: || Current queue: || Aktuelle Warteschlange: || Cola actual:
+Aucune vente. || Nessuna vendita. || No sales. || Keine Verkäufe. || Ninguna venta.
+Encaissé || Incassato || Collected || Kassiert || Cobrado
+
+# ---- Employés ----
+Comptes du personnel : manager, serveur, caissier, cuisine. Chacun a sa session et ses permissions ; un serveur déclare aussi les tables qu'il sert. || Account del personale: manager, cameriere, cassiere, cucina. Ognuno ha la propria sessione e i propri permessi; un cameriere indica anche i tavoli che serve. || Staff accounts: manager, waiter, cashier, kitchen. Each has their own session and permissions; a waiter also declares the tables they serve. || Mitarbeiterkonten: Manager, Service, Kasse, Küche. Jedes Konto hat eigene Sitzung und Rechte; der Service gibt auch seine Tische an. || Cuentas del personal: encargado, camarero, cajero, cocina. Cada uno tiene su sesión y sus permisos; un camarero indica también las mesas que atiende.
+Ajouter un employé || Aggiungi un dipendente || Add a staff member || Mitarbeiter hinzufügen || Añadir un empleado
+Employé || Dipendente || Staff member || Mitarbeiter || Empleado
+Employé ajouté || Dipendente aggiunto || Staff member added || Mitarbeiter hinzugefügt || Empleado añadido
+Modifications enregistrées || Modifiche salvate || Changes saved || Änderungen gespeichert || Cambios guardados
+Compte supprimé || Account eliminato || Account deleted || Konto gelöscht || Cuenta eliminada
+Aucun compte. || Nessun account. || No accounts. || Keine Konten. || Ninguna cuenta.
+Connecté || Connesso || Online || Angemeldet || Conectado
+Désactivé || Disattivato || Disabled || Deaktiviert || Desactivado
+Aucune table déclarée || Nessun tavolo indicato || No tables declared || Keine Tische angegeben || Ninguna mesa indicada
+Tables servies || Tavoli serviti || Tables served || Bediente Tische || Mesas atendidas
+Tables servies (séparées par des virgules) || Tavoli serviti (separati da virgole) || Tables served (separated by commas) || Bediente Tische (durch Kommas getrennt) || Mesas atendidas (separadas por comas)
+Identifiant de connexion * || Nome utente * || Username * || Benutzername * || Usuario *
+Nom affiché * || Nome visualizzato * || Display name * || Anzeigename * || Nombre visible *
+Mot de passe * || Password * || Password * || Passwort * || Contraseña *
+Nouveau mot de passe (laisser vide pour ne pas changer) || Nuova password (lascia vuoto per non cambiarla) || New password (leave blank to keep it) || Neues Passwort (leer lassen, um es nicht zu ändern) || Nueva contraseña (déjala vacía para no cambiarla)
+Rôle * || Ruolo * || Role * || Rolle * || Rol *
+Compte actif (décoché : connexion impossible) || Account attivo (senza spunta: accesso impossibile) || Active account (unticked: can't sign in) || Konto aktiv (nicht angekreuzt: keine Anmeldung möglich) || Cuenta activa (sin marcar: no puede iniciar sesión)
+Indiquez l'identifiant de connexion. || Indica il nome utente. || Enter the username. || Geben Sie den Benutzernamen ein. || Indica el usuario.
+Indiquez le nom affiché. || Indica il nome visualizzato. || Enter the display name. || Geben Sie den Anzeigenamen ein. || Indica el nombre visible.
+Le mot de passe doit faire au moins 8 caractères. || La password deve avere almeno 8 caratteri. || The password must be at least 8 characters. || Das Passwort muss mindestens 8 Zeichen haben. || La contraseña debe tener al menos 8 caracteres.
+Le nouveau mot de passe doit faire au moins 8 caractères. || La nuova password deve avere almeno 8 caratteri. || The new password must be at least 8 characters. || Das neue Passwort muss mindestens 8 Zeichen haben. || La nueva contraseña debe tener al menos 8 caracteres.
+Compte enregistré, mais tables non modifiées : || Account salvato, ma tavoli non modificati: || Account saved, but tables not changed: || Konto gespeichert, aber Tische nicht geändert: || Cuenta guardada, pero mesas sin cambios:
+Compte enregistré, mais tables non modifiées : {0} || Account salvato, ma tavoli non modificati: {0} || Account saved, but tables not changed: {0} || Konto gespeichert, aber Tische nicht geändert: {0} || Cuenta guardada, pero mesas sin cambios: {0}
+Le serveur peut aussi les renseigner lui-même à sa connexion. Une table n'a qu'un seul serveur. || Il cameriere può anche indicarli lui stesso al suo accesso. Un tavolo ha un solo cameriere. || The waiter can also enter them when signing in. A table has only one waiter. || Der Service kann sie auch selbst bei der Anmeldung angeben. Ein Tisch hat nur eine Bedienung. || El camarero también puede indicarlas al iniciar sesión. Una mesa solo tiene un camarero.
+Voit et sert SES tables, acquitte les appels, demande l'addition. Ne prépare ni n'encaisse. || Vede e serve i SUOI tavoli, conferma le chiamate, chiede il conto. Non prepara né incassa. || Sees and serves THEIR tables, acknowledges calls, requests the bill. Doesn't prepare or take payment. || Sieht und bedient SEINE Tische, bestätigt Rufe, fordert die Rechnung an. Bereitet nicht zu und kassiert nicht. || Ve y atiende SUS mesas, confirma llamadas, pide la cuenta. No prepara ni cobra.
+Encaisse (espèces, carte), libère les tables. Ne prépare ni ne modifie les produits. || Incassa (contanti, carta), libera i tavoli. Non prepara né modifica i prodotti. || Takes payment (cash, card), frees tables. Doesn't prepare or change products. || Kassiert (bar, Karte), gibt Tische frei. Bereitet nicht zu und ändert keine Produkte. || Cobra (efectivo, tarjeta), libera mesas. No prepara ni modifica productos.
+Prépare les commandes et déclare les ruptures de stock. Ne modifie aucun prix. || Prepara gli ordini e segnala i prodotti esauriti. Non modifica alcun prezzo. || Prepares orders and marks items out of stock. Doesn't change any prices. || Bereitet Bestellungen zu und meldet ausverkaufte Produkte. Ändert keine Preise. || Prepara pedidos e indica productos agotados. No cambia ningún precio.
+Statistiques, historique, produits et prix, promotions, fidélité, tables, employés (sauf admin et managers). || Statistiche, cronologia, prodotti e prezzi, promozioni, fedeltà, tavoli, personale (tranne admin e manager). || Statistics, history, products and prices, promotions, loyalty, tables, staff (except admins and managers). || Statistiken, Verlauf, Produkte und Preise, Aktionen, Treue, Tische, Mitarbeiter (außer Admins und Managern). || Estadísticas, historial, productos y precios, promociones, fidelidad, mesas, empleados (salvo administradores y encargados).
+Impossible de charger les comptes : || Impossibile caricare gli account: || Couldn't load accounts: || Konten konnten nicht geladen werden: || No se pudieron cargar las cuentas:
+Impossible de charger les comptes : {0} || Impossibile caricare gli account: {0} || Couldn't load accounts: {0} || Konten konnten nicht geladen werden: {0} || No se pudieron cargar las cuentas: {0}
+Confirmer ? || Confermare? || Confirm? || Bestätigen? || ¿Confirmar?
+Modifier {0} || Modifica {0} || Edit {0} || {0} bearbeiten || Editar {0}
+— serveur : || — cameriere: || — waiter: || — Service: || — camarero:
+commande(s) en cours || ordine/i in corso || order(s) in progress || laufende Bestellung(en) || pedido(s) en curso
+client(s) || cliente/i || customer(s) || Gast/Gäste || cliente(s)
+occupée ( || occupato ( || occupied ( || besetzt ( || ocupada (
+
+# ---- Changements de table ----
+Changements de table || Cambi di tavolo || Table changes || Tischwechsel || Cambios de mesa
+Changements de table ( || Cambi di tavolo ( || Table changes ( || Tischwechsel ( || Cambios de mesa (
+Changement de table || Cambio di tavolo || Table change || Tischwechsel || Cambio de mesa
+Table actuelle : || Tavolo attuale: || Current table: || Aktueller Tisch: || Mesa actual:
+→ souhaitée : || → desiderato: || → requested: || → gewünscht: || → deseada:
+Table disponible à attribuer || Tavolo libero da assegnare || Free table to assign || Freier Tisch zur Zuweisung || Mesa libre para asignar
+Indiquez la table disponible à attribuer. || Indica il tavolo libero da assegnare. || Enter the free table to assign. || Geben Sie den freien Tisch an. || Indica la mesa libre que asignar.
+attribuée || assegnato || assigned || zugewiesen || asignada
+Table {0} attribuée || Tavolo {0} assegnato || Table {0} assigned || Tisch {0} zugewiesen || Mesa {0} asignada
+Demande refusée || Richiesta rifiutata || Request declined || Anfrage abgelehnt || Solicitud rechazada
+Message au client (facultatif) || Messaggio al cliente (facoltativo) || Message to the customer (optional) || Nachricht an den Gast (optional) || Mensaje al cliente (opcional)
+
+# ---- Promotions ----
+Règles automatiques appliquées par le serveur au calcul de chaque commande : happy hour, jours, catégorie, produit, minimum de commande. || Regole automatiche applicate dal server al calcolo di ogni ordine: happy hour, giorni, categoria, prodotto, ordine minimo. || Automatic rules applied by the server when pricing each order: happy hour, days, category, product, minimum order. || Automatische Regeln, die der Server bei jeder Bestellung anwendet: Happy Hour, Tage, Kategorie, Produkt, Mindestbestellwert. || Reglas automáticas que aplica el servidor al calcular cada pedido: happy hour, días, categoría, producto, pedido mínimo.
+Nouvelle promotion || Nuova promozione || New promotion || Neue Aktion || Nueva promoción
+Modifier la promotion || Modifica la promozione || Edit promotion || Aktion bearbeiten || Editar promoción
+Aucune promotion. Créez-en une : elle s’applique automatiquement aux commandes, selon vos règles. || Nessuna promozione. Creane una: si applica automaticamente agli ordini, secondo le tue regole. || No promotions. Create one: it applies automatically to orders, according to your rules. || Keine Aktionen. Erstellen Sie eine: Sie gilt automatisch nach Ihren Regeln. || Ninguna promoción. Crea una: se aplica automáticamente a los pedidos según tus reglas.
+Promotion || Promozione || Promotion || Aktion || Promoción
+Promotion active || Promozione attiva || Active promotion || Aktive Aktion || Promoción activa
+Promotion activée || Promozione attivata || Promotion turned on || Aktion aktiviert || Promoción activada
+Promotion désactivée || Promozione disattivata || Promotion turned off || Aktion deaktiviert || Promoción desactivada
+Promotion créée || Promozione creata || Promotion created || Aktion erstellt || Promoción creada
+Promotion modifiée || Promozione modificata || Promotion updated || Aktion geändert || Promoción modificada
+Promotion supprimée || Promozione eliminata || Promotion deleted || Aktion gelöscht || Promoción eliminada
+Impossible de charger les promotions : || Impossibile caricare le promozioni: || Couldn't load promotions: || Aktionen konnten nicht geladen werden: || No se pudieron cargar las promociones:
+Impossible de charger les promotions : {0} || Impossibile caricare le promozioni: {0} || Couldn't load promotions: {0} || Aktionen konnten nicht geladen werden: {0} || No se pudieron cargar las promociones: {0}
+Activer || Attiva || Turn on || Aktivieren || Activar
+Désactiver || Disattiva || Turn off || Deaktivieren || Desactivar
+Désactivée || Disattivata || Off || Deaktiviert || Desactivada
+Programmée || Programmata || Scheduled || Geplant || Programada
+En vigueur maintenant || In vigore ora || Active now || Jetzt gültig || Vigente ahora
+Créer || Crea || Create || Erstellen || Crear
+Type || Tipo || Type || Typ || Tipo
+Valeur || Valore || Value || Wert || Valor
+Valeur * || Valore * || Value * || Wert * || Valor *
+Pourcentage (%) || Percentuale (%) || Percentage (%) || Prozent (%) || Porcentaje (%)
+Montant fixe (€) || Importo fisso (€) || Fixed amount (€) || Fester Betrag (€) || Importe fijo (€)
+S’applique à || Si applica a || Applies to || Gilt für || Se aplica a
+Toute la commande || Tutto l'ordine || The whole order || Die ganze Bestellung || Todo el pedido
+Une catégorie || Una categoria || A category || Eine Kategorie || Una categoría
+Un produit || Un prodotto || A product || Ein Produkt || Un producto
+Cible || Obiettivo || Target || Ziel || Objetivo
+Jours || Giorni || Days || Tage || Días
+Heure de début || Ora di inizio || Start time || Startzeit || Hora de inicio
+Heure de fin || Ora di fine || End time || Endzeit || Hora de fin
+Du (date) || Dal (data) || From (date) || Ab (Datum) || Desde (fecha)
+Au (date) || Al (data) || To (date) || Bis (Datum) || Hasta (fecha)
+Commande minimum (€) || Ordine minimo (€) || Minimum order (€) || Mindestbestellwert (€) || Pedido mínimo (€)
+Choisissez au moins un jour. || Scegli almeno un giorno. || Choose at least one day. || Wählen Sie mindestens einen Tag. || Elige al menos un día.
+Indiquez un nom. || Indica un nome. || Enter a name. || Geben Sie einen Namen ein. || Indica un nombre.
+Indiquez une valeur supérieure à 0. || Indica un valore superiore a 0. || Enter a value greater than 0. || Geben Sie einen Wert größer als 0 an. || Indica un valor mayor que 0.
+Suggestions intelligentes || Suggerimenti intelligenti || Smart suggestions || Intelligente Vorschläge || Sugerencias inteligentes
+Aucune suggestion pour le moment : vos heures et vos produits se comportent normalement. || Nessun suggerimento per ora: orari e prodotti si comportano normalmente. || No suggestions for now: your hours and products are performing normally. || Derzeit keine Vorschläge: Ihre Zeiten und Produkte verhalten sich normal. || Ninguna sugerencia por ahora: tus horas y productos se comportan con normalidad.
+sur la commande || sull'ordine || on the order || auf die Bestellung || en el pedido
+sur une catégorie || su una categoria || on a category || auf eine Kategorie || en una categoría
+sur un produit || su un prodotto || on a product || auf ein Produkt || en un producto
+
+# ---- Fidélité ----
+1 point par € payé (x1,25 en Argent, x1,5 en Or) ; 10 points = 1 €, par 50 points minimum, jusqu'à 50 % d'une commande. || 1 punto per € pagato (x1,25 in Argento, x1,5 in Oro); 10 punti = 1 €, minimo 50 punti alla volta, fino al 50% di un ordine. || 1 point per € paid (x1.25 for Silver, x1.5 for Gold); 10 points = 1 €, in steps of at least 50 points, up to 50% of an order. || 1 Punkt pro bezahltem € (x1,25 bei Silber, x1,5 bei Gold); 10 Punkte = 1 €, ab 50 Punkten, bis zu 50 % einer Bestellung. || 1 punto por € pagado (x1,25 en Plata, x1,5 en Oro); 10 puntos = 1 €, mínimo 50 puntos, hasta el 50 % de un pedido.
+Rechercher un nom ou un téléphone || Cerca un nome o un telefono || Search by name or phone || Name oder Telefon suchen || Buscar un nombre o teléfono
+Rechercher un compte fidélité || Cerca un account fedeltà || Search for a loyalty account || Treuekonto suchen || Buscar una cuenta de fidelidad
+Aucun compte fidélité. Un compte est créé quand un client renseigne son téléphone à l’identification. || Nessun account fedeltà. Un account viene creato quando un cliente indica il telefono all'identificazione. || No loyalty accounts. One is created when a customer gives their phone number when signing in. || Keine Treuekonten. Ein Konto wird angelegt, wenn ein Gast bei der Anmeldung seine Telefonnummer angibt. || Ninguna cuenta de fidelidad. Se crea cuando un cliente indica su teléfono al identificarse.
+Solde || Saldo || Balance || Kontostand || Saldo
+Solde ajusté || Saldo rettificato || Balance adjusted || Kontostand angepasst || Saldo ajustado
+Ajuster le solde || Rettifica il saldo || Adjust balance || Kontostand anpassen || Ajustar el saldo
+Ajustement de points || Rettifica punti || Points adjustment || Punktekorrektur || Ajuste de puntos
+Indiquez un nombre de points non nul et un motif. || Indica un numero di punti diverso da zero e un motivo. || Enter a non-zero number of points and a reason. || Geben Sie eine Punktzahl ungleich null und einen Grund an. || Indica un número de puntos distinto de cero y un motivo.
+points cumulés || punti accumulati || points earned || gesammelte Punkte || puntos acumulados
+Points gagnés : || Punti guadagnati: || Points earned: || Gesammelte Punkte: || Puntos ganados:
+· utilisés : || · utilizzati: || · used: || · eingelöst: || · usados:
+· palier x || · livello x || · tier x || · Stufe x || · nivel x
+Aucun mouvement. || Nessun movimento. || No activity. || Keine Bewegungen. || Ningún movimiento.
+Tél. || Tel. || Tel. || Tel. || Tel.
+Clients || Clienti || Customers || Gäste || Clientes
+
+# ---- Historique (audit) ----
+Journal d'audit en lecture seule : connexions, comptes, prix, commandes, paiements, tables, promotions, fidélité. || Registro di audit in sola lettura: accessi, account, prezzi, ordini, pagamenti, tavoli, promozioni, fedeltà. || Read-only audit log: sign-ins, accounts, prices, orders, payments, tables, promotions, loyalty. || Schreibgeschütztes Prüfprotokoll: Anmeldungen, Konten, Preise, Bestellungen, Zahlungen, Tische, Aktionen, Treue. || Registro de auditoría de solo lectura: accesos, cuentas, precios, pedidos, pagos, mesas, promociones, fidelidad.
+Type d'action || Tipo di azione || Action type || Aktionstyp || Tipo de acción
+Toutes les actions || Tutte le azioni || All actions || Alle Aktionen || Todas las acciones
+Connexions || Accessi || Sign-ins || Anmeldungen || Accesos
+Produits et prix || Prodotti e prezzi || Products and prices || Produkte und Preise || Productos y precios
+Commandes et paiements || Ordini e pagamenti || Orders and payments || Bestellungen und Zahlungen || Pedidos y pagos
+Acteur || Autore || Actor || Akteur || Autor
+Nom de l'acteur || Nome dell'autore || Actor's name || Name des Akteurs || Nombre del autor
+~Du || Dal || From || Von || Desde
+~Au || Al || To || Bis || Hasta
+Filtrer || Filtra || Filter || Filtern || Filtrar
+Qui || Chi || Who || Wer || Quién
+Action || Azione || Action || Aktion || Acción
+Objet || Oggetto || Subject || Objekt || Objeto
+Détails || Dettagli || Details || Details || Detalles
+Page || Pagina || Page || Seite || Página
+Page {0} || Pagina {0} || Page {0} || Seite {0} || Página {0}
+entrée(s) || voce/i || entry(ies) || Eintrag/Einträge || entrada(s)
+Aucune entrée pour ces critères. || Nessuna voce per questi criteri. || No entries for these criteria. || Keine Einträge für diese Kriterien. || Ninguna entrada para estos criterios.
+Impossible de charger le journal : || Impossibile caricare il registro: || Couldn't load the log: || Protokoll konnte nicht geladen werden: || No se pudo cargar el registro:
+Impossible de charger le journal : {0} || Impossibile caricare il registro: {0} || Couldn't load the log: {0} || Protokoll konnte nicht geladen werden: {0} || No se pudo cargar el registro: {0}
+Connexion || Accesso || Sign-in || Anmeldung || Acceso
+Connexion échouée || Accesso fallito || Failed sign-in || Fehlgeschlagene Anmeldung || Acceso fallido
+Connexion bloquée (verrouillage) || Accesso bloccato (blocco) || Sign-in blocked (lockout) || Anmeldung gesperrt (Sperre) || Acceso bloqueado (bloqueo)
+Déconnexion || Disconnessione || Sign-out || Abmeldung || Cierre de sesión
+Client identifié || Cliente identificato || Customer signed in || Gast angemeldet || Cliente identificado
+Employé créé || Dipendente creato || Staff member created || Mitarbeiter erstellt || Empleado creado
+Employé modifié || Dipendente modificato || Staff member updated || Mitarbeiter geändert || Empleado modificado
+Employé supprimé || Dipendente eliminato || Staff member deleted || Mitarbeiter gelöscht || Empleado eliminado
+Tables du serveur modifiées || Tavoli del cameriere modificati || Waiter's tables updated || Tische der Bedienung geändert || Mesas del camarero modificadas
+Prix modifié || Prezzo modificato || Price changed || Preis geändert || Precio modificado
+Produit modifié || Prodotto modificato || Product updated || Produkt geändert || Producto modificado
+Commande créée || Ordine creato || Order created || Bestellung erstellt || Pedido creado
+Statut de commande || Stato dell'ordine || Order status || Bestellstatus || Estado del pedido
+Paiement || Pagamento || Payment || Zahlung || Pago
+Table ajoutée || Tavolo aggiunto || Table added || Tisch hinzugefügt || Mesa añadida
+Table encaissée || Tavolo incassato || Table paid || Tisch kassiert || Mesa cobrada
+Table libérée || Tavolo liberato || Table freed || Tisch freigegeben || Mesa liberada
+Table nettoyée || Tavolo pulito || Table cleaned || Tisch gereinigt || Mesa limpia
+Additions demandées || Conti richiesti || Bills requested || Angeforderte Rechnungen || Cuentas solicitadas
+Tables à traiter || Tavoli da gestire || Tables to handle || Zu bearbeitende Tische || Mesas por atender
+Réponse à un changement de table || Risposta a un cambio di tavolo || Reply to a table change || Antwort auf einen Tischwechsel || Respuesta a un cambio de mesa
+Cuisine et fidélité || Cucina e fedeltà || Kitchen and loyalty || Küche und Treue || Cocina y fidelidad
+Impossible de charger le plan : || Impossibile caricare la pianta: || Couldn't load the floor plan: || Raumplan konnte nicht geladen werden: || No se pudo cargar el plano:
+Impossible de charger le plan : {0} || Impossibile caricare la pianta: {0} || Couldn't load the floor plan: {0} || Raumplan konnte nicht geladen werden: {0} || No se pudo cargar el plano: {0}
+Indiquez le numéro de la table || Indica il numero del tavolo || Enter the table number || Geben Sie die Tischnummer an || Indica el número de la mesa
+
+# ---- Clients connectés (surveillance) ----
+Sessions de l'espace client en direct : présence active, inactivité, connexion interrompue, et erreurs serveur réellement mesurées. || Sessioni dell'area clienti in tempo reale: presenza attiva, inattività, connessione interrotta ed errori del server realmente misurati. || Live customer-area sessions: active presence, inactivity, interrupted connection, and server errors actually measured. || Live-Sitzungen im Gästebereich: aktive Präsenz, Inaktivität, unterbrochene Verbindung und tatsächlich gemessene Serverfehler. || Sesiones del área de clientes en directo: presencia activa, inactividad, conexión interrumpida y errores del servidor realmente medidos.
+Actualiser || Aggiorna || Refresh || Aktualisieren || Actualizar
+Notifications || Notifiche || Notifications || Benachrichtigungen || Notificaciones
+Notifications ({0} non lue) || Notifiche ({0} non letta) || Notifications ({0} unread) || Benachrichtigungen ({0} ungelesen) || Notificaciones ({0} sin leer)
+Notifications ({0} non lues) || Notifiche ({0} non lette) || Notifications ({0} unread) || Benachrichtigungen ({0} ungelesen) || Notificaciones ({0} sin leer)
+@({0} alerte non lue) || ({0} avviso non letto) || ({0} unread alert) || ({0} ungelesene Warnung) || ({0} alerta sin leer)
+@({0} alertes non lues) || ({0} avvisi non letti) || ({0} unread alerts) || ({0} ungelesene Warnungen) || ({0} alertas sin leer)
+Tout lire || Segna tutto come letto || Mark all read || Alle als gelesen markieren || Marcar todo como leído
+Aucune notification ouverte. || Nessuna notifica aperta. || No open notifications. || Keine offenen Benachrichtigungen. || Ninguna notificación abierta.
+Voir tous les clients connectés || Vedi tutti i clienti connessi || See all connected customers || Alle verbundenen Gäste ansehen || Ver todos los clientes conectados
+Voir la session || Vedi la sessione || View session || Sitzung ansehen || Ver la sesión
+Marquer lu || Segna come letto || Mark as read || Als gelesen markieren || Marcar como leído
+Clôturer || Chiudi || Close || Schließen || Cerrar
+(événement enregistré) || (evento registrato) || (event logged) || (Ereignis erfasst) || (evento registrado)
+(enregistré) || (registrato) || (logged) || (erfasst) || (registrado)
+Action impossible : || Azione impossibile: || Action failed: || Aktion nicht möglich: || Acción imposible:
+Action impossible : {0} || Azione impossibile: {0} || Action failed: {0} || Aktion nicht möglich: {0} || Acción imposible: {0}
+{0} nouvelles alertes clients || {0} nuovi avvisi clienti || {0} new customer alerts || {0} neue Gästewarnungen || {0} nuevas alertas de clientes
+Client actif depuis plus de {0} min || Cliente attivo da più di {0} min || Customer active for over {0} min || Gast seit über {0} Min. aktiv || Cliente activo desde hace más de {0} min
+Client connecté mais inactif depuis {0} min || Cliente connesso ma inattivo da {0} min || Customer connected but idle for {0} min || Gast verbunden, aber seit {0} Min. inaktiv || Cliente conectado pero inactivo desde hace {0} min
+Erreurs serveur pendant la session || Errori del server durante la sessione || Server errors during the session || Serverfehler während der Sitzung || Errores del servidor durante la sesión
+Connecté et actif || Connesso e attivo || Connected and active || Verbunden und aktiv || Conectado y activo
+Connecté mais inactif || Connesso ma inattivo || Connected but idle || Verbunden, aber inaktiv || Conectado pero inactivo
+Connexion interrompue || Connessione interrotta || Connection interrupted || Verbindung unterbrochen || Conexión interrumpida
+Session terminée || Sessione terminata || Session ended || Sitzung beendet || Sesión terminada
+Problème serveur confirmé || Problema del server confermato || Confirmed server problem || Bestätigtes Serverproblem || Problema del servidor confirmado
+Aucun signal reçu depuis l'ouverture de la session || Nessun segnale ricevuto dall'apertura della sessione || No signal received since the session opened || Seit Sitzungsbeginn kein Signal empfangen || Ninguna señal recibida desde que se abrió la sesión
+Plus de signal ; échecs réseau signalés par l'appareil (réseau suspecté) || Nessun segnale; errori di rete segnalati dal dispositivo (rete sospetta) || No more signal; network failures reported by the device (network suspected) || Kein Signal mehr; Netzwerkfehler vom Gerät gemeldet (Netzwerk vermutet) || Sin señal; fallos de red señalados por el dispositivo (red sospechosa)
+Plus de signal (appareil fermé ou réseau coupé) || Nessun segnale (dispositivo chiuso o rete assente) || No more signal (device closed or network down) || Kein Signal mehr (Gerät geschlossen oder Netz weg) || Sin señal (dispositivo cerrado o red caída)
+Application en arrière-plan || Applicazione in background || App in the background || App im Hintergrund || Aplicación en segundo plano
+Aucune interaction récente || Nessuna interazione recente || No recent interaction || Keine aktuelle Interaktion || Ninguna interacción reciente
+Session fermée (table libérée) || Sessione chiusa (tavolo liberato) || Session closed (table freed) || Sitzung geschlossen (Tisch freigegeben) || Sesión cerrada (mesa liberada)
+Expiration || Scadenza || Expiry || Ablauf || Caducidad
+Actifs || Attivi || Active || Aktiv || Activos
+Inactifs || Inattivi || Idle || Inaktiv || Inactivos
+Terminées (2 h) || Terminate (2 h) || Ended (2 h) || Beendet (2 Std.) || Terminadas (2 h)
+Sessions en cours ({0}) || Sessioni in corso ({0}) || Current sessions ({0}) || Laufende Sitzungen ({0}) || Sesiones en curso ({0})
+Terminées récemment || Terminate di recente || Recently ended || Kürzlich beendet || Terminadas recientemente
+Aucun client connecté pour le moment. || Al momento nessun cliente connesso. || No customers connected right now. || Derzeit keine verbundenen Gäste. || Ningún cliente conectado por ahora.
+Santé de l'API — {0} || Stato dell'API — {0} || API health — {0} || API-Zustand — {0} || Estado de la API — {0}
+Aucune erreur serveur ni lenteur consignée sur {0} min || Nessun errore del server né lentezza registrati in {0} min || No server errors or slowness logged in {0} min || Keine Serverfehler oder Verzögerungen in {0} Min. erfasst || Ningún error del servidor ni lentitud registrados en {0} min
+{0} réponse(s) lente(s) sur {1} min, aucune erreur serveur || {0} risposta/e lenta/e in {1} min, nessun errore del server || {0} slow response(s) in {1} min, no server errors || {0} langsame Antwort(en) in {1} Min., keine Serverfehler || {0} respuesta(s) lenta(s) en {1} min, ningún error del servidor
+Problème serveur confirmé : {0} erreur(s) serveur sur {1} min || Problema del server confermato: {0} errore/i del server in {1} min || Confirmed server problem: {0} server error(s) in {1} min || Bestätigtes Serverproblem: {0} Serverfehler in {1} Min. || Problema del servidor confirmado: {0} error(es) del servidor en {1} min
+Erreurs serveur : {0} · réponses lentes : {1} · d'après le journal technique ({2} dernières minutes) || Errori del server: {0} · risposte lente: {1} · secondo il registro tecnico (ultimi {2} minuti) || Server errors: {0} · slow responses: {1} · from the technical log (last {2} minutes) || Serverfehler: {0} · langsame Antworten: {1} · laut technischem Protokoll (letzte {2} Minuten) || Errores del servidor: {0} · respuestas lentas: {1} · según el registro técnico (últimos {2} minutos)
+Erreurs serveur : {0} · réponses lentes : {1} · plus lente : {2} ms · d'après le journal technique ({3} dernières minutes) || Errori del server: {0} · risposte lente: {1} · più lenta: {2} ms · secondo il registro tecnico (ultimi {3} minuti) || Server errors: {0} · slow responses: {1} · slowest: {2} ms · from the technical log (last {3} minutes) || Serverfehler: {0} · langsame Antworten: {1} · langsamste: {2} ms · laut technischem Protokoll (letzte {3} Minuten) || Errores del servidor: {0} · respuestas lentas: {1} · la más lenta: {2} ms · según el registro técnico (últimos {3} minutos)
+@depuis {0} min || da {0} min || for {0} min || seit {0} Min. || desde hace {0} min
+@depuis {0} s || da {0} s || for {0} s || seit {0} s || desde hace {0} s
+@depuis {0} h {1} || da {0} h {1} || for {0} h {1} || seit {0} Std. {1} || desde hace {0} h {1}
+@durée {0} min || durata {0} min || duration {0} min || Dauer {0} Min. || duración {0} min
+@durée {0} s || durata {0} s || duration {0} s || Dauer {0} s || duración {0} s
+@durée {0} h {1} || durata {0} h {1} || duration {0} h {1} || Dauer {0} Std. {1} || duración {0} h {1}
+@dernier signal il y a {0} min || ultimo segnale {0} min fa || last signal {0} min ago || letztes Signal vor {0} Min. || última señal hace {0} min
+@dernier signal il y a {0} s || ultimo segnale {0} s fa || last signal {0} s ago || letztes Signal vor {0} s || última señal hace {0} s
+@dernier signal il y a {0} h {1} || ultimo segnale {0} h {1} fa || last signal {0} h {1} ago || letztes Signal vor {0} Std. {1} || última señal hace {0} h {1}
+@il y a {0} s) || {0} s fa) || {0} s ago) || vor {0} s) || hace {0} s)
+@{0} erreur(s) 5xx || {0} errore/i 5xx || {0} 5xx error(s) || {0} 5xx-Fehler || {0} error(es) 5xx
+@{0} lente(s) || {0} lenta/e || {0} slow || {0} langsam || {0} lenta(s)
+@{0} échec(s) réseau || {0} errore/i di rete || {0} network failure(s) || {0} Netzwerkfehler || {0} fallo(s) de red
+Connexion {0} || Accesso {0} || Connected {0} || Angemeldet {0} || Conexión {0}
+signalé à || segnalato alle || reported at || gemeldet um || señalado a las
+ordinateur || computer || computer || Computer || ordenador
+Ordinateur || Computer || Computer || Computer || Ordenador
+Mobile || Mobile || Mobile || Mobil || Móvil
+Connecté depuis || Connesso da || Connected for || Verbunden seit || Conectado desde hace
+Durée || Durata || Duration || Dauer || Duración
+Dernier signal || Ultimo segnale || Last signal || Letztes Signal || Última señal
+aucun || nessuno || none || keins || ninguno
+Sans interaction depuis || Senza interazione da || No interaction for || Ohne Interaktion seit || Sin interacción desde hace
+Fin de session || Fine sessione || Session end || Sitzungsende || Fin de la sesión
+Appareil · page || Dispositivo · pagina || Device · page || Gerät · Seite || Dispositivo · página
+Qualité de service pendant la session || Qualità del servizio durante la sessione || Service quality during the session || Servicequalität während der Sitzung || Calidad del servicio durante la sesión
+Erreurs serveur (mesurées par l'API) || Errori del server (misurati dall'API) || Server errors (measured by the API) || Serverfehler (von der API gemessen) || Errores del servidor (medidos por la API)
+Réponses 5xx reçues par l'appareil || Risposte 5xx ricevute dal dispositivo || 5xx responses received by the device || Vom Gerät empfangene 5xx-Antworten || Respuestas 5xx recibidas por el dispositivo
+Réponses lentes (API · appareil) || Risposte lente (API · dispositivo) || Slow responses (API · device) || Langsame Antworten (API · Gerät) || Respuestas lentas (API · dispositivo)
+Réponse la plus lente (appareil) || Risposta più lenta (dispositivo) || Slowest response (device) || Langsamste Antwort (Gerät) || Respuesta más lenta (dispositivo)
+Échecs réseau (appareil) || Errori di rete (dispositivo) || Network failures (device) || Netzwerkfehler (Gerät) || Fallos de red (dispositivo)
+Signaux reçus || Segnali ricevuti || Signals received || Empfangene Signale || Señales recibidas
+Commandes de la session || Ordini della sessione || Orders in this session || Bestellungen der Sitzung || Pedidos de la sesión
+Aucune commande pendant cette session. || Nessun ordine durante questa sessione. || No orders during this session. || Keine Bestellungen in dieser Sitzung. || Ningún pedido durante esta sesión.
+Événements || Eventi || Events || Ereignisse || Eventos
+Aucun événement. || Nessun evento. || No events. || Keine Ereignisse. || Ningún evento.
+· payée || · pagato || · paid || · bezahlt || · pagado
+Chargement… || Caricamento… || Loading… || Wird geladen… || Cargando…
+Chargement impossible : {0} || Caricamento impossibile: {0} || Couldn't load: {0} || Laden nicht möglich: {0} || No se pudo cargar: {0}
+Réglages de la surveillance || Impostazioni del monitoraggio || Monitoring settings || Überwachungseinstellungen || Ajustes de la supervisión
+Événement enregistré après (min) || Evento registrato dopo (min) || Event logged after (min) || Ereignis erfasst nach (Min.) || Evento registrado tras (min)
+Présence active ; liste possible, ex. 3 || Presenza attiva; elenco possibile, es. 3 || Active presence; a list is allowed, e.g. 3 || Aktive Präsenz; Liste möglich, z. B. 3 || Presencia activa; se admite una lista, p. ej. 3
+Alerte admin après (min) || Avviso admin dopo (min) || Admin alert after (min) || Admin-Warnung nach (Min.) || Alerta de administración tras (min)
+Une alerte par seuil et par session ; ex. 5, 15 || Un avviso per soglia e per sessione; es. 5, 15 || One alert per threshold and per session; e.g. 5, 15 || Eine Warnung pro Schwelle und Sitzung; z. B. 5, 15 || Una alerta por umbral y por sesión; p. ej. 5, 15
+Inactif après (min sans interaction) || Inattivo dopo (min senza interazione) || Idle after (min without interaction) || Inaktiv nach (Min. ohne Interaktion) || Inactivo tras (min sin interacción)
+Distingue présence active et simple connexion || Distingue presenza attiva e semplice connessione || Distinguishes active presence from just being connected || Unterscheidet aktive Präsenz von bloßer Verbindung || Distingue presencia activa y simple conexión
+Alerte d'inactivité prolongée (min) || Avviso di inattività prolungata (min) || Prolonged inactivity alert (min) || Warnung bei längerer Inaktivität (Min.) || Alerta de inactividad prolongada (min)
+0 = désactivée || 0 = disattivato || 0 = off || 0 = deaktiviert || 0 = desactivada
+Intervalle du signal (s) || Intervallo del segnale (s) || Signal interval (s) || Signalintervall (s) || Intervalo de la señal (s)
+15 à 300 ; plus court = plus réactif, plus de requêtes || Da 15 a 300; più breve = più reattivo, più richieste || 15 to 300; shorter = more responsive, more requests || 15 bis 300; kürzer = reaktiver, mehr Anfragen || De 15 a 300; más corto = más reactivo, más peticiones
+Réponse lente à partir de (ms) || Risposta lenta a partire da (ms) || Slow response from (ms) || Langsame Antwort ab (ms) || Respuesta lenta a partir de (ms)
+500 à 30000 || Da 500 a 30000 || 500 to 30000 || 500 bis 30000 || De 500 a 30000
+Conservation (jours) || Conservazione (giorni) || Retention (days) || Aufbewahrung (Tage) || Conservación (días)
+Sessions terminées supprimées ensuite || Sessioni terminate eliminate in seguito || Ended sessions are deleted afterwards || Beendete Sitzungen werden danach gelöscht || Las sesiones terminadas se eliminan después
+Surveillance activée || Monitoraggio attivo || Monitoring on || Überwachung aktiv || Supervisión activada
+Réglages enregistrés || Impostazioni salvate || Settings saved || Einstellungen gespeichert || Ajustes guardados
+Déconnexion || Disconnessione || Sign-out || Abmeldung || Cierre de sesión
+Table libérée || Tavolo liberato || Table freed || Tisch freigegeben || Mesa liberada

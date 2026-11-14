@@ -1,0 +1,8 @@
+# Page de suivi « Commande envoyée » au style restaurant (2026-11-01).
+# français || italiano || english || deutsch || español
+
+Restaurant · Bar · Café || Ristorante · Bar · Caffè || Restaurant · Bar · Café || Restaurant · Bar · Café || Restaurante · Bar · Café
+Votre commande part en cuisine… || Il tuo ordine sta andando in cucina… || Your order is on its way to the kitchen… || Ihre Bestellung geht in die Küche… || Tu pedido va camino de la cocina…
+L’équipe a bien reçu votre commande. || Lo staff ha ricevuto il tuo ordine. || The team has received your order. || Das Team hat Ihre Bestellung erhalten. || El equipo ha recibido tu pedido.
+En cuisine et au bar, tout se prépare. || In cucina e al bar si prepara tutto. || The kitchen and bar are preparing everything. || Küche und Bar bereiten alles zu. || En la cocina y en la barra se prepara todo.
+Bon appétit ! || Buon appetito! || Enjoy your meal! || Guten Appetit! || ¡Buen provecho!
